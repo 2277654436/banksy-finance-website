@@ -1,6 +1,7 @@
 import './App.css';
 import {Row, Col} from 'antd';
 import 'antd/dist/antd.css';
+import Top from "./pages/top";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Col span={1}><a href={"#"}>CONTACT</a></Col>
         </Row>
       </div>
+      <Top />
     </div>
   );
 }
