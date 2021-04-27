@@ -1,5 +1,6 @@
 .top {
   width: 100%;
-  height: 300px;
-  background: #282c34;
+  height: 100vh;
+  background: url(../../image/top/topImg.jpg) no-repeat;
+  background-size: 100% 100%;
 }
