@@ -2,6 +2,7 @@ import './App.css';
 import {Row, Col} from 'antd';
 import 'antd/dist/antd.css';
 import Top from "./pages/top";
+import Foot from "./pages/foot";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </Row>
       </div>
       <Top />
+      <Foot />
     </div>
   );
 }
