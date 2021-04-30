@@ -14,8 +14,8 @@ function App() {
           <Col span={1}><img src={logo} style={{width: '35px'}}/></Col>
           <Col span={12}/>
           <Col span={1}><a href={"#"}>HOME</a></Col>
-          <Col span={1}><a href={"#"}>WHITEPAPER</a></Col>
-          <Col span={1}><a href={"#"}>FEATURES</a></Col>
+          <Col span={2}><a href={"#"}>WHITEPAPER</a></Col>
+          <Col span={2}><a href={"#"}>FEATURES</a></Col>
           <Col span={1}><a href={"#"}>ORACLE</a></Col>
           <Col span={1}><a href={"#"}>TAME</a></Col>
           <Col span={1}><a href={"#"}>CONTACT</a></Col>
