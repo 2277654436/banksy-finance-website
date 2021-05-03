@@ -1,0 +1,82 @@
+.systemInnovation {
+    width: 100%;
+    background: url(../../image/systemInnovation/innovationBac.png) no-repeat;
+    background-size: 80%;
+    background-position: top 1000px left 0;
+    position: relative;
+}
+.system {
+    position: relative;
+    height: 3000px;
+    background: url(../../image/systemInnovation/systemBac.png) no-repeat;
+    background-size: 80%;
+    background-position: top 0 right 0;
+}
+.systemContent {
+    position: absolute;
+    top: 522px;
+    left: 15%;
+}
+.systemContent-title {
+    font-size: 46px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.systemContent-text1 {
+    width: 600px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 36px;
+}
+.systemContent-text2 {
+    width: 600px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 19px;
+}
+.learnMore {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 24px;
+}
+.systemBac {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.innovationContent {
+    width: 70%;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+.innovationContent-title {
+    width: 700px;
+    font-size: 46px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-left: 50px;
+}
+.innovationContent-text {
+    width: 80%;
+}
+.innovationContent-item {
+    margin-left: 50px;
+    margin-top: 120px;
+}
+.item-text-title {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.item-text-text {
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+}

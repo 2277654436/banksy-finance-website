@@ -1,6 +1,58 @@
 .top {
   width: 100%;
-  height: 100vh;
-  background: url(../../image/top/topImg.jpg) no-repeat;
-  background-size: 100% 100%;
+  height: 1800px;
+  background: radial-gradient( 700px circle,#763F4B, #0e0a27);
+  position: relative;
+}
+.top-title {
+    text-align: center;
+    font-size: 18px;
+    color: #D1D1D1;
+    position: relative;
+    top: 146px;
+}
+.top-content {
+    text-align: center;
+    position: relative;
+    top: 203px;
+}
+.top-content-child {
+    font-weight: 800;
+    color: #FFFFFF;
+    font-size: 41px;
+}
+.top-foot {
+    position: relative;
+    top: 240px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+.service {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: -150px;
+}
+.service-content {
+    margin-left: 10%;
+}
+.service-content-title {
+    font-size: 46px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.service-content-text {
+    width: 400px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 36px;
+}
+.learnMore {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 24px;
 }
