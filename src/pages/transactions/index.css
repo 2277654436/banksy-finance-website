@@ -1,0 +1,113 @@
+.transactions {
+    width: 100%;
+    height: 2400px;
+    background: url(../../image/transactionis/transactions.png) no-repeat;
+    background-size: 1619px;
+    background-position: top 10px right 0;
+    position: relative;
+    font-family: 'PingFang SC';
+}
+.transactionsTitle {
+    width: 594px;
+    font-weight: 800;
+    color: #fff;
+    font-size: 46px;
+    position: absolute;
+    top: 200px;
+    left: 5%;
+}
+.transactionsContent {
+    width: 1200px;
+    height: 1000px;
+    position: absolute;
+    top: 400px;
+    right: 100px;
+}
+.Digitalartwork {
+    width: 8%;
+    position: absolute;
+    top: 500px;
+    left: 15%;
+}
+.GameVirtualLand {
+    width: 25%;
+    position: absolute;
+    top: 170px;
+    right: 40%;
+}
+.AudioVideo {
+    width: 13%;
+    position: absolute;
+    top: 63%;
+    left: 9%;
+}
+.Physicaleducation {
+    width: 15%;
+    position: absolute;
+    bottom: 6%;
+    right: 15%;
+}
+.team {
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    bottom: 0;
+}
+.teamText {
+    position: absolute;
+    left: 5%;
+    top: 0;
+}
+.teamText-title {
+    font-size: 46px;
+    font-weight: 800;
+    color: #fff;
+}
+.teamText-text {
+    width: 500px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 30px;
+}
+.teamContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 278px;
+}
+.teamItem {
+    width: 331px;
+    height: 529px;
+    background: linear-gradient(45deg, #18171B 0%, #201E2D 100%);
+    border-radius: 9px;
+    padding: 22px;
+}
+.teamItem-img {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+.teamItem-img > img {
+    width: 41.12%;
+}
+.teamItem-position {
+    margin-top: 28px;
+    color: #fff;
+    font-weight: 800;
+}
+.teamItem-name {
+    margin-top: 5px;
+    color: #fff;
+    font-weight: 800;
+}
+.teamItem-text {
+    color: #fff;
+    margin-top: 25px;
+}
+.teamItem:nth-of-type(2) {
+    margin-left: 55px;
+}
+.teamItem:nth-of-type(3) {
+    margin-left: 55px;
+}

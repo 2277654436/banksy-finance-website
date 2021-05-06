@@ -4,6 +4,7 @@ import 'antd/dist/antd.css';
 import Top from "./pages/top";
 import Foot from "./pages/foot";
 import SystemInnovation from "./pages/systemInnovation";
+import Transactions from "./pages/transactions";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </div>
       <Top />
       <SystemInnovation />
+      <Transactions />
       <Foot />
     </div>
   );

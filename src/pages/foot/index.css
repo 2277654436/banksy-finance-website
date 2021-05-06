@@ -1,3 +1,93 @@
 .foot {
-  width: 100%;
+    width: 100%;
+    height: 600px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'PingFang SC';
+}
+.footLine {
+    width: 100%;
+    height: 1px;
+    background: #DCDCDC;
+    opacity: 0.2;
+}
+.footContent {
+    width: 100%;
+    height: 364px;
+    margin-top: 84px;
+}
+.footContent {
+    width: 100%;
+    position: relative;
+}
+.footContent-main {
+    display: flex;
+    align-items: center;
+}
+.footContent-main > span:nth-of-type(1) {
+    font-size: 34px;
+    font-weight: 600;
+    color: #fff;
+}
+.footContent-main > span:nth-of-type(2) {
+    display: inline-block;
+    width: 1px;
+    height: 21px;
+    background: #DCDCDC;
+    opacity: 0.3;
+    margin-left: 29px;
+}
+.footContent-main > span:nth-of-type(3) {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 29px;
+}
+.footContent-main-link {
+    position: absolute;
+    right: 0;
+}
+.footContent-main-link > img {
+    margin-left: 23px;
+}
+.operating {
+    display: flex;
+}
+.genarel {
+    margin-top: 46px;
+}
+.genarel > div:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.genarel > div:nth-of-type(2) {
+    color: #fff;
+    margin-top: 17px;
+}
+.genarel > div:nth-of-type(3), .genarel > div:nth-of-type(4), .genarel > div:nth-of-type(5) {
+    color: #fff;
+    margin-top: 10px;
+}
+.learn {
+    margin-top: 46px;
+    margin-left: 110px;
+}
+.learn > div:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.learn > div:nth-of-type(2) {
+    color: #fff;
+    margin-top: 17px;
+}
+.learn > div:nth-of-type(3) {
+    color: #fff;
+    margin-top: 10px;
+}
+.foot-time {
+    width: 100%;
+    margin-top: 58px;
+    color: #D1D1D1;
+    text-align: center;
 }

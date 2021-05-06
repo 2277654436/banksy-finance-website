@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'PingFang SC';
+    src: url(./font/PingFang-SC-Regular.ttf);
+}
 .App {
     background: #0e0a27;
 }
 .menu {
+    font-family: 'PingFang SC';
     height: 80px;
     line-height: 80px;
     color: #fff;

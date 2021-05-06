@@ -1,5 +1,6 @@
 import './index.css'
 import service from '../../image/service/service.png'
+import topBac from '../../image/top/topBac.png'
 
 function Top() {
   return(
@@ -14,6 +15,9 @@ function Top() {
         <div className="top-content-child">
           Decentralized NFT Financial Center.
         </div>
+      </div>
+      <div className="topBac">
+        <img src={topBac} />
       </div>
       <div className="top-foot">
         <div>Unleashing the full value of NFT finance from the</div>

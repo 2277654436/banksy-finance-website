@@ -1,8 +1,9 @@
 .top {
-  width: 100%;
-  height: 1800px;
-  background: radial-gradient( 700px circle,#763F4B, #0e0a27);
-  position: relative;
+    width: 100%;
+    height: 1800px;
+    background: radial-gradient( 700px circle,#763F4B, #0e0a27);
+    position: relative;
+    font-family: 'PingFang SC';
 }
 .top-title {
     text-align: center;
@@ -20,6 +21,12 @@
     font-weight: 800;
     color: #FFFFFF;
     font-size: 41px;
+}
+.topBac {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 480px;
 }
 .top-foot {
     position: relative;
