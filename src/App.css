@@ -22,3 +22,29 @@
 .menuUl > li > a {
     color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+    .menu {
+        font-family: 'PingFang SC';
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .logo {
+        width: 100px;
+    }
+    .menuUl {
+        display: none;
+    }
+    .menuUl > li {
+        list-style: none;
+        float: left;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .menuUl > li > a {
+        color: #fff;
+    }
+}

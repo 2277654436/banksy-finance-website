@@ -14,16 +14,13 @@ function SystemInnovation() {
       <div className="system">
         <div className="systemContent" data-aos="fade-right">
           <div className="systemContent-title">
-            NFT Value Assessment System
+            NFT Evaluation System
           </div>
           <div className="systemContent-text1">
-            Banksy has developed its own artificial intelligence algorithm to evaluate the
-            value of NFT assets in multiple dimensions and to make objective and realistic
-            NFT prices publicly available to the NFT market through Banksy Oracle.
+            Banksy has developed its own AI algorithm to evaluate NFTs from multiple dimensions
           </div>
           <div className="systemContent-text2">
-            Reduce false NFT offers and fraudulent transactions and promote a healthy
-            NFT market.
+            More objective NFT prices are made available to the NFT market through Banksy Oracle.
           </div>
           <div className="learnMore">
             Learn more
@@ -33,101 +30,81 @@ function SystemInnovation() {
         <div className="innovation">
           <div className="innovationContent">
             <div className="innovationContent-title" data-aos="fade-up">
-              Banksy's innovation
+              Highlights of Banksy
             </div>
             <div className="innovationContent-text" data-aos="fade-up">
               <Row>
-                <Col span={8}>
+                <Col xxl={8} xl={8} lg={8}>
                   <div className="innovationContent-item">
                     <img src={innovation1} />
                     <div className="item-text-title">
-                      First NFT valuation system
+                      First NFT evaluation system
                     </div>
                     <div className="item-text-text">
-                      The AI algorithm evaluates NFT
-                      prices based on multi-dimensional
-                      information such as NFT attributes,
-                      scarcity, creator, and pricing of
-                      similar or adjacent collections,
-                      helping users make relatively
-                      accurate judgments.
+                      The AI algorithm evaluates NFT prices based on multi-dimensional
+                      information such as NFT attributes, scarcity, creator, and pricing
+                      of similar pieces.
                     </div>
                   </div>
                 </Col>
-                <Col span={8}>
+                <Col xxl={8} xl={8} lg={8}>
                   <div className="innovationContent-item">
                     <img src={innovation2} />
                     <div className="item-text-title">
                       First NFT Oracle
                     </div>
                     <div className="item-text-text">
-                      Combined with the NFT valuation
-                      system, Banksy Oracle provides
-                      objective and realistic NFT prices
-                      to the NFT market, promoting a
-                      thriving NFT trading market.
+                      Combined with the NFT evaluation system, the Banksy
+                      oracle provides objective NFT prices to the NFT market.
                     </div>
                   </div>
                 </Col>
-                <Col span={8}>
+                <Col xxl={8} xl={8} lg={8}>
                   <div className="innovationContent-item">
                     <img src={innovation3} />
                     <div className="item-text-title">
-                      First Vickers Auction
+                      Innovative Vickery Auction
                     </div>
                     <div className="item-text-text">
-                      The Vickrey auction mechanism
-                      can reflect the value of NFT
-                      more objectively, avoid fraudulent
-                      auctions and protect NFT investors.
+                      Vickery Auction can objectively reflect the value
+                      of NFT, avoiding fraudulent auctions and protecting
+                      NFT investors.
                     </div>
                   </div>
                 </Col>
-                <Col span={8}>
+                <Col xxl={8} xl={8} lg={8}>
                   <div className="innovationContent-item">
                     <img src={innovation4} />
                     <div className="item-text-title">
-                      cross-chain aggregated
-                      transactions
+                      cross-chain aggregated transactions
                     </div>
                     <div className="item-text-text">
-                      The Banksy aggregation platform will
-                      serve as an entry point for integrated
-                      NFT transactions, seamlessly
-                      connecting all NFT platforms and
-                      maximizing transaction cost savings
+                      Banksy serves as an entrance for integrated NFT transactions
+                      with low costs, seamlessly connecting all NFT platforms.
                     </div>
                   </div>
                 </Col>
-                <Col span={8}>
+                <Col xxl={8} xl={8} lg={8}>
                   <div className="innovationContent-item">
                     <img src={innovation5} />
                     <div className="item-text-title">
-                      NFT mortgage lending
+                      Collateralizing NFT
                     </div>
                     <div className="item-text-text">
-                      Users pledge their NFTs on the
-                      Banksy platform to get loans that
-                      help them activate idle on-chain
-                      assets and get better cash flow.
+                      Users can pledge their NFTs on Banksy to borrow funds, enjoying
+                      financial leverages.
                     </div>
                   </div>
                 </Col>
-                <Col span={8}>
+                <Col xxl={8} xl={8} lg={8}>
                   <div className="innovationContent-item">
                     <img src={innovation6} />
                     <div className="item-text-title">
-                      NFT cutting
+                      NFT fragmentation
                     </div>
                     <div className="item-text-text">
-                      Banksy supports the transformation
-                      of NFT split into ERC20 Tokens.
-                      tokens can be traded on a
-                      decentralized trading platform,
-                      and users own part of NFT by
-                      holding tokens, lowering the
-                      investment threshold of NFT and
-                      improving the liquidity of NFT.
+                      NFTs can be split to ERC20 Tokens, which can be traded on DEXs.
+                      This lowers investment barriers for users.
                     </div>
                   </div>
                 </Col>

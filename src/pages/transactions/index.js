@@ -31,7 +31,7 @@ function Transactions() {
           </div>
         </div>
         <div className="teamContent">
-          <div className="teamItem" data-aos="fade-right">
+          <div className="teamItem" data-aos="fade-up">
             <div className="teamItem-img">
               <img src={ceo} />
             </div>
@@ -42,17 +42,11 @@ function Transactions() {
               Clink Li
             </div>
             <div className="teamItem-text">
-              Banksy Finance project initiator, worked as
-              an algorithm engineer and product manager
-              in a large Internet company, specializing in
-              artificial intelligence algorithms. 2018 has
-              developed AI + art creation software, with
-              in-depth research and understanding of art
-              creation and computer cutting-edge
-              technology. 2019 entered the blockchain
-              industry, in-depth research on the
-              combination of blockchain technology, art
-              and finance. So launched Banksy Finance.
+              Clink worked at Sangfor Technologies Inc as a product manager
+              and algorithm security engineer, specializing in algorithms and
+              artificial intelligence. In 2018, Clink developed a software that uses
+              AI to create art pieces. Clink is fascinated by the idea of combining
+              blockchain technology, art, and finance, so he launched Banksy.
             </div>
           </div>
           <div className="teamItem" data-aos="fade-up">
@@ -66,18 +60,14 @@ function Transactions() {
               Chris Su
             </div>
             <div className="teamItem-text">
-              Chris has worked as a core architect for a
-              major gaming company.Expert in distributed
-              computing, distributed storage, and network
-              protocol development.
-              Proficient in c, java, nodejs, rust, etc., and
-              architecting and implementing distributed
-              systems.
-              Extensive experience in Web3, Ethereum,
-              Substrate development.
+              Chris worked as a core architect at NetDragon
+              Websoft Inc. His expertise includes distributed computing,
+              distributed storage, and network protocol development.
+              Chris is experienced in Ethereum, Substrate development
+              with Node.js and Rust.
             </div>
           </div>
-          <div className="teamItem" data-aos="fade-left">
+          <div className="teamItem" data-aos="fade-up">
             <div className="teamItem-img">
               <img src={coo} />
             </div>
@@ -88,13 +78,10 @@ function Transactions() {
               Terry Li
             </div>
             <div className="teamItem-text">
-              Terry has worked as a project manager
-              for multinational companies in the US and
-              Europe. He has extensive experience in
-              project management, partner building and
-              offshore companies. He maintains contact
-              with investors and is responsible for fund
-              raising, marketing and resource integration.
+              Terry worked as a project manager at Bell Sports.
+              He is experienced in managing project management
+              and building partnerships. He is responsible for
+              fund raising and marketing.
             </div>
           </div>
         </div>

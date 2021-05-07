@@ -21,7 +21,7 @@ function App() {
       <div className="menu">
         <Row>
           <Col span={2}/>
-          <Col span={2}><img src={logo}/></Col>
+          <Col span={2}><img className="logo" src={logo}/></Col>
           <Col span={4}/>
           <Col span={10}>
             <ul className="menuUl">

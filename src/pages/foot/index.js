@@ -22,16 +22,16 @@ function Foot() {
         </div>
         <div className="operating">
           <div className="genarel">
-            <div>Genarel</div>
-            <div>Home</div>
-            <div>Features</div>
-            <div>Oracle</div>
-            <div>NFT-Types</div>
+            <div>GENERAL</div>
+            <div>HOME</div>
+            <div>FEATURES</div>
+            <div>ORACLE</div>
+            <div>NFT-TYPES</div>
           </div>
           <div className="learn">
-            <div>Learn</div>
-            <div>Whitepaper</div>
-            <div>Community</div>
+            <div>LEARN</div>
+            <div>WHITEPAPER</div>
+            <div>COMMUNITY</div>
           </div>
         </div>
       </div>
