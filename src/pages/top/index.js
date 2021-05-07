@@ -37,8 +37,8 @@ function Top() {
         <img src={opensea}/>
       </div>
       <div className="service">
-        <img src={service} data-aos="fade-right" />
-        <div className="service-content" data-aos="fade-left">
+        <img className="serviceImg" src={service} data-aos="fade-right" />
+        <div className="service-content" data-aos="fade-up">
           <div className="service-content-title">
             <div>One-stop</div>
             <div>NFT financial services</div>
