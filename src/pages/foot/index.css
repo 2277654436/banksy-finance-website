@@ -1,8 +1,7 @@
 .foot {
-    width: 100%;
+    width: 1300px;
     height: 600px;
-    padding-left: 15%;
-    padding-right: 15%;
+    margin-left: calc((100% - 1300px) / 2);
     font-family: 'PingFang SC';
 }
 .footLine {

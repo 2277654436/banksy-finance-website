@@ -7,9 +7,18 @@
 }
 .menu {
     font-family: 'PingFang SC';
-    height: 80px;
-    line-height: 80px;
+    height: 100px;
+    line-height: 140px;
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
+}
+.menuUl > li {
+    list-style: none;
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.menuUl > li > a {
+    color: #fff;
 }

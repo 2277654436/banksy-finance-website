@@ -10,7 +10,7 @@ import coo from '../../image/transactionis/coo.png'
 function Transactions() {
   return (
     <div className="transactions">
-      <div className="transactionsTitle">
+      <div className="transactionsTitle" data-aos="fade-up">
         Support multiple types of
         NFT transactions
       </div>
@@ -21,7 +21,7 @@ function Transactions() {
       </div>
       <img className="Digitalartwork" src={Digitalartwork}/>
       <div className="team">
-        <div className="teamText">
+        <div className="teamText" data-aos="fade-right">
           <div className="teamText-title">
             Team
           </div>
@@ -31,7 +31,7 @@ function Transactions() {
           </div>
         </div>
         <div className="teamContent">
-          <div className="teamItem">
+          <div className="teamItem" data-aos="fade-right">
             <div className="teamItem-img">
               <img src={ceo} />
             </div>
@@ -55,7 +55,7 @@ function Transactions() {
               and finance. So launched Banksy Finance.
             </div>
           </div>
-          <div className="teamItem">
+          <div className="teamItem" data-aos="fade-up">
             <div className="teamItem-img">
               <img src={cto} />
             </div>
@@ -77,7 +77,7 @@ function Transactions() {
               Substrate development.
             </div>
           </div>
-          <div className="teamItem">
+          <div className="teamItem" data-aos="fade-left">
             <div className="teamItem-img">
               <img src={coo} />
             </div>

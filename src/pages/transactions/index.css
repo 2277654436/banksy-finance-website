@@ -14,7 +14,7 @@
     font-size: 46px;
     position: absolute;
     top: 200px;
-    left: 5%;
+    left: 10%;
 }
 .transactionsContent {
     width: 1200px;
@@ -48,15 +48,11 @@
     right: 15%;
 }
 .team {
-    width: 100%;
+    width: 1300px;
     height: 900px;
+    margin-left: calc((100% - 1300px) / 2);
     position: absolute;
     bottom: 0;
-}
-.teamText {
-    position: absolute;
-    left: 5%;
-    top: 0;
 }
 .teamText-title {
     font-size: 46px;
@@ -106,8 +102,8 @@
     margin-top: 25px;
 }
 .teamItem:nth-of-type(2) {
-    margin-left: 55px;
+    margin-left: 154.5px;
 }
 .teamItem:nth-of-type(3) {
-    margin-left: 55px;
+    margin-left: 154.5px;
 }

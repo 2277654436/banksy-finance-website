@@ -12,7 +12,7 @@ function SystemInnovation() {
   return (
     <div className="systemInnovation">
       <div className="system">
-        <div className="systemContent">
+        <div className="systemContent" data-aos="fade-right">
           <div className="systemContent-title">
             NFT Value Assessment System
           </div>
@@ -26,15 +26,16 @@ function SystemInnovation() {
             NFT market.
           </div>
           <div className="learnMore">
-            Learn more →
+            Learn more
+            <span className="learnTo">→</span>
           </div>
         </div>
         <div className="innovation">
           <div className="innovationContent">
-            <div className="innovationContent-title">
+            <div className="innovationContent-title" data-aos="fade-up">
               Banksy's innovation
             </div>
-            <div className="innovationContent-text">
+            <div className="innovationContent-text" data-aos="fade-up">
               <Row>
                 <Col span={8}>
                   <div className="innovationContent-item">
