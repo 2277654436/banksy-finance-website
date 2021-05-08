@@ -14,10 +14,10 @@ function Foot() {
           <span/>
           <span>Contact us</span>
           <div className="footContent-main-link">
-            <img src={github}/>
-            <img src={fly}/>
-            <img src={twitter}/>
-            <img src={email}/>
+            <a href={'https://github.com/Banksy-Finance'} target='_blank'><img src={github}/></a>
+            <a href={'https://t.me/Banskyfinance'} target='_blank'><img src={fly}/></a>
+            <a href={'https://twitter.com/banksy_finance'} target='_blank'><img src={twitter}/></a>
+            <a href={'clink.banksy@gmail.com'} target='_blank'><img src={email}/></a>
           </div>
         </div>
         <div className="operating">

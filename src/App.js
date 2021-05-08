@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import {Row, Col} from 'antd';
 import 'antd/dist/antd.css';
 import Top from "./pages/top";
@@ -36,7 +37,7 @@ function App() {
         </Row>
       </div>
       <Top />
-      <SystemInnovation />
+      <SystemInnovation/>
       <Transactions />
       <Foot />
     </div>
