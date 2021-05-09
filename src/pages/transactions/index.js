@@ -10,7 +10,7 @@ import coo from '../../image/transactionis/coo.png'
 function Transactions() {
   return (
     <div className="transactions">
-      <div className="transactionsTitle" data-aos="fade-up">
+      <div className="transactionsTitle" data-aos="fade-up" id="types">
         Support multiple types of
         NFT transactions
       </div>
@@ -22,7 +22,7 @@ function Transactions() {
       <img className="Digitalartwork" src={Digitalartwork}/>
       <div className="team">
         <div className="teamText" data-aos="fade-right">
-          <div className="teamText-title">
+          <div className="teamText-title" id="team">
             Team
           </div>
           <div className="teamText-text">

@@ -16,7 +16,7 @@
 .menuUl > li {
     list-style: none;
     float: left;
-    margin-left: 40px;
+    margin-left: 30px;
     cursor: pointer;
 }
 .menuUl > li > a {

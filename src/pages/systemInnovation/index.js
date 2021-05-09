@@ -13,7 +13,7 @@ function SystemInnovation() {
     <div className="systemInnovation">
       <div className="system">
         <div className="systemContent" data-aos="fade-right">
-          <div className="systemContent-title">
+          <div className="systemContent-title"  id="oracle">
             NFT Evaluation System
           </div>
           <div className="systemContent-text1">
@@ -29,7 +29,7 @@ function SystemInnovation() {
         </div>
         <div className="innovation">
           <div className="innovationContent">
-            <div className="innovationContent-title" data-aos="fade-up">
+            <div className="innovationContent-title" data-aos="fade-up" id="innovation">
               Highlights of Banksy
             </div>
             <div className="innovationContent-text" data-aos="fade-up">

@@ -10,6 +10,19 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import logo from './image/logo.png'
 
+
+
+function scrollToPart(anchorName){
+  if (anchorName) {
+    let anchorElement = document.getElementById(anchorName);
+    if(anchorElement) {
+        anchorElement.scrollIntoView(
+            {behavior: 'smooth',block:'center'}
+        );
+    }
+  }
+}
+
 function App() {
   AOS.init({
     duration: 1500,
@@ -24,14 +37,15 @@ function App() {
           <Col span={2}/>
           <Col span={2}><img className="logo" src={logo}/></Col>
           <Col span={4}/>
-          <Col span={10}>
+          <Col span={14}>
             <ul className="menuUl">
-              <li><a>Home</a></li>
-              <li><a>Hub</a></li>
-              <li><a>Oracle</a></li>
-              <li><a>Innovation</a></li>
-              <li><a>Types</a></li>
-              <li><a>Team</a></li>
+              <li><a onClick={()=>scrollToPart('scc1')}>Home</a></li>
+              <li><a onClick={()=>scrollToPart('scc2')}>Hub</a></li>
+              <li><a onClick={()=>scrollToPart('oracle')}>Oracle</a></li>
+              <li><a onClick={()=>scrollToPart('innovation')}>Innovation</a></li>
+              <li><a onClick={()=>scrollToPart('types')}>Types</a></li>
+              <li><a onClick={()=>scrollToPart('team')}>Team</a></li>
+              <li><a href="http://app.banksy.finance/">Explore</a></li>
             </ul>
           </Col>
         </Row>

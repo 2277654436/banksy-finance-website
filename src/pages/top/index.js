@@ -11,7 +11,7 @@ import opensea from '../../image/top/opensea.png'
 function Top() {
   return(
     <div className="top">
-      <div className="top-title">
+      <div className="top-title" id="scc1">
         The First Decentralized NFT Financial Hub
       </div>
       <div className="top-content">
@@ -36,7 +36,7 @@ function Top() {
         <img src={raible}/>
         <img src={opensea}/>
       </div>
-      <div className="service">
+      <div className="service" id="scc2">
         <img className="serviceImg" src={service} data-aos="fade-right" />
         <div className="service-content" data-aos="fade-up">
           <div className="service-content-title">
