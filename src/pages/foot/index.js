@@ -4,6 +4,17 @@ import fly from '../../image/foot/aircraft_logo.png'
 import twitter from '../../image/foot/Twitter_logo.png'
 import email from '../../image/foot/e-mail_logo.png'
 
+function scrollToPart(anchorName){
+  if (anchorName) {
+    let anchorElement = document.getElementById(anchorName);
+    if(anchorElement) {
+      anchorElement.scrollIntoView(
+          {behavior: 'smooth',block:'center'}
+      );
+    }
+  }
+}
+
 function Foot() {
   return(
     <div className="foot">
@@ -23,10 +34,12 @@ function Foot() {
         <div className="operating">
           <div className="genarel">
             <div>GENERAL</div>
-            <div>HOME</div>
-            <div>FEATURES</div>
-            <div>ORACLE</div>
-            <div>NFT-TYPES</div>
+            <div><a onClick={()=>scrollToPart('scc1')}>Home</a></div>
+            <div><a onClick={()=>scrollToPart('scc2')}>Hub</a></div>
+            <div><a onClick={()=>scrollToPart('oracle')}>Oracle</a></div>
+            <div><a onClick={()=>scrollToPart('innovation')}>Innovation</a></div>
+            <div><a onClick={()=>scrollToPart('types')}>Types</a></div>
+            <div><a onClick={()=>scrollToPart('team')}>Team</a></div>
           </div>
           <div className="learn">
             <div>LEARN</div>
