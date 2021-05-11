@@ -45,7 +45,7 @@ function App() {
               <li><a onClick={()=>scrollToPart('innovation')}>Innovation</a></li>
               <li><a onClick={()=>scrollToPart('types')}>Types</a></li>
               <li><a onClick={()=>scrollToPart('team')}>Team</a></li>
-              {/*<li><a href="http://app.banksy.finance/">Explore</a></li>*/}
+              <li><a href="http://app.banksy.finance/">Explore</a></li>
             </ul>
           </Col>
         </Row>

@@ -35,7 +35,7 @@
     .logo {
         width: 100px;
     }
-    .menuUl > li {
+    .menuUl > li:not(:last-child) {
         display: none;
     }
     .menuUl > li {
