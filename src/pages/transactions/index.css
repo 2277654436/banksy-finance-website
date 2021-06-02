@@ -97,6 +97,10 @@
     color: #fff;
     font-weight: 800;
 }
+.linkedinImg {
+    margin-left: 10px;
+    width: 24px;
+}
 .teamItem-text {
     color: #fff;
     margin-top: 25px;

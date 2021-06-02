@@ -6,6 +6,7 @@ import Physicaleducation from '../../image/transactionis/Physicaleducation.png'
 import ceo from '../../image/transactionis/ceo.png'
 import cto from '../../image/transactionis/cto.png'
 import coo from '../../image/transactionis/coo.png'
+import linkedin from '../../image/transactionis/linkedin.png'
 
 function Transactions() {
   return (
@@ -37,6 +38,7 @@ function Transactions() {
             </div>
             <div className="teamItem-position">
               Co-founder CEO
+              <a href={'https://www.linkedin.com/in/clink-li-aa1ba418a/'} target={'_blank'}><img className="linkedinImg" src={linkedin}/></a>
             </div>
             <div className="teamItem-name">
               Clink Li
@@ -55,6 +57,7 @@ function Transactions() {
             </div>
             <div className="teamItem-position">
               Co-founder CTO
+              <a href={'https://www.linkedin.com/in/chris-su-b78775119/'} target={'_blank'}><img className="linkedinImg" src={linkedin}/></a>
             </div>
             <div className="teamItem-name">
               Chris Su
@@ -73,6 +76,7 @@ function Transactions() {
             </div>
             <div className="teamItem-position">
               Co-founder COO
+              <a href={'https://www.linkedin.com/in/terry-li-5803a3212'} target={'_blank'}><img className="linkedinImg" src={linkedin}/></a>
             </div>
             <div className="teamItem-name">
               Terry Li

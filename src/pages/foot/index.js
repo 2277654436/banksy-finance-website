@@ -28,7 +28,7 @@ function Foot() {
             <a href={'https://github.com/Banksy-Finance'} target='_blank'><img src={github}/></a>
             <a href={'https://t.me/Banskyfinance'} target='_blank'><img src={fly}/></a>
             <a href={'https://twitter.com/banksy_finance'} target='_blank'><img src={twitter}/></a>
-            <a href={'clink.banksy@gmail.com'} target='_blank'><img src={email}/></a>
+            <a href={'mailto:contact@banksy.finance'} target='_blank'><img src={email}/></a>
           </div>
         </div>
         <div className="operating">
@@ -41,11 +41,11 @@ function Foot() {
             <div><a onClick={()=>scrollToPart('types')}>Types</a></div>
             <div><a onClick={()=>scrollToPart('team')}>Team</a></div>
           </div>
-          <div className="learn">
+          {/*<div className="learn">
             <div>LEARN</div>
             <div>WHITEPAPER</div>
             <div>COMMUNITY</div>
-          </div>
+          </div>*/}
         </div>
       </div>
       <div className="footLine" />

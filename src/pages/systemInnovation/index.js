@@ -22,10 +22,10 @@ function SystemInnovation() {
           <div className="systemContent-text2">
             More objective NFT prices are made available to the NFT market through Banksy Oracle.
           </div>
-          <div className="learnMore">
+          {/*<div className="learnMore">
             Learn more
             <span className="learnTo">→</span>
-          </div>
+          </div>*/}
         </div>
         <div className="innovation">
           <div className="innovationContent">

@@ -35,9 +35,12 @@
     .logo {
         width: 100px;
     }
-    .menuUl > li:not(:last-child) {
+    .menuUl > li {
         display: none;
     }
+    /*.menuUl > li:not(:last-child) {*/
+    /*    display: none;*/
+    /*}*/
     .menuUl > li {
         list-style: none;
         float: left;

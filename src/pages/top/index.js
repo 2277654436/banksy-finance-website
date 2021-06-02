@@ -46,10 +46,10 @@ function Top() {
           <div className="service-content-text">
             Banksy is an infrastructure that enables anyone to create, trade/auction and collateralize NFTs.
           </div>
-          <div className="learnMore">
+          {/*<div className="learnMore">
             Learn more
             <span className="learnTo">→</span>
-          </div>
+          </div>*/}
 
         </div>
       </div>
