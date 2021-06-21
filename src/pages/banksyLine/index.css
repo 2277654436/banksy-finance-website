@@ -1,0 +1,31 @@
+.banksyLine {
+    height: 49px;
+}
+@keyframes rowup {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+.list{
+    width: 100%;
+    border: 1px solid #999;
+    margin: 20px auto;
+    position: relative;
+    height: 49px;
+    overflow: hidden;
+}
+
+.list .rowup{
+    -webkit-animation: 10s rowup linear infinite normal;
+    animation: 10s rowup linear infinite normal;
+    position: relative;
+    display: flex;
+}
+.item > img {
+    height: 49px;
+}

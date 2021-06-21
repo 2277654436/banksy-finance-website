@@ -1,0 +1,79 @@
+.problem {
+    width: 100%;
+    height: 1300px;
+    position: relative;
+    font-family: 'AvenirNext';
+}
+.dangerImg {
+    width: 180px;
+    position: absolute;
+    right: 30%;
+}
+.dangerImg > img {
+    width: 100%;
+}
+.problem-title {
+    position: absolute;
+    top: 130px;
+    right: 15%;
+    color: white;
+    font-size: 64px;
+    font-weight: bolder;
+    text-align: right;
+}
+.problemContent {
+    position: absolute;
+    left: 15%;
+    top: 250px;
+}
+.problemContent-item {
+    display: flex;
+    align-items: center;
+}
+.problemContent-item-serial {
+    color: #00CE01;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.problemContent-item-text {
+    color: #808080;
+    font-size: 27px;
+    margin-left: 20px;
+}
+.problemBac {
+    width: 900px;
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+.problemBac > img {
+    width: 100%;
+}
+.features-title {
+    position: absolute;
+    top: 600px;
+    left: 6%;
+}
+.features-title-img {
+    position: absolute;
+}
+.features-title-img > img:nth-of-type(1) {
+    width: 150px;
+    position: absolute;
+    top: 170px;
+    left: 150px;
+}
+.features-title-img > img:nth-of-type(2) {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.features-titleText {
+    width: 600px;
+    font-size: 64px;
+    color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 130px;
+}

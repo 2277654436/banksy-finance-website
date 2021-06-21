@@ -1,22 +1,23 @@
-@font-face {
-    font-family: 'PingFang SC';
-    src: url(./font/PingFang-SC-Regular.ttf);
-}
+
 .App {
-    background: #0e0a27;
+    background: #000000;
 }
 .menu {
-    font-family: 'PingFang SC';
-    height: 100px;
+    font-family: 'AvenirNext';
+    height: 131px;
     line-height: 140px;
     color: #fff;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
+}
+
+.logo {
+    width: 199px;
 }
 .menuUl > li {
     list-style: none;
     float: left;
-    margin-left: 30px;
+    margin-left: 50px;
     cursor: pointer;
 }
 .menuUl > li > a {
@@ -25,7 +26,7 @@
 
 @media screen and (max-width: 600px) {
     .menu {
-        font-family: 'PingFang SC';
+        font-family: 'AvenirNext';
         height: 40px;
         line-height: 40px;
         color: #fff;

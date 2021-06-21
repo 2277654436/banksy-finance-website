@@ -1,0 +1,70 @@
+.kind {
+    width: 100%;
+    height: 1000px;
+    background: url("../../image/kind/kindBac.png") no-repeat;
+    background-size: 90%;
+    background-position: top 30px left 0;
+    position: relative;
+    font-family: 'AvenirNext';
+}
+.kind-title {
+    width: 500px;
+    position: absolute;
+    right: 0;
+}
+.kind-titleImg {
+    width: 150px;
+}
+.kind-titleImg > img {
+    width: 100%;
+}
+.kind-title-text {
+    color: #fff;
+    font-size: 64px;
+    font-weight: bolder;
+    position: absolute;
+    top: 50px;
+    left: -80px;
+}
+.kindBacBall {
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    left: 23%;
+    animation: spin 10s infinite linear
+}
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+.kindBacBall > img {
+    width: 100%;
+}
+.kindsList{
+    width: 100%;
+    margin: 20px auto;
+    position: absolute;
+    top: 450px;
+    height: 348px;
+    overflow: hidden;
+}
+
+.kindsList .kindRowup{
+    -webkit-animation: 10s rowup linear infinite normal;
+    animation: 10s rowup linear infinite normal;
+    position: relative;
+    display: flex;
+}
+.kindItemImg {
+    width: 200px;
+    height: 280px;
+    background: #999999;
+    border: 1px solid red;
+}
+.kindItemTitle {
+    width: 200px;
+    height: 78px;
+    background: url("../../image/kind/kindItemTitleImg.png") no-repeat;
+    background-size: 100% 100%;
+}

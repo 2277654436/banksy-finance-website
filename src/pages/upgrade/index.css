@@ -1,0 +1,24 @@
+.upgrade {
+    width: 100%;
+    height: 2000px;
+    background: url("../../image/upgrade/upgradeBac.png") no-repeat;
+    background-position: top 0 left 0;
+    background-size: 30%;
+    position: relative;
+    font-family: 'AvenirNext';
+}
+.upgrade-img {
+    width: 70%;
+    margin-left: 18%;
+}
+.upgrade-img > img {
+    width: 100%;
+}
+.upgrade-title {
+    color: white;
+    font-size: 64px;
+    font-weight: bolder;
+    position: absolute;
+    top: 150px;
+    left: 15%;
+}
