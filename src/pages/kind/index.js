@@ -2,12 +2,18 @@ import React from "react";
 import './index.css'
 import kindTitleImg from '../../image/kind/kindTitleImg.png'
 import kindBacBall from '../../image/kind/kindBacBall.png'
-import banksyLineItem from '../../image/baksyLine/banksyLineItem.png'
+import kindItemImg1 from '../../image/kind/kindItemImg1.jpg'
+import kindItemImg2 from '../../image/kind/kindItemImg2.jpg'
+import kindItemImg3 from '../../image/kind/kindItemImg3.jpg'
+import kindItemImg4 from '../../image/kind/kindItemImg4.jpg'
+import kindItemImg5 from '../../image/kind/kindItemImg5.jpg'
+import kindItemImg6 from '../../image/kind/kindItemImg6.jpg'
+import kindItemImg7 from '../../image/kind/kindItemImg7.jpg'
 
 function Kind() {
     return (
         <div className="kind">
-            <div className="kind-title">
+            <div className="kind-title" data-aos="fade-up">
                 <div className="kind-titleImg">
                     <img src={kindTitleImg} />
                 </div>
@@ -23,142 +29,170 @@ function Kind() {
                 <div className="aa kindRowup">
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg1} />
                         </div>
                         <div className="kindItemTitle">
+                            GAMING
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg2} />
                         </div>
                         <div className="kindItemTitle">
+                            DIGITAL ART
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg3} />
                         </div>
                         <div className="kindItemTitle">
+                            FASHION
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg4} />
                         </div>
                         <div className="kindItemTitle">
+                            VIRTUAL WORLDS
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg5} />
                         </div>
                         <div className="kindItemTitle">
+                            NAME SERVICE AND DOMAINS
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg6} />
                         </div>
                         <div className="kindItemTitle">
+                            LICENSES AND CERTIFICATIONS
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg7} />
                         </div>
                         <div className="kindItemTitle">
+                            COLLECTIBLES
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg1} />
                         </div>
                         <div className="kindItemTitle">
+                            GAMING
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg2} />
                         </div>
                         <div className="kindItemTitle">
+                            DIGITAL ART
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg3} />
                         </div>
                         <div className="kindItemTitle">
+                            FASHION
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg4} />
                         </div>
                         <div className="kindItemTitle">
+                            VIRTUAL WORLDS
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg5} />
                         </div>
                         <div className="kindItemTitle">
+                            NAME SERVICE AND DOMAINS
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg6} />
                         </div>
                         <div className="kindItemTitle">
+                            LICENSES AND CERTIFICATIONS
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg7} />
                         </div>
                         <div className="kindItemTitle">
+                            COLLECTIBLES
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg1} />
                         </div>
                         <div className="kindItemTitle">
+                            GAMING
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg2} />
                         </div>
                         <div className="kindItemTitle">
+                            DIGITAL ART
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg3} />
                         </div>
                         <div className="kindItemTitle">
+                            FASHION
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg4} />
                         </div>
                         <div className="kindItemTitle">
+                            VIRTUAL WORLDS
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg5} />
                         </div>
                         <div className="kindItemTitle">
+                            NAME SERVICE AND DOMAINS
                         </div>
                     </div>
                     <div className="kindItem">
                         <div className="kindItemImg">
-                            <img />
+                            <img src={kindItemImg6} />
                         </div>
                         <div className="kindItemTitle">
+                            LICENSES AND CERTIFICATIONS
+                        </div>
+                    </div>
+                    <div className="kindItem">
+                        <div className="kindItemImg">
+                            <img src={kindItemImg7} />
+                        </div>
+                        <div className="kindItemTitle">
+                            COLLECTIBLES
                         </div>
                     </div>
                 </div>

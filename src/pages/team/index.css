@@ -4,7 +4,8 @@
     background: url("../../image/team/teamBac.png") no-repeat center;
     background-size: 100% 100%;
     font-family: 'AvenirNext';
-    position: relative;
+    position: absolute;
+    bottom: 0;
 }
 .teamTitle {
     position: absolute;
@@ -23,4 +24,36 @@
     position: absolute;
     top: 75px;
     left: -130px;
+}
+.temContent {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 200px;
+}
+.teamContent-item {
+    width: 20%;
+}
+.teamContent-img {
+    height: 289px;
+}
+.teamContent-img > img {
+    height: 100%;
+}
+.position {
+    color: #808080;
+    margin-top: 30px;
+}
+.teamItem-name {
+    color: #808080;
+}
+.linkdin {
+    color: #808080;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.linkdin:hover {
+    color: #fff;
 }

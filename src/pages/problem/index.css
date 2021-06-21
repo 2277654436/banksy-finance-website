@@ -8,6 +8,7 @@
     width: 180px;
     position: absolute;
     right: 30%;
+    top: -50px;
 }
 .dangerImg > img {
     width: 100%;

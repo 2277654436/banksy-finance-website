@@ -4,4 +4,60 @@
     background: url("../../image/mission/missionBac.png") no-repeat center;
     background-size: 100% 100%;
     font-family: 'AvenirNext';
+    position: relative;
+}
+.mission-title {
+    position: absolute;
+    left: 10%;
+    top: 100px;
+}
+.mission-titleImg {
+    width: 400px;
+    position: relative;
+}
+.mission-titleImg > img:nth-of-type(1) {
+    position: absolute;
+    top: 180px;
+    left: 130px;
+    width: 80px;
+}
+.mission-titleImg > img:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.mission-title-text {
+    width: 500px;
+    position: absolute;
+    top: 250px;
+    left: 21%;
+}
+.mission-title-text > div:nth-of-type(1) {
+    font-size: 64px;
+    color: #fff;
+}
+.mission-title-text > div:nth-of-type(2) {
+    font-size: 18px;
+    color: #808080;
+    margin-top: 61px;
+}
+.mission-title-text > div:nth-of-type(3) {
+    font-size: 18px;
+    color: #808080;
+    margin-top: 40px;
+}
+.missionImg {
+    width: 633px;
+    height: 677px;
+    background: url("../../image/mission/missionImg.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 15%;
+    top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.missionImg > img {
+    width: 80%;
 }

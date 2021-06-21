@@ -15,6 +15,8 @@ import Foot from "./pages/foot";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import RoadMap from "./pages/roadMap";
+import menuTwitter from './image/menuTwitter.png'
+import menuFly from './image/menuFly.png'
 
 
 
@@ -46,7 +48,7 @@ function App() {
               <img className="logo" src={logo}/>
           </Col>
           <Col span={4}/>
-          <Col span={14}>
+          <Col span={13}>
             <ul className="menuUl">
               <li><a onClick={()=>scrollToPart('scc1')}>Features</a></li>
               <li><a onClick={()=>scrollToPart('scc2')}>Roadmap</a></li>
@@ -54,6 +56,10 @@ function App() {
               <li><a onClick={()=>scrollToPart('innovation')}>Docs</a></li>
             </ul>
           </Col>
+            <Col span={3}>
+                <a href={"https://twitter.com/banksy_finance"} target="_blank"><img className="menuTwitter" src={menuTwitter} /></a>
+                <a href={"https://t.me/Banskyfinance"} target='_blank'><img className="menuFly" src={menuFly} /></a>
+            </Col>
         </Row>
       </div>
       <Top />

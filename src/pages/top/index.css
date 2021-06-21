@@ -1,37 +1,37 @@
 .top {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     background: url("../../image/top/topBac.png") no-repeat;
-    background-size: 50%;
-    background-position: top 0 right 40%;
+    background-size: 70%;
+    background-position: top 50px left 50%;
     position: relative;
     font-family: 'AvenirNext';
 }
 .topContent {
-    width: 900px;
+    width: 1000px;
     position: absolute;
     top: 68px;
 }
 .topText {
-    font-size: 70px;
+    font-size: 80px;
     font-weight: bold;
     color: white;
-    margin-left: 43%;
+    margin-left: 33%;
     text-shadow: #04C100 0.1rem 0.1rem 0.1rem;
 }
 .topIntroduction {
-    width: 296px;
+    width: 306px;
     height: 87px;
     border-radius: 296px / 90px;
     border: 1px solid #767676;
     position: absolute;
-    left: 43%;
+    left: 33%;
     margin-top: 83px;
     color: #fff;
 }
 .topIntroduction > div:nth-of-type(1) {
     text-align: center;
-    margin-top: 14px;
+    margin-top: 18px;
 }
 .topIntroduction > div:nth-of-type(2) {
     text-align: center;
