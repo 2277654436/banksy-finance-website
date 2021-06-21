@@ -4,7 +4,7 @@ import './index.css'
 function Top() {
     return (
         <div className="top">
-          <div className="topContent">
+          <div className="topContent" data-aos="fade-right">
              <div className="topText">
                <div>The First</div>
                  <div>Decentralized</div>
