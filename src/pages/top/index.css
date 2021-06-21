@@ -6,6 +6,7 @@
     background-position: top 50px left 50%;
     position: relative;
     font-family: 'AvenirNext';
+    transition: background 2s;
 }
 .topContent {
     width: 1000px;

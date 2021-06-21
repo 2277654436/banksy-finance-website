@@ -8,7 +8,7 @@ function RoadMap() {
         <div className="roadMap">
             <div className="roadMapMain" id="roadMap">
                 <div className="roadMapTitle" data-aos="fade-right">
-                    ROAD MAP
+                    ROADMAP
                 </div>
                 <div className="roadMapImg" data-aos="fade-up">
                     <img src={roadMapImg} />
