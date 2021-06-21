@@ -6,7 +6,7 @@ import missionImgContent from '../../image/mission/missionImgContent.png'
 
 function Mission() {
     return (
-        <div className="mission">
+        <div className="mission" id="mission">
             <div className="mission-title">
                 <div className="mission-titleImg" data-aos="fade-right">
                     <img src={missionTitleImg} />

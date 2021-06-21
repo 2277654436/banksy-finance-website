@@ -50,10 +50,10 @@ function App() {
           <Col span={4}/>
           <Col span={13}>
             <ul className="menuUl">
-              <li><a onClick={()=>scrollToPart('scc1')}>Features</a></li>
-              <li><a onClick={()=>scrollToPart('scc2')}>Roadmap</a></li>
-              <li><a onClick={()=>scrollToPart('oracle')}>Medium</a></li>
-              <li><a onClick={()=>scrollToPart('innovation')}>Docs</a></li>
+              <li><a onClick={()=>scrollToPart('mission')}>Mission</a></li>
+              <li><a onClick={()=>scrollToPart('features')}>Features</a></li>
+              <li><a onClick={()=>scrollToPart('benefits')}>Benefits</a></li>
+              <li><a onClick={()=>scrollToPart('roadMap')}>Roadmap</a></li>
             </ul>
           </Col>
             <Col span={3}>

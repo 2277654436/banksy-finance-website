@@ -54,6 +54,9 @@
     margin-top: 30px;
     cursor: pointer;
 }
-.linkdin:hover {
+.linkdin > a {
+    color: #808080;
+}
+.linkdin > a:hover {
     color: #fff;
 }

@@ -5,9 +5,21 @@ import benefits2 from '../../image/banefits/benefits2.png'
 import benefits3 from '../../image/banefits/benefits3.png'
 import benefitsButton from '../../image/banefits/benefitsButton.png'
 
+
+function scrollToPart(anchorName){
+    if (anchorName) {
+        let anchorElement = document.getElementById(anchorName);
+        if(anchorElement) {
+            anchorElement.scrollIntoView(
+                {behavior: 'smooth',block:'center'}
+            )
+        }
+    }
+}
+
 function Benefits() {
     return(
-        <div className="benefits">
+        <div className="benefits" id="benefits">
             <div className="benefits-title" data-aos="fade-up">
                 <div>BENEFITS</div>
             </div>
@@ -85,7 +97,7 @@ function Benefits() {
                     </div>
                 </div>
             </div>
-            <div className="benefitsButton" data-aos="fade-up">
+            <div className="benefitsButton" data-aos="fade-up" onClick={()=>scrollToPart('roadMap')}>
                 <img src={benefitsButton} />
             </div>
         </div>

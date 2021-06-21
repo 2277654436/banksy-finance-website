@@ -6,7 +6,7 @@ import roadMapImg from '../../image/roadmap/mapImg.png'
 function RoadMap() {
     return (
         <div className="roadMap">
-            <div className="roadMapMain">
+            <div className="roadMapMain" id="roadMap">
                 <div className="roadMapTitle" data-aos="fade-right">
                     ROAD MAP
                 </div>

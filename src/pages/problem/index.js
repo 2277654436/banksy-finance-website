@@ -45,7 +45,7 @@ function Problem() {
                     <img src={featuresTitleImg} />
                     <img src={featuresTitleBac} />
                 </div>
-                <div className="features-titleText" data-aos="fade-up">
+                <div className="features-titleText" data-aos="fade-up" id="features">
                     <div>SOLUTIONS &</div>
                     <div>MAIN FEATURES</div>
                 </div>
