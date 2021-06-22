@@ -34,7 +34,7 @@
     text-align: center;
     color: #8E8E8E;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1024px){
     .foot-text{
         width: 80%;
         font-size: 14px;

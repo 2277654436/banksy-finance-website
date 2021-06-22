@@ -51,10 +51,10 @@
 .benefitsButton > img {
     width: 100%;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     .benefits {
         width: 100%;
-        height: 1750px;
+        height: 1450px;
         position: absolute;
         bottom:100px;
     }
@@ -69,5 +69,11 @@
     }
     .benefitsItem-img {
         margin-bottom: 20px;
+    }
+    .benefitsButton {
+        width: 273px;
+        position: absolute;
+        bottom: 0;
+        right: 15%;
     }
 }

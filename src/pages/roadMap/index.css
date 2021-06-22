@@ -48,9 +48,9 @@
     position: absolute;
     left: 62.5%;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     .roadMap{
-        height: 2350px;
+        height: 2200px;
     }
   
     .roadMapTitle{
@@ -67,22 +67,22 @@
     }
     .roadMapImgContent-item:nth-of-type(1) {
         position: absolute;
-        left: 20%;
-        top:195px;
+        left: 5%;
+        top:105px;
     }
     .roadMapImgContent-item:nth-of-type(2) {
         position: absolute;
-        left: 20%;
-        top: 350px;
+        left: 5%;
+        top: 205px;
     }
     .roadMapImgContent-item:nth-of-type(3) {
         position: absolute;
-        left: 20%;
-        top:525px;
+        left: 5%;
+        top:365px;
     }
     .roadMapImgContent-item:nth-of-type(4) {
         position: absolute;
-        left: 20%;
-        top:700px;
+        left: 5%;
+        top:560px;
     }   
 }

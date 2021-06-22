@@ -66,7 +66,7 @@
 .linkdin > a:hover {
     color: #fff;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1024px){
     .team {
         height: 1350px;
         background: none;
