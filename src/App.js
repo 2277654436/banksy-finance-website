@@ -47,8 +47,8 @@ function App() {
           <Col span={2}>
               <img className="logo" src={logo}/>
           </Col>
-          <Col span={4}/>
-          <Col span={12}>
+          <Col span={10}/>
+          <Col xxl={12} xl={12} lg={12} md={12} sm={12}>
             <ul className="menuUl">
               <li><a onClick={()=>scrollToPart('mission')}>Mission</a></li>
               <li><a onClick={()=>scrollToPart('features')}>Features</a></li>
@@ -56,7 +56,7 @@ function App() {
               <li><a onClick={()=>scrollToPart('roadMap')}>Roadmap</a></li>
             </ul>
           </Col>
-            <Col span={4}>
+            <Col xxl={4} xl={4} lg={4} md={6} sm={6}>
                 <a href={"https://twitter.com/banksy_finance"} target="_blank"><img className="menuTwitter" src={menuTwitter} /></a>
                 <a href={"https://t.me/Banskyfinance"} target='_blank'><img className="menuFly" src={menuFly} /></a>
             </Col>

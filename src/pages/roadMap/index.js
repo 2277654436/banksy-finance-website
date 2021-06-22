@@ -20,7 +20,7 @@ function RoadMap() {
                         </div>
                         <div className="roadMapImgContent-item">
                             <div className="roadMapImgContent-item-title">·2021. Q2 Beta launch</div>
-                            <div className="roadMapImgContent-item-text">·FT marketplace</div>
+                            <div className="roadMapImgContent-item-text">·NFT Marketplace</div>
                             <div className="roadMapImgContent-item-text">·NFT creation,</div>
                             <div className="roadMapImgContent-item-text">·NFT transaction,</div>
                             <div className="roadMapImgContent-item-text">·AI-based NFT generation</div>
@@ -35,7 +35,6 @@ function RoadMap() {
                         </div>
                         <div className="roadMapImgContent-item">
                             <div className="roadMapImgContent-item-title">·2021. Q4 V2</div>
-                            <div className="roadMapImgContent-item-text">AI Oracle</div>
                             <div className="roadMapImgContent-item-text">NFT collateral</div>
                             <div className="roadMapImgContent-item-text">Exclusive Artist Exhibition Galleries</div>
                             <div className="roadMapImgContent-item-text">Cross chains extension</div>
