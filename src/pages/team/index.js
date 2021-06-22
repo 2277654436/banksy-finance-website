@@ -4,6 +4,7 @@ import teamTitleImg from '../../image/team/teamTttleImg.png'
 import ceo from '../../image/team/ceo.png'
 import cto from '../../image/team/cto.png'
 import cmo from '../../image/team/cmo.png'
+import linkedin from '../../image/team/linkedin.png'
 
 function Team() {
     return (
@@ -24,7 +25,10 @@ function Team() {
                     <div className="position">Co-founder CEO</div>
                     <div className="teamItem-name">Clink Li</div>
                     <div className="linkdin">
-                        <a href={"https://www.linkedin.com/in/clink-li-aa1ba418a/"} target='_blank'>Linkdin.</a>
+                        <a href={"https://www.linkedin.com/in/clink-li-aa1ba418a/"} target='_blank'>
+                            <img src={linkedin} />
+                            Linkdin.
+                        </a>
                     </div>
                 </div>
                 <div className="teamContent-item">
@@ -34,7 +38,10 @@ function Team() {
                     <div className="position">Co-founder CTO</div>
                     <div className="teamItem-name">Chris Su</div>
                     <div className="linkdin">
-                        <a href={"https://www.linkedin.com/in/chris-su-b78775119/"} target='_blank'>Linkdin.</a>
+                        <a href={"https://www.linkedin.com/in/chris-su-b78775119/"} target='_blank'>
+                            <img src={linkedin} />
+                            Linkdin.
+                        </a>
                     </div>
                 </div>
                 <div className="teamContent-item">
@@ -44,7 +51,10 @@ function Team() {
                     <div className="position">Co-founder CMO</div>
                     <div className="teamItem-name">Terry Li</div>
                     <div className="linkdin">
-                        <a href={"https://www.linkedin.com/in/terry-li-614512212/"} target='_blank'>Linkdin.</a>
+                        <a href={"https://www.linkedin.com/in/terry-li-614512212/"} target='_blank'>
+                            <img src={linkedin} />
+                            Linkdin.
+                        </a>
                     </div>
                 </div>
             </div>

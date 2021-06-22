@@ -24,7 +24,7 @@
     color: #fff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .menu {
         font-family: 'AvenirNext';
         height: 40px;
@@ -39,9 +39,6 @@
     .menuUl > li {
         display: none;
     }
-    /*.menuUl > li:not(:last-child) {*/
-    /*    display: none;*/
-    /*}*/
     .menuUl > li {
         list-style: none;
         float: left;

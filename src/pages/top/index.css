@@ -37,3 +37,25 @@
 .topIntroduction > div:nth-of-type(2) {
     text-align: center;
 }
+@media screen and (max-height: 900px) {
+    .top {
+        height: 400px;
+        background: url("../../image/top/topBac.png") no-repeat;
+        background-size: 90%;
+        background-position: top 50px left 50%;
+        position: relative;
+        font-family: 'AvenirNext';
+        transition: background 2s;
+    }
+    .topContent {
+        width: 100%;
+    }
+    .topText {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    .topIntroduction {
+        position: absolute;
+        left: calc((100% - 306px) / 2);
+    }
+}
