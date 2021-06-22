@@ -44,11 +44,11 @@ function App() {
       <div className="menu">
         <Row>
           <Col span={2}/>
-          <Col span={2}>
+          <Col xxl={2} xl={2} lg={2} md={4} sm={4}>
               <img className="logo" src={logo}/>
           </Col>
-          <Col span={10}/>
-          <Col xxl={12} xl={12} lg={12} md={12} sm={12}>
+          <Col xxl={4} xl={4} lg={8} md={8} sm={8}/>
+          <Col xxl={12} xl={4} lg={8} md={8} sm={8} >
             <ul className="menuUl">
               <li><a onClick={()=>scrollToPart('mission')}>Mission</a></li>
               <li><a onClick={()=>scrollToPart('features')}>Features</a></li>
@@ -56,7 +56,7 @@ function App() {
               <li><a onClick={()=>scrollToPart('roadMap')}>Roadmap</a></li>
             </ul>
           </Col>
-            <Col xxl={4} xl={4} lg={4} md={6} sm={6}>
+            <Col xxl={4} xl={4} lg={4} md={4} sm={4}>
                 <a href={"https://twitter.com/banksy_finance"} target="_blank"><img className="menuTwitter" src={menuTwitter} /></a>
                 <a href={"https://t.me/Banskyfinance"} target='_blank'><img className="menuFly" src={menuFly} /></a>
             </Col>
