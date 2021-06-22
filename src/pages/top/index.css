@@ -38,6 +38,19 @@
     text-align: center;
 }
 @media screen and (max-width: 1024px) {
+    .top{
+        height: 800px;
+    }
+    .topText{
+        font-size: 54px;
+        margin-left: 8%;
+    }
+    .topIntroduction{
+        left: 8%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 900px) {
     .top {
         height: 400px;
         background: url("../../image/top/topBac.png") no-repeat;

@@ -7,10 +7,6 @@
 .features-content {
     width: 70%;
     margin-left: 15%;
-
-}
-.features-content-item {
-
 }
 .features-content-item-img {
     width: 102px;
@@ -36,18 +32,22 @@
     color: #808080;
     font-size: 17px;
 }
-
 @media screen and (max-width: 1024px) {
+    .features {
+        height: 1600px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 900px) {
     .features {
         width: 100%;
         height: 2850px;
-        margin-bottom: 200px;
+        margin-bottom: 100px;
         font-family: 'AvenirNext';
     }
     .features-content {
         width: 70%;
         margin-left: 15%;
-
     }
     .features-content-item-img {
         width: 102px;

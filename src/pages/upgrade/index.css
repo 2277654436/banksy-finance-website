@@ -24,11 +24,20 @@
     left: 15%;
 }
 @media screen and (max-width: 1024px) {
+    .upgrade-img {
+        width:80%;
+    }
+    .upgrade-title {
+        font-size: 48px;
+        top: 100px;
+    }
+}
+@media screen and (max-width: 900px) {
     .upgrade{
         background: url("../../image/upgrade/upgradeBac.png") no-repeat;
         background-position: top 0 left 0;
         background-size: 50% 30%;
-        height: 2400px;
+        height: 2500px;
     }
     .upgrade-img {
         width:90%;

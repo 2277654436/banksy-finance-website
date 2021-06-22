@@ -23,7 +23,7 @@ function FeaturesPage() {
         <div className="features">
             <div className="features-content" data-aos="fade-up">
                 <Row gutter={[70,100]}>
-                    <Col xxl={6} xl={6}>
+                    <Col xxl={6} xl={6} lg={12} md={24}>
                         <div className="features-content-item">
                             <div className="features-content-item-img">
                                 <img src={SERVICES} />
@@ -40,7 +40,7 @@ function FeaturesPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl={6} xl={6}>
+                    <Col xxl={6} xl={6} lg={12} md={24}>
                         <div className="features-content-item">
                             <div className="features-content-item-img">
                                 <img src={ORACLE} />
@@ -55,7 +55,7 @@ function FeaturesPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl={6} xl={6}>
+                    <Col xxl={6} xl={6} lg={12} md={24}>
                         <div className="features-content-item">
                             <div className="features-content-item-img">
                                 <img src={ARTWORKS} />
@@ -72,7 +72,7 @@ function FeaturesPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl={6} xl={6}>
+                    <Col xxl={6} xl={6} lg={12} md={24}>
                         <div className="features-content-item">
                             <div className="features-content-item-img">
                                 <img src={DETECTION} />
@@ -89,7 +89,7 @@ function FeaturesPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl={6} xl={6}>
+                    <Col xxl={6} xl={6} lg={12} md={24}>
                         <div className="features-content-item">
                             <div className="features-content-item-img">
                                 <img src={INFRASTRUCTURE} />
@@ -105,7 +105,7 @@ function FeaturesPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl={6} xl={6}>
+                    <Col xxl={6} xl={6} lg={12} md={24}>
                         <div className="features-content-item">
                             <div className="features-content-item-img">
                                 <img src={CASES} />
@@ -120,7 +120,7 @@ function FeaturesPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl={6} xl={6}>
+                    <Col xxl={6} xl={6} lg={12} md={24}>
                         <div className="features-content-item">
                             <div className="features-content-item-img">
                                 <img src={FEES} />
@@ -136,7 +136,7 @@ function FeaturesPage() {
                             </div>
                         </div>
                     </Col>
-                    <Col xxl={6} xl={6}>
+                    <Col xxl={6} xl={6} lg={12} md={24}>
                         <div className="features-content-item">
                             <div className="features-content-item-img">
                                 <img src={ROYALTIES} />

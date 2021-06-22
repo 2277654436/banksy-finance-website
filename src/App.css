@@ -30,6 +30,11 @@
     width: 25px;
     margin-left: 30px;
 }
+@media screen and (max-width: 1024px) {
+    .menu{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width: 900px) {
     .menu {
         font-family: 'AvenirNext';

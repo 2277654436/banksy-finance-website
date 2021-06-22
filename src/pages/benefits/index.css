@@ -54,7 +54,27 @@
 @media screen and (max-width: 1024px) {
     .benefits {
         width: 100%;
-        height: 1450px;
+        height: 950px;
+        position: absolute;
+        bottom:100px;
+    }
+    .benefits-title{
+        font-size: 48px;
+        position: absolute;
+        top: -150px;
+        right: 15%;
+   }
+   .benefits-content {
+    margin-left: 20%;
+  }
+  .benefitsButton {
+   right: 35%;
+}
+}
+@media screen and (max-width: 900px) {
+    .benefits {
+        width: 100%;
+        height: 1550px;
         position: absolute;
         bottom:100px;
     }
