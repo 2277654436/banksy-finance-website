@@ -21,8 +21,8 @@
 }
 
 .list .rowup{
-    -webkit-animation: 10s rowup linear infinite normal;
-    animation: 10s rowup linear infinite normal;
+    -webkit-animation: 15s rowup linear infinite normal;
+    animation: 15s rowup linear infinite normal;
     position: relative;
     display: flex;
 }
