@@ -29,7 +29,7 @@ function RoadMap() {
                             <div className="roadMapImgContent-item-title">·2021. Q3 V1</div>
                             <div className="roadMapImgContent-item-text">IDO</div>
                             <div className="roadMapImgContent-item-text">·Listing</div>
-                            <div className="roadMapImgContent-item-text">·Auction, splitting, NFT Farming.</div>
+                            <div className="roadMapImgContent-item-text">·Auction, Splitting, NFT Lending.</div>
                             <div className="roadMapImgContent-item-text">·AI KIT</div>
                             <div className="roadMapImgContent-item-text">·Cross chains</div>
                         </div>

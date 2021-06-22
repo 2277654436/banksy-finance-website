@@ -34,3 +34,10 @@
     text-align: center;
     color: #8E8E8E;
 }
+@media screen and (max-width: 900px){
+    .foot-text{
+        width: 80%;
+        font-size: 14px;
+        margin:0 auto;
+    }
+}

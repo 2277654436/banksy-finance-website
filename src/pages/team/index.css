@@ -66,3 +66,40 @@
 .linkdin > a:hover {
     color: #fff;
 }
+@media screen and (max-width: 900px){
+    .team {
+        height: 1350px;
+        background: none;
+    }
+    .teamTitleImg {
+        width: 100px;
+    }
+    .teamTitleText {
+        width: 100%;
+        color: #fff;
+        font-size: 28px;
+        position: absolute;
+        top: 60px;
+        left: -60px;
+    }
+    .temContent{
+       top:100px;
+       display: block;
+       width: 70%;
+       text-align: center;
+    }
+    .teamContent-item {
+        width: 100%;
+        margin-top: 30px;  
+    }
+    .linkdin{
+        margin-top: 10px;
+    }
+    .linkdin > a {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+  
+
+}

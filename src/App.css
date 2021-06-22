@@ -23,7 +23,13 @@
 .menuUl > li > a {
     color: #fff;
 }
-
+.menuTwitter {
+    width: 25px;
+}
+.menuFly {
+    width: 25px;
+    margin-left: 30px;
+}
 @media screen and (max-width: 900px) {
     .menu {
         font-family: 'AvenirNext';
@@ -47,5 +53,12 @@
     }
     .menuUl > li > a {
         color: #fff;
+    }
+    .menuTwitter {
+        width: 20px;
+    }
+    .menuFly {
+        width: 20px;
+        margin-left: 10px;
     }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import './index.css'
 import kindTitleImg from '../../image/kind/kindTitleImg.png'
-import kindBacBall from '../../image/kind/kindBacBall.png'
+import kindBacBall  from '../../image/kind/kindBacBall.png'
 import kindItemImg1 from '../../image/kind/kindItemImg1.jpg'
 import kindItemImg2 from '../../image/kind/kindItemImg2.jpg'
 import kindItemImg3 from '../../image/kind/kindItemImg3.jpg'
