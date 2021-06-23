@@ -66,9 +66,11 @@
     .topText {
         font-size: 20px;
         margin-left: 5%;
+        
     }
     .topIntroduction {
         position: absolute;
+        margin-top: 60px;
         left: calc((100% - 306px) / 2);
     }
 }
