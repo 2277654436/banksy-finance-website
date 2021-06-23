@@ -48,7 +48,7 @@ function App() {
               <img className="logo" src={logo}/>
           </Col>
           <Col xxl={4} xl={4} lg={2} md={2} sm={6}/>
-          <Col xxl={12} xl={4} lg={14} md={12} sm={8} >
+          <Col xxl={12} xl={12} lg={14} md={12} sm={8} >
             <ul className="menuUl">
               <li><a onClick={()=>scrollToPart('mission')}>Mission</a></li>
               <li><a onClick={()=>scrollToPart('features')}>Features</a></li>

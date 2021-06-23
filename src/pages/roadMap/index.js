@@ -19,7 +19,7 @@ function RoadMap() {
                             <div className="roadMapImgContent-item-text">Launched</div>
                         </div>
                         <div className="roadMapImgContent-item">
-                            <div className="roadMapImgContent-item-title">·2021. Q2 Beta launch</div>
+                            <div className="roadMapImgContent-item-title">·2021. Q2 Beta</div>
                             <div className="roadMapImgContent-item-text">·NFT Marketplace</div>
                             <div className="roadMapImgContent-item-text">·NFT creation,</div>
                             <div className="roadMapImgContent-item-text">·NFT transaction,</div>
