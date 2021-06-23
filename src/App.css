@@ -37,6 +37,7 @@
 }
 @media screen and (max-width: 900px) {
     .menu {
+        
         font-family: 'AvenirNext';
         height: 40px;
         line-height: 40px;
@@ -47,13 +48,11 @@
     .logo {
         width: 100px;
     }
-    .menuUl > li {
-        display: none;
-    }
+    
     .menuUl > li {
         list-style: none;
         float: left;
-        margin-left: 10px;
+        margin-left: 20px;
         cursor: pointer;
     }
     .menuUl > li > a {
@@ -61,9 +60,17 @@
     }
     .menuTwitter {
         width: 20px;
-        margin-right: 0;
     }
     .menuFly {
         width: 20px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .menuUl > li {
+        display: none;
+    }
+    .menuTwitter {
+        margin-left: 100px;
     }
 }

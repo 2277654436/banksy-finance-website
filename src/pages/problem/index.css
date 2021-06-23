@@ -172,3 +172,8 @@
         left: 90px;
     }
 }
+@media screen and (max-width: 600px){
+    .problemBac {
+        width: 90%;
+    }
+}

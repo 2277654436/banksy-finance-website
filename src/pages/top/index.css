@@ -54,7 +54,7 @@
     .top {
         height: 400px;
         background: url("../../image/top/topBac.png") no-repeat;
-        background-size: 90%;
+        background-size: 70%;
         background-position: top 50px left 50%;
         position: relative;
         font-family: 'AvenirNext';
@@ -71,6 +71,15 @@
     .topIntroduction {
         position: absolute;
         margin-top: 60px;
+        left: 25px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .top{
+        background-size: 90%;  
+    }
+    .topIntroduction {
+        margin-top: 90px;
         left: calc((100% - 306px) / 2);
     }
 }
