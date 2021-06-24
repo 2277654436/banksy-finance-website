@@ -31,8 +31,10 @@
     width: 100%;
 }
 .footLogoText {
+    font-size: 14px;
     text-align: center;
     color: #8E8E8E;
+    margin-top: 20px;
 }
 @media screen and (max-width: 900px){
     .foot-text{

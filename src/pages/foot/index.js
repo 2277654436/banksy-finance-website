@@ -40,7 +40,7 @@ function Foot() {
             <div className="footLogo">
                 <img src={footLogo} />
             </div>
-            <div className="footLogoText">2021</div>
+            <div className="footLogoText">© 2021 Banksy - Terms of Use | Privacy Policy | Cookie Settings</div>
         </div>
     )
 }
