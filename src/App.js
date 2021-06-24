@@ -44,11 +44,11 @@ function App() {
       <div className="menu">
         <Row>
           <Col span={2}/>
-          <Col xxl={2} xl={2} lg={2} md={4} sm={4}>
+          <Col xxl={2} xl={2} lg={2} md={4} sm={4} xs={4}>
               <img className="logo" src={logo}/>
           </Col>
-          <Col xxl={4} xl={4} lg={2} md={2} sm={6}/>
-          <Col xxl={12} xl={12} lg={14} md={12} sm={8} >
+          <Col xxl={4} xl={4} lg={2} md={2} sm={6} xs={6}/>
+          <Col xxl={12} xl={12} lg={14} md={12} sm={8} xs={8} >
             <ul className="menuUl">
               <li><a onClick={()=>scrollToPart('mission')}>Mission</a></li>
               <li><a onClick={()=>scrollToPart('features')}>Features</a></li>
@@ -56,7 +56,7 @@ function App() {
               <li><a onClick={()=>scrollToPart('roadMap')}>Roadmap</a></li>
             </ul>
           </Col>
-            <Col xxl={4} xl={4} lg={4} md={4} sm={4}>
+            <Col xxl={4} xl={4} lg={4} md={4} sm={4} xs={4}>
                 <a href={"https://twitter.com/banksy_finance"} target="_blank"><img className="menuTwitter" src={menuTwitter} /></a>
                 <a href={"https://t.me/Banskyfinance"} target='_blank'><img className="menuFly" src={menuFly} /></a>
             </Col>

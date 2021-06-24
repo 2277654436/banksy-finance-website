@@ -70,5 +70,12 @@
     .menuUl > li {
         display: none;
     }
-    
+    .menuTwitter {
+        width: 15px;
+    }
+    .menuFly {
+        width: 15px;
+        margin-left: 20px;
+    }
+   
 }
