@@ -7,7 +7,7 @@
 .dangerImg {
     width: 180px;
     position: absolute;
-    right: 30%;
+    right: 20%;
     top: -50px;
 }
 .dangerImg > img {
@@ -15,8 +15,8 @@
 }
 .problem-title {
     position: absolute;
-    top: 130px;
-    right: 15%;
+    top: 150px;
+    right: 10%;
     color: white;
     font-size: 64px;
     font-weight: bolder;
@@ -24,7 +24,7 @@
 }
 .problemContent {
     position: absolute;
-    left: 15%;
+    left: 10%;
     top: 250px;
 }
 .problemContent-item {
@@ -78,7 +78,7 @@
     top: 250px;
     left: 130px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
     .problem-title{
         font-size: 48px;
     }
@@ -89,7 +89,7 @@
         font-size: 48px;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .problem {
         width: 100%;
         height: 700px;
@@ -172,7 +172,7 @@
         left: 90px;
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 750px){
     .problemBac {
         width: 90%;
     }

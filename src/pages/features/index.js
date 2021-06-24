@@ -112,11 +112,13 @@ function FeaturesPage() {
                                 <img src={CASESSolid} />
                             </div>
                             <div className="features-content-item-title">
-                                VARIOUS NFT USE CASES
+                            NFT LENDING
                             </div>
                             <div className="features-content-item-text">
-                                Gaming NFT, limited sale of exclusive
-                                artists, AI generated artworks, etc.
+                            Provide complete NFT lending methods, 
+                            including the P2P model of mortgage of
+                            NFT ERC20 tokens and the scheme of
+                            direct mortgage of ERC721 tokens.
                             </div>
                         </div>
                     </Col>
@@ -127,7 +129,7 @@ function FeaturesPage() {
                                 <img src={FEESSolid} />
                             </div>
                             <div className="features-content-item-title">
-                                LOWF FEES
+                                LOWER FEES
                             </div>
                             <div className="features-content-item-text">
                                 Lower gas fees base on Solana,

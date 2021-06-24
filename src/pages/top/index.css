@@ -37,7 +37,7 @@
 .topIntroduction > div:nth-of-type(2) {
     text-align: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
     .top{
         height: 800px;
     }
@@ -50,7 +50,7 @@
         margin-top: 20px;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .top {
         height: 400px;
         background: url("../../image/top/topBac.png") no-repeat;
@@ -74,7 +74,7 @@
         left: 25px;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .top{
         background-size: 90%;  
     }

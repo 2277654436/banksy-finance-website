@@ -30,12 +30,12 @@
     width: 25px;
     margin-left: 30px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
     .menu{
         font-size: 16px;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .menu {
         
         font-family: 'AvenirNext';
@@ -66,11 +66,9 @@
     }
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .menuUl > li {
         display: none;
     }
-    .menuTwitter {
-        margin-left: 100px;
-    }
+    
 }

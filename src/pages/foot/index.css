@@ -36,7 +36,7 @@
     color: #8E8E8E;
     margin-top: 20px;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
     .foot-text{
         width: 80%;
         font-size: 14px;
