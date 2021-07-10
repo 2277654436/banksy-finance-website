@@ -14,12 +14,9 @@ function Mission() {
                 </div>
                 <div className="mission-title-text" data-aos="fade-up">
                     <div>MISSION</div>
-                    <div>Banksy has built a scalable NFT cross-chain mechanism
-                        and financial service infrastructure that provides users with
-                        a variety of transaction methods.
-                    </div>
-                    <div>The first AI built-in core for NFT Oracle, artwork generation,
-                        and copyright protection.
+                    <div>
+                        Provide a safe and reliable lending environment for the NFT market,
+                        solve the problem of NFT illiquidity, and fully release the value of NFT.
                     </div>
                 </div>
             </div>

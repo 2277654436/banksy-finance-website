@@ -30,25 +30,16 @@ function Benefits() {
                     </div>
                     <div className="benefitsItem-content">
                         <div className="benefitsItem-title">
-                            NFT Creators
+                            NFT Holder
                         </div>
                         <div className="benefitsItem-content-text">
-                            1｜Permanent royalty incomes
+                            1｜Easily get loans
                         </div>
                         <div className="benefitsItem-content-text">
-                            2｜Multiple NFT trading revenue
+                            2｜Mapping NFT for higher liquidity
                         </div>
                         <div className="benefitsItem-content-text">
-                            3｜Governance and platform revenue
-                        </div>
-                        <div className="benefitsItem-content-text">
-                            4｜Expanded publicity
-                        </div>
-                        <div className="benefitsItem-content-text">
-                            5｜Direct donations from fans
-                        </div>
-                        <div className="benefitsItem-content-text">
-                            6｜Platform incentives
+                            3｜Instant loan and repayment; Flexible repayment
                         </div>
                     </div>
                 </div>
@@ -58,16 +49,16 @@ function Benefits() {
                     </div>
                     <div className="benefitsItem-content">
                         <div className="benefitsItem-title">
-                            Collectors
+                            Funds Lender
                         </div>
                         <div className="benefitsItem-content-text">
-                            1｜Multiple NFT transaction services
+                            1｜Loan safely with security
                         </div>
                         <div className="benefitsItem-content-text">
-                            2｜More categories to choose
+                            2｜Dual incomes from interest and platform rewards
                         </div>
                         <div className="benefitsItem-content-text">
-                            3｜Friendly NFT collection experience
+                            3｜Deposit and withdraw funds instantly
                         </div>
                     </div>
                 </div>
@@ -77,22 +68,16 @@ function Benefits() {
                     </div>
                     <div className="benefitsItem-content">
                         <div className="benefitsItem-title">
-                            Token holders
+                            Tokens Holder
                         </div>
                         <div className="benefitsItem-content-text">
-                            1｜Multiple NFT transaction services
+                            1｜Share the platform revenue
                         </div>
                         <div className="benefitsItem-content-text">
-                            2｜Governance
+                            2｜Participate in platform governance
                         </div>
                         <div className="benefitsItem-content-text">
-                            3｜Platform revenue
-                        </div>
-                        <div className="benefitsItem-content-text">
-                            4｜Donate to your favorite creators
-                        </div>
-                        <div className="benefitsItem-content-text">
-                            5｜Lower platform service fee
+                            3｜NFT creation and management
                         </div>
                     </div>
                 </div>
