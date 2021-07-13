@@ -1,11 +1,11 @@
 .benefits {
     width: 100%;
     position: absolute;
-    bottom: 100px;
+    bottom: 10rem;
 }
 .benefits-title {
     color: #fff;
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: bolder;
     position: absolute;
     right: 15%;
@@ -18,32 +18,32 @@
     align-items: center;
 }
 .benefits-content-item:nth-of-type(2) {
-    margin-top: 40px;
+    margin-top: 4remx;
 }
 .benefits-content-item:nth-of-type(3) {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 .benefitsItem-img {
-    width: 289px;
+    width: 28.9rem;
 }
 .benefitsItem-img > img {
     width: 100%;
 }
 .benefitsItem-content {
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 .benefitsItem-title {
     color: #fff;
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: bolder;
 }
 .benefitsItem-content-text {
     color: #808080;
-    font-size: 17px;
-    margin-left: 15px;
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
 }
 .benefitsButton {
-    width: 273px;
+    width: 27.3rem;
     position: absolute;
     bottom: 0;
     right: 15%;

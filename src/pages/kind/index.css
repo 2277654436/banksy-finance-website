@@ -1,35 +1,35 @@
 .kind {
     width: 100%;
-    height: 1000px;
+    height: 100rem;
     background: url("../../image/kind/kindBac.png") no-repeat;
     background-size: 90%;
-    background-position: top 30px left 0;
+    background-position: top 3rem left 0;
     position: relative;
     font-family: 'AvenirNext';
 }
 .kind-title {
-    width: 500px;
+    width: 50rem;
     position: absolute;
     right: 0;
 }
 .kind-titleImg {
-    width: 150px;
+    width: 15rem;
 }
 .kind-titleImg > img {
     width: 100%;
 }
 .kind-title-text {
     color: #fff;
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: bolder;
     position: absolute;
-    top: 50px;
-    left: -80px;
+    top: 5rem;
+    left: -8rem;
 }
 .kindBacBall {
-    width: 200px;
+    width: 20rem;
     position: absolute;
-    top: 100px;
+    top: 10rem;
     left: 23%;
     animation: spin 10s infinite linear
 }
@@ -43,10 +43,10 @@
 }
 .kindsList{
     width: 100%;
-    margin: 20px auto;
+    margin: 2rem auto;
     position: absolute;
-    top: 450px;
-    height: 348px;
+    top: 45rem;
+    height: 34.8rem;
     overflow: hidden;
 }
 
@@ -57,7 +57,7 @@
     display: flex;
 }
 .kindItemImg {
-    height: 280px;
+    height: 28rem;
     background: #999999;
 }
 .kindItemImg > img {
@@ -65,11 +65,11 @@
 }
 .kindItemTitle {
     width: 100%;
-    height: 78px;
+    height: 7.8rem;
     background: url("../../image/kind/kindItemTitleImg.png") no-repeat;
     background-size: 100% 100%;
     color: #9E9D9E;
-    font-size: 22px;
+    font-size: 2.2rem;
     text-align: center;
     display: flex;
     align-items: center;

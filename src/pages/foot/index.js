@@ -11,9 +11,8 @@ function Foot() {
     return (
         <div className="foot">
             <div className="foot-text">
-                The First Decentralized NFT×AI Financial Hubtions.
-                An AI-driven NFT platform to fully
-                unleash the financial potential of NFT.
+                The first AI-driven NFT pool-based lending platform
+                to lead a revolution of the NFT market.
             </div>
             <div className="foot-content">
                 <div className="footContent-item">

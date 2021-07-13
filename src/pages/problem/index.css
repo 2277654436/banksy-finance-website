@@ -1,83 +1,83 @@
 .problem {
     width: 100%;
-    height: 1300px;
+    height: 130rem;
     position: relative;
     font-family: 'AvenirNext';
 }
 .dangerImg {
-    width: 180px;
+    width: 18rem;
     position: absolute;
     right: 20%;
-    top: -50px;
+    top: -5rem;
 }
 .dangerImg > img {
     width: 100%;
 }
 .problem-title {
     position: absolute;
-    top: 150px;
+    top: 15rem;
     right: 10%;
     color: white;
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: bolder;
     text-align: right;
 }
 .problemContent {
     position: absolute;
     left: 10%;
-    top: 250px;
+    top: 25rem;
 }
 .problemContent-item {
-    width: 700px;
+    width: 70rem;
     display: flex;
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 .problemContent-item-serial {
     color: #00CE01;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: bolder;
 }
 .problemContent-item-text {
     color: #808080;
-    font-size: 27px;
-    margin-left: 20px;
+    font-size: 2.7rem;
+    margin-left: 2rem;
 }
 .problemBac {
-    width: 900px;
+    width: 90rem;
     position: absolute;
     right: 0;
-    top: 200px;
+    top: 20rem;
 }
 .problemBac > img {
     width: 100%;
 }
 .features-title {
     position: absolute;
-    top: 600px;
+    top: 60rem;
     left: 6%;
 }
 .features-title-img {
     position: absolute;
 }
 .features-title-img > img:nth-of-type(1) {
-    width: 150px;
+    width: 15rem;
     position: absolute;
-    top: 170px;
-    left: 150px;
+    top: 17rem;
+    left: 15rem;
 }
 .features-title-img > img:nth-of-type(2) {
-    width: 500px;
+    width: 50rem;
     position: absolute;
     top: 0;
     left: 0;
 }
 .features-titleText {
-    width: 600px;
-    font-size: 64px;
+    width: 60rem;
+    font-size: 6.4rem;
     color: #fff;
     position: absolute;
-    top: 250px;
-    left: 130px;
+    top: 25rem;
+    left: 13rem;
 }
 @media screen and (max-width: 1150px) {
     .problem-title{
