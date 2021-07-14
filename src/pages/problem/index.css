@@ -6,17 +6,17 @@
 }
 .dangerImg {
     width: 18rem;
-    position: absolute;
-    right: 20%;
-    top: -5rem;
+    position: relative;
+    top: 20rem;
+    left: 10rem;
 }
 .dangerImg > img {
     width: 100%;
 }
 .problem-title {
     position: absolute;
-    top: 15rem;
-    right: 10%;
+    top: 30rem;
+    left: 13%;
     color: white;
     font-size: 6.4rem;
     font-weight: bolder;
@@ -25,7 +25,7 @@
 .problemContent {
     position: absolute;
     left: 10%;
-    top: 25rem;
+    top: 40rem;
 }
 .problemContent-item {
     width: 70rem;
@@ -33,13 +33,23 @@
     margin-top: 4rem;
 }
 .problemContent-item-serial {
-    color: #00CE01;
+    color: #3B05E2;
     font-size: 3.5rem;
     font-weight: bolder;
 }
+
+.problemContent-title-text {
+    color: white;
+    margin-top: 0.6rem;
+    font-weight: 550;
+    font-size: 3rem;
+    font-family: 'SourceHanSansCN-Bold';
+    margin-left: 2rem;
+}
 .problemContent-item-text {
-    color: #808080;
-    font-size: 2.7rem;
+    color: #4C606D;
+    font-size: 2rem;
+    font-family: 'SourceHanSansCN-Light';
     margin-left: 2rem;
 }
 .problemBac {
@@ -71,14 +81,34 @@
     top: 0;
     left: 0;
 }
-.features-titleText {
+.features-titleText > div:nth-of-type(1) {
     width: 60rem;
     font-size: 6.4rem;
     color: #fff;
     position: absolute;
-    top: 25rem;
-    left: 13rem;
+    top: 100rem;
+    left: 2rem;
 }
+.features-titleText > div:nth-of-type(2) {
+    width: 60rem;
+    font-size: 2rem;
+    color: #B2B2B2;
+    position: absolute;
+    top: 114rem;
+    left: 2rem;
+    font-family: 'SourceHanSansCN-Light';
+}
+
+
+.features-text {
+    color: #4C606D;
+    font-family: 'SourceHanSansCN-Light';
+    font-size: 2rem;
+    position: relative;
+    left: 240px;
+    bottom: 860px;
+}
+
 @media screen and (max-width: 1150px) {
     .problem-title{
         font-size: 48px;

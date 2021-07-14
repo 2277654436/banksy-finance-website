@@ -9,7 +9,7 @@
 .mission-title {
     position: absolute;
     left: 10%;
-    top: 10rem;
+    top: 30rem;
 }
 .mission-titleImg {
     width: 40rem;
@@ -27,7 +27,7 @@
     width: 100%;
 }
 .mission-title-text {
-    width: 50rem;
+    width: 40rem;
     position: absolute;
     top: 25rem;
     left: 21%;
@@ -37,7 +37,9 @@
     color: #fff;
 }
 .mission-title-text > div:nth-of-type(2) {
-    font-size: 2.6rem;
+    font-size: 1.6rem;
+    font-family: 'SourceHanSansCN-Light';
+    line-height: 4rem;
     color: #808080;
     margin-top: 6.1rem;
 }
@@ -47,13 +49,13 @@
     margin-top: 4rem;
 }
 .missionImg {
-    width: 63.3rem;
-    height: 67.7rem;
+    width: 85rem;
+    height: 85rem;
     background: url("../../image/mission/missionImg.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
     right: 10%;
-    top: 20rem;
+    top: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +66,7 @@
 @media screen and (max-width: 1150px) {
     .mission-title-text > div:nth-of-type(1) {
         font-size: 48px;
-     
+
     }
     .mission-title-text > div:nth-of-type(2) {
         font-size: 18px;
@@ -76,7 +78,7 @@
         width: 480px;
         height: 580px;
         right: 5%;
-       
+
     }
 }
 @media screen and (max-width: 1000px) {

@@ -27,10 +27,10 @@ function Team() {
                     <div className="linkdin">
                         <a href={"https://www.linkedin.com/in/clink-li-aa1ba418a/"} target='_blank'>
                             <img src={linkedin} />
-                            Linkdin.
                         </a>
                     </div>
                 </div>
+
                 <div className="teamContent-item">
                     <div className="teamContent-img">
                         <img src={cto} />
@@ -40,7 +40,6 @@ function Team() {
                     <div className="linkdin">
                         <a href={"https://www.linkedin.com/in/chris-su-b78775119/"} target='_blank'>
                             <img src={linkedin} />
-                            Linkdin.
                         </a>
                     </div>
                 </div>
@@ -53,7 +52,45 @@ function Team() {
                     <div className="linkdin">
                         <a href={"https://www.linkedin.com/in/terry-li-614512212/"} target='_blank'>
                             <img src={linkedin} />
-                            Linkdin.
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="temContent2" data-aos="fade-up">
+                <div className="teamContent-item">
+                    <div className="teamContent-img">
+
+                    </div>
+                    <div className="position"></div>
+                    <div className="teamItem-name"></div>
+                    <div className="linkdin">
+                        <a href={"https://www.linkedin.com/in/clink-li-aa1ba418a/"} target='_blank'>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="teamContent-item">
+                    <div className="teamContent-img">
+                        <img src={cto} />
+                    </div>
+                    <div className="position">Co-founder CTO</div>
+                    <div className="teamItem-name">Chris Su</div>
+                    <div className="linkdin">
+                        <a href={"https://www.linkedin.com/in/chris-su-b78775119/"} target='_blank'>
+                            <img src={linkedin} />
+                        </a>
+                    </div>
+                </div>
+                <div className="teamContent-item">
+                    <div className="teamContent-img">
+                        <img src={cmo} />
+                    </div>
+                    <div className="position">Co-founder CMO</div>
+                    <div className="teamItem-name">Terry Li</div>
+                    <div className="linkdin">
+                        <a href={"https://www.linkedin.com/in/terry-li-614512212/"} target='_blank'>
+                            <img src={linkedin} />
                         </a>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 .upgrade {
     width: 100%;
-    height: 200rem;
-    background: url("../../image/upgrade/upgradeBac.png") no-repeat;
+    height: 250rem;
+    /*background: url("../../image/upgrade/upgradeBac.png") no-repeat;*/
     background-position: top 0 left 0;
     background-size: 30%;
     position: relative;
@@ -14,6 +14,122 @@
 }
 .upgrade-img > img {
     width: 100%;
+}
+
+.features-border {
+    position: relative;
+    right: 20%;
+    top: 30%;
+    width: 100%;
+    height: 80rem
+
+}
+
+.features-content {
+    width: 65%;
+    position: relative;
+    left: 19%;
+    top: 20%;
+
+}
+.features-item-img > img:nth-of-type(1) {
+    width: 200px;
+}
+
+.features-item-text >div:nth-of-type(1) {
+    position: relative;
+    right: 20%;
+    width: 30rem;
+    color: white;
+    text-align: center;
+    font-family: SourceHanSansCN-Bold;
+    font-weight: 550;
+    font-size: 2rem;
+}
+
+.support-title {
+    position: relative;
+    left: 16%;
+    top: 60rem;
+    color: white;
+    font-family: SourceHanSansCN-Bold;
+    font-weight: 550;
+    font-size: 4rem;
+}
+
+.support-title >div {
+    position: relative;
+    z-index: 2;
+}
+
+.support-title > img {
+    width: 10%;
+    position: relative;
+    left: 4rem;
+    top: 22rem;
+    z-index: 1;
+}
+
+.kindBacBall {
+    width: 25rem;
+    position: relative;
+    top: 40rem;
+    left: 115rem;
+    animation: spin 10s infinite linear;
+    z-index: 5;
+}
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+.kindBacBall > img {
+    width: 100%;
+}
+.right-area >img {
+    width: 20%;
+    position: relative;
+}
+
+.right-area > img:nth-of-type(1) {
+    position: relative;
+    top: 65rem;
+    left: 90rem;
+    z-index: 3;
+}
+
+.right-area > img:nth-of-type(2) {
+    position: relative;
+    top: 50rem;
+    left: 70rem;
+    z-index: 2;
+}
+
+.right-area > img:nth-of-type(3) {
+    position: relative;
+    top: 35rem;
+    left: 50rem;
+    z-index: 1;
+}
+
+
+
+.features-item-text >div:nth-of-type(2) {
+    position: relative;
+    right: 20%;
+    width: 30rem;
+    color: #B2B2B2;
+    font-family: SourceHanSansCN-Bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.upgrade-title > img {
+    width: 160px;
+    position: relative;
+    top: 13rem;
+    right: 5.2rem;
+    z-index: -1;
 }
 .upgrade-title {
     color: white;
