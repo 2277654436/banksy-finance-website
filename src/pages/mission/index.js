@@ -4,6 +4,7 @@ import missionTitleImg from '../../image/mission/missionTitleImg.png'
 import missionTitleBac from '../../image/mission/missionTitlebac.png'
 import missionImgContent from '../../image/mission/missionImgContent.png'
 import missionBG from '../../image/mission/missionBG.png'
+import missionRing from '../../image/mission/mission-ring.png'
 
 
 function Mission() {
@@ -26,6 +27,11 @@ function Mission() {
             <div className="missionImg">
                 <img src={missionBG} data-aos="zoom-in" />
             </div>
+
+            <div className="ring" >
+                <img src={ missionRing }/>
+            </div>
+
         </div>
     )
 }

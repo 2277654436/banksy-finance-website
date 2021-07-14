@@ -49,13 +49,13 @@
     margin-top: 4rem;
 }
 .missionImg {
-    width: 85rem;
-    height: 85rem;
-    background: url("../../image/mission/missionImg.png") no-repeat;
+    width: 70rem;
+    height: 70rem;
+   /* background: url("../../image/mission/missionImg.png") no-repeat;*/
     background-size: 100% 100%;
     position: absolute;
     right: 10%;
-    top: 10rem;
+    top: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +63,15 @@
 .missionImg > img {
     width: 80%;
 }
+
+.ring >img {
+    transform: rotate(-6deg);
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    height: 100%;
+}
+
 @media screen and (max-width: 1150px) {
     .mission-title-text > div:nth-of-type(1) {
         font-size: 48px;
@@ -133,7 +142,9 @@
     .missionImg {
         width: 330px;
         height: 243px;
+        /*
         background: url("../../image/mission/missionImg.png") no-repeat;
+        */
         background-size: 70%;
         background-position: top 50% left 50%;
         position: absolute;
@@ -156,4 +167,18 @@
         right: calc((100% - 330px) / 2);
         top: 500px;
     }
+}
+
+.missionImg {
+
+    animation: spin 10s infinite linear;
+    z-index: 5;
+}
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+.missionImg > img {
+    width: 100%;
 }

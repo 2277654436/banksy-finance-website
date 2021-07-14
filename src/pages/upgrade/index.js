@@ -94,7 +94,7 @@ function Upgrade() {
                 <div>NFTS POOL-BASE LENDING</div>
             </div>
 
-            <div className="right-area" data-aos="fade-up">
+            <div className="right-area" data-aos="fade-left">
                 <img src={Image1} />
                 <img src={Image2} />
                 <img src={Image3} />

@@ -28,7 +28,7 @@ function FeaturesPage() {
             <div className="features-content" data-aos="fade-up">
                 <div className="features-content-item-img">
                     <img src={FeaturesBG} />
-                    <img src={Dots} />
+                    <img src={Dots} style={{marginTop:'20%'}} />
                 </div>
 
             </div>

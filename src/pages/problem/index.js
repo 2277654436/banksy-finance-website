@@ -34,9 +34,9 @@ function Problem() {
                 </div>
                 <div className="problemContent-item-text">Lenders are taking risk for the NFT valuation bubble.</div>
             </div>
-            <div className="problemBac">
+           {/* <div className="problemBac">
                 <img src={problemBac} data-aos="fade-in" />
-            </div>
+            </div>*/}
             <div className="features-title">
                {/* <div className="features-title-img" data-aos="fade-right">
                     <img src={featuresTitleImg} />
