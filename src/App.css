@@ -1,31 +1,44 @@
-@font-face {
-    font-family: 'PingFang SC';
-    src: url(./font/PingFang-SC-Regular.ttf);
-}
+
 .App {
-    background: #0e0a27;
+    background: #000000;
 }
 .menu {
-    font-family: 'PingFang SC';
-    height: 100px;
-    line-height: 140px;
+    font-family: 'AvenirNext';
+    height: 13.1rem;
+    line-height: 14rem;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.9rem;
     font-weight: bold;
+}
+
+.logo {
+    width: 19.9rem;
 }
 .menuUl > li {
     list-style: none;
     float: left;
-    margin-left: 30px;
+    margin-left: 5rem;
     cursor: pointer;
 }
 .menuUl > li > a {
     color: #fff;
 }
-
-@media screen and (max-width: 600px) {
+.menuTwitter {
+    width: 2.5rem;
+}
+.menuFly {
+    width: 2.5rem;
+    margin-left: 3rem;
+}
+@media screen and (max-width: 1150px) {
+    .menu{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1000px) {
     .menu {
-        font-family: 'PingFang SC';
+        
+        font-family: 'AvenirNext';
         height: 40px;
         line-height: 40px;
         color: #fff;
@@ -35,19 +48,34 @@
     .logo {
         width: 100px;
     }
-    .menuUl > li {
-        display: none;
-    }
-    /*.menuUl > li:not(:last-child) {*/
-    /*    display: none;*/
-    /*}*/
+    
     .menuUl > li {
         list-style: none;
         float: left;
-        margin-left: 10px;
+        margin-left: 20px;
         cursor: pointer;
     }
     .menuUl > li > a {
         color: #fff;
     }
+    .menuTwitter {
+        width: 20px;
+    }
+    .menuFly {
+        width: 20px;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .menuUl > li {
+        display: none;
+    }
+    .menuTwitter {
+        width: 15px;
+    }
+    .menuFly {
+        width: 15px;
+        margin-left: 20px;
+    }
+   
 }

@@ -1,0 +1,66 @@
+.upgrade {
+    width: 100%;
+    height: 200rem;
+    background: url("../../image/upgrade/upgradeBac.png") no-repeat;
+    background-position: top 0 left 0;
+    background-size: 30%;
+    position: relative;
+    font-family: 'AvenirNext';
+    margin-bottom: 10rem;
+}
+.upgrade-img {
+    width: 70%;
+    margin-left: 18%;
+}
+.upgrade-img > img {
+    width: 100%;
+}
+.upgrade-title {
+    color: white;
+    font-size: 6.4rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 15rem;
+    left: 15%;
+}
+@media screen and (max-width: 1150px) {
+    .upgrade-img {
+        width:80%;
+    }
+    .upgrade-title {
+        font-size: 48px;
+        top: 100px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .upgrade{
+        background: url("../../image/upgrade/upgradeBac.png") no-repeat;
+        background-position: top 0 left 0;
+        background-size: 50% 30%;
+        height: 2250px;
+    }
+    .upgrade-img {
+        width:90%;
+        height: 300px;
+        margin-left: 5%;
+        position: absolute;
+        top: 170px;
+    }
+    .upgrade-title {
+        color: white;
+        font-size: 28px;
+        font-weight: bolder;
+        position: absolute;
+        top: 70px;
+        left: 15%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .upgrade-img{
+        width: 95%;
+    }
+    .upgrade-img > img {
+        width: 100%;
+        height: 100%;
+    }
+}
