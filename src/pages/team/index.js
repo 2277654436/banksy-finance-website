@@ -8,7 +8,6 @@ import engineer1 from '../../image/team/4.png'
 import engineer2 from '../../image/team/5.png'
 import linkedin from '../../image/team/linkedin.png'
 import github from '../../image/team/github-link.png'
-import ring from '../../image/team/team-ring.png'
 
 function Team() {
     return (
@@ -64,6 +63,7 @@ function Team() {
                         </a>
                     </div>
                 </div>
+
             </div>
 
             <div className="temContent" data-aos="fade-up" style={{marginTop:'35rem'}}>
@@ -87,7 +87,7 @@ function Team() {
                     <div className="teamItem-name">PeiHuang Guo</div>
                     <div className="linkdin">
                         <a href={"https://github.com/Disperito"} target='_blank'>
-                            <img src={github} />
+                            <img src={github} alt=""/>
                         </a>
                     </div>
                 </div>
@@ -103,10 +103,10 @@ function Team() {
                         </a>
                     </div>
                 </div>
+                <div className="team-ring">
+                </div>
             </div>
-            <div className="team-ring">
 
-            </div>
         </div>
     )
 }
