@@ -48,9 +48,9 @@
 }
 
 .support-title {
-    position: relative;
+    position: absolute;
     left: 16%;
-    top: 60rem;
+    top: 90rem;
     color: white;
     font-family: SourceHanSansCN-Bold;
     font-weight: 550;
@@ -63,10 +63,10 @@
 }
 
 .support-title > img {
-    width: 10%;
+    width: 15%;
     position: relative;
-    left: 4rem;
-    top: 22rem;
+    left: 10rem;
+    top: 19rem;
     z-index: 1;
 }
 
@@ -86,9 +86,14 @@
 .kindBacBall > img {
     width: 100%;
 }
+
+.right-area {
+    margin-top: 45rem;
+}
 .right-area >img {
     width: 20%;
     position: relative;
+    top: 65rem;
 }
 
 .right-area > img:nth-of-type(1) {
