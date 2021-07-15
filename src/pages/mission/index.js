@@ -1,11 +1,8 @@
 import React from "react";
 import './index.css'
 import missionTitleImg from '../../image/mission/missionTitleImg.png'
-import missionTitleBac from '../../image/mission/missionTitlebac.png'
-import missionImgContent from '../../image/mission/missionImgContent.png'
 import missionBG from '../../image/mission/missionBG.png'
 import missionRing from '../../image/mission/mission-ring.png'
-
 
 function Mission() {
     return (
@@ -13,7 +10,6 @@ function Mission() {
             <div className="mission-title">
                 <div className="mission-titleImg" data-aos="fade-right">
                     <img src={missionTitleImg} />
-                    {/*<img src={missionTitleBac} />*/}
                 </div>
                 <div className="mission-title-text" data-aos="fade-up">
                     <div>MISSION</div>

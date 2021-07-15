@@ -4,15 +4,15 @@
 }
 .menu {
     font-family: 'AvenirNext';
-    height: 13.1rem;
+    height: 12vh;
     line-height: 14rem;
     color: #fff;
-    font-size: 1.9rem;
+    font-size: 1vw;
     font-weight: bold;
 }
 
 .logo {
-    width: 19.9rem;
+    width: 10.5vw;
 }
 .menuUl > li {
     list-style: none;
@@ -37,7 +37,6 @@
 }
 @media screen and (max-width: 1000px) {
     .menu {
-        
         font-family: 'AvenirNext';
         height: 40px;
         line-height: 40px;
@@ -48,7 +47,7 @@
     .logo {
         width: 100px;
     }
-    
+
     .menuUl > li {
         list-style: none;
         float: left;
@@ -77,5 +76,5 @@
         width: 15px;
         margin-left: 20px;
     }
-   
+
 }
