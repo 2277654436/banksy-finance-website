@@ -100,7 +100,7 @@ function Team() {
                     <div className="position">Front end Engineer</div>
                     <div className="teamItem-name">ChengYang Lin</div>
                     <div className="linkdin">
-                        <a href={"https://www.linkedin.com/in/terry-li-614512212/"} target='_blank'>
+                        <a href={"https://github.com/linchengyang1116"} target='_blank'>
                             <img src={github} />
                         </a>
                     </div>
