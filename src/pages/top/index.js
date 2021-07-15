@@ -1,6 +1,6 @@
 import React from "react";
 import './index.css'
-import MainBG from '../../image/top/main_bg.png'
+import MainBG from '../../image/top/topBG.png'
 
 import Icon1 from '../../image/top/icon1.png'
 import Icon2 from '../../image/top/icon2.png'
@@ -19,7 +19,7 @@ function Top() {
             {/*<div className="top-title" id="scc1">
         The First Decentralized NFT Financial Hub
       </div>*/}
-            <div className="top-content">
+            <div className="top-content" data-aos="fade-right">
                 <div className="top-content-child">
                     NFT Mortgage
                 </div>
@@ -27,10 +27,10 @@ function Top() {
                     Lending Hub
                 </div>
             </div>
-            <div className="topBac">
+            <div className="topBac" data-aos="fade-left">
                 <img src={MainBG}/>
             </div>
-            <div className="top-foot">
+            <div className="top-foot" data-aos="fade-up">
                 <div>The first AI-driven NFT pool-based</div>
                 <div>lending platform to lead a revolution</div>
                 <div>of the NFT market</div>
@@ -42,7 +42,7 @@ function Top() {
         <img src={raible}/>
         <img src={opensea}/>
       </div>*/}
-            <div className="explore-button">
+            {/*<div className="explore-button">
                 <div className="button-border">
                     Explore
                 </div>
@@ -57,7 +57,7 @@ function Top() {
                 <img src={Icon7} alt=""/>
                 <img src={Icon8} alt=""/>
                 <img src={Icon9} alt=""/>
-            </div>
+            </div>*/}
 
         </div>
     )

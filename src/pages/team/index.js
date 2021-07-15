@@ -8,6 +8,7 @@ import engineer1 from '../../image/team/4.png'
 import engineer2 from '../../image/team/5.png'
 import linkedin from '../../image/team/linkedin.png'
 import github from '../../image/team/github-link.png'
+import ring from '../../image/team/team-ring.png'
 
 function Team() {
     return (
@@ -102,6 +103,9 @@ function Team() {
                         </a>
                     </div>
                 </div>
+            </div>
+            <div className="team-ring">
+
             </div>
         </div>
     )
