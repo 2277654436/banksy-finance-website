@@ -19,6 +19,8 @@ function Team() {
                 <div className="teamTitleText">
                    TEAM
                 </div>
+                <div className="team-ring">
+                </div>
                 <div className="introduce">
                     We are all from first-line internet
                     companies with extensive experience
@@ -102,8 +104,6 @@ function Team() {
                             <img src={github} />
                         </a>
                     </div>
-                </div>
-                <div className="team-ring">
                 </div>
             </div>
 

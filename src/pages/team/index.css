@@ -90,8 +90,7 @@
     background: url("../../image/team/team-ring.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
-    right: calc((100% - 600px)/2);
-    bottom: -12rem;
+    bottom: -70rem;
     transform: rotate(-5deg);
     z-index: 1;
 
