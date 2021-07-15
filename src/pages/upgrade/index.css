@@ -1,12 +1,12 @@
 .upgrade {
     width: 100%;
-    height: 280rem;
+    height: 320vh;
     /*background: url("../../image/upgrade/upgradeBac.png") no-repeat;*/
     background-position: top 0 left 0;
     background-size: 30%;
     position: relative;
     font-family: 'AvenirNext';
-    margin-bottom: 10rem;
+    margin-bottom: 10vh;
 }
 .upgrade-img {
     width: 70%;
@@ -18,43 +18,43 @@
 
 .features-border {
     position: relative;
-    right: 20%;
-    top: 30%;
-    width: 100%;
-    height: 80rem
+    right: 20vw;
+    top: 30vh;
+    width: 100vw;
+    height: 80vh;
 
 }
 
 .features-content {
-    width: 65%;
+    width: 65vw;
     position: relative;
-    left: 19%;
-    top: 20%;
+    top: 50vh;
+    left: calc((100% - 65vw)/2)
+
 
 }
 .features-item-img > img:nth-of-type(1) {
-    width: 200px;
+    width: 12vw;
 }
 
 .features-item-text >div:nth-of-type(1) {
     position: relative;
-    right: 20%;
-    width: 30rem;
+    width: 12vw;
     color: white;
     text-align: center;
     font-family: SourceHanSansCN-Bold;
     font-weight: 550;
-    font-size: 2rem;
+    font-size: 1.1vw;
 }
 
 .support-title {
     position: absolute;
     left: 16%;
-    top: 90rem;
+    top: 120vh;
     color: white;
     font-family: SourceHanSansCN-Bold;
     font-weight: 550;
-    font-size: 4rem;
+    font-size: 2.5vw;
 }
 
 .support-title >div {
@@ -88,12 +88,14 @@
 }
 
 .right-area {
-    margin-top: 45rem;
+    margin-top: 80vh;
+    margin-left: 10vw;
+    position: relative;
+    bottom: 20vh;
 }
 .right-area >img {
-    width: 20%;
+    width: 18vw;
     position: relative;
-    top: 65rem;
 }
 
 .right-area > img:nth-of-type(1) {

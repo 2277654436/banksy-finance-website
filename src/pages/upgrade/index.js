@@ -46,7 +46,7 @@ function Upgrade() {
                     <Col xxl={6}  xl={6} lg={12} md={24}>
                         <div className="features-item">
                             <div className="features-item-img">
-                                <img src={ Features2 } style={{height:'168px'}} />
+                                <img src={ Features2 } style={{height:'20.5vh'}} />
                             </div>
                             <div className="features-item-text">
                                 <div>Support multi-chain</div>
@@ -60,7 +60,7 @@ function Upgrade() {
                     <Col xxl={6}  xl={6} lg={12} md={24}>
                         <div className="features-item">
                             <div className="features-item-img">
-                                <img src={ Features3  } style={{height:'168px'}}/>
+                                <img src={ Features3  } style={{ height:'20.5vh' }}/>
                             </div>
                             <div className="features-item-text">
                                 <div>Combine with Def</div>
@@ -74,7 +74,7 @@ function Upgrade() {
                     <Col xxl={6}  xl={6} lg={12} md={24}>
                         <div className="features-item">
                             <div className="features-item-img">
-                                <img src={ Features4 }  style={{height:'168px', width:'180px'}} />
+                                <img src={ Features4 }  style={ { height:'20.5vh', width:'11vw' }} />
                             </div>
                             <div className="features-item-text">
                                 <div>NAK Protocol</div>

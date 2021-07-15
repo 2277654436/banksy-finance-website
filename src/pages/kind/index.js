@@ -21,7 +21,11 @@ function Kind() {
                 </div>*/}
                 <div className="kind-title-text" data-aos="fade-up">
                     <div>NFT MAPPER</div>
-                    <div>映射器</div>
+                    <div >
+                        <div>The NFT mapper can effectively solve</div>
+                        <div>the problem of poor liquidity</div>
+                        <div>for more flexible and diversified business.</div>
+                    </div>
                 </div>
             </div>
             {/*<div className="kindBacBall">
@@ -31,11 +35,6 @@ function Kind() {
                 <img src={MapperImg} />
             </div>
 
-            <div className="mapper-text" data-aos="fade-right">
-                <div>The NFT mapper can effectively solve</div>
-                <div>the problem of poor liquidity</div>
-                <div>for more flexible and diversified business.</div>
-            </div>
            {/* <div className="kindsList">
                 <div className="aa kindRowup">
                     <div className="kindItem">

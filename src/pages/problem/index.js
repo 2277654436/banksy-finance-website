@@ -38,7 +38,7 @@ function Problem() {
                 <img src={problemBac} data-aos="fade-in" />
             </div>*/}
             <div className="features-title">
-               {/* <div className="features-title-img" data-aos="fade-right">
+                {/*<div className="features-title-img" data-aos="fade-right">
                     <img src={featuresTitleImg} />
                     <img src={featuresTitleBac} />
                 </div>*/}
@@ -50,8 +50,6 @@ function Problem() {
                         <div>which can effectively solve the lending risk from</div>
                         <div>the NFT price confusion</div>
                     </div>
-
-
                 </div>
             </div>
         </div>
