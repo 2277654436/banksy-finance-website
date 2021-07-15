@@ -34,13 +34,13 @@
 }
 
 .temContent2{
+    top: 35vh;
     width: 63.5vw;
     margin-left: 21vw;
     display: flex;
     justify-content: space-between;
     position: absolute;
     flex-wrap: wrap;
-
 }
 
 
@@ -59,7 +59,9 @@
 }
 .position {
     color: #808080;
-    margin-top: 3rem;
+    margin-top: 1vh;
+    font-size: 1vw;
+    width: 120%;
 }
 
 .introduce {
@@ -74,6 +76,7 @@
 }
 .teamItem-name {
     color: #808080;
+    font-size: 1vw;
 }
 .linkdin {
     color: #fff;

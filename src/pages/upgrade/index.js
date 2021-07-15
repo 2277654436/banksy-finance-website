@@ -15,99 +15,81 @@ import Image3 from '../../image/upgrade/3.png'
 import SpinImg from '../../image/upgrade/spinImg.png'
 
 
-
 function Upgrade() {
-    return (
-        <div className="upgrade">
-            {/*<div className="upgrade-img" data-aos="fade-in">
+  return (
+    <div className="upgrade">
+      {/*<div className="upgrade-img" data-aos="fade-in">
                 <img src={upgradeImg} />
             </div>*/}
-            <div className="upgrade-title" data-aos="fade-right">
-                <img src={UpgradeTextBG} alt="" />
-                <div>MAIN FEATURES</div>
-            </div>
+      <div className="upgrade-title" data-aos="fade-right">
+        <img src={UpgradeTextBG} alt=""/>
+        <div>MAIN FEATURES</div>
+      </div>
 
-            <div className="features-content" data-aos="fade-up">
-                <Row gutter={[70,100]}>
-                    <Col xxl={6}  xl={6} lg={12} md={24}>
-                        <div className="features-item">
-                            <div className="features-item-img">
-                                <img src={ Features1 } />
-                            </div>
-                            <div className="features-item-text">
-                                <div>Safe and convenient</div>
-                                <div>
-                                    <div>Secure users` assets;</div>
-                                    <div>flexible and convenient lending</div>
-                                </div>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col xxl={6}  xl={6} lg={12} md={24}>
-                        <div className="features-item">
-                            <div className="features-item-img">
-                                <img src={ Features2 } style={{height:'20.5vh'}} />
-                            </div>
-                            <div className="features-item-text">
-                                <div>Support multi-chain</div>
-                                <div>
-                                    <div>Support multi-chain such as </div>
-                                    <div>ETH, BSC, HECO, Solana, DOT, etc.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col xxl={6}  xl={6} lg={12} md={24}>
-                        <div className="features-item">
-                            <div className="features-item-img">
-                                <img src={ Features3  } style={{ height:'20.5vh' }}/>
-                            </div>
-                            <div className="features-item-text">
-                                <div>Combine with Def</div>
-                                <div>
-                                    <div>Intergrade Defi to</div>
-                                    <div>increase NFT liquidity</div>
-                                </div>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col xxl={6}  xl={6} lg={12} md={24}>
-                        <div className="features-item">
-                            <div className="features-item-img">
-                                <img src={ Features4 }  style={ { height:'20.5vh', width:'11vw' }} />
-                            </div>
-                            <div className="features-item-text">
-                                <div>NAK Protocol</div>
-                                <div>
-                                    <div>Service for the whole industry to</div>
-                                    <div>a healthier and faster development</div>
-                                </div>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-            </div>
-
-            <div className="support-title" data-aos="fade-right">
-                <img src={Arrow} />
-                <div>SUPPORT A VARIETY OF</div>
-                <div>NFTS POOL-BASE LENDING</div>
-            </div>
-
-            <div className="right-area" data-aos="zoom-in">
-                <img src={Image1} />
-                <img src={Image2} />
-                <img src={Image3} />
-                <div className="kindBacBall">
-                    <img src={SpinImg} />
-                </div>
-            </div>
-
-
-            <Benefits />
+      <div className="features-content" data-aos="fade-up">
+        <div className="features-item">
+          <div className="features-item-img">
+            <img src={Features1}/>
+          </div>
+          <div className="features-item-text">
+            <div>Safe and convenient</div>
+            <div>Secure users' assets, flexible and convenient lending</div>
+          </div>
         </div>
+        <div className="features-item">
+          <div className="features-item-img">
+            <img src={Features2}/>
+          </div>
+          <div className="features-item-text">
+            <div>Support multi-chain</div>
+            <div>Support multi-chain such as ETH, BSC, HECO, Solana, DOT, etc.</div>
+          </div>
+        </div>
+        <div className="features-item">
+          <div className="features-item-img">
+            <img src={Features3}/>
+          </div>
+          <div className="features-item-text">
+            <div>Combine with Defi</div>
+            <div>
+              <div>Integrate Defi to</div>
+              <div>increase NFT liquidity</div>
+            </div>
+          </div>
+        </div>
+        <div className="features-item">
+          <div className="features-item-img">
+            <img src={Features4}/>
+          </div>
+          <div className="features-item-text">
+            <div>NAK Protocol</div>
+            <div>
+              <div>Service for the whole industry to a healthier and faster development</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    )
+      <div className="support-title" data-aos="fade-right">
+        <img src={Arrow}/>
+        <div>SUPPORT A VARIETY OF</div>
+        <div>NFTS POOL-BASE LENDING</div>
+      </div>
+
+      <div className="right-area" data-aos="zoom-in">
+        <img src={Image1}/>
+        <img src={Image2}/>
+        <img src={Image3}/>
+        <div className="kindBacBall">
+          <img src={SpinImg}/>
+        </div>
+      </div>
+
+
+      <Benefits/>
+    </div>
+
+  )
 }
 
 export default Upgrade

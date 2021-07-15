@@ -83,12 +83,13 @@
     top: 0;
     left: 0;
 }
+
 .features-titleText > div:nth-of-type(1) {
     width: 24vw;
     font-size: 4vw;
     color: #fff;
     position: absolute;
-    top: 100vh;
+    top: 110vh;
     left: 2vw;
 }
 .features-titleText > div:nth-of-type(2) {
@@ -96,7 +97,7 @@
     font-size: 1.2vw;
     color: #B2B2B2;
     position: relative;
-    top: 114vh;
+    top: 124vh;
     left: 2vw;
     font-family: 'SourceHanSansCN-Light';
 }

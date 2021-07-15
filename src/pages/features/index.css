@@ -1,7 +1,7 @@
 .features {
     width: 100%;
     height: 100vh;
-    margin-bottom: 20vh;
+    margin-bottom: 50vh;
     font-family: 'AvenirNext';
 }
 .features-content {
@@ -22,6 +22,7 @@
     position: relative;
     width: 45vw;
     left: 30vw;
+    bottom: 10vh;
 }
 
 .features-content-item-img > img:nth-of-type(2) {

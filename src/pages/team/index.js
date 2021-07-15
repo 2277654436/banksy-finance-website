@@ -67,12 +67,9 @@ function Team() {
                         </a>
                     </div>
                 </div>
-
             </div>
 
-
-
-            <div className="temContent2" data-aos="fade-up" style={{marginTop:'35rem'}}>
+            <div className="temContent2" data-aos="fade-up">
                 <div className="teamContent-item">
                     <div className="teamContent-img">
                         <img src={architect} />

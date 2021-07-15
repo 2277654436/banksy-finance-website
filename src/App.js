@@ -71,7 +71,6 @@ function App() {
       <Problem/>
       <FeaturesPage/>
       <Kind/>
-      <BanksyLine/>
       <Upgrade/>
       <RoadMap/>
       <Foot/>
