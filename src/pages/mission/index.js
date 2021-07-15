@@ -20,6 +20,7 @@ function Mission() {
                     </div>
                 </div>
             </div>
+
             <div className="missionImg">
                 <img src={missionBG} data-aos="zoom-in" />
             </div>

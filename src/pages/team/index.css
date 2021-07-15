@@ -33,6 +33,16 @@
     flex-wrap: wrap;
 }
 
+.temContent2{
+    width: 68%;
+    margin-left: 21.6%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    flex-wrap: wrap;
+
+}
+
 
 .teamContent-item {
     width: 20%;
@@ -104,7 +114,7 @@
         left: -90px;
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     .team {
         height: 1350px;
         background: none;
@@ -120,7 +130,7 @@
         top: 60px;
         left: -60px;
     }
-    .temContent{
+    .temContent {
        top:100px;
        display: block;
        width: 70%;
