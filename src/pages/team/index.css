@@ -114,7 +114,7 @@
         left: -90px;
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     .team {
         height: 1350px;
         background: none;
@@ -130,7 +130,7 @@
         top: 60px;
         left: -60px;
     }
-    .temContent{
+    .temContent {
        top:100px;
        display: block;
        width: 70%;

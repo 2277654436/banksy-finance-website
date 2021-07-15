@@ -26,14 +26,14 @@ function Top() {
                 <div className="top-content-child">
                     Lending Hub
                 </div>
+                <div className="top-foot" data-aos="fade-up">
+                    <div>The first AI-driven NFT pool-based</div>
+                    <div>lending platform to lead a revolution</div>
+                    <div>of the NFT market</div>
+                </div>
             </div>
             <div className="topBac" data-aos="fade-left">
                 <img src={MainBG}/>
-            </div>
-            <div className="top-foot" data-aos="fade-up">
-                <div>The first AI-driven NFT pool-based</div>
-                <div>lending platform to lead a revolution</div>
-                <div>of the NFT market</div>
             </div>
             {/*<div className="topBacStart">
         <img src={virtualland}/>
