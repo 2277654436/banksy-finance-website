@@ -17,6 +17,7 @@
     margin-top: 1rem;
 }
 .footContent-item {
+    z-index: 9999;
     width: 4rem;
 }
 .footContent-item > a > img {

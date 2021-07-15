@@ -40,11 +40,12 @@
     user-select: none;
 }
 .topBac {
-    width: 80vw;
+    width: 77vw;
     text-align: center;
     position: absolute;
-    top: -1vh;
+    top: 10vh;
     right: 5vw;
+    z-index: 0;
 }
 .topBac > img {
     width: 100%;

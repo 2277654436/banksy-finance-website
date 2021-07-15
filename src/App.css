@@ -9,6 +9,7 @@
     color: #fff;
     font-size: 1vw;
     font-weight: bold;
+    z-index: 9999;
 }
 
 .logo {
@@ -19,6 +20,7 @@
     float: left;
     margin-left: 5rem;
     cursor: pointer;
+    z-index: 9999;
 }
 .menuUl > li > a {
     color: #fff;
