@@ -1,6 +1,6 @@
 .kind {
     width: 100%;
-    height: 70rem;
+    height: 80vh;
     /*background: url("../../image/kind/kindBac.png") no-repeat;*/
     background-size: 90%;
     background-position: top 3rem left 0;
@@ -8,24 +8,32 @@
     font-family: 'AvenirNext';
 }
 .kind-title {
-    width: 50rem;
-    position: absolute;
-    right: 0;
+    width: 50vw;
+    position: relative;
+    left: 40vw;
 }
 .kind-titleImg {
-    width: 15rem;
+    width: 15vw;
 }
 .kind-titleImg > img {
     width: 100%;
 }
-.kind-title-text {
+.kind-title-text >div:nth-of-type(1) {
     color: #fff;
-    font-size: 6.4rem;
+    font-size: 4.4vw;
     font-weight: bolder;
-    position: absolute;
-    top: 5rem;
-    left: -8rem;
+    position: relative;
+    top: 5vh;
     text-align: right;
+}
+
+.kind-title-text > div:nth-of-type(2) {
+    color: #fff;
+    font-size: 1.2vw;
+    position: relative;
+    top: 20vh;
+    text-align: right;
+    font-family: SourceHanSansCN-Light;
 }
 .kindBacBall {
     width: 20rem;
@@ -36,21 +44,20 @@
 }
 
 .nft-mapper > img:nth-of-type(1) {
-    width: 700px;
+    width: 40vw;
     position: relative;
-    left: 15rem;
+    left: 10vw;
+    bottom: 35vh;
 }
 
 .mapper-text {
     color: #808080;
     font-family: 'SourceHanSansCN-Light';
     position: absolute;
-    top: 30rem;
-    right: 20rem;
+    top: 25vh;
+    right: 6vw;
     text-align: right;
     font-size: 2rem;
-
-
 }
 @keyframes spin {
     to {
