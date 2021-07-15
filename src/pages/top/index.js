@@ -2,6 +2,7 @@ import React from "react";
 import './index.css'
 import MainBG from '../../image/top/topBG.png'
 import BanksyLine from "../banksyLine";
+import github from "../../image/team/github-link.png";
 
 function Top() {
   return (
@@ -25,6 +26,12 @@ function Top() {
         <div>lending platform to lead a revolution</div>
         <div>of the NFT market</div>
       </div>
+
+        <div className="explore-btn">
+            <a href={"http://app.banksy.finance/#/"} target='_blank' style={{color:'white'}}>
+                Explore
+            </a>
+        </div>
       <BanksyLine/>
       {/*<div className="topBacStart">
         <img src={virtualland}/>
