@@ -1,5 +1,8 @@
 .banksyLine {
+    width: 99vw;
     height: 49px;
+    top: 50vh;
+    position: relative;
 }
 @keyframes rowup {
     0% {
@@ -14,7 +17,7 @@
 .list{
     width: 100%;
     border: 1px solid #999;
-    margin: 20px auto;
+    /*margin: 20px auto;*/
     position: relative;
     height: 49px;
     overflow: hidden;
