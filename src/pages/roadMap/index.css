@@ -1,181 +1,166 @@
 .roadMap {
-    width: 100%;
-    height: 210rem;
-    background: url("../../image/roadmap/mapBac.png") no-repeat center;
-    background-size: 100%;
-    background-position: top 20rem left 50%;
+    width: 98vw;
+    height: 200vh;
+    background-image: url("../../image/roadmap/mapBac.png");
+    background-repeat: no-repeat;
+    background-size: 85vw;
+    background-position: top 15vh left 7.5vw;
     position: relative;
     font-family: 'AvenirNext';
-    margin-bottom: 20rem;
+    user-select: none;
 }
-.roadMapMain {
-    height: 90rem;
-}
+
 .roadMapTitle {
-    color: #fff;
-    font-size: 6.4rem;
-    margin-left: 15%;
-}
-.roadMapImg {
-    width: 85%;
-    max-width: 1488px;
     position: absolute;
-    right: 0;
+    color: #fff;
+    font-size: 4vw;
+    left: 15vw;
 }
+
+.roadMapImg {
+    width: 74vw;
+    position: absolute;
+    left: 13vw;
+    top: 10vh;
+}
+
 .roadMapImg > img {
     width: 100%;
 }
-.roadMapImgContent {
-    display: flex;
-}
-.roadMapImgContent-item-title {
-    color: #fff;
-    font-size: 1.8rem;
-}
-.roadMapImgContent-item-text {
-    color: #808080;
-    font-size: 1.7rem;
-    margin-top: 1rem;
-}
-.roadMapImgContent-item:nth-of-type(2) {
-    position: absolute;
-    left: 15%;
-}
-.roadMapImgContent-item:nth-of-type(3) {
-    position: absolute;
-    left: 37.5%;
-}
-.roadMapImgContent-item:nth-of-type(4) {
-    position: absolute;
-    left: 62.5%;
-}
-@media screen and (max-width: 1400px){
-    .roadMap{
+
+@media screen and (max-width: 1400px) {
+    .roadMap {
         height: 1700px;
     }
 }
+
 @media screen and (max-width: 1150px) {
-    .roadMapTitle{
+    .roadMapTitle {
         font-size: 48px;
     }
+
     .roadMapImg {
         width: 95%;
         position: absolute;
         right: 0;
     }
-    .roadMapImgContent-item-title{
+
+    .roadMapImgContent-item-title {
         font-size: 14px;
     }
-    .roadMapImgContent-item-text{
+
+    .roadMapImgContent-item-text {
         font-size: 12PX;
     }
+
     .roadMapImgContent-item:nth-of-type(2) {
         position: absolute;
         left: 14%;
     }
+
     .roadMapImgContent-item:nth-of-type(3) {
         position: absolute;
         left: 36.5%;
     }
+
     .roadMapImgContent-item:nth-of-type(4) {
         position: absolute;
         left: 64%;
     }
 }
-@media screen and (max-width: 1000px){
 
-    .roadMap{
+@media screen and (max-width: 1000px) {
+
+    .roadMap {
         height: 2000px;
     }
-    .roadMapTitle{
+
+    .roadMapTitle {
         font-size: 28px;
     }
-    .roadMapImgContent-item-title{
+
+    .roadMapImgContent-item-title {
         font-size: 13px;
     }
 }
+
 @media screen and (max-width: 750px) {
-    .roadMap{
+    .roadMap {
         height: 2200px;
     }
 
-    .roadMapTitle{
+    .roadMapTitle {
         font-size: 28px;
     }
+
     .roadMapImgContent {
-       display: block;
+        display: block;
     }
-    .roadMapImgContent-item-title{
+
+    .roadMapImgContent-item-title {
         font-size: 14px;
     }
-    .roadMapImgContent-item-text{
+
+    .roadMapImgContent-item-text {
         font-size: 12PX;
     }
+
     .roadMapImgContent-item:nth-of-type(1) {
         position: absolute;
         left: 5%;
-        top:185px;
+        top: 185px;
     }
+
     .roadMapImgContent-item:nth-of-type(2) {
         position: absolute;
         left: 5%;
         top: 285px;
     }
+
     .roadMapImgContent-item:nth-of-type(3) {
         position: absolute;
         left: 5%;
-        top:445px;
+        top: 445px;
     }
+
     .roadMapImgContent-item:nth-of-type(4) {
         position: absolute;
         left: 5%;
-        top:640px;
+        top: 640px;
     }
 }
 
-.map-content {
-    position: relative;
-}
-
-.map-content-item >div {
+.map-content-item > div {
     position: absolute;
-    color: #B2B2B2;
+    color: #ccc;
     font-family: SourceHanSansCN-Light;
-    font-size: 2rem;
+    font-size: 1vw;
 }
 
 .text {
-    width: 300px;
-
-    top:16rem;
-    left: 10%;
+    width: 15vw;
+    top: 25vh;
+    left: 10vw;
 }
 
 .text2 {
-    top: 6rem;
-    left: 45%;
-    width: 400px;
+    top: 20vh;
+    left: 38vw;
+    width: 20vw;
 }
 
 .text3 {
-    width: 350px;
-    top: 40rem;
-    left: 14%;
+    width: 15vw;
+    top: 48vh;
+    left: 16vw;
 }
 
 .text4 {
-    width: 350px;
-    top: 30rem;
-    left: 65%;
+    top: 42vh;
+    left: 55vw;
 }
 
 .text5 {
-    top: 48rem;
-    left: 76%;
-}
-.map-content-item > div :nth-of-type(2) {
-    width: 300px;
-    position: relative;
-    top:16rem;
-    left: 13rem;
+    top: 60vh;
+    left: 66vw;
 }
