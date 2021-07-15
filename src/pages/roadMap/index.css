@@ -138,7 +138,7 @@
 }
 
 .map-content-item >div {
-    position: relative;
+    position: absolute;
     color: #B2B2B2;
     font-family: SourceHanSansCN-Light;
     font-size: 2rem;
@@ -148,32 +148,30 @@
     width: 300px;
 
     top:16rem;
-    left: 16%;
+    left: 10%;
 }
 
 .text2 {
-
-    top: 4rem;
-    left: 48%;
-    width: 40rem;
+    top: 6rem;
+    left: 45%;
+    width: 400px;
 }
 
 .text3 {
     width: 350px;
-    top:35rem;
-    left: 24%;
+    top: 40rem;
+    left: 14%;
 }
 
 .text4 {
     width: 350px;
-    top:12rem;
+    top: 30rem;
     left: 65%;
 }
 
 .text5 {
-    width: 350px;
-    top:28rem;
-    left: 78%;
+    top: 48rem;
+    left: 76%;
 }
 .map-content-item > div :nth-of-type(2) {
     width: 300px;

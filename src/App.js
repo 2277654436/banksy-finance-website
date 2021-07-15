@@ -26,7 +26,7 @@ function scrollToPart(anchorName){
     let anchorElement = document.getElementById(anchorName);
     if(anchorElement) {
         anchorElement.scrollIntoView(
-            {behavior: 'smooth',block:'center'}
+            {behavior: 'smooth', block:'center'}
         );
     }
   }
@@ -68,6 +68,7 @@ function App() {
       <Problem />
       <FeaturesPage />
       <Kind />
+        <BanksyLine />
       <Upgrade />
       <RoadMap />
       <Foot />
