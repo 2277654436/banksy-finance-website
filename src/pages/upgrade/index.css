@@ -1,20 +1,173 @@
 .upgrade {
     width: 100%;
-    height: 200rem;
-    background: url("../../image/upgrade/upgradeBac.png") no-repeat;
+    height: 320vh;
+    /*background: url("../../image/upgrade/upgradeBac.png") no-repeat;*/
     background-position: top 0 left 0;
     background-size: 30%;
     position: relative;
     font-family: 'AvenirNext';
-    margin-bottom: 10rem;
+    margin-bottom: 10vh;
 }
+
 .upgrade-img {
     width: 70%;
     margin-left: 18%;
 }
+
 .upgrade-img > img {
     width: 100%;
 }
+
+.features-border {
+    position: relative;
+    right: 20vw;
+    top: 30vh;
+    width: 100vw;
+    height: 80vh;
+
+}
+
+.features-content {
+    width: 65vw;
+    position: relative;
+    top: 50vh;
+    left: calc((100% - 65vw) / 2)
+}
+
+.features-content {
+    display: flex;
+}
+
+.features-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+}
+
+.features-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-item-img > img:nth-of-type(1) {
+    height: 22vh;
+}
+
+.features-item-text > div:nth-of-type(1) {
+    color: white;
+    text-align: center;
+    font-family: SourceHanSansCN-Bold;
+    font-weight: 550;
+    font-size: 1.2vw;
+}
+
+.features-item-text > div:nth-of-type(2) {
+    position: relative;
+    width: 30rem;
+    text-align: center;
+    color: #B2B2B2;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 0.9vw;
+}
+
+.support-title {
+    position: absolute;
+    left: 12vw;
+    top: 120vh;
+    color: white;
+    font-family: SourceHanSansCN-Bold;
+    font-weight: 550;
+    font-size: 2.0vw;
+}
+
+.support-title > div {
+    position: relative;
+    z-index: 2;
+}
+
+.support-title > img {
+    width: 8vw;
+    position: relative;
+    left: 3vw;
+    top: 14vh;
+    z-index: 1;
+}
+
+.kindBacBall {
+    width: 25rem;
+    position: relative;
+    top: 40rem;
+    left: 115rem;
+    animation: spin 10s infinite linear;
+    z-index: 5;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.kindBacBall > img {
+    width: 100%;
+}
+
+.right-area {
+    position: absolute;
+    left: 12vw;
+    top: 90vh;
+}
+
+.right-area > img {
+    width: 18vw;
+    position: relative;
+}
+
+.right-area > img:nth-of-type(1) {
+    position: relative;
+    top: 65rem;
+    left: 90rem;
+    z-index: 3;
+    transition: all 1s;
+
+}
+
+.right-area > img:nth-of-type(2) {
+    position: relative;
+    top: 50rem;
+    left: 70rem;
+    z-index: 2;
+    transition: all 1s;
+}
+
+.right-area > img:nth-of-type(3) {
+    position: relative;
+    top: 35rem;
+    left: 50rem;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.right-area > img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+
+}
+
+
+.upgrade-title > img {
+    width: 160px;
+    position: relative;
+    top: 13rem;
+    right: 5.2rem;
+    z-index: -1;
+}
+
 .upgrade-title {
     color: white;
     font-size: 6.4rem;
@@ -23,29 +176,34 @@
     top: 15rem;
     left: 15%;
 }
+
 @media screen and (max-width: 1150px) {
     .upgrade-img {
-        width:80%;
+        width: 80%;
     }
+
     .upgrade-title {
         font-size: 48px;
         top: 100px;
     }
 }
+
 @media screen and (max-width: 1000px) {
-    .upgrade{
+    .upgrade {
         background: url("../../image/upgrade/upgradeBac.png") no-repeat;
         background-position: top 0 left 0;
         background-size: 50% 30%;
         height: 2250px;
     }
+
     .upgrade-img {
-        width:90%;
+        width: 90%;
         height: 300px;
         margin-left: 5%;
         position: absolute;
         top: 170px;
     }
+
     .upgrade-title {
         color: white;
         font-size: 28px;
@@ -55,10 +213,12 @@
         left: 15%;
     }
 }
+
 @media screen and (max-width: 750px) {
-    .upgrade-img{
+    .upgrade-img {
         width: 95%;
     }
+
     .upgrade-img > img {
         width: 100%;
         height: 100%;

@@ -82,9 +82,9 @@ function Benefits() {
                     </div>
                 </div>
             </div>
-            <div className="benefitsButton" data-aos="fade-up" onClick={()=>scrollToPart('roadMap')}>
+          {/*  <div className="benefitsButton" data-aos="fade-up" onClick={()=>scrollToPart('roadMap')}>
                 <img src={benefitsButton} />
-            </div>
+            </div>*/}
         </div>
     )
 }

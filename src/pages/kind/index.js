@@ -9,23 +9,33 @@ import kindItemImg4 from '../../image/kind/kindItemImg4.jpg'
 import kindItemImg5 from '../../image/kind/kindItemImg5.jpg'
 import kindItemImg6 from '../../image/kind/kindItemImg6.jpg'
 import kindItemImg7 from '../../image/kind/kindItemImg7.jpg'
+import MapperImg from '../../image/kind/mapperImg.png'
+
 
 function Kind() {
     return (
         <div className="kind">
             <div className="kind-title" data-aos="fade-up">
-                <div className="kind-titleImg">
+               {/* <div className="kind-titleImg">
                     <img src={kindTitleImg} />
-                </div>
+                </div>*/}
                 <div className="kind-title-text" data-aos="fade-up">
-                    <div>VARIOUS NFT</div>
-                    <div>USE CASES</div>
+                    <div>NFT MAPPER</div>
+                    <div >
+                        <div>The NFT mapper can effectively solve</div>
+                        <div>the problem of poor liquidity</div>
+                        <div>for more flexible and diversified business.</div>
+                    </div>
                 </div>
             </div>
-            <div className="kindBacBall">
+            {/*<div className="kindBacBall">
                 <img src={kindBacBall} />
+            </div>*/}
+            <div className="nft-mapper" data-aos="fade-right">
+                <img src={MapperImg} />
             </div>
-            <div className="kindsList">
+
+           {/* <div className="kindsList">
                 <div className="aa kindRowup">
                     <div className="kindItem">
                         <div className="kindItemImg">
@@ -196,7 +206,7 @@ function Kind() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>*/}
         </div>
     )
 }
