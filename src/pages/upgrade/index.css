@@ -190,7 +190,6 @@
 
 @media screen and (max-width: 1000px) {
     .upgrade {
-        background: url("../../image/upgrade/upgradeBac.png") no-repeat;
         background-position: top 0 left 0;
         background-size: 50% 30%;
         height: 2250px;

@@ -1,8 +1,8 @@
 .team {
     width: 100%;
     height: 80vh;
-    background: url("../../image/team/teamBac.png") no-repeat center;
-    background-size: 100% 100%;
+    /*background: url("../../image/team/teamBac.png") no-repeat center;
+    background-size: 100% 100%;*/
     font-family: 'AvenirNext';
     position: absolute;
     bottom: 0;
@@ -35,8 +35,8 @@
 
 .temContent2{
     top: 35vh;
-    width: 63.5vw;
-    margin-left: 21vw;
+    width: 61.5vw;
+    margin-left: 22vw;
     display: flex;
     justify-content: space-between;
     position: absolute;

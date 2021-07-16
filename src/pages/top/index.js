@@ -1,6 +1,7 @@
 import React from "react";
 import './index.css'
 import MainBG from '../../image/top/topBG.png'
+import MainBG2 from '../../image/top/topImg.png'
 import BanksyLine from "../banksyLine";
 import github from "../../image/team/github-link.png";
 
@@ -12,14 +13,14 @@ function Top() {
       </div>*/}
       <div className="top-content" data-aos="fade-right">
         <div className="top-content-child">
-          NFT Mortgage
+            NFT Pool-Based
         </div>
         <div className="top-content-child">
           Lending Hub
         </div>
       </div>
       <div className="topBac" data-aos="fade-left">
-        <img src={MainBG}/>
+        <img src={MainBG2}/>
       </div>
       <div className="top-foot" data-aos="fade-up">
         <div>The first AI-driven NFT pool-based</div>

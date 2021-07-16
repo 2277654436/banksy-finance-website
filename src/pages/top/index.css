@@ -1,10 +1,13 @@
 .top {
-    width: 85vw;
+    width: 100%;
     height: 100vh;
     background: black;
+    /*background-image: url("../../image/top/topBG2.png");
+    background-size: 100% 100%;*/
     font-family: 'SourceHanSansCN-Bold';
 }
 .top-content {
+    width: 40vw;
     text-align: left;
     position: relative;
     top: 12vh;
@@ -14,6 +17,7 @@
 }
 
 .explore-btn{
+    margin-right: 0;
     background-color: #554BFF;
     border-radius: 1rem;
     width: 10vw;
@@ -30,11 +34,17 @@
     text-align: left;
     color: white;
     cursor: pointer;
-    transition: all 1s;
+    transition: all 0.5s;
+}
+
+.explore-btn:hover {
+    border: solid 1px #9490e7;
+    background-color: #554BFF;
 }
 
 
 .top-content-child {
+    width: 40vw;
     font-weight: 800;
     color: #FFFFFF;
     user-select: none;
@@ -43,14 +53,16 @@
     width: 77vw;
     text-align: center;
     position: absolute;
-    top: 10vh;
-    right: 5vw;
+    top: 13vh;
+    right: 0vw;
     z-index: 0;
+
 }
 .topBac > img {
     width: 100%;
 }
 .top-foot {
+    width: 30vw;
     position: relative;
     font-size: 1.2vw;
     top: 12vh;
@@ -63,9 +75,10 @@
 }
 
 .explore-button {
+
     position: relative;
     top: 200px;
-    width: 87%;
+    width: 20vw;
     display: flex;
     justify-content: flex-end;
 }
@@ -249,7 +262,7 @@
 @media screen and (max-width: 1000px) {
     .top {
         height: 400px;
-        background: url("../../image/top/topBac.png") no-repeat;
+        /*background: url("../../image/top/topBac.png") no-repeat;*/
         background-size: 70%;
         background-position: top 50px left 50%;
         position: relative;

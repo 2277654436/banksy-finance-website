@@ -1,6 +1,5 @@
 import React from "react";
 import './index.css'
-import upgradeImg from '../../image/upgrade/upgradeImg.png'
 import Benefits from "../benefits";
 import { Row, Col } from 'antd'
 import UpgradeTextBG from '../../image/upgrade/upgrade-text-bg.png'

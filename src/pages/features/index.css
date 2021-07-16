@@ -3,6 +3,10 @@
     height: 100vh;
     margin-bottom: 50vh;
     font-family: 'AvenirNext';
+    background-image: url("../../image/features/dots.png");
+    background-size: 100% 100%;
+    background-position: top 20vh right 5vw;
+    position: relative;
 }
 .features-content {
     width: 80%;

@@ -58,11 +58,13 @@
 }
 
 .ring >img {
+    width: 55vw;
     transform: rotate(-6deg);
     position: absolute;
-    top: 80%;
-    left: 35%;
-    height: 100%;
+    top: 25vh;
+    left: 35vw;
+    height: 100vh;
+    z-index: 5;
 }
 
 @media screen and (max-width: 1150px) {
@@ -164,7 +166,7 @@
 
 .missionImg {
 
-    animation: spin 10s infinite linear;
+    animation: spin 30s infinite linear;
     z-index: 5;
 }
 @keyframes spin {

@@ -5,18 +5,21 @@
     font-family: 'AvenirNext';
 }
 .dangerImg {
-    width: 11vw;
+    width: 14vw;
     position: relative;
     top: 20vh;
-    left: 6vw;
+    left: 60vw;
 }
+
+
+
 .dangerImg > img {
     width: 100%;
 }
 .problem-title {
     position: absolute;
-    top: 15vw;
-    left: 13vw;
+    top: 12vw;
+    left: 70vw;
     color: white;
     font-size: 5vw;
     font-weight: bolder;
@@ -24,18 +27,20 @@
 }
 .problemContent {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     left: 13vw;
     top: 24vw;
 }
 .problemContent-item {
-    width: 30vw;
     display: flex;
+    justify-content: space-between;
+    width: 30vw;
     margin-top: 5vh;
 }
-.problemContent-item-serial {
-    color: #3B05E2;
-    font-size: 2.4vw;
-    font-weight: bolder;
+.problemContent-item-serial > img {
+    width: 7vw;
+    height: 15vh;
 }
 
 .problemContent-title-text {
@@ -44,13 +49,17 @@
     font-weight: 550;
     font-size: 1.8vw;
     font-family: 'SourceHanSansCN-Bold';
-    margin-left: 1vw;
 }
 .problemContent-item-text {
+    display: flex;
+    flex-direction: column;
     color: #B2B2B2;
     font-size: 1.2vw;
     font-family: 'SourceHanSansCN-Light';
-    margin-left: 2.5vw;
+}
+
+.problemContent-details {
+    width: 40vw;
 }
 .problemBac {
     width: 90rem;

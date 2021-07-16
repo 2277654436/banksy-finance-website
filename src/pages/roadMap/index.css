@@ -17,16 +17,19 @@
     left: 15vw;
 }
 
-.roadMapImg {
-    width: 74vw;
-    position: absolute;
-    left: 13vw;
-    top: 10vh;
+.roadmap-content {
+
 }
 
-.roadMapImg > img {
-    width: 100%;
+.roadmap-content >img {
+    width: 74vw;
+    position: absolute;
+    left: 15vw;
+    top: 15vh;
+
 }
+
+
 
 @media screen and (max-width: 1400px) {
     .roadMap {

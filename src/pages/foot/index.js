@@ -37,11 +37,6 @@ function Foot() {
                         <img src={footEmail} />
                     </a>
                 </div>
-                <div className="footContent-item">
-                    <a href={"mailto:contact@banksy.finance"} target="_blank">
-                        <img src={footMessenger} />
-                    </a>
-                </div>
             </div>
             <div className="footLogo">
                 <img src={footLogo} />
