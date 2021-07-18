@@ -17,7 +17,7 @@
     margin: 0 auto;
 }
 
-.solutions-title{
+.solutions-title {
     color: white;
     font-size: 4vw;
     position: relative;
@@ -35,5 +35,44 @@
 
 .solutions-content-item-img > img {
     width: 45vw;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .solutions {
+        width: 90vw;
+        margin: 0 auto;
+        height: 40vh;
+        user-select: none;
+        background-image: url("../../image/solutions/dots.png");
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+        background-position: top 0 left 0;
+    }
+
+    .solutions-content-item-img > img {
+        width: 45vw;
+        position: relative;
+        bottom: 3.5vh;
+    }
+
+    .solutions-title {
+        color: white;
+        font-size: 4vw;
+        position: relative;
+        top: 8vh;
+        font-family: 'SourceHanSansCN-Bold';
+        font-weight: 550;
+    }
+
+    .solutions-title-text {
+        position: absolute;
+        width:80vw;
+        color: #B2B2B2;
+        font-size: 12px;
+        transform: scale(0.8) !important;
+        top: 5vh;
+        transform-origin: 0 0;
+        font-family: 'SourceHanSansCN-Normal';
+    }
 
 }

@@ -17,7 +17,7 @@ export const Solutions = () => {
                         </div>
                     </div>
                 </div>
-                <div className="solutions-content" data-aos="fade-left">
+                <div className="solutions-content" data-aos="fade-up">
                     <div className="solutions-content-item-img">
                         <img src={FeaturesBG}/>
                     </div>

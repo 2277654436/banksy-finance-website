@@ -52,7 +52,7 @@
     text-align: center;
     position: absolute;
     top: 13vh;
-    right: 0vw;
+    right: 0;
     z-index: 0;
 
 }
@@ -67,32 +67,8 @@
     font-size: 1.2vw;
     top: 12vh;
     left: 10.5vw;
-    /*top: 160px;*/
-    /*font-size: 2.2rem;*/
     text-align: left;
     color: #ccc;
-    /*margin-left: calc((100% - 1300px)/2);*/
-}
-
-.explore-button {
-
-    position: relative;
-    top: 200px;
-    width: 20vw;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.button-border {
-    background-color: #554BFF;
-    width: 90px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
 }
 
 .topBacStart {
@@ -152,11 +128,11 @@
 @media screen and (max-width: 1000px) {
     .top {
         height: 400px;
-        /*background: url("../../image/top/topBac.png") no-repeat;*/
+        /*background: url("../../image/top/topImg.png") no-repeat;*/
         background-size: 70%;
         background-position: top 50px left 50%;
         position: relative;
-        font-family: 'AvenirNext';
+        font-family: 'SourceHanSansCN-Normal';
         transition: background 2s;
     }
 
@@ -186,4 +162,63 @@
         margin-top: 90px;
         left: calc((100% - 306px) / 2);
     }
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px){
+    .top {
+        width: 100vw;
+        height: 25vh;
+    }
+    .top-content{
+        position: relative;
+        top: 5vh;
+        font-size: 4vw;
+        font-family: 'SourceHanSansCN-Light';
+    }
+
+    .topBac {
+        position: absolute;
+        height: 100vh;
+        top: 0;
+    }
+    .top-foot {
+        width: 60vw;
+        position: relative;
+        font-size: 12px;
+        transform: scale(0.7);
+        top: 6vh;
+        left: 1vw;
+        text-align: left;
+        color: #ccc;
+    }
+
+    .explore-btn {
+        margin-right: 0;
+        background-color: #554BFF;
+        border-radius: 0.5rem;
+        width: 18vw;
+        height: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-size: 1.2vw;
+        transform: scale(0.8);
+        top: 7vh;
+        left: 8.5vw;
+        /*top: 160px;*/
+        /*font-size: 2.2rem;*/
+        text-align: left;
+        color: white;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .explore-btn:hover {
+        border: solid 1px #9490e7;
+        background-color: #554BFF;
+    }
+
+
+
 }

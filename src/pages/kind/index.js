@@ -10,7 +10,7 @@ function Kind() {
                {/* <div className="kind-titleImg">
                     <img src={kindTitleImg} />
                 </div>*/}
-                <div className="kind-title-text" data-aos="fade-up">
+                <div className="kind-title-text" >
                     <div>NFT MAPPER</div>
                     <div >
                         <div>The NFT mapper can effectively solve</div>

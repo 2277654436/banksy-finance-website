@@ -1,6 +1,6 @@
 .roadMap {
     width: 98vw;
-    height: 200vh;
+    height: 100vh;
     background-image: url("../../image/roadmap/mapBac.png");
     background-repeat: no-repeat;
     background-size: 85vw;
@@ -20,7 +20,7 @@
 
 }
 
-.roadmap-content >img {
+.roadmap-content > img {
     width: 74vw;
     position: absolute;
     left: 15vw;
@@ -29,6 +29,40 @@
 }
 
 
+.map-content-item > div {
+    position: absolute;
+    color: #ccc;
+    font-family: SourceHanSansCN-Light;
+    font-size: 1vw;
+}
+
+.text {
+    width: 15vw;
+    top: 27vh;
+    left: 10vw;
+}
+
+.text2 {
+    top: 20vh;
+    left: 38vw;
+    width: 20vw;
+}
+
+.text3 {
+    width: 15vw;
+    top: 48vh;
+    left: 16vw;
+}
+
+.text4 {
+    top: 42vh;
+    left: 55vw;
+}
+
+.text5 {
+    top: 60vh;
+    left: 66vw;
+}
 
 @media screen and (max-width: 1400px) {
     .roadMap {
@@ -132,37 +166,17 @@
     }
 }
 
-.map-content-item > div {
-    position: absolute;
-    color: #ccc;
-    font-family: SourceHanSansCN-Light;
-    font-size: 1vw;
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .roadMap {
+        height: 40vh;
+    }
+
+    .roadmap-content > img {
+        position: relative;
+        left: 10vw;
+        top: 6vh;
+        width: 90vw;
+        margin-bottom: 30vh;
+    }
 }
 
-.text {
-    width: 15vw;
-    top: 27vh;
-    left: 10vw;
-}
-
-.text2 {
-    top: 20vh;
-    left: 38vw;
-    width: 20vw;
-}
-
-.text3 {
-    width: 15vw;
-    top: 48vh;
-    left: 16vw;
-}
-
-.text4 {
-    top: 42vh;
-    left: 55vw;
-}
-
-.text5 {
-    top: 60vh;
-    left: 66vw;
-}

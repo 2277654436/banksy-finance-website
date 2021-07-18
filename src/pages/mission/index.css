@@ -7,29 +7,35 @@
     font-family: 'AvenirNext';
     position: relative;
 }
+
 .mission-title {
     position: absolute;
     left: 10vw;
     top: 31vh;
 }
+
 .mission-titleImg {
     position: relative;
 }
+
 .mission-titleImg > img:nth-of-type(1) {
     position: absolute;
     top: 10vh;
     width: 6.6vw;
 }
+
 .mission-title-text {
     width: 31vw;
     position: absolute;
     top: 22vh;
     left: 3.6vw;
 }
+
 .mission-title-text > div:nth-of-type(1) {
     font-size: 4.5vw;
     color: #fff;
 }
+
 .mission-title-text > div:nth-of-type(2) {
     font-size: 1.2vw;
     font-family: 'SourceHanSansCN-Light';
@@ -37,15 +43,17 @@
     color: #808080;
     margin-top: 5vh;
 }
+
 .mission-title-text > div:nth-of-type(3) {
     font-size: 2.6rem;
     color: #808080;
     margin-top: 4rem;
 }
+
 .missionImg {
     width: 47vw;
     height: 47vw;
-   /* background: url("../../image/mission/missionImg.png") no-repeat;*/
+    /* background: url("../../image/mission/missionImg.png") no-repeat;*/
     background-size: 100% 100%;
     position: absolute;
     right: 10vw;
@@ -54,11 +62,12 @@
     align-items: center;
     justify-content: center;
 }
+
 .missionImg > img {
     width: 80%;
 }
 
-.ring >img {
+.ring > img {
     width: 55vw;
     transform: rotate(-6deg);
     position: absolute;
@@ -73,12 +82,15 @@
         font-size: 48px;
 
     }
+
     .mission-title-text > div:nth-of-type(2) {
         font-size: 18px;
     }
-    .mission-title-text{
+
+    .mission-title-text {
         left: 5%;
     }
+
     .missionImg {
         width: 480px;
         height: 580px;
@@ -86,6 +98,7 @@
 
     }
 }
+
 @media screen and (max-width: 1000px) {
     .mission {
         width: 100%;
@@ -95,46 +108,55 @@
         font-family: 'AvenirNext';
         position: relative;
     }
+
     .mission-title {
         position: absolute;
         left: 5%;
         top: 0;
     }
+
     .mission-titleImg {
         width: 200px;
         position: relative;
     }
+
     .mission-titleImg > img:nth-of-type(1) {
         position: absolute;
         top: 90px;
         left: 60px;
         width: 40px;
     }
+
     .mission-titleImg > img:nth-of-type(2) {
         position: absolute;
         top: 0;
         width: 100%;
     }
+
     .mission-title-text {
         width: 300px;
         position: absolute;
         top: 120px;
         left: 21%;
     }
+
     .mission-title-text > div:nth-of-type(1) {
         font-size: 28px;
         color: #fff;
     }
+
     .mission-title-text > div:nth-of-type(2) {
         font-size: 16px;
         color: #808080;
         margin-top: 61px;
     }
+
     .mission-title-text > div:nth-of-type(3) {
         font-size: 16px;
         color: #808080;
         margin-top: 40px;
     }
+
     .missionImg {
         width: 330px;
         height: 243px;
@@ -150,16 +172,19 @@
         align-items: center;
         justify-content: center;
     }
+
     .missionImg > img {
         width: 70%;
     }
 
 }
+
 @media screen and (max-width: 750px) {
-    .mission{
+    .mission {
         height: 900px;
     }
-    .missionImg{
+
+    .missionImg {
         right: calc((100% - 330px) / 2);
         top: 500px;
     }
@@ -170,11 +195,78 @@
     animation: spin 30s infinite linear;
     z-index: 5;
 }
+
 @keyframes spin {
     to {
         transform: rotate(1turn);
     }
 }
+
 .missionImg > img {
     width: 100%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .mission {
+        width: 100vw;
+        height: 45vh;
+        margin-bottom: 0;
+        background: url("../../image/mission/missionBac.png") no-repeat center;
+        background-size: 100% 100%;
+        position: relative;
+        background-position: top 0 left 0;
+    }
+
+    .mission-titleImg {
+        position: relative;
+    }
+
+    .mission-title {
+        position: absolute;
+        left: -5vw;
+    }
+
+    .mission-titleImg > img:nth-of-type(1) {
+        position: absolute;
+        top: 10vh;
+        width: 5vw;
+    }
+
+    .mission-title-text > div:nth-of-type(1) {
+        position: relative;
+        font-size: 4.5vw;
+        bottom: 3vh;
+        left: 7vw;
+        color: #fff;
+    }
+
+    .mission-title-text > div:nth-of-type(2) {
+        position: relative;
+        bottom: 10vh;
+        width: 55vw;
+        font-size: 1.2vw;
+        transform: scale(0.7);
+        font-family: 'SourceHanSansCN-Light';
+        line-height: 2.5vh;
+        color: #808080;
+    }
+
+    .missionImg {
+        width: 35vw;
+        height: 35vw;
+        background-size: 100% 100%;
+        position: absolute;
+        right: 8vw;
+        top: 5vh;
+    }
+
+    .ring > img {
+        width: 55vw;
+        transform: rotate(-16deg);
+        position: absolute;
+        top: 20vh;
+        left: 30vw;
+        height: 20vh;
+        z-index: 5;
+    }
 }
