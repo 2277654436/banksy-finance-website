@@ -171,3 +171,68 @@
         width: 90%;
     }
 }
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .problem {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+    }
+
+    .dangerImg {
+        width: 16vw;
+        position: relative;
+        left: 55vw;
+    }
+
+    .problem-title-content {
+        position: relative;
+        width: 50vw;
+        top: 6vh;
+        left: 10vw;
+        margin: 0;
+    }
+
+    .problem-title {
+        top: 1vw;
+        left: 67vw;
+        color: white;
+        font-size: 4.5vw;
+        font-weight: bolder;
+        text-align: right;
+        font-family: 'SourceHanSansCN-Bold';
+    }
+    .problemContent-item-serial {
+         display: flex;
+         justify-content: center;
+         align-self: center;
+     }
+
+    .problemContent-item-serial > img {
+        width: 8vw;
+        height: 5vh;
+    }
+    .problemContent {
+        display: flex;
+        flex-direction: column;
+        left: 8vw;
+        width: 82vw;
+        top: 24vw;
+    }
+
+    .problemContent-title-text {
+        color: white;
+        font-weight: 550;
+        font-size: 3.5vw;
+        font-family: 'SourceHanSansCN-Bold';
+    }
+
+    .problemContent-details {
+        position: relative;
+        width: 80vw;
+        font-size: 12px;
+        transform: scale(0.8);
+        right: 8vw;
+    }
+
+}

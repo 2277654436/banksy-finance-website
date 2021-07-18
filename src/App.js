@@ -16,6 +16,7 @@ import menuTwitter from './image/menuTwitter.png'
 import menuFly from './image/menuFly.png'
 import Benefits from "./pages/benefits"
 import Solutions from "./pages/solutions"
+import Team from "./pages/team";
 
 function scrollToPart(anchorName) {
     if (anchorName) {
@@ -73,6 +74,7 @@ function App() {
             <Upgrade/>
             <Benefits/>
             <RoadMap/>
+            <Team/>
             <Foot/>
         </div>
     );

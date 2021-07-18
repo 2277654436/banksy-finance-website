@@ -4,19 +4,23 @@
     /*background: url("../../image/team/teamBac.png") no-repeat center;
     background-size: 100% 100%;*/
     font-family: 'AvenirNext';
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
+
 .teamTitle {
     position: absolute;
     left: 12vw;
 }
+
 .teamTitleImg {
     width: 10vw;
 }
+
 .teamTitleImg > img {
     width: 100%;
 }
+
 .teamTitleText {
     color: #fff;
     font-size: 4vw;
@@ -24,6 +28,7 @@
     top: 5vh;
     left: 3vw;
 }
+
 .temContent {
     width: 45%;
     margin-left: 40%;
@@ -33,7 +38,7 @@
     flex-wrap: wrap;
 }
 
-.temContent2{
+.temContent2 {
     top: 35vh;
     width: 61.5vw;
     margin-left: 22vw;
@@ -43,20 +48,20 @@
     flex-wrap: wrap;
 }
 
-
 .teamContent-item {
     width: 10vw;
     font-family: SourceHanSansCN-Light;
     z-index: 2;
 }
 
-
 .teamContent-img {
     height: 23vh;
 }
+
 .teamContent-img > img {
     height: 100%;
 }
+
 .position {
     color: #808080;
     margin-top: 1vh;
@@ -74,24 +79,29 @@
     font-size: 1vw;
 
 }
+
 .teamItem-name {
     color: #808080;
     font-size: 1vw;
 }
+
 .linkdin {
     color: #fff;
     margin-top: 1rem;
     cursor: pointer;
 }
+
 .linkdin > a {
     color: #fff;
     display: flex;
     align-items: center;
 }
+
 .linkdin > a > img {
     width: 2rem;
     margin-right: 0.5rem;
 }
+
 .linkdin > a:hover {
     color: #fff;
 }
@@ -107,7 +117,8 @@
     z-index: 1;
 
 }
-@media screen and (max-width: 1150px){
+
+@media screen and (max-width: 1150px) {
     .teamTitleText {
 
         font-size: 48px;
@@ -116,14 +127,17 @@
         left: -90px;
     }
 }
+
 @media screen and (max-width: 1000px) {
     .team {
         height: 1350px;
         background: none;
     }
+
     .teamTitleImg {
         width: 100px;
     }
+
     .teamTitleText {
         width: 100%;
         color: #fff;
@@ -132,20 +146,24 @@
         top: 60px;
         left: -60px;
     }
+
     .temContent {
-       top:100px;
-       display: block;
-       width: 70%;
-       text-align: center;
+        top: 100px;
+        display: block;
+        width: 70%;
+        text-align: center;
     }
+
     .teamContent-item {
         width: 100%;
         margin-top: 30px;
 
     }
-    .linkdin{
+
+    .linkdin {
         margin-top: 10px;
     }
+
     .linkdin > a {
         color: #fff;
         display: flex;
@@ -153,4 +171,63 @@
     }
 
 
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .team {
+        height: fit-content;
+        position: relative;
+        margin-bottom: 30vh;
+    }
+
+    .team-ring {
+        display: none;
+    }
+
+    .temContent, .temContent2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 100vw;
+
+        position: relative;
+        top: 20vh;
+        height: fit-content;
+    }
+
+    .teamContent-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itemTitle {
+        width: 80vw;
+        margin: 0;
+        height: fit-content;
+    }
+
+    .teamTitleText {
+        position: relative;
+        left: 8vw;
+        top: -2.6vh;
+        width: fit-content;
+        margin: 0;
+    }
+
+    .teamTitleImg {
+        position: relative;
+        top: 8vw;
+    }
+
+    .position {
+        width: fit-content;
+    }
+
+    .introduce {
+        width: 90%;
+        top: 0;
+    }
 }
