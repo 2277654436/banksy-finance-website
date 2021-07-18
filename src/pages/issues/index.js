@@ -61,11 +61,11 @@ function Problem() {
            {/* <div className="problemBac">
                 <img src={problemBac} data-aos="fade-in" />
             </div>*/}
-            <div className="features-title" data-aos="fade-right">
-                {/*<div className="features-title-img" data-aos="fade-right">
+            {/*<div className="features-title" data-aos="fade-right">
+                <div className="features-title-img" data-aos="fade-right">
                     <img src={featuresTitleImg} />
                     <img src={featuresTitleBac} />
-                </div>*/}
+                </div>
                 <div className="features-titleText" id="features">
                     <div>SOLUTIONS</div>
                     <div>
@@ -75,7 +75,7 @@ function Problem() {
                         <div>the NFT price confusion</div>
                     </div>
                 </div>
-            </div>
+            </div>*/}
         </div>
     )
 }

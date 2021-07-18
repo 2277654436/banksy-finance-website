@@ -80,3 +80,11 @@
     }
 
 }
+
+@media screen and (max-device-width: 600px) {
+
+    .App {
+        width: 100%;
+    }
+
+}
