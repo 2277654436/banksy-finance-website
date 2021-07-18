@@ -1,0 +1,39 @@
+.solutions {
+    width: 98vw;
+    height: 100vh;
+    margin-bottom: 20vh;
+    user-select: none;
+    background-image: url("../../image/solutions/dots.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: top 15vh left 0;
+}
+
+.solutions-area {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.solutions-title{
+    color: white;
+    font-size: 4vw;
+    position: relative;
+    top: 40vh;
+    font-family: 'SourceHanSansCN-Bold';
+    font-weight: 550;
+}
+
+.solutions-title-text {
+    color: #B2B2B2;
+    font-size: 1.4vw;
+    font-family: 'SourceHanSansCN-Normal';
+    font-weight: lighter;
+}
+
+.solutions-content-item-img > img {
+    width: 45vw;
+
+}

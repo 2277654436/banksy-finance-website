@@ -14,7 +14,8 @@ import AOS from 'aos';
 import RoadMap from "./pages/roadMap";
 import menuTwitter from './image/menuTwitter.png'
 import menuFly from './image/menuFly.png'
-import Benefits from "./pages/benefits";
+import Benefits from "./pages/benefits"
+import Solutions from "./pages/solutions"
 
 function scrollToPart(anchorName) {
     if (anchorName) {
@@ -67,7 +68,7 @@ function App() {
             <Top/>
             <Mission/>
             <Issues/>
-            {/*<FeaturesPage />*/}
+            <Solutions />
             <Kind/>
             <Upgrade/>
             <Benefits/>
