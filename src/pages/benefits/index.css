@@ -1,7 +1,6 @@
 .benefits {
     width: 100%;
-    position: absolute;
-    bottom: 10vh;
+    height: 100vh;
 }
 .benefits-title {
     color: #fff;
@@ -13,8 +12,10 @@
 .benefits-content {
     display: flex;
     justify-content: space-around;
-    padding: 0 10vw;
-    margin-top: 20vh;
+    position: relative;
+    top: 20vh;
+    width: 80vw;
+    margin: 0 auto;
 }
 .benefits-content-item {
     display: flex;

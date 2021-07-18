@@ -1,20 +1,18 @@
 .features {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    margin-bottom: 50vh;
+    margin-bottom: 60vh;
     font-family: 'AvenirNext';
     background-image: url("../../image/features/dots.png");
     background-size: 100% 100%;
     background-position: top 20vh right 5vw;
     position: relative;
 }
-.features-content {
-    width: 80%;
-    position: relative;
-    left: 30%;
-}
-
-
+/*.features-content {*/
+/*    width: 80%;*/
+/*    position: relative;*/
+/*    left: 30%;*/
+/*}*/
 
 .features-content-item-img {
 

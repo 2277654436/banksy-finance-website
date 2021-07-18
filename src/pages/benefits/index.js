@@ -3,19 +3,6 @@ import './index.css'
 import benefits1 from '../../image/banefits/benefits1.png'
 import benefits2 from '../../image/banefits/benefits2.png'
 import benefits3 from '../../image/banefits/benefits3.png'
-import benefitsButton from '../../image/banefits/benefitsButton.png'
-
-
-function scrollToPart(anchorName){
-    if (anchorName) {
-        let anchorElement = document.getElementById(anchorName);
-        if(anchorElement) {
-            anchorElement.scrollIntoView(
-                {behavior: 'smooth',block:'center'}
-            )
-        }
-    }
-}
 
 function Benefits() {
     return(
