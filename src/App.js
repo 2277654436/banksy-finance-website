@@ -1,85 +1,81 @@
 import './App.css';
-import React from 'react';
-import {Col, Row} from 'antd';
+import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import 'aos/dist/aos.css';
-import logo from './image/logo.png'
 import Top from "./pages/top";
 import Mission from "./pages/mission";
 import Issues from "./pages/issues";
-import Kind from "./pages/kind";
-import Upgrade from "./pages/upgrade";
+import Mapper from "./pages/mapper";
+import Features from "./pages/features";
 import Foot from "./pages/foot";
 import AOS from 'aos';
 import RoadMap from "./pages/roadMap";
-import menuTwitter from './image/menuTwitter.png'
-import menuFly from './image/menuFly.png'
 import Benefits from "./pages/benefits"
 import Solutions from "./pages/solutions"
+import ReactFullpage from '@fullpage/react-fullpage'
+import { useMediaQuery } from "react-responsive/src";
 import Team from "./pages/team";
-import Support from './pages/support'
 
-function scrollToPart(anchorName) {
-    if (anchorName) {
-        let anchorElement = document.getElementById(anchorName);
-        if (anchorElement) {
-            anchorElement.scrollIntoView(
-                {behavior: 'smooth', block: 'center'}
-            );
-        }
-    }
-}
 
-const Menu = () => {
-    return (
-        <div className="menu">
-            <Row>
-                <Col span={2}/>
-                <Col xxl={2} xl={2} lg={2} md={4} sm={4} xs={4}>
-                    <img className="logo" src={logo}/>
-                </Col>
-                <Col xxl={4} xl={4} lg={2} md={2} sm={6} xs={6}/>
-                <Col xxl={12} xl={12} lg={14} md={12} sm={8} xs={8}>
-                    <ul className="menuUl">
-                        <li><a onClick={() => scrollToPart('mission')}>Mission</a></li>
-                        <li><a onClick={() => scrollToPart('features')}>Features</a></li>
-                        <li><a onClick={() => scrollToPart('benefits')}>Benefits</a></li>
-                        <li><a onClick={() => scrollToPart('roadMap')}>Roadmap</a></li>
-                    </ul>
-                </Col>
-                <Col xxl={4} xl={4} lg={4} md={4} sm={4} xs={4}>
-                    <a href={"https://twitter.com/banksy_finance"} target="_blank"><img className="menuTwitter"
-                                                                                        src={menuTwitter}/></a>
-                    <a href={"https://t.me/Banskyfinance"} target='_blank'><img className="menuFly" src={menuFly}/></a>
-                </Col>
-            </Row>
-        </div>
-    )
-}
+const App = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
 
-function App() {
-    AOS.init({
-        duration: 1500,
-        easing: 'ease-in-sine',
-        delay: 200,
-    })
+  const [current, setCurrent] = useState(1)
 
-    return (
-        <div className="App">
-            <Menu/>
+  AOS.init({
+    duration: 500,
+    easing: 'ease-in-sine',
+    delay: 0,
+  })
+
+  return (
+    <div className="App">
+      {
+        isMobile ? (
+          <div>
             <Top/>
             <Mission/>
             <Issues/>
-            <Solutions />
-            <Kind/>
-            <Upgrade/>
-            <Support />
+            <Solutions/>
+            <Mapper/>
+            <Features/>
             <Benefits/>
             <RoadMap/>
-            <Team/>
+            <Team />
             <Foot/>
-        </div>
-    );
+          </div>
+        ) : (
+          <div>
+            <ReactFullpage
+              licenseKey="banksy-finance"
+              navigation={true}
+              scrollingSpeed={500}
+              parallax={true}
+              onLeave={(index, next) => {
+                setCurrent(next.index)
+              }}
+              render={() => (
+                <ReactFullpage.Wrapper>
+                  <Top/>
+                  <Mission active={current === 1}/>
+                  <Issues active={current === 2}/>
+                  <Solutions active={current === 3}/>
+                  <Mapper active={current === 4}/>
+                  <Features active={current === 5}/>
+                  <Benefits active={current === 6}/>
+                  <RoadMap active={current === 7}/>
+                  <Team active={current === 8}/>
+                  <Foot active={current === 9}/>
+                </ReactFullpage.Wrapper>
+              )}
+              afterRender={() => {
+              }}
+            />
+          </div>
+        )
+      }
+    </div>
+  );
 }
 
 export default App;

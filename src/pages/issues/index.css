@@ -1,58 +1,68 @@
-.problem {
+.issues {
     width: 100%;
     height: 100vh;
-    margin-bottom: 50vh;
     position: relative;
     font-family: 'AvenirNext';
 }
-.dangerImg {
+
+.issues-title-text {
+    position: relative;
+    z-index: 9999;
+}
+
+.issues-title-img {
     width: 14vw;
     position: relative;
-    top: 20vh;
-    left: 60vw;
+    bottom: 18vh;
+    right: 10.5vw;
+    z-index: 1;
 }
 
-
-
-.dangerImg > img {
+.issues-title-img > img {
     width: 100%;
+    z-index: 1;
 }
-.problem-title {
+
+.issues-title {
     position: absolute;
-    top: 12vw;
-    left: 70vw;
+    top: 7vw;
+    right: 10vw;
     color: white;
     font-size: 5vw;
     font-weight: bolder;
     text-align: right;
 }
-.problemContent {
+
+.issues-content {
     position: absolute;
     display: flex;
     flex-direction: column;
     left: 13vw;
-    top: 24vw;
+    top: 10vw;
 }
-.problemContent-item {
+
+.issues-content-item {
     display: flex;
     justify-content: space-between;
     width: 30vw;
     margin-top: 5vh;
 }
-.problemContent-item-serial > img {
+
+.issues-content-item-serial > img {
     width: 7vw;
     height: 15vh;
     margin-right: 2.6vw;
 }
 
-.problemContent-title-text {
+.issues-content-title-text {
     color: white;
     margin-top: 1.2vh;
     font-weight: 550;
     font-size: 2vw;
     font-family: 'SourceHanSansCN-Bold';
 }
-.problemContent-item-text {
+
+.issues-content-item-text {
     display: flex;
     flex-direction: column;
     color: #B2B2B2;
@@ -60,48 +70,56 @@
     font-family: 'SourceHanSansCN-Light';
 }
 
-.problemContent-details {
+.issues-content-details {
     width: 40vw;
     font-size: 1.6vw;
 }
-.problemBac {
+
+.issuesBac {
     width: 90rem;
     position: absolute;
     right: 0;
     top: 20rem;
 }
-.problemBac > img {
+
+.issuesBac > img {
     width: 100%;
 }
 
 @media screen and (max-width: 1150px) {
-    .problem-title{
+    .issues-title {
         font-size: 48px;
     }
-    .problemContent-item-text{
+
+    .issues-content-item-text {
         font-size: 18px;
     }
-    .features-titleText{
+
+    .features-titleText {
         font-size: 48px;
     }
 }
+
 @media screen and (max-width: 1000px) {
-    .problem {
+    .issues {
         width: 100%;
         height: 700px;
         position: relative;
         font-family: 'AvenirNext';
     }
-    .dangerImg {
+
+    .issues-title-img {
         width: 80px;
         position: absolute;
         right: 30%;
         top: -10px;
     }
-    .dangerImg > img {
+
+    .issues-title-img > img {
         width: 100%;
     }
-    .problem-title {
+
+    .issues-title {
         position: absolute;
         top: 55px;
         left: 50%;
@@ -110,55 +128,66 @@
         font-weight: bolder;
         text-align: left;
     }
-    .problemContent {
+
+    .issues-content {
         position: absolute;
         left: 5%;
         top: 150px;
     }
-    .problemContent-item {
+
+    .issues-content-item {
         display: flex;
         flex-direction: row;
         align-items: start;
     }
-    .problemContent-item-serial {
+
+    .issues-content-item-serial {
         color: #00CE01;
         font-size: 17px;
         font-weight: bolder;
     }
-    .problemContent-item-text {
+
+    .issues-content-item-text {
         color: #808080;
         font-size: 16px;
         margin-left: 10px;
     }
-    .problemBac {
+
+    .issuesBac {
         width: 70%;
         position: absolute;
         right: 0;
         top: 100px;
     }
-    .problemBac > img {
+
+    .issuesBac > img {
         width: 100%;
     }
+
     .features-title {
         position: absolute;
         top: 350px;
         left: 0;
     }
+
     .features-title-img {
         position: absolute;
     }
+
     .features-title-img > img:nth-of-type(1) {
         width: 80px;
         position: absolute;
         top: 100px;
         left: 90px;
     }
+
     .features-title-img > img:nth-of-type(2) {
         width: 300px;
         position: absolute;
         top: 0;
         left: 0;
     }
+
     .features-titleText {
         width: 250px;
         font-size: 28px;
@@ -168,53 +197,42 @@
         left: 90px;
     }
 }
-@media screen and (max-width: 750px){
-    .problemBac {
+
+@media screen and (max-width: 750px) {
+    .issuesBac {
         width: 90%;
     }
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
-    .problem {
+    .issues {
         width: 100%;
-        height: fit-content;
+        height: 100vh;
         position: relative;
     }
 
-    .dangerImg {
-        width: 16vw;
+    .issues-title {
         position: relative;
-        left: 55vw;
-    }
-
-    .problem-title-content {
-        position: relative;
-        width: 50vw;
-        top: 6vh;
-        left: 10vw;
-        margin: 0;
-    }
-
-    .problem-title {
-        top: 1vw;
-        left: 67vw;
+        top: 10vh;
+        left: 0;
+        margin: 0 auto;
+        width: fit-content;
         color: white;
-        font-size: 4.5vw;
-        font-weight: bolder;
-        text-align: right;
         font-family: 'SourceHanSansCN-Bold';
     }
-    .problemContent-item-serial {
-         display: flex;
-         justify-content: center;
-         align-self: center;
-     }
 
-    .problemContent-item-serial > img {
-        width: 8vw;
-        height: 5vh;
+    .issues-title-text {
+        font-size: 12vw;
     }
-    .problemContent {
+
+    .issues-title-img {
+        position: absolute;
+        top: -2vw;
+        left: -14vw;
+    }
+
+    .issues-content {
+        position: relative;
         display: flex;
         flex-direction: column;
         left: 8vw;
@@ -222,18 +240,28 @@
         top: 24vw;
     }
 
-    .problemContent-title-text {
+    .issues-content-item-serial {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .issues-content-item-serial > img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .issues-content-title-text {
         color: white;
         font-weight: 550;
-        font-size: 3.5vw;
+        font-size: 6vw;
         font-family: 'SourceHanSansCN-Bold';
     }
 
-    .problemContent-details {
+    .issues-content-details {
         position: relative;
-        width: 80vw;
-        font-size: 12px;
-        right: 8vw;
+        width: 70vw;
+        font-size: 4.5vw;
     }
 
 }

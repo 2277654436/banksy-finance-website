@@ -3,15 +3,13 @@ import './index.css'
 import footTwitter from '../../image/foot/footTwitter.png'
 import footGithub from '../../image/foot/footGithub.png'
 import footEmail from '../../image/foot/footEmail.png'
-import footMail from '../../image/foot/footMail.png'
 import footFly from '../../image/foot/footFly.png'
 import footLogo from '../../image/foot/footLogo.png'
-import footMessenger from '../../image/foot/footMessenger.png'
 
 
 function Foot() {
     return (
-        <div className="foot">
+        <div className="foot section">
            {/* <div className="foot-text">
                 The first AI-driven NFT pool-based lending platform
                 to lead a revolution of the NFT market.
