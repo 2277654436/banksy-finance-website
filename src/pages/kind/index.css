@@ -23,13 +23,13 @@
     font-size: 4.4vw;
     font-weight: bolder;
     position: relative;
-    top: 5vh;
+    top: 15vh;
     text-align: right;
 }
 
 .kind-title-text > div:nth-of-type(2) {
-    color: #fff;
-    font-size: 1.2vw;
+    color: #B2B2B2;
+    font-size: 1.4vw;
     position: relative;
     top: 20vh;
     text-align: right;

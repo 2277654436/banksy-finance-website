@@ -4,7 +4,6 @@
     margin-bottom: 30vh;
     background: url("../../image/mission/missionBac.png") no-repeat center;
     background-size: 100% 100%;
-    font-family: 'AvenirNext';
     position: relative;
 }
 
@@ -29,17 +28,20 @@
     position: absolute;
     top: 22vh;
     left: 3.6vw;
+    font-family: SourceHanSansCN-Bold;
+
 }
 
 .mission-title-text > div:nth-of-type(1) {
     font-size: 4.5vw;
     color: #fff;
+    font-weight: 600;
 }
 
 .mission-title-text > div:nth-of-type(2) {
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     font-family: 'SourceHanSansCN-Light';
-    line-height: 4vh;
+    line-height: 5vh;
     color: #808080;
     margin-top: 5vh;
 }

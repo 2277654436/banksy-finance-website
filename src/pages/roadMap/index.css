@@ -1,6 +1,6 @@
 .roadMap {
     width: 98vw;
-    height: 100vh;
+    height: 140vh;
     background-image: url("../../image/roadmap/mapBac.png");
     background-repeat: no-repeat;
     background-size: 85vw;
@@ -64,11 +64,6 @@
     left: 66vw;
 }
 
-@media screen and (max-width: 1400px) {
-    .roadMap {
-        height: 1700px;
-    }
-}
 
 @media screen and (max-width: 1150px) {
     .roadMapTitle {

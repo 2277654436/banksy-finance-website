@@ -18,7 +18,7 @@ function Upgrade() {
         <div>MAIN FEATURES</div>
       </div>
 
-      <div className="features-content" data-aos="fade-up">
+      <div className="features-content" >
         <div className="features-item">
           <div className="features-item-img">
             <img src={Features1}/>

@@ -17,6 +17,7 @@ import menuFly from './image/menuFly.png'
 import Benefits from "./pages/benefits"
 import Solutions from "./pages/solutions"
 import Team from "./pages/team";
+import Support from './pages/support'
 
 function scrollToPart(anchorName) {
     if (anchorName) {
@@ -72,6 +73,7 @@ function App() {
             <Solutions />
             <Kind/>
             <Upgrade/>
+            <Support />
             <Benefits/>
             <RoadMap/>
             <Team/>
