@@ -86,6 +86,7 @@
     font-family: SourceHanSansCN-Bold;
     font-weight: 550;
     top: 12vh;
+    width: fit-content;
     left: 15%;
 }
 

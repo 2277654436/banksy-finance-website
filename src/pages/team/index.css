@@ -34,18 +34,20 @@
     margin-left: 40%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     flex-wrap: wrap;
+    margin-bottom: 2.5vh;
 }
 
 .temContent2 {
-    top: 35vh;
+    top: 5vh;
     width: 61.5vw;
     margin-left: 22vw;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     flex-wrap: wrap;
+
 }
 
 .teamContent-item {

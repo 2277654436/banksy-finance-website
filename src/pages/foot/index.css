@@ -1,5 +1,5 @@
 .foot {
-    height: 50vh;
+    height: 70vh;
     font-family: 'AvenirNext';
 }
 .foot-text {
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: calc((100% - 30rem) / 2);
-    margin-top: 1rem;
+    margin-top: 20vh;
 }
 .footContent-item {
     z-index: 9999;
@@ -37,6 +37,7 @@
     text-align: center;
     color: #8E8E8E;
     margin-top: 2rem;
+    font-family: SourceHanSansCN-Light;
 }
 @media screen and (max-width: 1000px){
     .foot-text{
