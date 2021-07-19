@@ -14,10 +14,10 @@ export const Support = () => {
                 <div>SUPPORT A VARIETY OF</div>
                 <div>NFTS POOL-BASE LENDING</div>
             </div>
-            <div className="right-area" >
-                <img src={Image3} />
-                <img src={Image2} />
-                <img src={Image1} />
+            <div className="right-area1" >
+                <img src={Image3} className="a" />
+                <img src={Image2} className="b"  />
+                <img src={Image1} className="c" />
             </div>
             <img src={SpinImg} className="spin-img" />
 
