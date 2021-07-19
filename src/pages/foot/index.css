@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: calc((100% - 30rem) / 2);
-    margin-top: 20vh;
+    margin-top: 50vh;
 }
 .footContent-item {
     z-index: 9999;

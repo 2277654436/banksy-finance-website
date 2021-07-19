@@ -3,14 +3,15 @@
     height: 80vh;
     /*background: url("../../image/team/teamBac.png") no-repeat center;
     background-size: 100% 100%;*/
-    font-family: 'AvenirNext';
+    font-family: 'SourceHanSansCN-Normal';
     position: relative;
     bottom: 0;
 }
 
 .teamTitle {
-    position: absolute;
+    position: relative;
     left: 12vw;
+    width: fit-content;
 }
 
 .teamTitleImg {
@@ -25,8 +26,9 @@
     color: #fff;
     font-size: 4vw;
     position: absolute;
-    top: 5vh;
+    bottom: 10vh;
     left: 3vw;
+    font-weight: 550;
 }
 
 .temContent {
@@ -76,9 +78,8 @@
     color: #808080;
     width: 25vw;
     font-family: SourceHanSansCN-Light;
-
+    font-size: 1.2vw;
     top: 8vh;
-    font-size: 1vw;
 
 }
 

@@ -52,6 +52,8 @@
     font-size: 2vw;
     font-weight: bolder;
     font-family: 'SourceHanSansCN-Bold';
+    width: fit-content;
+    margin-bottom: 2vh;
 }
 
 .benefitsItem-content-text {
