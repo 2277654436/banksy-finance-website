@@ -1,20 +1,23 @@
 import React from "react";
 import './index.css'
-import Team from "../team";
 import RoadMapImg from '../../image/roadmap/roadmapImg.png'
+import clsx from "clsx";
 
-function RoadMap() {
+function RoadMap({ active }) {
   return (
-    <div className="roadMap">
-      <div className="roadMapMain" >
-        <div className="roadMapTitle" data-aos="fade-right">
-          ROADMAP
-        </div>
-
-        <div className="roadmap-content" data-aos="zoom-in">
-          <img src={RoadMapImg}  alt="" id="roadMap"/>
-        </div>
+    <div className="roadmap section">
+      <div
+        className={clsx('roadmap-title', active && 'aos-animate')}
+        data-aos="zoom-in"
+      >
+        ROADMAP
       </div>
+
+      <img
+        src={RoadMapImg}
+        alt=""
+        className={clsx('roadmap-img')}
+      />
     </div>
   )
 }

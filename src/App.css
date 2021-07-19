@@ -1,37 +1,8 @@
-
 .App {
     background: #000000;
-}
-.menu {
-    font-family: 'AvenirNext';
-    height: 13vh;
-    line-height: 14rem;
-    color: #fff;
-    font-size: 1vw;
-    font-weight: bold;
-    z-index: 9999;
+    overflow-x: hidden;
 }
 
-.logo {
-    width: 10.5vw;
-}
-.menuUl > li {
-    list-style: none;
-    float: left;
-    margin-left: 5rem;
-    cursor: pointer;
-    z-index: 9999;
-}
-.menuUl > li > a {
-    color: #fff;
-}
-.menuTwitter {
-    width: 2.5rem;
-}
-.menuFly {
-    width: 2.5rem;
-    margin-left: 3rem;
-}
 @media screen and (max-width: 1150px) {
     .menu{
         font-size: 16px;
@@ -78,13 +49,10 @@
         width: 15px;
         margin-left: 20px;
     }
-
 }
 
 @media screen and (max-device-width: 600px) {
-
     .App {
         width: 100%;
     }
-
 }

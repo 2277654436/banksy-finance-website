@@ -1,47 +1,48 @@
 .solutions {
     width: 98vw;
-    height: 100vh;
-    margin-bottom: 20vh;
+    height: 100%vh;
     user-select: none;
     background-image: url("../../image/solutions/dots.png");
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: top 15vh left 0;
-}
-
-.solutions-area {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: 80vw;
-    margin: 0 auto;
+    color: white;
 }
 
 .solutions-title {
     color: white;
     font-size: 4vw;
-    position: relative;
-    top: 40vh;
     font-family: 'SourceHanSansCN-Bold';
     font-weight: 550;
+    height: fit-content;
 }
 
-.solutions-title-text {
+.solutions-title, .solutions-content {
+    position: relative;
+    top: 30vh;
+    left: 10vw;
+}
+
+.solutions-content {
+    width: 40vw;
     color: #B2B2B2;
     font-size: 1.4vw;
     font-family: 'SourceHanSansCN-Normal';
     font-weight: lighter;
 }
 
-.solutions-content-item-img > img {
+.solutions-img {
+    position: absolute;
+    right: 7vw;
+    top: 10vh;
     width: 45vw;
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
     .solutions {
         width: 90vw;
-        margin: 0 auto;
-        height: 40vh;
+        margin: 10vh auto;
+        height: 80vh;
         user-select: none;
         background-image: url("../../image/solutions/dots.png");
         background-repeat: no-repeat;
@@ -49,30 +50,29 @@
         background-position: top 0 left 0;
     }
 
-    .solutions-content-item-img > img {
-        width: 45vw;
+    .solutions-title, .solutions-content {
         position: relative;
-        bottom: 3.5vh;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        width: fit-content;
     }
 
     .solutions-title {
-        color: white;
-        font-size: 4vw;
-        position: relative;
-        top: 8vh;
-        font-family: 'SourceHanSansCN-Bold';
-        font-weight: 550;
+        font-size: 12vw;
+        margin-bottom: 4vh;
     }
 
-    .solutions-title-text {
-        position: absolute;
-        width:80vw;
-        color: #B2B2B2;
-        font-size: 12px;
-        transform: scale(0.8) !important;
-        top: 5vh;
-        transform-origin: 0 0;
-        font-family: 'SourceHanSansCN-Normal';
+    .solutions-content {
+        width: 85vw;
+        font-size: 5.5vw;
+    }
+
+    .solutions-img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90vw;
     }
 
 }

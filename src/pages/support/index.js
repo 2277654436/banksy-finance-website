@@ -1,28 +1,29 @@
-import Arrow from "../../image/upgrade/arrow.png";
-import Image1 from "../../image/upgrade/1.png";
-import Image2 from "../../image/upgrade/2.png";
-import Image3 from "../../image/upgrade/3.png";
-import SpinImg from "../../image/upgrade/spinImg.png";
+import React from "react"
+import Arrow from "../../image/support/arrow.png";
+import Image1 from "../../image/support/1.png";
+import Image2 from "../../image/support/2.png";
+import Image3 from "../../image/support/3.png";
+import SpinImg from "../../image/features/spinImg.png";
+import './index.css'
 
-const support = () => {
-    return (
-        <div className="support">
-            <div className="support-title" data-aos="fade-right">
-                <img src={Arrow}/>
-                <div>SUPPORT A VARIETY OF</div>
-                <div>NFTS POOL-BASE LENDING</div>
-            </div>
+export const Support = () => {
+  return (
+    <div className="support" id="support">
+      <div className="support-title">
+        <img src={Arrow}/>
+        <div>SUPPORT A VARIETY OF</div>
+        <div>NFTS POOL-BASE LENDING</div>
+      </div>
+      <div className="right-area1">
+        <img src={Image3} className="a"/>
+        <img src={Image2} className="b"/>
+        <img src={Image1} className="c"/>
+      </div>
+      <img src={SpinImg} className="spin-img"/>
 
-            <div className="right-area" data-aos="zoom-in">
-                <img src={Image1}/>
-                <img src={Image2}/>
-                <img src={Image3}/>
-                <div className="kindBacBall">
-                    <img src={SpinImg}/>
-                </div>
-            </div>
-        </div>
-    )
+
+    </div>
+  )
 }
 
-export default support
+export default Support

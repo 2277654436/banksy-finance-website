@@ -3,34 +3,31 @@ import './index.css'
 import missionTitleImg from '../../image/mission/missionTitleImg.png'
 import missionBG from '../../image/mission/missionBG.png'
 import missionRing from '../../image/mission/mission-ring.png'
+import clsx from "clsx";
 
-function Mission() {
-    return (
-        <div className="mission" id="mission">
-            <div className="mission-title">
-                <div className="mission-titleImg" data-aos="fade-right">
-                    <img src={missionTitleImg} />
-                </div>
-                <div className="mission-title-text" data-aos="fade-up">
-                    <div>MISSION</div>
-                    <div>
-                        Provide a safe and reliable lending environment for
-                        the NFT market, solve the problem of NFT illiquidity,
-                        and fully release the value of NFT
-                    </div>
-                </div>
-            </div>
+const Mission = () => {
+  return (
+    <div className="mission section" id="mission">
 
-            <div className="missionImg">
-                <img src={missionBG} data-aos="zoom-in" />
-            </div>
-
-            <div className="ring" >
-                <img src={ missionRing }/>
-            </div>
-
+      <div className="mission-title">
+        <div className="mission-title-text">
+          MISSION
         </div>
-    )
+        <img src={missionTitleImg} className="mission-title-img"/>
+      </div>
+      <div className="mission-content">
+        Provide a safe and reliable lending environment for
+        the NFT market, solve the problem of NFT liquidity,
+        and fully release the value of NFT
+      </div>
+
+      <div className={clsx('mission-img')}>
+        <img src={missionBG}/>
+      </div>
+
+      <img src={missionRing} className="ring"/>
+    </div>
+  )
 }
 
 export default Mission

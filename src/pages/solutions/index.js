@@ -1,31 +1,26 @@
 import React from "react";
 import FeaturesBG from "../../image/solutions/features-bg.png";
-import'./index.css'
+import './index.css'
+import clsx from "clsx";
 
-export const Solutions = () => {
-    return (
-        <div className="solutions">
-            < div className="solutions-area">
-                <div className="solutions-title" data-aos="fade-right">
-                    <div>SOLUTIONS</div>
-                    <div className="solutions-title-text" id="solutions" data-aos="fade-up">
-                        <div>
-                            <div>The NAK protocol is a complete solution</div>
-                            <div>driven by AI technology,</div>
-                            <div>which can effectively solve the lending risk from</div>
-                            <div>the NFT price confusion</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="solutions-content" data-aos="fade-up">
-                    <div className="solutions-content-item-img">
-                        <img src={FeaturesBG}/>
-                    </div>
-                </div>
-            </div>
-
+export const Solutions = ({ active }) => {
+  return (
+    <div className="solutions section">
+      <div style={{ height: '100vh' }}>
+        <div className={clsx('solutions-title', active && 'aos-animate')} data-aos="fade-right">
+          SOLUTIONS
         </div>
-    )
+        <div className="solutions-content">
+          The NAK protocol is a complete solution
+          driven by AI technology,
+          which can effectively solve the lending risk from
+          the NFT price confusion
+        </div>
+
+        <img src={FeaturesBG} className={clsx('solutions-img', active && 'aos-animate')} data-aos="fade-left"/>
+      </div>
+    </div>
+  )
 }
 
 export default Solutions

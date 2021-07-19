@@ -1,0 +1,72 @@
+.menu {
+    font-family: 'AvenirNext';
+    height: 80px;
+    color: #fff;
+    font-size: 1vw;
+    font-weight: bold;
+    z-index: 9999;
+    width: 100vw;
+
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 30px;
+}
+
+.logo {
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-items-container {
+    height: 100%;
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: space-between;
+    margin:  0;
+}
+
+.menu-items-container > li {
+    list-style: none;
+    float: left;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.menu-items-container > li > a {
+    color: #fff;
+}
+
+.links-container {
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+.link-twitter {
+    height: 2.5vh;
+}
+.link-tg {
+    height: 2.5vh;
+    margin-left: 3rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .menu {
+        padding: 4px 8px 4px 4px;
+        height: 50px;
+    }
+
+    .logo {
+        height: 100%;
+        object-fit: contain;
+        /*width: 45%;*/
+    }
+
+    .menu-items-container {
+        display: none;
+    }
+}
