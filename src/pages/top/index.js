@@ -1,66 +1,76 @@
 import React from "react";
 import './index.css'
-import MainBG from '../../image/top/topBG.png'
+import MainBG2 from '../../image/top/topImg.png'
+import logo from "../../image/logo.png";
+import menuTwitter from "../../image/menuTwitter.png";
+import menuFly from "../../image/menuFly.png";
 
-import Icon1 from '../../image/top/icon1.png'
-import Icon2 from '../../image/top/icon2.png'
-import Icon3 from '../../image/top/icon3.png'
-import Icon4 from '../../image/top/icon4.png'
-import Icon5 from '../../image/top/icon5.png'
-import Icon6 from '../../image/top/icon6.png'
-import Icon7 from '../../image/top/icon7.png'
-import Icon8 from '../../image/top/icon8.png'
-import Icon9 from '../../image/top/icon9.png'
+import '../../menu.css'
 
+function scrollToPart(anchorName) {
+  if (anchorName) {
+    let anchorElement = document.getElementById(anchorName);
+    if (anchorElement) {
+      anchorElement.scrollIntoView(
+        { behavior: 'smooth', block: 'center' }
+      );
+    }
+  }
+}
 
-function Top() {
-    return (
-        <div className="top">
-            {/*<div className="top-title" id="scc1">
-        The First Decentralized NFT Financial Hub
-      </div>*/}
-            <div className="top-content" data-aos="fade-right">
-                <div className="top-content-child">
-                    NFT Mortgage
-                </div>
-                <div className="top-content-child">
-                    Lending Hub
-                </div>
-            </div>
-            <div className="topBac" data-aos="fade-left">
-                <img src={MainBG}/>
-            </div>
-            <div className="top-foot" data-aos="fade-up">
-                <div>The first AI-driven NFT pool-based</div>
-                <div>lending platform to lead a revolution</div>
-                <div>of the NFT market</div>
-            </div>
-            {/*<div className="topBacStart">
-        <img src={virtualland}/>
-        <img src={solible}/>
-        <img src={cryptokitties}/>
-        <img src={raible}/>
-        <img src={opensea}/>
-      </div>*/}
-            {/*<div className="explore-button">
-                <div className="button-border">
-                    Explore
-                </div>
-            </div>
-            <div className="top-icon-bg">
-                <img src={Icon1} alt=""/>
-                <img src={Icon2} alt=""/>
-                <img src={Icon3} alt=""/>
-                <img src={Icon4} alt=""/>
-                <img src={Icon5} alt=""/>
-                <img src={Icon6} alt=""/>
-                <img src={Icon7} alt=""/>
-                <img src={Icon8} alt=""/>
-                <img src={Icon9} alt=""/>
-            </div>*/}
+const Navbar = () => {
+  return (
+    <div className="menu">
 
+      <img className="logo" src={logo}/>
+
+      <ul className="menu-items-container">
+        <li><a onClick={() => scrollToPart('mission')}>Mission</a></li>
+        <li><a onClick={() => scrollToPart('features')}>Features</a></li>
+        <li><a onClick={() => scrollToPart('benefits')}>Benefits</a></li>
+        <li><a onClick={() => scrollToPart('roadMap')}>Roadmap</a></li>
+      </ul>
+
+      <div className="links-container">
+        <a href={"https://twitter.com/banksy_finance"} target="_blank">
+          <img className="link-twitter" src={menuTwitter}/>
+        </a>
+        <a href={"https://t.me/Banskyfinance"} target='_blank'>
+          <img className="link-tg" src={menuFly}/>
+        </a>
+      </div>
+
+    </div>
+  )
+}
+
+const Top = () => {
+  return (
+    <div className="top section">
+      <Navbar/>
+      <div className="top-title">
+        <div className="top-title-child">
+          NFT Pool-Based
         </div>
-    )
+        <div className="top-title-child">
+          Lending Hub
+        </div>
+      </div>
+      <div className="top-img">
+        <img src={MainBG2}/>
+      </div>
+      <div className="top-content">
+        <div>The first AI-driven NFT pool-based</div>
+        <div>lending platform to lead a revolution</div>
+        <div>of the NFT market</div>
+      </div>
+      <div className="explore-btn">
+        <a href={"https://app.banksy.finance/#/"} target='_blank' style={{ color: 'white' }}>
+          Explore
+        </a>
+      </div>
+    </div>
+  )
 }
 
 export default Top

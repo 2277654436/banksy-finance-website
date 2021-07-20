@@ -1,184 +1,129 @@
 .mission {
     width: 100%;
-    height: 100rem;
+    height: 100vh;
     background: url("../../image/mission/missionBac.png") no-repeat center;
     background-size: 100% 100%;
-    font-family: 'AvenirNext';
     position: relative;
 }
+
 .mission-title {
     position: absolute;
-    left: 10%;
-    top: 30rem;
+    left: 10vw;
+    top: 11vh;
 }
-.mission-titleImg {
-    width: 40rem;
+
+.mission-title-img {
     position: relative;
+    top: 10vh;
+    width: 6.6vw;
 }
-.mission-titleImg > img:nth-of-type(1) {
-    position: absolute;
-    top: 18rem;
-    left: 13rem;
-    width: 8rem;
-}
-.mission-titleImg > img:nth-of-type(2) {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
+
 .mission-title-text {
-    width: 40rem;
+    width: 31vw;
     position: absolute;
-    top: 25rem;
-    left: 21%;
-}
-.mission-title-text > div:nth-of-type(1) {
-    font-size: 6.4rem;
+    top: 22vh;
+    left: 3.6vw;
+    font-family: SourceHanSansCN-Bold;
+    font-size: 4.5vw;
     color: #fff;
+    font-weight: 600;
+    z-index: 9;
 }
-.mission-title-text > div:nth-of-type(2) {
-    font-size: 1.6rem;
+
+.mission-content {
+    position: relative;
+    top: 12vh;
+    left: 9.6vw;
+    width: 31vw;
+    font-size: 1.6vw;
     font-family: 'SourceHanSansCN-Light';
-    line-height: 4rem;
+    line-height: 5vh;
     color: #808080;
-    margin-top: 6.1rem;
+    margin-top: 5vh;
 }
-.mission-title-text > div:nth-of-type(3) {
-    font-size: 2.6rem;
-    color: #808080;
-    margin-top: 4rem;
-}
-.missionImg {
-    width: 70rem;
-    height: 70rem;
-   /* background: url("../../image/mission/missionImg.png") no-repeat;*/
+
+.mission-img {
+    width: 47vw;
+    height: 47vw;
     background-size: 100% 100%;
     position: absolute;
-    right: 10%;
-    top: 30rem;
+    right: 4vw;
+    top: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.missionImg > img {
+
+.mission-img > img {
     width: 80%;
-}
-
-.ring >img {
-    transform: rotate(-6deg);
-    position: absolute;
-    top: 80%;
-    left: 35%;
-    height: 100%;
-}
-
-@media screen and (max-width: 1150px) {
-    .mission-title-text > div:nth-of-type(1) {
-        font-size: 48px;
-
-    }
-    .mission-title-text > div:nth-of-type(2) {
-        font-size: 18px;
-    }
-    .mission-title-text{
-        left: 5%;
-    }
-    .missionImg {
-        width: 480px;
-        height: 580px;
-        right: 5%;
-
-    }
-}
-@media screen and (max-width: 1000px) {
-    .mission {
-        width: 100%;
-        height: 600px;
-        background: url("../../image/mission/missionBac.png") no-repeat center;
-        background-size: 100% 100%;
-        font-family: 'AvenirNext';
-        position: relative;
-    }
-    .mission-title {
-        position: absolute;
-        left: 5%;
-        top: 0;
-    }
-    .mission-titleImg {
-        width: 200px;
-        position: relative;
-    }
-    .mission-titleImg > img:nth-of-type(1) {
-        position: absolute;
-        top: 90px;
-        left: 60px;
-        width: 40px;
-    }
-    .mission-titleImg > img:nth-of-type(2) {
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-    .mission-title-text {
-        width: 300px;
-        position: absolute;
-        top: 120px;
-        left: 21%;
-    }
-    .mission-title-text > div:nth-of-type(1) {
-        font-size: 28px;
-        color: #fff;
-    }
-    .mission-title-text > div:nth-of-type(2) {
-        font-size: 16px;
-        color: #808080;
-        margin-top: 61px;
-    }
-    .mission-title-text > div:nth-of-type(3) {
-        font-size: 16px;
-        color: #808080;
-        margin-top: 40px;
-    }
-    .missionImg {
-        width: 330px;
-        height: 243px;
-        /*
-        background: url("../../image/mission/missionImg.png") no-repeat;
-        */
-        background-size: 70%;
-        background-position: top 50% left 50%;
-        position: absolute;
-        right: calc((100% - 600px) / 2);
-        top: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .missionImg > img {
-        width: 70%;
-    }
-
-}
-@media screen and (max-width: 750px) {
-    .mission{
-        height: 900px;
-    }
-    .missionImg{
-        right: calc((100% - 330px) / 2);
-        top: 500px;
-    }
-}
-
-.missionImg {
-
-    animation: spin 10s infinite linear;
+    animation: spin 30s infinite linear;
     z-index: 5;
 }
+
+.ring {
+    height: 90vh;
+    transform: rotate(-6deg);
+    position: absolute;
+    top: 4vh;
+    right: 5vw;
+    z-index: 5;
+}
+
 @keyframes spin {
     to {
         transform: rotate(1turn);
     }
 }
-.missionImg > img {
-    width: 100%;
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .mission {
+        height: 120vh;
+    }
+
+    .mission-title {
+        position: relative;
+        top: 10vh;
+        left: 0;
+        margin: 0 10vw;
+        width: 20vw;
+        height: 24vw;
+    }
+
+    .mission-title-text {
+        font-size: 9vw;
+
+        position: absolute;
+        top: 5vw;
+        left: 5vw;
+    }
+
+    .mission-title-img {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 9vw;
+    }
+
+    .mission-content {
+        position: relative;
+        width: 80%;
+        left: 0;
+        top: 15vh;
+        margin: 0 auto;
+        line-height: 12vw;
+        font-size: 6vw;
+    }
+
+    .mission-img {
+        top: 150vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .mission-img > img {
+        animation: none;
+        width: 100vw;
+    }
+
 }

@@ -1,39 +1,63 @@
 import React from "react";
 import './index.css'
-import { Row, Col } from 'antd'
-import SERVICES from '../../image/features/SERVICES.png'
-import ORACLE from '../../image/features/ORACLE.png'
-import ARTWORKS from '../../image/features/ARTWORKS.png'
-import DETECTION from '../../image/features/DETECTION.png'
-import INFRASTRUCTURE from '../../image/features/INFRASTRUCTURE.png'
-import CASES from  '../../image/features/CASES.png'
-import FEES from '../../image/features/FEES.png'
-import ROYALTIES from '../../image/features/ROYALTIES.png'
-import SERVICESSolid from '../../image/features/SERVICESSolid.png'
-import ORACLESolid from '../../image/features/ORACLESolid.png'
-import ARTWORKSSolid from '../../image/features/ARTWORKSSolid.png'
-import DETECTIONSolid from '../../image/features/DETECTIONSolid.png'
-import INFRASTRUCTURESolid from '../../image/features/INFRASTRUCTURESolid.png'
-import CASESSolid from  '../../image/features/CASESSolid.png'
-import FEESSolid from '../../image/features/FEESSolid.png'
-import ROYALTIESSolid from '../../image/features/ROYALTIESSolid.png'
-import FeaturesBG from '../../image/features/features-bg.png'
-import Dots from '../../image/features/dots.png'
+import featuresTextBG from '../../image/features/features-text-bg.png'
+import Features1 from '../../image/features/features-img1.png'
+import Features2 from '../../image/features/features-img2.png'
+import Features3 from '../../image/features/features-img3.png'
+import Features4 from '../../image/features/features-img4.png'
+import clsx from "clsx";
 
+function Features({ active }) {
+  return (
+    <div className="features section">
+      <div className="features-title">
+        <img src={featuresTextBG} alt=""/>
+        <div>MAIN FEATURES</div>
+      </div>
 
-
-function FeaturesPage() {
-    return (
-        <div className="features">
-            <div className="features-content" data-aos="fade-up">
-                <div className="features-content-item-img">
-                    <img src={FeaturesBG} />
-                    <img src={Dots} style={{marginTop:'20%'}} />
-                </div>
-
-            </div>
+      <div className={clsx('features-content', active && 'aos-animate')} data-aos="flip-down">
+        <div className="features-item">
+          <div className="features-item-img">
+            <img src={Features1}/>
+          </div>
+          <div className="features-item-text">
+            <div>Safe and convenient</div>
+            <div>Secure users' assets, flexible and convenient lending</div>
+          </div>
         </div>
-    )
+        <div className="features-item">
+          <div className="features-item-img">
+            <img src={Features2}/>
+          </div>
+          <div className="features-item-text">
+            <div>Support multi-chain</div>
+            <div>Support multi-chain such as ETH, BSC, HECO, Solana, DOT, etc.</div>
+          </div>
+        </div>
+        <div className="features-item">
+          <div className="features-item-img">
+            <img src={Features3}/>
+          </div>
+          <div className="features-item-text">
+            <div>Combine with Defi</div>
+            <div>
+              Integrate Defi to increase NFT liquidity
+            </div>
+          </div>
+        </div>
+        <div className="features-item">
+          <div className="features-item-img">
+            <img src={Features4}/>
+          </div>
+          <div className="features-item-text">
+            <div>NAK Protocol</div>
+            <div>Service for the whole industry to a healthier and faster development</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  )
 }
 
-export default FeaturesPage
+export default Features

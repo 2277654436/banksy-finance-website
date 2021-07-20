@@ -1,0 +1,78 @@
+.solutions {
+    width: 98vw;
+    height: 100%vh;
+    user-select: none;
+    background-image: url("../../image/solutions/dots.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: top 15vh left 0;
+    color: white;
+}
+
+.solutions-title {
+    color: white;
+    font-size: 4vw;
+    font-family: 'SourceHanSansCN-Bold';
+    font-weight: 550;
+    height: fit-content;
+}
+
+.solutions-title, .solutions-content {
+    position: relative;
+    top: 30vh;
+    left: 10vw;
+}
+
+.solutions-content {
+    width: 40vw;
+    color: #B2B2B2;
+    font-size: 1.4vw;
+    font-family: 'SourceHanSansCN-Normal';
+    font-weight: lighter;
+}
+
+.solutions-img {
+    position: absolute;
+    right: 7vw;
+    top: 10vh;
+    width: 45vw;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .solutions {
+        width: 90vw;
+        margin: 10vh auto;
+        height: 80vh;
+        user-select: none;
+        background-image: url("../../image/solutions/dots.png");
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+        background-position: top 0 left 0;
+    }
+
+    .solutions-title, .solutions-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .solutions-title {
+        font-size: 12vw;
+        margin-bottom: 4vh;
+    }
+
+    .solutions-content {
+        width: 85vw;
+        font-size: 5.5vw;
+    }
+
+    .solutions-img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90vw;
+    }
+
+}

@@ -1,144 +1,199 @@
 .team {
     width: 100%;
-    height: 80rem;
-    background: url("../../image/team/teamBac.png") no-repeat center;
-    background-size: 100% 100%;
-    font-family: 'AvenirNext';
-    position: absolute;
-    bottom: 0;
+    height: 100vh;
+    font-family: 'SourceHanSansCN-Normal';
+    position: relative;
 }
-.teamTitle {
-    position: absolute;
-    left: 20%;
+
+.team-title {
+    position: relative;
+    left: 12vw;
+    top: 10vh;
+    width: fit-content;
 }
-.teamTitleImg {
-    width: 15rem;
+
+.team-title-img {
+    width: 10vw;
 }
-.teamTitleImg > img {
+
+.team-title-img > img {
     width: 100%;
 }
-.teamTitleText {
+
+.team-title-text {
     color: #fff;
-    font-size: 6.4rem;
+    font-size: 4vw;
     position: absolute;
-    top: 6.5rem;
-    left: -13rem;
+    bottom: 10vh;
+    left: 3vw;
+    font-weight: 550;
 }
-.temContent {
+
+.team-row-container {
+    position: relative;
+    top: -12vh;
+}
+
+.team-row {
     width: 45%;
     margin-left: 40%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     flex-wrap: wrap;
+    margin-bottom: 2.5vh;
 }
 
+.team-row2 {
+    top: 5vh;
+    width: 61.5vw;
+    margin-left: 22vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
 
-.teamContent-item {
-    width: 20%;
+}
+
+.team-item {
+    width: 10vw;
     font-family: SourceHanSansCN-Light;
     z-index: 2;
 }
 
-
-.teamContent-img {
-    height: 20rem;
+.team-item-img {
+    height: 23vh;
 }
-.teamContent-img > img {
+
+.team-item-img > img {
     height: 100%;
 }
+
 .position {
     color: #808080;
-    margin-top: 3rem;
+    margin-top: 1vh;
+    font-size: 1vw;
+    width: 120%;
 }
 
 .introduce {
     position: relative;
     color: #808080;
-    width: 340px;
+    width: 25vw;
     font-family: SourceHanSansCN-Light;
-
-    top: 12rem;
-    right: 40%;
-    font-size: 1.8rem;
+    font-size: 1.2vw;
+    top: 8vh;
 
 }
-.teamItem-name {
+
+.team-item-name {
     color: #808080;
+    font-size: 1vw;
 }
-.linkdin {
+
+.linkin {
     color: #fff;
     margin-top: 1rem;
     cursor: pointer;
 }
-.linkdin > a {
+
+.linkin > a {
     color: #fff;
     display: flex;
     align-items: center;
 }
-.linkdin > a > img {
+
+.linkin > a > img {
     width: 2rem;
     margin-right: 0.5rem;
 }
-.linkdin > a:hover {
+
+.linkin > a:hover {
     color: #fff;
 }
 
 .team-ring {
-    width: 100rem;
-    height: 100rem;
+    width: 100vh;
+    height: 100vh;
     background: url("../../image/team/team-ring.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
-    bottom: -70rem;
+    bottom: -40vh;
     transform: rotate(-5deg);
     z-index: 1;
 
 }
-@media screen and (max-width: 1150px){
-    .teamTitleText {
 
-        font-size: 48px;
-        position: absolute;
-        top: 80px;
-        left: -90px;
-    }
-}
-@media screen and (max-width: 1000px){
+@media screen and (min-width: 300px) and (max-width: 1000px) {
     .team {
-        height: 1350px;
-        background: none;
+        height: fit-content;
+        position: relative;
+        margin-bottom: 30vh;
     }
-    .teamTitleImg {
-        width: 100px;
-    }
-    .teamTitleText {
-        width: 100%;
-        color: #fff;
-        font-size: 28px;
-        position: absolute;
-        top: 60px;
-        left: -60px;
-    }
-    .temContent{
-       top:100px;
-       display: block;
-       width: 70%;
-       text-align: center;
-    }
-    .teamContent-item {
-        width: 100%;
-        margin-top: 30px;
 
+    .team-ring {
+        display: none;
     }
-    .linkdin{
-        margin-top: 10px;
-    }
-    .linkdin > a {
-        color: #fff;
+
+    .team-row, .team-row2 {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 100vw;
+
+        position: relative;
+        top: 20vh;
+        height: fit-content;
     }
 
+    .team-item {
+        width: 60vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6vh;
+    }
 
+    .team-title {
+        width: 80vw;
+        margin: 0;
+        height: fit-content;
+    }
+
+    .team-title-text {
+        position: relative;
+        left: 8vw;
+        top: -2.6vh;
+        width: fit-content;
+        margin: 0;
+        font-size: 12vw;
+    }
+
+    .team-title-img {
+        position: relative;
+        top: 12vw;
+        width: 28vw;
+    }
+
+    .position {
+        width: fit-content;
+    }
+
+    .introduce {
+        width: 100%;
+        margin: 0 auto;
+        top: 0;
+        font-size: 5vw;
+    }
+
+    .team-row-container {
+        position: relative;
+        top: 0;
+    }
+
+    .position, .team-item-name {
+        font-size: 4.5vw;
+    }
 }

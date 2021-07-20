@@ -1,0 +1,51 @@
+name: Deploy to OSS
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - README.md
+      - LICENSE
+  # pull_request:
+  #   branches:
+  #     - main
+  #   paths-ignore:
+  #     - README.md
+  #     - LICENSE
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get latest CMake and ninja
+        uses: lukka/get-cmake@latest
+
+      - name: Setup cmake
+        uses: jwlawson/actions-setup-cmake@v1.9
+        with:
+          cmake-version: '3.16.x'
+
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install --network-timeout=1000000 # will run `yarn install` command
+
+      - uses: borales/actions-yarn@v2.3.0
+        env:
+          CI: false
+        with:
+          cmd: build # will run `yarn build` command
+
+      - name: upload files to OSS
+        uses: fangbinwei/aliyun-oss-website-action@v1
+        with:
+          accessKeyId: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          accessKeySecret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          bucket: "banksy-finance-website"
+          # use your own endpoint
+          endpoint: "oss-cn-hongkong.aliyuncs.com"
+          folder: "build"
+          skipSetting: true
