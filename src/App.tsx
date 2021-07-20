@@ -1,26 +1,24 @@
-import './App.css';
-import React, { useState } from 'react';
-import 'antd/dist/antd.css';
-import 'aos/dist/aos.css';
-import Top from "./pages/top";
-import Mission from "./pages/mission";
-import Issues from "./pages/issues";
-import Mapper from "./pages/mapper";
-import Features from "./pages/features";
-import Foot from "./pages/foot";
-import AOS from 'aos';
-import RoadMap from "./pages/roadMap";
-import Benefits from "./pages/benefits"
-import Solutions from "./pages/solutions"
-import ReactFullpage from '@fullpage/react-fullpage'
-import { useMediaQuery } from "react-responsive/src";
-import Team from "./pages/team";
-
+import './App.css'
+import React from 'react'
+import 'antd/dist/antd.css'
+import 'aos/dist/aos.css'
+import Top from './pages/top'
+import Mission from './pages/mission'
+import Issues from './pages/issues'
+import Mapper from './pages/mapper'
+import Features from './pages/features'
+import Foot from './pages/foot'
+import AOS from 'aos'
+import RoadMap from './pages/roadmap'
+import Benefits from './pages/benefits'
+import Solutions from './pages/solutions'
+// import ReactFullpage from '@fullpage/react-fullpage'
+import Team from './pages/team'
 
 const App = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
+  // const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
 
-  const [current, setCurrent] = useState(1)
+  // const [current, setCurrent] = useState(1)
 
   AOS.init({
     duration: 500,
@@ -30,20 +28,20 @@ const App = () => {
 
   return (
     <div className="App">
-      {
-        isMobile ? (
-          <div>
-            <Top/>
-            <Mission/>
-            <Issues/>
-            <Solutions/>
-            <Mapper/>
-            <Features/>
-            <Benefits/>
-            <RoadMap/>
-            <Team />
-            <Foot/>
-          </div>
+      {/*{*/}
+      {/*  isMobile ? (*/}
+      {/*    <div>*/}
+      <Top />
+      <Mission />
+      <Issues />
+      <Solutions />
+      <Mapper />
+      <Features />
+      <Benefits />
+      <RoadMap />
+      <Team />
+      <Foot />
+      {/*    </div>
         ) : (
           <div>
             <ReactFullpage
@@ -73,9 +71,9 @@ const App = () => {
             />
           </div>
         )
-      }
+      }*/}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
