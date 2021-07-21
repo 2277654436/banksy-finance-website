@@ -10,17 +10,22 @@ import algorithm from '../../image/team/7.png'
 import linkedin from '../../image/team/linkedin.png'
 import github from '../../image/team/github-link.png'
 import styled from 'styled-components'
+import BackgroundImage from '../../image/issues/background.png'
 
 const TeamContainer = styled.div`
   width: 100%;
   height: 100vh;
   font-family: 'SourceHanSansCN-Normal';
   position: relative;
+  background-image: url(${BackgroundImage});
+  background-size: 100%;
 
   @media screen and (max-width: 1100px) {
     height: fit-content;
     position: relative;
     margin-bottom: 30vh;
+    
+    background-size: 100% 100% cover;
   }
 `
 

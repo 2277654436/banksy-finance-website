@@ -4,12 +4,15 @@ import Number1 from '../../image/issues/number1.png'
 import Number2 from '../../image/issues/number2.png'
 import Number3 from '../../image/issues/number3.png'
 import styled from 'styled-components'
+import BackgroundImage from '../../image/issues/background.png'
 
 const IssuesContainer = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
   font-family: 'AvenirNext';
+  background-image: url(${BackgroundImage});
+  background-size: 80%;
 
   @media screen and (max-width: 1100px) {
     width: 100%;
@@ -26,6 +29,7 @@ const Title = styled.div`
   font-size: 5vw;
   font-weight: bolder;
   text-align: right;
+  z-index: 9;
 
   img {
     width: 14vw;
@@ -69,6 +73,7 @@ const ItemsContainer = styled.div`
   top: 0;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  z-index: 9;
 
   @media screen and (max-width: 1100px) {
     top: 0;
@@ -86,7 +91,8 @@ const Item = styled.div`
   justify-content: start;
   width: 50vw;
   margin-top: 5vh;
-  
+  z-index: 9;
+
   .col {
     display: flex;
     flex-direction: column;

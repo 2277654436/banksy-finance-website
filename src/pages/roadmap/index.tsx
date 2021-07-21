@@ -2,10 +2,11 @@ import React from 'react'
 import RoadMapImg from '../../image/roadmap/roadmapImg.png'
 import styled from 'styled-components'
 
+import Background from '../../image/roadmap/mapBac.png'
+
 const RoadmapContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: url("../../image/roadmap/mapBac.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -22,6 +23,7 @@ const Title = styled.div`
   font-size: 4vw;
   top: 5vh;
   right: 15vw;
+  z-index: 9;
 
   @media screen and (max-width: 1100px) {
     position: relative;
@@ -30,6 +32,25 @@ const Title = styled.div`
     text-align: center;
     font-size: 12vw;
     margin-top: 10vh;
+  }
+`
+
+const BackgroundImage = styled.img`
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  @media screen and (max-width: 1100px) {
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    height: 100vw;
+    width: calc(100vw * 3994 / 2210);
+    object-fit: cover;
+    left: 100vw;
+    top: 20vw;
   }
 `
 
@@ -66,6 +87,8 @@ const RoadMap: React.FC = () => {
           src={RoadMapImg}
           alt="roadmap"
         />
+
+        <BackgroundImage src={Background} alt="roadmap" />
       </RoadmapContainer>
     </div>
   )

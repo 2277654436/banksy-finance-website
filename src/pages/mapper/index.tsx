@@ -36,11 +36,11 @@ const Title = styled.div`
 const Text = styled.div`
   position: relative;
   top: 20vh;
-  text-align: left;
+  text-align: right;
   left: 60vw;
   width: 30vw;
-  color: #fff;
-  font-size: 1.2vw;
+  color: #ccc;
+  font-size: 1.4vw;
   position: relative;
   font-family: SourceHanSansCN-Light;
 
@@ -50,6 +50,7 @@ const Text = styled.div`
     margin: 5vh 0 0 5vw;
     font-size: 5vw;
     width: 90vw;
+    text-align: left;
   }
 `
 

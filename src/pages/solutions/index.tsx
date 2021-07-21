@@ -2,12 +2,14 @@ import React from 'react'
 import FeaturesBG from '../../image/solutions/features-bg.png'
 import styled from 'styled-components'
 
+import BackgroundImage from '../../image/solutions/dots.png'
+
 const SolutionsContainer = styled.div`
   width: 100vw;
   height: 100vh;
   position: relative;
   user-select: none;
-  background-image: url("../../image/solutions/dots.png");
+  background-image: url(${BackgroundImage});
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: top 15vh left 0;
@@ -18,10 +20,8 @@ const SolutionsContainer = styled.div`
   @media screen and (max-width: 1100px) {
     height: fit-content;
     user-select: none;
-    background-image: url("../../image/solutions/dots.png");
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
-    background-position: top 0 left 0;
+    background-size: 100% 100% cover;
+    background-position-y: 30vh;
 
     padding: 10vh 0 0 0;
   }

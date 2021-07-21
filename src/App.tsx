@@ -12,8 +12,8 @@ import AOS from 'aos'
 import RoadMap from './pages/roadmap'
 import Benefits from './pages/benefits'
 import Solutions from './pages/solutions'
-// import ReactFullpage from '@fullpage/react-fullpage'
 import Team from './pages/team'
+import Support from './pages/support'
 
 const App = () => {
   // const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
@@ -37,6 +37,7 @@ const App = () => {
       <Solutions />
       <Mapper />
       <Features />
+      <Support />
       <Benefits />
       <RoadMap />
       <Team />
