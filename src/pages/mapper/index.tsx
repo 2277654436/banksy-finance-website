@@ -37,8 +37,8 @@ const Text = styled.div`
   position: relative;
   top: 20vh;
   text-align: right;
-  left: 60vw;
-  width: 30vw;
+  left: 49vw;
+  width: 40vw;
   color: #ccc;
   font-size: 1.4vw;
   position: relative;

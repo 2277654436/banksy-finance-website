@@ -158,7 +158,7 @@ const Features: React.FC = () => {
 
   return (
     <div className="section">
-      <FeaturesContainer>
+      <FeaturesContainer id="FeaturesContainer">
         <Title id="features-title" data-aos="flip-up">
           <img src={featuresTextBG} alt="features" />
           <div>MAIN FEATURES</div>

@@ -133,7 +133,7 @@ const Benefits: React.FC = () => {
       title: 'NFT Holder',
       details: [
         '1｜Easily get loans',
-        '2｜Mapping NFT for higher liquidity',
+        '2｜Map NFT for higher liquidity',
         '3｜Instant loan and repayment; Flexible repayment',
       ]
     },
@@ -159,7 +159,7 @@ const Benefits: React.FC = () => {
 
   return (
     <div className="section" id="benefits">
-      <BenefitsContainer>
+      <BenefitsContainer id="BenefitsContainer">
         <Title id="benefits-title" data-aos="zoom-out">
           BENEFITS
         </Title>
