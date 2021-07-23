@@ -258,7 +258,7 @@ const Team: React.FC = () => {
   return (
     <div className="section">
       <TeamContainer>
-        <Title data-aos="flip-left">
+        <Title data-aos="fade-right">
           <img src={teamTitleImg} className="team-title-img" alt="banksy team" />
           <span>TEAM</span>
           <div>
@@ -268,13 +268,13 @@ const Team: React.FC = () => {
           </div>
         </Title>
 
-        <MembersRowContainer data-aos="flip-down">
-          <div className="row__1">
+        <MembersRowContainer>
+          <div className="row__1" data-aos="fade-left">
             {
               MEMBERS_ROW1.map(member => (<Member key={member.name} {...member} />))
             }
           </div>
-          <div className="row__2">
+          <div className="row__2" data-aos="fade-right">
             {
               MEMBERS_ROW2.map(member => (<Member key={member.name} {...member} />))
             }

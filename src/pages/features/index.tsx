@@ -163,7 +163,7 @@ const Features: React.FC = () => {
           <img src={featuresTextBG} alt="features" />
           <div>MAIN FEATURES</div>
         </Title>
-        <ItemsContainer data-aos="flip-down">
+        <ItemsContainer data-aos="fade-up">
           {
             FEATURES_ITEMS.map(item => (
               <Item key={item.title}>

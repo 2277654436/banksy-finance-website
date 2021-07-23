@@ -163,7 +163,7 @@ const Benefits: React.FC = () => {
         <Title id="benefits-title" data-aos="zoom-out">
           BENEFITS
         </Title>
-        <ItemsContainer data-aos="flip-left">
+        <ItemsContainer data-aos="fade-up">
           {
             BENEFIT_ITEMS.map(item => (
               <Item key={item.title}>

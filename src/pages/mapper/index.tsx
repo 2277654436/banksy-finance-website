@@ -73,17 +73,17 @@ const Mapper: React.FC = () => {
   return (
     <div className="section">
       <MapperContainer id="MapperContainer">
-        <Title data-aos="flip-left">
+        <Title data-aos="fade-down">
           NFT MAPPER
         </Title>
 
-        <Text id="mapper-text" data-aos="flip-left">
+        <Text id="mapper-text" data-aos="fade-left">
           The NFT mapper can effectively solve
           the problem of poor liquidity
           for more flexible and diversified business
         </Text>
 
-        <MapperImage src={MapperImg} data-aos="flip-right" />
+        <MapperImage src={MapperImg} data-aos="fade-right" />
       </MapperContainer>
     </div>
   )
