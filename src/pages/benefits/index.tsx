@@ -77,6 +77,7 @@ const Item = styled.div`
     color: #808080;
     font-size: 1.2vw;
     font-family: SourceHanSansCN-Light;
+    width: 25vw;
 
     p {
       width: 100%;

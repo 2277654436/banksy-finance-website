@@ -1,5 +1,5 @@
 import React from 'react'
-import MapperImg from '../../image/mapper/mapperImg.png'
+import MapperImg from '../../image/mapper/mapperImg-fix.png'
 import styled from 'styled-components'
 
 const MapperContainer = styled.div`

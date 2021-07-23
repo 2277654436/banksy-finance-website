@@ -137,17 +137,17 @@ const Features: React.FC = () => {
     {
       img: Features1,
       title: 'Safe and Convenient',
-      detail: 'Secure users\' assets, flexible and convenient lending'
+      detail: 'Secures users\' assets, flexible and convenient lending'
     },
     {
       img: Features2,
       title: 'Multi-chain Supports',
-      detail: 'Support multi-chain such as ETH, BSC, HECO, Solana, DOT, etc'
+      detail: 'Supports multi-chain such as ETH, BSC, HECO, Solana, DOT, etc'
     },
     {
       img: Features3,
       title: 'Combine with Defi',
-      detail: 'Integrate Defi to increase NFT liquidity'
+      detail: 'Integrates Defi to increase NFT liquidity'
     },
     {
       img: Features4,

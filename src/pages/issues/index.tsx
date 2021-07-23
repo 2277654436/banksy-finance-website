@@ -153,17 +153,17 @@ const Issues: React.FC = () => {
     {
       img: Number1,
       title: 'Price confusion',
-      detail: 'Lack of an effective NFT price discovery mechanism for the NFT valuation and quotation in the market'
+      detail: 'Lack of an effective NFT price discovery mechanism for NFT valuation and quotation in the market'
     },
     {
       img: Number2,
       title: 'Poor liquidity',
-      detail: 'Low volume and handovers'
+      detail: 'Low volume and handovers the previous entries have no final punctuation.'
     },
     {
       img: Number3,
-      title: 'Lenders are taking risk for the NFT valuation bubble',
-      detail: 'Lack of an effective NFT price discovery mechanism for the NFT valuation and quotation in the market'
+      title: 'No security for lender\'s funds',
+      detail: 'Lenders are taking on risk for the NFT valuation bubble DITTO!'
     },
   ]
 

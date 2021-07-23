@@ -1,5 +1,5 @@
 import React from 'react'
-import RoadMapImg from '../../image/roadmap/roadmapImg.png'
+import RoadMapImg from '../../image/roadmap/roadmapImg-fix.png'
 import styled from 'styled-components'
 
 import Background from '../../image/roadmap/mapBac.png'
