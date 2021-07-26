@@ -1,5 +1,5 @@
 import React from 'react'
-import MapperImg from '../../image/mapper/mapperImg.png'
+import MapperImg from '../../image/mapper/mapperImg-fix.png'
 import styled from 'styled-components'
 
 const MapperContainer = styled.div`
@@ -37,8 +37,8 @@ const Text = styled.div`
   position: relative;
   top: 20vh;
   text-align: right;
-  left: 60vw;
-  width: 30vw;
+  left: 49vw;
+  width: 40vw;
   color: #ccc;
   font-size: 1.4vw;
   position: relative;
@@ -73,17 +73,17 @@ const Mapper: React.FC = () => {
   return (
     <div className="section">
       <MapperContainer id="MapperContainer">
-        <Title data-aos="flip-left">
+        <Title data-aos="fade-down">
           NFT MAPPER
         </Title>
 
-        <Text id="mapper-text" data-aos="flip-left">
+        <Text id="mapper-text" data-aos="fade-left">
           The NFT mapper can effectively solve
           the problem of poor liquidity
           for more flexible and diversified business
         </Text>
 
-        <MapperImage src={MapperImg} data-aos="flip-right" />
+        <MapperImage src={MapperImg} data-aos="fade-right" />
       </MapperContainer>
     </div>
   )

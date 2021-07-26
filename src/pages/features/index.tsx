@@ -137,17 +137,17 @@ const Features: React.FC = () => {
     {
       img: Features1,
       title: 'Safe and Convenient',
-      detail: 'Secure users\' assets, flexible and convenient lending'
+      detail: 'Secures users\' assets, flexible and convenient lending'
     },
     {
       img: Features2,
       title: 'Multi-chain Supports',
-      detail: 'Support multi-chain such as ETH, BSC, HECO, Solana, DOT, etc'
+      detail: 'Supports multi-chain such as ETH, BSC, HECO, Solana, DOT, etc'
     },
     {
       img: Features3,
       title: 'Combine with Defi',
-      detail: 'Integrate Defi to increase NFT liquidity'
+      detail: 'Integrates Defi to increase NFT liquidity'
     },
     {
       img: Features4,
@@ -158,12 +158,12 @@ const Features: React.FC = () => {
 
   return (
     <div className="section">
-      <FeaturesContainer>
+      <FeaturesContainer id="FeaturesContainer">
         <Title id="features-title" data-aos="flip-up">
           <img src={featuresTextBG} alt="features" />
           <div>MAIN FEATURES</div>
         </Title>
-        <ItemsContainer data-aos="flip-down">
+        <ItemsContainer data-aos="fade-up">
           {
             FEATURES_ITEMS.map(item => (
               <Item key={item.title}>

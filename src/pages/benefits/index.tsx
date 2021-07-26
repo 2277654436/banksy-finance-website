@@ -77,6 +77,7 @@ const Item = styled.div`
     color: #808080;
     font-size: 1.2vw;
     font-family: SourceHanSansCN-Light;
+    width: 25vw;
 
     p {
       width: 100%;
@@ -132,7 +133,7 @@ const Benefits: React.FC = () => {
       title: 'NFT Holder',
       details: [
         '1｜Easily get loans',
-        '2｜Mapping NFT for higher liquidity',
+        '2｜Map NFT for higher liquidity',
         '3｜Instant loan and repayment; Flexible repayment',
       ]
     },
@@ -158,11 +159,11 @@ const Benefits: React.FC = () => {
 
   return (
     <div className="section" id="benefits">
-      <BenefitsContainer>
+      <BenefitsContainer id="BenefitsContainer">
         <Title id="benefits-title" data-aos="zoom-out">
           BENEFITS
         </Title>
-        <ItemsContainer data-aos="flip-left">
+        <ItemsContainer data-aos="fade-up">
           {
             BENEFIT_ITEMS.map(item => (
               <Item key={item.title}>

@@ -125,13 +125,13 @@ const RingImage = styled.img`
 const Mission: React.FC = () => {
   return (
     <div className="section">
-      <MissionContainer id="MissionContainer">
-        <Title>
+      <MissionContainer id="MissionContainer" >
+        <Title data-aos="fade-down">
           <p>MISSION</p>
-          <img src={missionTitleImg} alt="mission" />
+          <img src={missionTitleImg} alt="mission"  />
         </Title>
 
-        <Content>
+        <Content data-aos="fade-right">
           Provide a safe and reliable lending environment for
           the NFT market, solve the problem of NFT liquidity,
           and fully release the value of NFT

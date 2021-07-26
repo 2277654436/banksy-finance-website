@@ -136,17 +136,17 @@ const Top: React.FC = () => {
     <div className="section">
       <TopContainer>
         <Navbar />
-        <Title>
+        <Title data-aos="fade-right">
           <p>NFT Pool-Based</p>
           <p> Lending Hub</p>
         </Title>
-        <BackgroundImage src={MainBG2} alt="NFT Poll-Based Lending Hub" />
-        <Text>
+        <BackgroundImage src={MainBG2} alt="NFT Poll-Based Lending Hub" data-aos="fade-left"  />
+        <Text data-aos="fade-right">
           <div>The first AI-driven NFT pool-based</div>
           <div>lending platform to lead a revolution</div>
           <div>of the NFT market</div>
         </Text>
-        <ExplorerButton>
+        <ExplorerButton data-aos="fade-right">
           <a href={'https://app.banksy.finance/#/'} target="_blank" style={{ color: 'white' }} rel="noreferrer">
             Explore
           </a>

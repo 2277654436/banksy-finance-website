@@ -1,5 +1,5 @@
 import React from 'react'
-import RoadMapImg from '../../image/roadmap/roadmapImg.png'
+import RoadMapImg from '../../image/roadmap/roadmapImg-fix.png'
 import styled from 'styled-components'
 
 import Background from '../../image/roadmap/mapBac.png'
@@ -21,6 +21,7 @@ const Title = styled.div`
   position: absolute;
   color: #fff;
   font-size: 4vw;
+  font-weight: 550;
   top: 5vh;
   right: 15vw;
   z-index: 9;
@@ -59,6 +60,7 @@ const Image = styled.img`
   left: 8vw;
   top: 15vh;
   width: 88vw;
+  z-index: 99;
 
   @media screen and (max-width: 1100px) {
     transform: rotate(90deg);
@@ -76,7 +78,7 @@ const Image = styled.img`
 const RoadMap: React.FC = () => {
   return (
     <div className="section">
-      <RoadmapContainer>
+      <RoadmapContainer id="RoadMapContainer">
         <Title
           data-aos="zoom-in"
         >

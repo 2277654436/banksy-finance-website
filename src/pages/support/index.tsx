@@ -154,12 +154,12 @@ export const Support = () => {
   return (
     <div className="section">
       <SupportsContainer id="support">
-        <Title>
+        <Title data-aos="fade-right">
           <img src={Arrow} />
           <div>SUPPORT A VARIETY OF</div>
           <div>NFTS POOL-BASE LENDING</div>
         </Title>
-        <ImagesContainer>
+        <ImagesContainer data-aos="zoom-in">
           <img src={Image3} className="a" />
           <img src={Image2} className="b" />
           <img src={Image1} className="c" />
