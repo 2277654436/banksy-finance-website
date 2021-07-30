@@ -49,8 +49,7 @@ const Content = styled.div`
   width: 40vw;
   color: #B2B2B2;
   font-size: 1.4vw;
-  font-family: 'SourceHanSansCN-Normal';
-  font-weight: lighter;
+  font-family: 'SourceHanSansCN-Bold';
 
   @media screen and (max-width: 1100px) {
     width: 90vw;
