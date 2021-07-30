@@ -3,7 +3,7 @@ import TwitterIcon from '../../image/foot/Twitter.png'
 import GithubIcon from '../../image/foot/Github.png'
 import EmailIcon from '../../image/foot/Email.png'
 import TelegramIcon from '../../image/foot/Telegram.png'
-import footLogo from '../../image/foot/Logo.png'
+import footLogo from '../../image/foot/logo.png'
 import Discord from '../../image/foot/Discord.svg'
 import styled from 'styled-components'
 
