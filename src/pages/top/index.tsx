@@ -4,8 +4,15 @@ import MainBG2 from '../../image/top/topImg.png'
 import styled from 'styled-components'
 import Navbar from './Navbar'
 
-const TopContainer = styled.div`
+const Wrapper = styled.div`
   width: 100vw;
+  background-image: url(${MainBG2});
+  background-size: 100vw;
+`
+
+const TopContainer = styled.div`
+  max-width: 1550px;
+  margin: 0 auto;
   height: 100vh;
   position: relative;
   font-family: 'SourceHanSansCN-Bold';
@@ -18,18 +25,16 @@ const TopContainer = styled.div`
 `
 
 const Title = styled.div`
-  width: 40vw;
   text-align: left;
   position: relative;
-  left: 10vw;
   z-index: 1;
-  font-size: 4.2vw;
+  font-size: 81px;
 
   p {
     font-weight: 800;
     color: #FFFFFF;
     user-select: none;
-    line-height: 2vw;
+    line-height: 38px;
   }
   
   @media screen and (max-width: 1100px) {
@@ -52,14 +57,14 @@ const ExplorerButton = styled.div`
   margin-right: 0;
   background-color: #554BFF;
   border-radius: 1rem;
-  width: 10vw;
-  height: 6vh;
+  width: 190px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  font-size: 1.6vw;
-  left: 10.5vw;
+  font-size: 31px;
+  font-weight: bold;
   text-align: left;
   color: white;
   cursor: pointer;
@@ -93,10 +98,9 @@ const ExplorerButton = styled.div`
 `
 
 const Text = styled.div`
-  width: 30vw;
+  width: 600px;
   position: relative;
-  font-size: 1.2vw;
-  left: 10.5vw;
+  font-size: 22px;
   text-align: left;
   color: #ccc;
   margin-bottom: 4vh;
@@ -115,43 +119,28 @@ const Text = styled.div`
   }
 `
 
-const BackgroundImage = styled.img`
-  height: 98vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  
-  @media screen and (max-width: 1100px) {
-    position: absolute;
-    left: -70vw;
-    top: 12vw;
-    width: 180vw;
-    height: 100%;
-    object-fit: cover;
-  }
-`
-
 const Top: React.FC = () => {
   return (
     <div className="section">
-      <TopContainer>
+      <Wrapper>
         <Navbar />
-        <Title data-aos="fade-right">
-          <p>NFT Pool-Based</p>
-          <p> Lending Hub</p>
-        </Title>
-        <BackgroundImage src={MainBG2} alt="NFT Poll-Based Lending Hub" data-aos="fade-left"  />
-        <Text data-aos="fade-right">
-          <div>The first AI-driven NFT pool-based</div>
-          <div>lending platform to lead a revolution</div>
-          <div>of the NFT market</div>
-        </Text>
-        <ExplorerButton data-aos="fade-right">
-          <a href={'https://app.banksy.finance/#/'} target="_blank" style={{ color: 'white' }} rel="noreferrer">
-            Explore
-          </a>
-        </ExplorerButton>
-      </TopContainer>
+        <TopContainer>
+          <Title>
+            <p>NFT Pool-Based</p>
+            <p> Lending Hub</p>
+          </Title>
+          <Text>
+            <div>The first AI-driven NFT pool-based</div>
+            <div>lending platform to lead a revolution</div>
+            <div>of the NFT market</div>
+          </Text>
+          <ExplorerButton>
+            <a href={'https://app.banksy.finance/#/'} target="_blank" style={{ color: 'white' }} rel="noreferrer">
+              Explore
+            </a>
+          </ExplorerButton>
+        </TopContainer>
+      </Wrapper>
     </div>
   )
 }

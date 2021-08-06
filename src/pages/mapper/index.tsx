@@ -1,12 +1,18 @@
 import React from 'react'
-import MapperImg from '../../image/mapper/mapperImg-fix.png'
+import MapperImg from '../../image/mapper/mapperImg.png'
 import styled from 'styled-components'
 
+const Wrapper = styled.div`
+  width: 100vw;
+`
+
 const MapperContainer = styled.div`
-  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
   height: 100vh;
   position: relative;
   font-family: 'AvenirNext';
+  padding-top: 200px;
 
   @media screen and (max-width: 1100px) {
     height: fit-content;
@@ -14,14 +20,13 @@ const MapperContainer = styled.div`
 `
 
 const Title = styled.div`
-  position: relative;
-  top: 20vh;
+  position: absolute;
+  top:  400px;
+  right: 0;
   text-align: left;
-  left: 60vw;
-  width: 30vw;
 
   color: #fff;
-  font-size: 4.4vw;
+  font-size: 82px;
   font-weight: bolder;
 
   @media screen and (max-width: 1100px) {
@@ -34,14 +39,13 @@ const Title = styled.div`
 `
 
 const Text = styled.div`
-  position: relative;
-  top: 20vh;
+  position: absolute;
+  top:  600px;
+  right: 0;
   text-align: right;
-  left: 49vw;
-  width: 40vw;
+  width: 600px;
   color: #ccc;
-  font-size: 1.4vw;
-  position: relative;
+  font-size: 28px;
   font-family: SourceHanSansCN-Light;
 
   @media screen and (max-width: 1100px) {
@@ -55,10 +59,8 @@ const Text = styled.div`
 `
 
 const MapperImage = styled.img`
-  width: 40vw;
-  position: relative;
-  left: 10vw;
-  bottom: 10vh;
+  width: 770px;
+  position: absolute;
 
   @media screen and (max-width: 1100px) {
     position: relative;
@@ -72,19 +74,21 @@ const MapperImage = styled.img`
 const Mapper: React.FC = () => {
   return (
     <div className="section">
-      <MapperContainer id="MapperContainer">
-        <Title data-aos="fade-down">
-          NFT MAPPER
-        </Title>
+      <Wrapper>
+        <MapperContainer id="MapperContainer">
+          <Title>
+            NFT MAPPER
+          </Title>
 
-        <Text id="mapper-text" data-aos="fade-left">
-          The NFT mapper can effectively solve
-          the problem of poor liquidity
-          for more flexible and diversified business
-        </Text>
+          <Text id="mapper-text">
+            The NFT mapper can effectively solve
+            the problem of poor liquidity
+            for more flexible and diversified business
+          </Text>
 
-        <MapperImage src={MapperImg} data-aos="fade-right" />
-      </MapperContainer>
+          <MapperImage src={MapperImg} />
+        </MapperContainer>
+      </Wrapper>
     </div>
   )
 }

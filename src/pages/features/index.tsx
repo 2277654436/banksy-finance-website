@@ -6,11 +6,16 @@ import Features3 from '../../image/features/features-img3.png'
 import Features4 from '../../image/features/features-img4.png'
 import styled from 'styled-components'
 
-const FeaturesContainer = styled.div`
+const Wrapper = styled.div`
   width: 100vw;
-  height: 100vh;
+`
+
+const FeaturesContainer = styled.div`
+  max-width: 1550px;
+  margin: 0 auto;
   position: relative;
   font-family: 'SourceHanSansCN-Normal';
+  padding: 150px 0;
 
   @media screen and (max-width: 1100px) {
     height: fit-content;
@@ -19,26 +24,23 @@ const FeaturesContainer = styled.div`
 
 const Title = styled.div`
   color: white;
-  font-size: 4vw;
+  font-size: 70px;
   position: relative;
   font-family: SourceHanSansCN-Bold;
   font-weight: 550;
   width: fit-content;
-
-  margin-top: 15vh;
-  margin-left: 10vw;
-  margin-bottom: 10vh;
-
+  margin-bottom: 200px;
+  
   img {
-    width: 160px;
+    width: 260px;
     position: absolute;
-    left: -5vw;
-    top: -2vh;
     z-index: 1;
   }
 
   div {
     position: relative;
+    left: 110px;
+    top: 20px;
     z-index: 9;
   }
 
@@ -57,7 +59,7 @@ const Title = styled.div`
 `
 
 const ItemsContainer = styled.div`
-  width: 90vw;
+  width: 100%;
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -69,31 +71,31 @@ const ItemsContainer = styled.div`
 `
 
 const Item = styled.div`
-  width: 20vw;
+  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
 
   img {
-    height: 15vw;
+    height: 150px;
     object-fit: cover;
   }
 
   .title {
-    width: 80vw;
+    width: 100%;
     color: white;
     text-align: center;
     font-family: SourceHanSansCN-Bold;
     font-weight: 550;
-    font-size: 1.6vw;
+    font-size: 25px;
   }
 
   .detail {
     text-align: center;
     color: #B2B2B2;
-    font-family: SourceHanSansCN-Bold;
-    font-size: 1.2vw;
+    font-family: SourceHanSansCN-Light;
+    font-size: 17px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -137,17 +139,17 @@ const Features: React.FC = () => {
     {
       img: Features1,
       title: 'Safe and Convenient',
-      detail: 'Secures users\' assets, flexible and convenient lending'
+      detail: 'Secure users\' assets, flexible and convenient lending'
     },
     {
       img: Features2,
       title: 'Multi-chain Supports',
-      detail: 'Supports multi-chain such as ETH, BSC, HECO, Solana, DOT, etc'
+      detail: 'Support multi-chain such as ETH, BSC, HECO, Solana, DOT, etc'
     },
     {
       img: Features3,
       title: 'Combine with Defi',
-      detail: 'Integrates Defi to increase NFT liquidity'
+      detail: 'Integrate Defi to increase NFT liquidity'
     },
     {
       img: Features4,
@@ -158,23 +160,25 @@ const Features: React.FC = () => {
 
   return (
     <div className="section">
-      <FeaturesContainer id="FeaturesContainer">
-        <Title id="features-title" data-aos="flip-up">
-          <img src={featuresTextBG} alt="features" />
-          <div>MAIN FEATURES</div>
-        </Title>
-        <ItemsContainer data-aos="fade-up">
-          {
-            FEATURES_ITEMS.map(item => (
-              <Item key={item.title}>
-                <img src={item.img} alt={item.title} />
-                <div className="title">{item.title}</div>
-                <div className="detail">{item.detail}</div>
-              </Item>
-            ))
-          }
-        </ItemsContainer>
-      </FeaturesContainer>
+      <Wrapper>
+        <FeaturesContainer>
+          <Title id="features-title">
+            <img src={featuresTextBG} alt="features" />
+            <div>MAIN FEATURES</div>
+          </Title>
+          <ItemsContainer>
+            {
+              FEATURES_ITEMS.map(item => (
+                <Item key={item.title}>
+                  <img src={item.img} alt={item.title} />
+                  <div className="title">{item.title}</div>
+                  <div className="detail">{item.detail}</div>
+                </Item>
+              ))
+            }
+          </ItemsContainer>
+        </FeaturesContainer>
+      </Wrapper>
     </div>
   )
 }

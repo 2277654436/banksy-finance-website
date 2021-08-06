@@ -11,7 +11,6 @@ const FootContainer = styled.div`
   height: fit-content;
   font-family: 'AvenirNext';
   margin: 20vh 0 5vh 0;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +22,7 @@ const FootContainer = styled.div`
 const ExternalLinksContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 30vw;
+  width: 510px;
   margin: 0 auto;
 
   @media screen and (max-width: 1100px) {
@@ -32,7 +31,7 @@ const ExternalLinksContainer = styled.div`
 `
 
 const SCExternalLink = styled.a`
-  width: 4vw;
+  width: 50px;
 
   img {
     width: 100%;
@@ -44,8 +43,8 @@ const SCExternalLink = styled.a`
 `
 
 const Logo = styled.img`
-  width: 20vw;
-  margin: 5vh 0 0 0;
+  width: 380px;
+  margin: 60px 0 0 0;
 
   @media screen and (max-width: 1100px) {
     width: 50vw;
@@ -53,10 +52,10 @@ const Logo = styled.img`
 `
 
 const Copyright = styled.div`
-  font-size: 1.4rem;
+  font-size: 14px;
   text-align: center;
   color: #8E8E8E;
-  margin-top: 2rem;
+  margin-top: 20px;
   font-family: SourceHanSansCN-Light;
 
   @media screen and (max-width: 1100px) {

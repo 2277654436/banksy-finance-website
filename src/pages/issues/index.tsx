@@ -6,13 +6,18 @@ import Number3 from '../../image/issues/number3.png'
 import styled from 'styled-components'
 import BackgroundImage from '../../image/issues/background.png'
 
-const IssuesContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  font-family: 'AvenirNext';
+const Wrapper = styled.div`
+  width: 100vw;
   background-image: url(${BackgroundImage});
   background-size: 80%;
+`
+
+const IssuesContainer = styled.div`
+  max-width: 1550px;
+  margin: 0 auto;
+  height: 900px;
+  position: relative;
+  font-family: 'AvenirNext';
 
   @media screen and (max-width: 1100px) {
     width: 100%;
@@ -23,19 +28,19 @@ const IssuesContainer = styled.div`
 
 const Title = styled.div`
   position: absolute;
-  top: 7vw;
-  right: 10vw;
+  top: 200px;
+  right: 0px;
   color: white;
-  font-size: 5vw;
+  font-size: 90px;
   font-weight: bolder;
   text-align: right;
   z-index: 9;
 
   img {
-    width: 14vw;
+    width: 270px;
     position: relative;
     bottom: 18vh;
-    right: 10.5vw;
+    right: 200px;
     z-index: 1;
   }
 
@@ -52,11 +57,11 @@ const Title = styled.div`
     width: fit-content;
     color: white;
     font-family: 'SourceHanSansCN-Bold';
-    
+
     div {
       font-size: 12vw;
     }
-    
+
     img {
       position: absolute;
       top: -2vw;
@@ -69,15 +74,14 @@ const ItemsContainer = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 13vw;
-  top: 0;
+  top: 150px;
   margin-top: 5vh;
   margin-bottom: 5vh;
   z-index: 9;
 
   @media screen and (max-width: 1100px) {
     top: 0;
-    
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -89,7 +93,6 @@ const ItemsContainer = styled.div`
 const Item = styled.div`
   display: flex;
   justify-content: start;
-  width: 50vw;
   margin-top: 5vh;
   z-index: 9;
 
@@ -97,27 +100,27 @@ const Item = styled.div`
     display: flex;
     flex-direction: column;
   }
-  
+
   img {
-    width: 7vw;
-    height: 15vh;
-    margin-right: 2.6vw;
+    width: 120px;
+    object-fit: fit;
+    margin-right: 50px;
   }
-  
+
   .title {
     width: 100%;
     color: white;
     margin-top: 1.2vh;
     font-weight: 550;
-    font-size: 2vw;
+    font-size: 28px;
     font-family: 'SourceHanSansCN-Bold';
   }
-  
+
   .detail {
+    width: 550px;
     display: flex;
-    flex-direction: column;
     color: #B2B2B2;
-    font-size: 1.2vw;
+    font-size: 18px;
     font-family: 'SourceHanSansCN-Light';
   }
 
@@ -126,14 +129,14 @@ const Item = styled.div`
       width: 15vw;
       height: 15vw;
     }
-    
+
     .title {
       color: white;
       font-weight: 550;
       font-size: 6vw;
       font-family: 'SourceHanSansCN-Bold';
     }
-    
+
     .detail {
       position: relative;
       width: 70vw;
@@ -169,26 +172,28 @@ const Issues: React.FC = () => {
 
   return (
     <div className="section">
-      <IssuesContainer id="IssuesContainer">
-        <Title data-aos="fade-up">
-          <div>Issues</div>
-          <img src={danger} alt="issues" />
-        </Title>
+      <Wrapper>
+        <IssuesContainer id="IssuesContainer">
+          <Title>
+            <div>Issues</div>
+            <img src={danger} alt="issues" />
+          </Title>
 
-        <ItemsContainer id="ItemsContainer" data-aos="fade-right">
-          {
-            items.map(item => (
-              <Item key={item.title}>
-                <img src={item.img} alt={item.title} />
-                <div className="col">
-                  <div className="title">{item.title}</div>
-                  <div className="detail">{item.detail}</div>
-                </div>
-              </Item>
-            ))
-          }
-        </ItemsContainer>
-      </IssuesContainer>
+          <ItemsContainer id="ItemsContainer">
+            {
+              items.map(item => (
+                <Item key={item.title}>
+                  <img src={item.img} alt={item.title} />
+                  <div className="col">
+                    <div className="title">{item.title}</div>
+                    <div className="detail">{item.detail}</div>
+                  </div>
+                </Item>
+              ))
+            }
+          </ItemsContainer>
+        </IssuesContainer>
+      </Wrapper>
     </div>
   )
 }

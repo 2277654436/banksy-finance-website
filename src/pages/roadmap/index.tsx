@@ -1,11 +1,16 @@
 import React from 'react'
-import RoadMapImg from '../../image/roadmap/roadmapImg-fix.png'
+import RoadMapImg from '../../image/roadmap/roadmapImg.png'
 import styled from 'styled-components'
 
 import Background from '../../image/roadmap/mapBac.png'
 
-const RoadmapContainer = styled.div`
+const Wrapper = styled.div`
   width: 100vw;
+`
+
+const RoadmapContainer = styled.div`
+  max-width: 1550px;
+  margin: 0 auto;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -20,10 +25,9 @@ const RoadmapContainer = styled.div`
 const Title = styled.div`
   position: absolute;
   color: #fff;
-  font-size: 4vw;
-  font-weight: 550;
-  top: 5vh;
-  right: 15vw;
+  font-size: 70px;
+  top: 100px;
+  right: 0;
   z-index: 9;
 
   @media screen and (max-width: 1100px) {
@@ -57,9 +61,9 @@ const BackgroundImage = styled.img`
 
 const Image = styled.img`
   position: relative;
-  left: 8vw;
-  top: 15vh;
-  width: 88vw;
+  left: 40px;
+  top: 150px;
+  width: 100%;
   z-index: 99;
 
   @media screen and (max-width: 1100px) {
@@ -78,20 +82,18 @@ const Image = styled.img`
 const RoadMap: React.FC = () => {
   return (
     <div className="section">
-      <RoadmapContainer id="RoadMapContainer">
-        <Title
-          data-aos="zoom-in"
-        >
-          ROADMAP
-        </Title>
+      <Wrapper>
+        <RoadmapContainer>
+          <Title>ROADMAP</Title>
 
-        <Image
-          src={RoadMapImg}
-          alt="roadmap"
-        />
+          <Image
+            src={RoadMapImg}
+            alt="roadmap"
+          />
 
-        <BackgroundImage src={Background} alt="roadmap" />
-      </RoadmapContainer>
+          <BackgroundImage src={Background} alt="roadmap" />
+        </RoadmapContainer>
+      </Wrapper>
     </div>
   )
 }
