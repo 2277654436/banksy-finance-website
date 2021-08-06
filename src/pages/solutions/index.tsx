@@ -4,18 +4,19 @@ import styled from 'styled-components'
 
 import BackgroundImage from '../../image/solutions/dots.png'
 
-const SolutionsContainer = styled.div`
+const Wrapper = styled.div`
   width: 100vw;
-  height: 100vh;
+  background: url(${BackgroundImage}) no-repeat center;
+  background-size: 50%;
+`
+
+const SolutionsContainer = styled.div`
+  max-width: 1550px;
+  margin: 0 auto;
   position: relative;
   user-select: none;
-  background-image: url(${BackgroundImage});
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-position: top 15vh left 0;
   color: white;
-
-  padding: 30vh 0 0 10vw;
+  padding-top: 500px;
 
   @media screen and (max-width: 1100px) {
     height: fit-content;
@@ -29,7 +30,7 @@ const SolutionsContainer = styled.div`
 
 const Title = styled.div`
   color: white;
-  font-size: 4vw;
+  font-size: 75px;
   font-family: 'SourceHanSansCN-Bold';
   font-weight: 550;
   height: fit-content;
@@ -46,9 +47,11 @@ const Title = styled.div`
 `
 
 const Content = styled.div`
-  width: 40vw;
+  margin-top: 80px;
+  width: 450px;
+  line-height: 36px;
   color: #B2B2B2;
-  font-size: 1.4vw;
+  font-size: 22px;
   font-family: 'SourceHanSansCN-Normal';
   font-weight: lighter;
 
@@ -61,9 +64,9 @@ const Content = styled.div`
 
 const SolutionsImage = styled.img`
   position: absolute;
-  right: 7vw;
-  top: 10vh;
-  width: 45vw;
+  right: 0;
+  top: 100px;
+  width: 830px;
 
   @media screen and (max-width: 1100px) {
     position: relative;
@@ -77,19 +80,22 @@ const SolutionsImage = styled.img`
 export const Solutions: React.FC = () => {
   return (
     <div className="section">
-      <SolutionsContainer>
-        <Title data-aos="fade-right">
-          SOLUTIONS
-        </Title>
-        <Content data-aos="fade-right">
-          The NAK protocol is a complete solution
-          driven by AI technology,
-          which can effectively solve the lending risk from
-          the NFT price confusion
-        </Content>
+      <Wrapper>
+        <SolutionsContainer>
+          <Title>
+            SOLUTIONS
+          </Title>
+          <Content>
+            The NAK protocol is a complete solution
+            driven by AI technology,
+            <br />
+            which can effectively solve the lending risk from
+            the NFT price confusion
+          </Content>
 
-        <SolutionsImage src={FeaturesBG} alt="solutions" data-aos="fade-left" />
-      </SolutionsContainer>
+          <SolutionsImage src={FeaturesBG} alt="solutions" />
+        </SolutionsContainer>
+      </Wrapper>
     </div>
   )
 }

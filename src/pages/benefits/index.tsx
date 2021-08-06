@@ -4,10 +4,15 @@ import benefits2 from '../../image/banefits/benefits2.png'
 import benefits3 from '../../image/banefits/benefits3.png'
 import styled from 'styled-components'
 
+const Wrapper = styled.div`
+  width: 100vw;
+`
+
 const BenefitsContainer = styled.div`
-  width: 100%;
-  height: 100vh;
+  max-width: 1550px;
+  margin: 0 auto;
   position: relative;
+  padding: 300px 0;
 
   @media screen and (max-width: 1100px) {
     height: fit-content;
@@ -16,11 +21,11 @@ const BenefitsContainer = styled.div`
 
 const Title = styled.div`
   color: #fff;
-  font-size: 4vw;
+  font-size: 68px;
   font-weight: bolder;
   position: relative;
-  margin-left: 62.5vw;
-  margin-top: 10vh;
+  text-align: right;
+  margin-bottom: 100px;
 
   @media screen and (max-width: 1100px) {
     margin: 6.6vh auto 10px auto;
@@ -36,8 +41,7 @@ const ItemsContainer = styled.div`
   display: flex;
   justify-content: space-around;
   position: relative;
-  margin: 4vh auto 0 auto;
-  width: 80vw;
+  width: 100%;
 
   @media screen and (max-width: 1100px) {
     position: relative;
@@ -56,31 +60,30 @@ const Item = styled.div`
   justify-content: start;
   flex-direction: column;
   align-items: start;
-  width: 16vw;
-  margin-bottom: 5vh;
 
   img {
-    width: 100%;
-    margin-bottom: 2vh;
+    width: 340px;
+    margin-bottom: 40px;
   }
 
   .title {
     color: #fff;
     width: 100%;
-    font-size: 2vw;
+    font-size: 28px;
     font-weight: bolder;
     font-family: 'SourceHanSansCN-Bold';
-    margin-bottom: 2vh;
+    margin-bottom: 20px;
   }
 
   .details {
     color: #808080;
-    font-size: 1.2vw;
+    font-size: 19px;
     font-family: SourceHanSansCN-Light;
+    width: 400px;
 
     p {
       width: 100%;
-      line-height: 3vh;
+      line-height: 40px;
       margin: 0 0 1vh 0;
     }
   }
@@ -158,26 +161,28 @@ const Benefits: React.FC = () => {
 
   return (
     <div className="section" id="benefits">
-      <BenefitsContainer>
-        <Title id="benefits-title" data-aos="zoom-out">
-          BENEFITS
-        </Title>
-        <ItemsContainer data-aos="flip-left">
-          {
-            BENEFIT_ITEMS.map(item => (
-              <Item key={item.title}>
-                <img src={item.img} alt={item.title} />
-                <div className="title">
-                  {item.title}
-                </div>
-                <div className="details">
-                  {item.details.map(detail => (<p key={detail}>{detail}</p>))}
-                </div>
-              </Item>
-            ))
-          }
-        </ItemsContainer>
-      </BenefitsContainer>
+      <Wrapper>
+        <BenefitsContainer>
+          <Title id="benefits-title">
+            BENEFITS
+          </Title>
+          <ItemsContainer>
+            {
+              BENEFIT_ITEMS.map(item => (
+                <Item key={item.title}>
+                  <img src={item.img} alt={item.title} />
+                  <div className="title">
+                    {item.title}
+                  </div>
+                  <div className="details">
+                    {item.details.map(detail => (<p key={detail}>{detail}</p>))}
+                  </div>
+                </Item>
+              ))
+            }
+          </ItemsContainer>
+        </BenefitsContainer>
+      </Wrapper>
     </div>
   )
 }

@@ -12,13 +12,19 @@ import github from '../../image/team/github-link.png'
 import styled from 'styled-components'
 import BackgroundImage from '../../image/issues/background.png'
 
+
+const Wrapper = styled.div`
+  width: 100vw;
+  background-image: url(${BackgroundImage});
+  background-size: 100%;
+`
+
 const TeamContainer = styled.div`
-  width: 100%;
+  max-width: 1550px;
+  margin: 0 auto;
   height: 100vh;
   font-family: 'SourceHanSansCN-Normal';
   position: relative;
-  background-image: url(${BackgroundImage});
-  background-size: 100%;
 
   @media screen and (max-width: 1100px) {
     height: fit-content;
@@ -31,30 +37,30 @@ const TeamContainer = styled.div`
 
 const Title = styled.div`
   position: absolute;
-  left: 12vw;
-  top: 10vh;
   width: fit-content;
-
+  top: 100px;
+  
   img {
-    width: 10vw;
+    width: 225px;
   }
 
   span {
     color: #fff;
-    font-size: 4vw;
-    position: absolute;
-    bottom: 10vh;
-    left: 3vw;
+    font-size: 72px;
     font-weight: 550;
+    position: absolute;
+    left: 70px;
+    top: 120px;
   }
 
   div {
-    position: relative;
+    position: absolute;
     color: #808080;
-    width: 25vw;
+    width: 500px;
     font-family: SourceHanSansCN-Light;
-    font-size: 1.2vw;
-    top: 8vh;
+    font-size: 20px;
+    top: 250px;
+    left: 80px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -90,7 +96,7 @@ const Title = styled.div`
 
 const MembersRowContainer = styled.div`
   position: relative;
-  margin-top: 10vh;
+  margin-top: 200px;
 
   .row__1, .row__2 {
     position: relative;
@@ -99,14 +105,17 @@ const MembersRowContainer = styled.div`
   }
 
   .row__1 {
-    width: 45vw;
-    margin-left: 40vw;
+    width: 865px;
+    position: absolute;
+    right: 0;
+    top: 100px;
   }
 
   .row__2 {
-    top: 5vh;
-    width: 61.5vw;
-    margin-left: 23vw;
+    width: 1180px;
+    position: absolute;
+    right: 0;
+    top: 500px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -125,18 +134,18 @@ const MemberContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 10vw;
+  width: 230px;
   font-family: SourceHanSansCN-Light;
   z-index: 2;
-  font-size: 1vw;
+  font-size: 18px;
   color: #808080;
 
   .name {
-    margin-top: 0.7vw;
+    margin-top: 10px;
   }
 
   .position {
-    margin-top: 1vh;
+    margin-top: 10px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -151,15 +160,15 @@ const MemberContainer = styled.div`
 const Avatar = styled.img`
   object-fit: cover;
   width: 100%;
-  height: 14vw;
-
+  height: 270px;
+  
   @media screen and (max-width: 1100px) {
     height: 80vw;
   }
 `
 
 const ExternalLink = styled.a`
-  margin-top: 1rem;
+  margin-top: 10px;
   cursor: pointer;
   color: #fff;
   display: flex;
@@ -170,7 +179,7 @@ const ExternalLink = styled.a`
   }
 
   img {
-    width: 1vw;
+    width: 20px;
     margin-right: 0.5rem;
   }
 
@@ -257,30 +266,32 @@ const Team: React.FC = () => {
 
   return (
     <div className="section">
-      <TeamContainer>
-        <Title data-aos="flip-left">
-          <img src={teamTitleImg} className="team-title-img" alt="banksy team" />
-          <span>TEAM</span>
-          <div>
-            We are all from first-line internet
-            companies with extensive experience
-            in blockchain technology.
-          </div>
-        </Title>
+      <Wrapper>
+        <TeamContainer>
+          <Title>
+            <img src={teamTitleImg} className="team-title-img" alt="banksy team" />
+            <span>TEAM</span>
+            <div>
+              We are all from first-line internet
+              companies with extensive experience
+              in blockchain technology.
+            </div>
+          </Title>
 
-        <MembersRowContainer data-aos="flip-down">
-          <div className="row__1">
-            {
-              MEMBERS_ROW1.map(member => (<Member key={member.name} {...member} />))
-            }
-          </div>
-          <div className="row__2">
-            {
-              MEMBERS_ROW2.map(member => (<Member key={member.name} {...member} />))
-            }
-          </div>
-        </MembersRowContainer>
-      </TeamContainer>
+          <MembersRowContainer>
+            <div className="row__1">
+              {
+                MEMBERS_ROW1.map(member => (<Member key={member.name} {...member} />))
+              }
+            </div>
+            <div className="row__2">
+              {
+                MEMBERS_ROW2.map(member => (<Member key={member.name} {...member} />))
+              }
+            </div>
+          </MembersRowContainer>
+        </TeamContainer>
+      </Wrapper>
     </div>
   )
 }

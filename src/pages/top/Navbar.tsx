@@ -22,7 +22,7 @@ const NavbarContainer = styled.div`
   font-size: 1vw;
   font-weight: bold;
   z-index: 9999;
-  width: 100vw;
+  width: 100%;
 
   position: absolute;
   top: 0;
