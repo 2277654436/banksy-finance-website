@@ -94,10 +94,10 @@ const Navbar: React.FC = () => {
       <Logo id="logo" src={logo} alt="Banksy" />
 
       <NavLinksContainer id="NavLinksContainer">
-        <li><a onClick={() => scrollToPart('mission')}>Mission</a></li>
-        <li><a onClick={() => scrollToPart('features')}>Features</a></li>
-        <li><a onClick={() => scrollToPart('benefits')}>Benefits</a></li>
-        <li><a onClick={() => scrollToPart('roadMap')}>Roadmap</a></li>
+        <li><a onClick={() => scrollToPart('MissionContainer')}>Mission</a></li>
+        <li><a onClick={() => scrollToPart('FeaturesContainer')}>Features</a></li>
+        <li><a onClick={() => scrollToPart('BenefitsContainer')}>Benefits</a></li>
+        <li><a onClick={() => scrollToPart('RoadMapContainer')}>Roadmap</a></li>
       </NavLinksContainer>
 
       <ExternalLinksContainer id="ExternalLinksContainer">

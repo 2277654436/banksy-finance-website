@@ -3,7 +3,8 @@ import TwitterIcon from '../../image/foot/Twitter.png'
 import GithubIcon from '../../image/foot/Github.png'
 import EmailIcon from '../../image/foot/Email.png'
 import TelegramIcon from '../../image/foot/Telegram.png'
-import footLogo from '../../image/foot/Logo.png'
+import footLogo from '../../image/foot/logo.png'
+import Discord from '../../image/foot/Discord.svg'
 import styled from 'styled-components'
 
 const FootContainer = styled.div`
@@ -66,9 +67,10 @@ const Copyright = styled.div`
 const Foot: React.FC = () => {
   const EXTERNAL_LINKS: Array<{ icon: string, link: string }> = [
     { icon: TwitterIcon, link: 'https://twitter.com/banksy_finance' },
-    { icon: GithubIcon, link: 'https://twitter.com/banksy_finance' },
+    { icon: GithubIcon, link: 'https://github.com/Banksy-Finance/' },
     { icon: TelegramIcon, link: 'https://t.me/Banskyfinance' },
     { icon: EmailIcon, link: 'mailto:contact@banksy.finance' },
+    { icon: Discord, link: 'https://discord.gg/NdRGt4BDFe' },
   ]
   return (
     <div className="section">
