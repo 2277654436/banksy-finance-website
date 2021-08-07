@@ -69,6 +69,7 @@ const Item = styled.div`
   align-items: start;
 
   img {
+    border-radius: 10px;
     width: 240px;
     margin-bottom: 40px;
   }
@@ -145,8 +146,7 @@ const Benefits: React.FC = () => {
       title: 'NFT Holder',
       details: [
         '1｜Easily get loans',
-        '2｜Mapping NFT for higher liquidity',
-        '3｜Instant loan and repayment; Flexible repayment',
+        '2｜Instant loan and repayment; Flexible repayment',
       ]
     },
     {
@@ -163,8 +163,7 @@ const Benefits: React.FC = () => {
       title: 'Tokens Holder',
       details: [
         '1｜Share the platform revenue',
-        '2｜Participate in platform governance',
-        '3｜NFT creation and management',
+        '2｜Participate in platform governance'
       ]
     }
   ]

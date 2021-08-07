@@ -6,7 +6,7 @@ import Background from '../../image/roadmap/mapBac.png'
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 650px;
+  height: 750px;
   background: url(${Background}) no-repeat;
   background-size: 80%;
   background-position: top 0 left 50%;

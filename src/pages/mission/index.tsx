@@ -111,7 +111,7 @@ const SpinningImage = styled.img`
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: ${Spin} 30s infinite linear !important;
+  // animation: ${Spin} 30s infinite linear !important;
 
   @media screen and (max-width: 1100px) {
     top: 330px;

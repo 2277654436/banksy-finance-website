@@ -156,8 +156,7 @@ const SpinningRing = styled.img`
   width: 300px;
   position: absolute;
   top: 500px;
-  left: 540px;
-  animation: ${Spin} 10s infinite linear;
+  left: 400px;
 
   @media screen and (max-width: 1100px) {
     position: relative;

@@ -84,7 +84,7 @@ const ItemsContainer = styled.div`
 `
 
 const Item = styled.div`
-  width: 300px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
