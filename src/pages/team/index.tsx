@@ -195,9 +195,9 @@ const MemberContainer = styled.div`
 `
 
 const Avatar = styled.img`
-  width: 80px;
-  border-radius: 40px;
-  margin-left: calc((100% - 80px) / 2);
+  width: 110px;
+  border-radius: 55px;
+  margin-left: calc((100% - 110px) / 2);
 
   @media screen and (max-width: 1100px) {
     width: 80px;
