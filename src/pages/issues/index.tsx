@@ -7,16 +7,24 @@ import styled from 'styled-components'
 import BackgroundImage from '../../image/issues/background.png'
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 900px;
   background-image: url(${BackgroundImage});
-  background-size: 80%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media screen and (max-width: 1100px) {
+    height: 770px;
+  }
 `
 
 const IssuesContainer = styled.div`
-  max-width: 1550px;
+  width: 1200px;
   margin: 0 auto;
   height: 900px;
   position: relative;
+  display: flex;
+  align-items: center;
   font-family: 'AvenirNext';
 
   @media screen and (max-width: 1100px) {
@@ -29,15 +37,15 @@ const IssuesContainer = styled.div`
 const Title = styled.div`
   position: absolute;
   top: 200px;
-  right: 0px;
+  right: 0;
   color: white;
-  font-size: 90px;
+  font-size: 64px;
   font-weight: bolder;
   text-align: right;
   z-index: 9;
 
   img {
-    width: 270px;
+    width: 200px;
     position: relative;
     bottom: 18vh;
     right: 200px;
@@ -45,27 +53,31 @@ const Title = styled.div`
   }
 
   div {
-    position: relative;
+    position: absolute;
+    right: 10px;
     z-index: 9;
   }
 
   @media screen and (max-width: 1100px) {
-    position: relative;
-    top: 0;
-    margin: 10vh auto 0 auto;
-    left: 0;
+    position: absolute;
+    top: 100px;
+    left: 190px;
     width: fit-content;
     color: white;
     font-family: 'SourceHanSansCN-Bold';
 
     div {
-      font-size: 12vw;
+      position: absolute;
+      top: 60px;
+      left: -80px;
+      font-size: 28px;
     }
 
     img {
+      width: 100px;
       position: absolute;
-      top: -2vw;
-      left: -14vw;
+      top: 0;
+      left: -150px;
     }
   }
 `
@@ -75,14 +87,10 @@ const ItemsContainer = styled.div`
   display: flex;
   flex-direction: column;
   top: 150px;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 50px;
   z-index: 9;
 
   @media screen and (max-width: 1100px) {
-    top: 0;
-
-    position: relative;
     display: flex;
     flex-direction: column;
     left: 8vw;
@@ -93,7 +101,7 @@ const ItemsContainer = styled.div`
 const Item = styled.div`
   display: flex;
   justify-content: start;
-  margin-top: 5vh;
+  margin-top: 50px;
   z-index: 9;
 
   .col {
@@ -103,7 +111,6 @@ const Item = styled.div`
 
   img {
     width: 120px;
-    object-fit: fit;
     margin-right: 50px;
   }
 
@@ -128,19 +135,20 @@ const Item = styled.div`
     img {
       width: 15vw;
       height: 15vw;
+      margin-right: 10px;
     }
 
     .title {
-      color: white;
+      color: whit e;
       font-weight: 550;
-      font-size: 6vw;
+      font-size: 22px;
       font-family: 'SourceHanSansCN-Bold';
     }
 
     .detail {
       position: relative;
       width: 70vw;
-      font-size: 4.5vw;
+      font-size: 16px;
     }
   }
 `
@@ -156,7 +164,7 @@ const Issues: React.FC = () => {
     {
       img: Number1,
       title: 'Price confusion',
-      detail: 'Lack of an effective NFT price discovery mechanism for NFT valuation and quotation in the market'
+      detail: 'Lack of an effective NFT price discovery mechanism for NFT valuation and quotation in the market.'
     },
     {
       img: Number2,
@@ -175,7 +183,7 @@ const Issues: React.FC = () => {
       <Wrapper>
         <IssuesContainer id="IssuesContainer">
           <Title>
-            <div>Issues</div>
+            <div>ISSUES</div>
             <img src={danger} alt="issues" />
           </Title>
 

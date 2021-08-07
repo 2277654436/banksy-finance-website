@@ -16,23 +16,24 @@ function scrollToPart(anchorName: string) {
 }
 
 const NavbarContainer = styled.div`
+  width: 1300px;
   font-family: 'AvenirNext';
   height: 80px;
   color: #fff;
   font-size: 1vw;
   font-weight: bold;
   z-index: 9999;
-  width: 100%;
-
-  position: absolute;
+  margin-left: calc((100% - 1300px) / 2);
+  position: relative;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 10px 30px;
 
   @media screen and (max-width: 1100px) {
+    width: 100%;
+    margin-left: 0;
     padding: 0 4vw 0 2vw;
     height: 12vw;
   }
@@ -82,7 +83,7 @@ const ExternalLink = styled.a`
 
 
   img {
-    height: 2.5vh;
+    width: 25px;
     margin-left: 2.5vw;
   }
 `

@@ -5,32 +5,33 @@ import styled from 'styled-components'
 import BackgroundImage from '../../image/solutions/dots.png'
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 600px;
   background: url(${BackgroundImage}) no-repeat center;
-  background-size: 50%;
+  background-size: 50% 100%;
 `
 
 const SolutionsContainer = styled.div`
-  max-width: 1550px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
   user-select: none;
   color: white;
-  padding-top: 500px;
+  padding-top: 130px;
 
   @media screen and (max-width: 1100px) {
+    width: 100%;
     height: fit-content;
     user-select: none;
-    background-size: 100% 100% cover;
+    background-size: 100% 100%;
     background-position-y: 30vh;
-
     padding: 10vh 0 0 0;
   }
 `
 
 const Title = styled.div`
   color: white;
-  font-size: 75px;
+  font-size: 64px;
   font-family: 'SourceHanSansCN-Bold';
   font-weight: 550;
   height: fit-content;
@@ -38,41 +39,40 @@ const Title = styled.div`
   @media screen and (max-width: 1100px) {
     position: relative;
     top: 0;
-    left: 0;
+    left: 20px;
     width: fit-content;
-    font-size: 12vw;
-    margin-bottom: 4vh;
+    font-size: 41px;
     margin-left: 5vw;
   }
 `
 
 const Content = styled.div`
-  margin-top: 80px;
-  width: 450px;
-  line-height: 36px;
+  margin-top: 30px;
+  width: 580px;
+  font-size: 18px;
+  font-family: 'SourceHanSansCN-Light';
+  line-height: 32px;
   color: #B2B2B2;
-  font-size: 22px;
-  font-family: 'SourceHanSansCN-Normal';
-  font-weight: lighter;
 
   @media screen and (max-width: 1100px) {
-    width: 90vw;
-    font-size: 5.5vw;
-    margin: 0 auto;
+    width: 300px;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-top: 10px;
   }
 `
 
 const SolutionsImage = styled.img`
   position: absolute;
   right: 0;
-  top: 100px;
-  width: 830px;
+  top: 40px;
+  width: 630px;
 
   @media screen and (max-width: 1100px) {
     position: relative;
-    top: 0;
-    left: 5vw;
-    width: 90vw;
+    top: 20px;
+    left: calc((100% - 270px) / 2);
+    width: 270px;
     margin-bottom: 5vh;
   }
 `
@@ -89,8 +89,8 @@ export const Solutions: React.FC = () => {
             The NAK protocol is a complete solution
             driven by AI technology,
             <br />
-            which can effectively solve the lending risk from
-            the NFT price confusion
+            which can effectively either “eliminate,” “reduce,” “diminish” etc.,
+            but not “solve” the lending risk associated with NFT price confusion.
           </Content>
 
           <SolutionsImage src={FeaturesBG} alt="solutions" />

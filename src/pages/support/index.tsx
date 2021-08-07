@@ -8,15 +8,21 @@ import styled, { keyframes } from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100vw;
+  height: 800px;
+
+  @media screen and (max-width: 1100px) {
+    height: 600px;
+  }
 `
 
 const SupportsContainer = styled.div`
-  max-width: 1550px;
+  width: 1200px;
   margin: 0 auto;
   height: 100vh;
   position: relative;
 
   @media screen and (max-width: 1100px) {
+    width: 100%;
     height: fit-content;
     padding-top: 10vh;
   }
@@ -27,16 +33,16 @@ const Title = styled.div`
   color: white;
   font-family: SourceHanSansCN-Bold;
   font-weight: 550;
-  font-size: 50px;
+  font-size: 46px;
   z-index: 1;
   width: fit-content;
-  top: 100px;
+  top: 0;
 
   img {
     position: relative;
-    width: 210px;
-    top: 320px;
-    left: 100px;
+    width: 160px;
+    top: 80px;
+    left: 0;
     z-index: 1;
   }
 
@@ -46,11 +52,18 @@ const Title = styled.div`
   }
 
   @media screen and (max-width: 1100px) {
-    font-size: 6vw;
+    font-size: 22px;
+    margin-left: 40px;
 
     img {
       top: 9vh;
       width: 18vw;
+    }
+
+    div {
+      z-index: 9;
+      position: relative;
+      top: 20px;
     }
   }
 `
@@ -63,17 +76,17 @@ const ImagesContainer = styled.div`
     right: 0;
 
     img {
-      width: 365px;
+      width: 265px;
       z-index: 1;
       position: relative;
       transition: all 1s;
 
       &:hover {
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        -ms-transform: scale(1.2);
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         z-index: 99;
       }
     }
@@ -86,15 +99,15 @@ const ImagesContainer = styled.div`
 
     .b {
       position: absolute;
-      top: 225px;
-      right: 92px;
+      top: 125px;
+      right: 120px;
       z-index: 2;
     }
 
     .c {
       position: absolute;
-      top: 450px;
-      right: 184px;
+      top: 250px;
+      right: 140px;
       z-index: 3;
     }
   }
@@ -142,17 +155,18 @@ const Spin = keyframes`
 const SpinningRing = styled.img`
   width: 300px;
   position: absolute;
-  top: 700px;
-  left: 300px;
+  top: 500px;
+  left: 540px;
   animation: ${Spin} 10s infinite linear;
 
   @media screen and (max-width: 1100px) {
     position: relative;
-    top: 0;
-    left: 0;
-    width: 40vw;
+    top: -120px;
+    left: 70px;
+    width: 150px;
     margin-top: 6vh;
     margin-left: 30vw;
+    z-index: 99;
   }
 `
 

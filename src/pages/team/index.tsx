@@ -14,24 +14,29 @@ import BackgroundImage from '../../image/issues/background.png'
 
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 900px;
   background-image: url(${BackgroundImage});
   background-size: 100%;
+
+  @media screen and (max-width: 1100px) {
+    height: 2600px;
+  }
 `
 
 const TeamContainer = styled.div`
-  max-width: 1550px;
+  width: 1200px;
   margin: 0 auto;
   height: 100vh;
   font-family: 'SourceHanSansCN-Normal';
   position: relative;
 
   @media screen and (max-width: 1100px) {
+    width: 100%;
     height: fit-content;
     position: relative;
     margin-bottom: 30vh;
-    
-    background-size: 100% 100% cover;
+    background-size: 100% 100%;
   }
 `
 
@@ -41,26 +46,26 @@ const Title = styled.div`
   top: 100px;
   
   img {
-    width: 225px;
+    width: 165px;
   }
 
   span {
     color: #fff;
-    font-size: 72px;
+    font-size: 64px;
     font-weight: 550;
     position: absolute;
-    left: 70px;
-    top: 120px;
+    left: 20px;
+    top: 80px;
   }
 
   div {
     position: absolute;
     color: #808080;
-    width: 500px;
+    width: 310px;
     font-family: SourceHanSansCN-Light;
     font-size: 20px;
-    top: 250px;
-    left: 80px;
+    top: 200px;
+    left: 0;
   }
 
   @media screen and (max-width: 1100px) {
@@ -68,20 +73,21 @@ const Title = styled.div`
     width: 80vw;
     margin: 0;
     height: fit-content;
+    left: 40px;
 
     img {
       position: absolute;
       top: -2vw;
-      width: 28vw;
+      width: 100px;
     }
 
     span {
       position: relative;
-      top: 0;
+      top: 20px;
       left: 8vw;
       width: fit-content;
       margin: 0;
-      font-size: 12vw;
+      font-size: 41px;
     }
 
     div {
@@ -89,7 +95,7 @@ const Title = styled.div`
       width: 100%;
       margin: 5vh auto 0 auto;
       top: 0;
-      font-size: 5vw;
+      font-size: 16px;
     }
   }
 `
@@ -120,12 +126,22 @@ const MembersRowContainer = styled.div`
 
   @media screen and (max-width: 1100px) {
     position: relative;
-    margin-top: 16vh;
+    margin-top: 50px;
 
-    .row__1, .row__2 {
+    .row__1{
+      width: 100%;
       flex-direction: column;
-      width: 65vw;
       margin: 0 auto;
+      position: absolute;
+      left: 0;
+    } 
+    .row__2 {
+      width: 90%;
+      flex-direction: column;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
+      top: 1100px;
     }
   }
 `
@@ -134,11 +150,11 @@ const MemberContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 230px;
+  width: 220px;
   font-family: SourceHanSansCN-Light;
   z-index: 2;
   font-size: 18px;
-  color: #808080;
+  color: #B2B2B2;
 
   .name {
     margin-top: 10px;
@@ -146,6 +162,7 @@ const MemberContainer = styled.div`
 
   .position {
     margin-top: 10px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -158,12 +175,10 @@ const MemberContainer = styled.div`
 `
 
 const Avatar = styled.img`
-  object-fit: cover;
   width: 100%;
-  height: 270px;
   
   @media screen and (max-width: 1100px) {
-    height: 80vw;
+    width: 200px;
   }
 `
 

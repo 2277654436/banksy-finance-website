@@ -5,30 +5,41 @@ import styled from 'styled-components'
 import Navbar from './Navbar'
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 110vh;
+  min-height: 800px;
+  max-height: 1200px;
   background-image: url(${MainBG2});
-  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  @media screen and (max-width: 1100px) {
+    height: 60vh;
+    min-height: 300px;
+    max-height: 1200px;
+    background-size: 100% 100%;
+    background-position: center;
+  }
 `
 
 const TopContainer = styled.div`
-  max-width: 1550px;
-  margin: 0 auto;
-  height: 100vh;
-  position: relative;
+  width: 1200px;
+  margin-left: calc((100% - 1200px) / 2);
   font-family: 'SourceHanSansCN-Bold';
-  padding-top: 35vh;
+  padding-top: 13%;
 
   @media screen and (max-width: 1100px) {
-    padding-top: 16vh;
+    padding-top: 5vh;
+    margin-left: 0;
     width: 100vw;
   }
 `
 
 const Title = styled.div`
   text-align: left;
-  position: relative;
   z-index: 1;
-  font-size: 81px;
+  font-size: 64px;
 
   p {
     font-weight: 800;
@@ -42,19 +53,18 @@ const Title = styled.div`
     margin: 0 auto;
     width: fit-content;
     left: 0;
-    font-size: 10vw;
+    font-size: 28px;
     font-family: 'SourceHanSansCN-Light';
     
     p {
       width: fit-content;
       margin: 0 auto;
-      line-height: 15vw;
+      line-height: normal;
     }
   }
 `
 
 const ExplorerButton = styled.div`
-  margin-right: 0;
   background-color: #554BFF;
   border-radius: 1rem;
   width: 190px;
@@ -69,6 +79,7 @@ const ExplorerButton = styled.div`
   color: white;
   cursor: pointer;
   transition: all 0.5s;
+  margin-top: 20px;
 
   &:hover {
     border: solid 1px #9490e7;
@@ -77,15 +88,12 @@ const ExplorerButton = styled.div`
 
   @media screen and (max-width: 1100px) {
     position: relative;
-
-    top: 20vh;
+    top: 0;
     left: 0;
     width: 40vw;
     height: 9vw;
     font-size: 5vw;
-
     margin: 0 auto;
-
     background-color: #554BFF;
     border-radius: 10px;
     color: white;
@@ -99,22 +107,18 @@ const ExplorerButton = styled.div`
 
 const Text = styled.div`
   width: 600px;
-  position: relative;
   font-size: 22px;
   text-align: left;
   color: #ccc;
-  margin-bottom: 4vh;
 
   @media screen and (max-width: 1100px) {
+    width: 300px;
     position: relative;
+    text-align: center;
     left: 0;
-    top: 14vh;
-
-    width: fit-content;
+    top: 20px;
     margin: 0 auto 10vh auto;
-
     font-size: 3.6vw;
-    text-align: left;
     color: #eee;
   }
 `

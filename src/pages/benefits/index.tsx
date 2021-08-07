@@ -6,40 +6,46 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100vw;
+  height: 1100px;
+
+  @media screen and (max-width: 1100px) {
+    height: 850px;
+  }
 `
 
 const BenefitsContainer = styled.div`
-  max-width: 1550px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
-  padding: 300px 0;
+  padding: 200px 0;
 
   @media screen and (max-width: 1100px) {
+    width: 100%;
     height: fit-content;
   }
 `
 
 const Title = styled.div`
   color: #fff;
-  font-size: 68px;
+  font-size: 64px;
   font-weight: bolder;
   position: relative;
   text-align: right;
   margin-bottom: 100px;
 
   @media screen and (max-width: 1100px) {
-    margin: 6.6vh auto 10px auto;
+    margin-left: 40px;
+    margin-bottom: 20px;
     left: 0;
     top: 0;
     width: fit-content;
     position: relative;
-    font-size: 12vw;
+    font-size: 28px;
   }
 `
 
 const ItemsContainer = styled.div`
   display: flex;
-  justify-content: space-around;
   position: relative;
   width: 100%;
 
@@ -59,10 +65,11 @@ const Item = styled.div`
   display: flex;
   justify-content: start;
   flex-direction: column;
+  margin-left: 20px;
   align-items: start;
 
   img {
-    width: 340px;
+    width: 240px;
     margin-bottom: 40px;
   }
 
@@ -111,11 +118,14 @@ const Item = styled.div`
       font-size: 3.5vw;
       position: absolute;
       left: 33vw;
-      top: 7vw;
+      top: 20px;
       width: 60vw;
+      padding-right: 10px;
 
       p {
-        margin: revert;
+        width: 100%;
+        line-height: normal;
+        margin: 10px 0 0 0;
       }
     }
   }

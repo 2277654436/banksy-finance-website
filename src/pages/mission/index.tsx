@@ -6,12 +6,18 @@ import missionRing from '../../image/mission/mission-ring.png'
 import styled, { keyframes } from 'styled-components'
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 760px;
   background: url(${MissionBackground}) no-repeat center;
+  background-size: 100% 100%;
+  
+  @media screen and (max-width: 1100px) {
+    height: 600px;
+  }
 `
 
 const MissionContainer = styled.div`
-  max-width: 1550px;
+  width: 1200px;
   margin: 0 auto;
   height: 100vh;
   background-size: 100% 100%;
@@ -19,25 +25,27 @@ const MissionContainer = styled.div`
   padding-top: 24vh;
 
   @media screen and (max-width: 1100px) {
-    height: 233vw;
+    width: 300px;
+    height: 400px;
     padding-top: 0;
   }
 `
 
 const Title = styled.div`
-  position: relative;
-  top: 80px;
+  position: absolute;
+  top: 280px;
   img {
     position: absolute;
     top: -160px;
-    width: 130px;
+    width: 80px;
   }
 
   p {
-    position: relative;
-    left: 69px;
+    position: absolute;
+    top: -60px;
+    left: 39px;
     font-family: SourceHanSansCN-Bold;
-    font-size: 72px;
+    font-size: 64px;
     color: #fff;
     font-weight: 600;
     z-index: 9;
@@ -47,15 +55,14 @@ const Title = styled.div`
     position: relative;
     top: 10vh;
     left: 0;
-    margin: 0 10vw;
+    margin: 0 0;
     width: 20vw;
     height: 24vw;
 
     p {
-      font-size: 9vw;
-
+      font-size: 28px;
       position: absolute;
-      top: 5vw;
+      top: 10vw;
       left: 5vw;
     }
 
@@ -70,38 +77,36 @@ const Title = styled.div`
 `
 
 const Content = styled.div`
-  position: relative;
+  position: absolute;
   width: 520px;
   font-size: 18px;
   font-family: 'SourceHanSansCN-Light';
   line-height: 32px;
-  color: #808080;
-  margin-left: 80px;
-  top: 80px;
+  color: #B2B2B2;
+  top: 340px;
 
   @media screen and (max-width: 1100px) {
     position: relative;
-    width: 80%;
+    width: 100%;
     left: 0;
     top: 15vh;
     margin: 0 auto;
-    line-height: 12vw;
-    font-size: 6vw;
+    line-height: normal;
+    font-size: 16px;
   }
 `
 
 const Spin = keyframes`
   to {
-    transform: rotate(1turn);
+    transform: rotate(-1turn);
   }
 `
 
 const SpinningImage = styled.img`
-  width: 700px;
-  height: 700px;
+  width: 600px;
   background-size: 100% 100%;
   position: absolute;
-  top: 100px;
+  top: 60px;
   right: 0px;
   display: flex;
   align-items: center;
@@ -109,20 +114,20 @@ const SpinningImage = styled.img`
   animation: ${Spin} 30s infinite linear !important;
 
   @media screen and (max-width: 1100px) {
-    top: 130vw;
+    top: 330px;
     left: 0;
-    width: 95vw;
-    height: 100vw;
+    width: 250px;
+    margin-left: calc((100% - 250px) / 2);
     animation: none !important;
   }
 `
 
 const RingImage = styled.img`
-  height: 900px;
+  height: 400px;
   transform: rotate(-6deg);
   position: absolute;
-  top: 100px;
-  right: 100px;
+  top: 300px;
+  right: 0;
   z-index: 5;
 `
 

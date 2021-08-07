@@ -22,7 +22,7 @@ const FootContainer = styled.div`
 const ExternalLinksContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 510px;
+  width: 450px;
   margin: 0 auto;
 
   @media screen and (max-width: 1100px) {
@@ -31,7 +31,7 @@ const ExternalLinksContainer = styled.div`
 `
 
 const SCExternalLink = styled.a`
-  width: 50px;
+  width: 45px;
 
   img {
     width: 100%;

@@ -3,11 +3,16 @@ import MapperImg from '../../image/mapper/mapperImg.png'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 800px;
+
+  @media screen and (max-width: 1100px) {
+    height: 400px;
+  }
 `
 
 const MapperContainer = styled.div`
-  max-width: 1550px;
+  width: 1200px;
   margin: 0 auto;
   height: 100vh;
   position: relative;
@@ -15,58 +20,58 @@ const MapperContainer = styled.div`
   padding-top: 200px;
 
   @media screen and (max-width: 1100px) {
-    height: fit-content;
+    width: 100%;
+    height: 500px;
   }
 `
 
 const Title = styled.div`
   position: absolute;
-  top:  400px;
+  top:  350px;
   right: 0;
   text-align: left;
-
   color: #fff;
-  font-size: 82px;
+  font-size: 64px;
   font-weight: bolder;
 
   @media screen and (max-width: 1100px) {
-    left: 0;
+    left: 20px;
     top: 0;
     margin: 5vh 0 0 5vw;
-    font-size: 12vw;
+    font-size: 28px;
     width: fit-content;
   }
 `
 
 const Text = styled.div`
   position: absolute;
-  top:  600px;
+  top:  480px;
   right: 0;
   text-align: right;
-  width: 600px;
+  width: 500px;
   color: #ccc;
-  font-size: 28px;
+  font-size: 22px;
   font-family: SourceHanSansCN-Light;
 
   @media screen and (max-width: 1100px) {
-    left: 0;
-    top: 0;
+    left: 20px;
+    top: 60px;
     margin: 5vh 0 0 5vw;
-    font-size: 5vw;
-    width: 90vw;
+    font-size: 16px;
+    width: 300px;
     text-align: left;
   }
 `
 
 const MapperImage = styled.img`
-  width: 770px;
+  width: 570px;
   position: absolute;
 
   @media screen and (max-width: 1100px) {
     position: relative;
-    left: 2vw;
+    left: calc((100% - 270px) / 2);
     top: 0;
-    width: 95vw;
+    width: 270px;
     margin: 0 2.5vw 5vh 0;
   }
 `

@@ -7,24 +7,30 @@ import Features4 from '../../image/features/features-img4.png'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
+  height: 900px;
+
+  @media screen and (max-width: 1100px) {
+    height: 1250px;
+  }
 `
 
 const FeaturesContainer = styled.div`
-  max-width: 1550px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
   font-family: 'SourceHanSansCN-Normal';
   padding: 150px 0;
 
   @media screen and (max-width: 1100px) {
+    width: 100%;
     height: fit-content;
   }
 `
 
 const Title = styled.div`
   color: white;
-  font-size: 70px;
+  font-size: 64px;
   position: relative;
   font-family: SourceHanSansCN-Bold;
   font-weight: 550;
@@ -32,7 +38,7 @@ const Title = styled.div`
   margin-bottom: 200px;
   
   img {
-    width: 260px;
+    width: 180px;
     position: absolute;
     z-index: 1;
   }
@@ -45,15 +51,22 @@ const Title = styled.div`
   }
 
   @media screen and (max-width: 1100px) {
-    margin: 8vh auto;
+    margin: 0 40px;
     color: white;
-    font-size: 9vw;
+    font-size: 28px;
     font-weight: bolder;
 
     img {
       z-index: 1;
       top: -2vh;
-      width: 30vw;
+      width: 90px;
+    }
+
+    div {
+      position: relative;
+      left: 30px;
+      top: 20px;
+      z-index: 9;
     }
   }
 `
@@ -71,14 +84,14 @@ const ItemsContainer = styled.div`
 `
 
 const Item = styled.div`
-  width: 320px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
 
   img {
-    height: 150px;
+    height: 120px;
     object-fit: cover;
   }
 
@@ -89,6 +102,7 @@ const Item = styled.div`
     font-family: SourceHanSansCN-Bold;
     font-weight: 550;
     font-size: 25px;
+    margin-top: 20px;
   }
 
   .detail {
@@ -96,6 +110,7 @@ const Item = styled.div`
     color: #B2B2B2;
     font-family: SourceHanSansCN-Light;
     font-size: 17px;
+    margin-top: 10px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -103,27 +118,27 @@ const Item = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 5vh;
+    margin-top: 40px;
 
     img {
-      width: 61.8%;
-      height: 100%;
+      width: 130px;
     }
 
     .title {
-      width: 80vw;
+      width: 100%;
       color: white;
       text-align: center;
       font-family: SourceHanSansCN-Bold;
       font-weight: 550;
-      font-size: 7vw;
+      font-size: 22px;
     }
 
     .detail {
+      width: 80%;
       text-align: center;
       color: #B2B2B2;
       font-family: SourceHanSansCN-Bold;
-      font-size: 5vw;
+      font-size: 16px;
     }
   }
 `
@@ -139,17 +154,17 @@ const Features: React.FC = () => {
     {
       img: Features1,
       title: 'Safe and Convenient',
-      detail: 'Secure users\' assets, flexible and convenient lending'
+      detail: 'Secures users\' assets, flexible and convenient lending'
     },
     {
       img: Features2,
       title: 'Multi-chain Supports',
-      detail: 'Support multi-chain such as ETH, BSC, HECO, Solana, DOT, etc'
+      detail: 'Supports multi-chain such as ETH, BSC, HECO, Solana, DOT, etc'
     },
     {
       img: Features3,
       title: 'Combine with Defi',
-      detail: 'Integrate Defi to increase NFT liquidity'
+      detail: 'Integrateas Defi to increase NFT liquidity'
     },
     {
       img: Features4,
