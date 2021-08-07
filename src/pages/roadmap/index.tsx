@@ -38,7 +38,7 @@ const Title = styled.div`
   color: #fff;
   font-size: 64px;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 9;
   font-weight: bolder;
 

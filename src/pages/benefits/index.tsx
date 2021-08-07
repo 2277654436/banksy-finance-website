@@ -30,7 +30,7 @@ const Title = styled.div`
   font-size: 64px;
   font-weight: bolder;
   position: relative;
-  text-align: right;
+  text-align: left;
   margin-bottom: 100px;
 
   @media screen and (max-width: 1100px) {
