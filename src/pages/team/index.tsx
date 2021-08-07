@@ -76,24 +76,23 @@ const Title = styled.div`
 
     img {
       position: absolute;
-      top: -2vw;
+      top: -20px;
       width: 100px;
     }
 
     span {
       position: relative;
       top: 20px;
-      left: 8vw;
+      left: 40px;
       width: fit-content;
       margin: 0;
       font-size: 41px;
     }
 
     div {
-      position: relative;
+      position: absolute;
       width: 100%;
-      margin: 5vh auto 0 auto;
-      top: 0;
+      top: 80px;
       font-size: 16px;
     }
   }
@@ -128,20 +127,20 @@ const MembersRowContainer = styled.div`
     margin-top: 0;
 
     .row__1{
-      width: 300px;
+      width: 100%;
       flex-direction: column;
       margin: 0 auto;
       position: absolute;
-      top: 130px;
+      top: 230px;
       left: 0;
     } 
     .row__2 {
-      width: 300px;
+      width: 100%;
       flex-direction: column;
       margin: 0 auto;
       position: absolute;
       left: 0;
-      top: 540px;
+      top: 640px;
     }
   }
 `
@@ -150,7 +149,8 @@ const MemberContainer = styled.div`
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 100%;
+  margin-left: 40px;
   font-family: SourceHanSansCN-Light;
   z-index: 2;
   font-size: 18px;
@@ -174,7 +174,7 @@ const MemberContainer = styled.div`
     position: relative;
     align-items: center;
     margin-bottom: 5vh;
-    font-size: 4vw;
+    font-size: 18px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -228,7 +228,7 @@ const ExternalLink = styled.a`
     display: block;
     
     img {
-      width: 4vw;
+      width: 20px;
     }
   }
 `
