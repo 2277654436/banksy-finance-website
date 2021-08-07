@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   background-size: 100%;
 
   @media screen and (max-width: 1100px) {
-    height: 2600px;
+    height: 1450px;
   }
 `
 
@@ -113,7 +113,7 @@ const MembersRowContainer = styled.div`
     width: 865px;
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 220px;
   }
 
   .row__2 {
@@ -125,59 +125,85 @@ const MembersRowContainer = styled.div`
 
   @media screen and (max-width: 1100px) {
     position: relative;
-    margin-top: 50px;
+    margin-top: 0;
 
     .row__1{
-      width: 100%;
+      width: 300px;
       flex-direction: column;
       margin: 0 auto;
       position: absolute;
+      top: 130px;
       left: 0;
     } 
     .row__2 {
-      width: 90%;
+      width: 300px;
       flex-direction: column;
       margin: 0 auto;
       position: absolute;
       left: 0;
-      top: 1100px;
+      top: 620px;
     }
   }
 `
 
 const MemberContainer = styled.div`
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 220px;
+  width: 300px;
   font-family: SourceHanSansCN-Light;
   z-index: 2;
   font-size: 18px;
   color: #B2B2B2;
+  text-align: center;
+  
+  .data {
+    text-align: left;
 
-  .name {
-    margin-top: 10px;
+    .name {
+      margin-top: 10px;
+    }
+
+    .position {
+      margin-top: 10px;
+      font-size: 16px;
+    }
   }
-
-  .position {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-
+  
   @media screen and (max-width: 1100px) {
     width: 100%;
     position: relative;
     align-items: center;
     margin-bottom: 5vh;
     font-size: 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    .data {
+
+      .name {
+        margin-top: 5px;
+      }
+
+      .position {
+        margin-top: 5px;
+        font-size: 16px;
+      }
+    }
   }
 `
 
 const Avatar = styled.img`
-  width: 100%;
-  
+  width: 80px;
+  border-radius: 40px;
+  margin-left: calc((100% - 80px) / 2);
+
   @media screen and (max-width: 1100px) {
-    width: 200px;
+    width: 80px;
+    border-radius: 40px;
+    margin-left: 0;
+    margin-right: 20px;
   }
 `
 
@@ -187,6 +213,7 @@ const ExternalLink = styled.a`
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &:hover {
     color: #fff;
@@ -198,6 +225,8 @@ const ExternalLink = styled.a`
   }
 
   @media screen and (max-width: 1100px) {
+    display: block;
+    
     img {
       width: 4vw;
     }
@@ -220,11 +249,13 @@ const Member: React.FC<TeamMember> = ({
   return (
     <MemberContainer key={name}>
       <Avatar src={avatar} alt={name} />
-      <div className="name">{name}</div>
-      <div className="position">{position}</div>
-      <ExternalLink href={externalLinks.link}>
-        <img src={externalLinks.icon} alt="" />
-      </ExternalLink>
+      <div className="data">
+        <div className="name">{name}</div>
+        <div className="position">{position}</div>
+        <ExternalLink href={externalLinks.link}>
+          <img src={externalLinks.icon} alt="" />
+        </ExternalLink>
+      </div>
     </MemberContainer>
   )
 }
