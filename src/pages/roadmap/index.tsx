@@ -1,8 +1,10 @@
 import React from 'react'
 import RoadMapImg from '../../image/roadmap/roadmapImg.png'
+import RoadMapImgMobile from '../../image/roadmap/RoadmapMobile.png'
 import styled from 'styled-components'
 
 import Background from '../../image/roadmap/mapBac.png'
+import { useMediaQuery } from 'react-responsive'
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -12,7 +14,7 @@ const Wrapper = styled.div`
   background-position: top 0 left 50%;
 
   @media screen and (max-width: 1100px) {
-    height: 850px;
+    height: 700px;
   }
 `
 
@@ -88,18 +90,42 @@ const Image = styled.img`
   }
 `
 
+const RoadmapMobile = styled.div`
+  width: 300px;
+  margin-left: calc((100% - 300px) / 2);
+  margin-top: 50px;
+`
+
+const ImageMobile = styled.img`
+  width: 100%;
+`
+
+const RoadmapMobileData = styled.div`
+  
+`
+
 const RoadMap: React.FC = () => {
+
+  const isMobile = useMediaQuery({ query: '(max-width: 1100px)' })
+
   return (
     <div className="section">
       <Wrapper>
         <RoadmapContainer>
           <Title>ROADMAP</Title>
-
-          <Image
-            src={RoadMapImg}
-            alt="roadmap"
-          />
-
+          {
+            !isMobile ?
+              <Image
+                src={RoadMapImg}
+                alt="roadmap"
+              /> :
+              <RoadmapMobile>
+                <ImageMobile
+                  src={RoadMapImgMobile}
+                  alt="roadmapMobile"
+                />
+              </RoadmapMobile>
+          }
           {/*<BackgroundImage src={Background} alt="roadmap" />*/}
         </RoadmapContainer>
       </Wrapper>
