@@ -158,7 +158,6 @@ const MemberContainer = styled.div`
   text-align: center;
   
   .data {
-    text-align: left;
 
     .name {
       margin-top: 10px;
@@ -181,7 +180,8 @@ const MemberContainer = styled.div`
     flex-direction: row;
 
     .data {
-
+      text-align: left;
+      
       .name {
         margin-top: 5px;
       }
