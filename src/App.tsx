@@ -35,7 +35,7 @@ const App = () => {
       <Mission />
       <Issues />
       <Solutions />
-      <Mapper />
+      {/*<Mapper />*/}
       <Features />
       <Support />
       <Benefits />
