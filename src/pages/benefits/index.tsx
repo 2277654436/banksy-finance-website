@@ -83,8 +83,8 @@ const Item = styled.div`
   }
 
   .details {
-    color: #808080;
-    font-size: 19px;
+    color: #B2B2B2;
+    font-size: 18px;
     font-family: SourceHanSansCN-Light;
     width: 400px;
 
