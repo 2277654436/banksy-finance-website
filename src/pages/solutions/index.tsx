@@ -9,6 +9,10 @@ const Wrapper = styled.div`
   height: 600px;
   background: url(${BackgroundImage}) no-repeat center;
   background-size: 50% 100%;
+
+  @media screen and (max-width: 1100px) {
+    height: 700px;
+  }
 `
 
 const SolutionsContainer = styled.div`
@@ -41,7 +45,7 @@ const Title = styled.div`
     top: 0;
     left: 20px;
     width: fit-content;
-    font-size: 41px;
+    font-size: 28px;
     margin-left: 5vw;
   }
 `

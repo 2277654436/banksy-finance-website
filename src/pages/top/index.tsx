@@ -50,7 +50,7 @@ const Title = styled.div`
   
   @media screen and (max-width: 1100px) {
     position: relative;
-    margin: 0 auto;
+    margin: 20px;
     width: fit-content;
     left: 0;
     font-size: 28px;
@@ -58,7 +58,7 @@ const Title = styled.div`
     
     p {
       width: fit-content;
-      margin: 0 auto;
+      margin: 0;
       line-height: normal;
     }
   }
@@ -93,7 +93,7 @@ const ExplorerButton = styled.div`
     width: 40vw;
     height: 9vw;
     font-size: 5vw;
-    margin: 0 auto;
+    margin: 0 0 0 20px;
     background-color: #554BFF;
     border-radius: 10px;
     color: white;
@@ -114,10 +114,9 @@ const Text = styled.div`
   @media screen and (max-width: 1100px) {
     width: 300px;
     position: relative;
-    text-align: center;
-    left: 0;
-    top: 20px;
-    margin: 0 auto 10vh auto;
+    text-align: left;
+    top: 0;
+    margin: 0 auto 20px 20px;
     font-size: 3.6vw;
     color: #eee;
   }

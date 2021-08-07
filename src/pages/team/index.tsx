@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   background-size: 100%;
 
   @media screen and (max-width: 1100px) {
-    height: 1450px;
+    height: 1250px;
   }
 `
 
@@ -141,13 +141,13 @@ const MembersRowContainer = styled.div`
       margin: 0 auto;
       position: absolute;
       left: 0;
-      top: 620px;
+      top: 540px;
     }
   }
 `
 
 const MemberContainer = styled.div`
-  padding: 20px 20px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   width: 300px;
