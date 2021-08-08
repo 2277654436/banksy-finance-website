@@ -21,7 +21,7 @@ const App = () => {
   // const [current, setCurrent] = useState(1)
 
   AOS.init({
-    duration: 1500,
+    duration: 1000,
     easing: 'ease-in-sine',
     delay: 0,
   })

@@ -9,7 +9,6 @@ import styled from 'styled-components'
 
 const FootContainer = styled.div`
   height: fit-content;
-  font-family: 'AvenirNext';
   margin: 20vh 0 5vh 0;
   display: flex;
   flex-direction: column;
@@ -56,7 +55,6 @@ const Copyright = styled.div`
   text-align: center;
   color: #8E8E8E;
   margin-top: 20px;
-  font-family: SourceHanSansCN-Light;
 
   @media screen and (max-width: 1100px) {
     font-size: 3vw;

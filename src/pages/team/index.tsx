@@ -10,14 +10,14 @@ import algorithm from '../../image/team/7.png'
 import linkedin from '../../image/team/linkedin.png'
 import github from '../../image/team/github-link.png'
 import styled from 'styled-components'
-import BackgroundImage from '../../image/issues/background.png'
+import BackgroundImage from '../../image/issues/background1.png'
 
 
 const Wrapper = styled.div`
   width: 100%;
   height: 900px;
   background-image: url(${BackgroundImage});
-  background-size: 100%;
+  background-size: 100% 100%;
 
   @media screen and (max-width: 1100px) {
     height: 1250px;
@@ -27,7 +27,6 @@ const Wrapper = styled.div`
 const TeamContainer = styled.div`
   width: 1200px;
   margin: 0 auto;
-  font-family: 'SourceHanSansCN-Normal';
   position: relative;
 
   @media screen and (max-width: 1100px) {
@@ -61,7 +60,6 @@ const Title = styled.div`
     position: absolute;
     color: #808080;
     width: 400px;
-    font-family: SourceHanSansCN-Light;
     font-size: 20px;
     top: 200px;
     left: 0;
@@ -151,7 +149,6 @@ const MemberContainer = styled.div`
   flex-direction: column;
   width: 100%;
   margin-left: 40px;
-  font-family: SourceHanSansCN-Light;
   z-index: 2;
   font-size: 18px;
   color: #B2B2B2;

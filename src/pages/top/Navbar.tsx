@@ -16,14 +16,12 @@ function scrollToPart(anchorName: string) {
 }
 
 const NavbarContainer = styled.div`
-  width: 1300px;
-  font-family: 'AvenirNext';
+  width: 100%;
   height: 80px;
   color: #fff;
   font-size: 1vw;
   font-weight: bold;
   z-index: 9999;
-  margin-left: calc((100% - 1300px) / 2);
   position: relative;
   top: 0;
   display: flex;

@@ -68,10 +68,22 @@ const Item = styled.div`
   margin-left: 20px;
   align-items: start;
 
-  img {
-    border-radius: 10px;
+  .item-img {
     width: 240px;
-    margin-bottom: 40px;
+    height: 178.25px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    img {
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 40px;
+      transition: all 0.7s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
 
   .title {
@@ -79,14 +91,12 @@ const Item = styled.div`
     width: 100%;
     font-size: 28px;
     font-weight: bolder;
-    font-family: 'SourceHanSansCN-Bold';
     margin-bottom: 20px;
   }
 
   .details {
     color: #B2B2B2;
     font-size: 18px;
-    font-family: SourceHanSansCN-Light;
     width: 400px;
 
     p {
@@ -179,7 +189,9 @@ const Benefits: React.FC = () => {
             {
               BENEFIT_ITEMS.map(item => (
                 <Item key={item.title}>
-                  <img src={item.img} alt={item.title} />
+                  <div className="item-img">
+                    <img src={item.img} alt={item.title} />
+                  </div>
                   <div className="title">
                     {item.title}
                   </div>

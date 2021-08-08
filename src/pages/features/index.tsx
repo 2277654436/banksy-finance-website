@@ -19,7 +19,6 @@ const FeaturesContainer = styled.div`
   width: 1200px;
   margin: 0 auto;
   position: relative;
-  font-family: 'SourceHanSansCN-Normal';
   padding: 150px 0;
 
   @media screen and (max-width: 1100px) {
@@ -32,7 +31,6 @@ const Title = styled.div`
   color: white;
   font-size: 64px;
   position: relative;
-  font-family: SourceHanSansCN-Bold;
   font-weight: 550;
   width: fit-content;
   margin-bottom: 200px;
@@ -99,7 +97,6 @@ const Item = styled.div`
     width: 100%;
     color: white;
     text-align: center;
-    font-family: SourceHanSansCN-Bold;
     font-weight: 550;
     font-size: 25px;
     margin-top: 20px;
@@ -108,7 +105,6 @@ const Item = styled.div`
   .detail {
     text-align: center;
     color: #B2B2B2;
-    font-family: SourceHanSansCN-Light;
     font-size: 17px;
     margin-top: 10px;
   }
@@ -128,7 +124,6 @@ const Item = styled.div`
       width: 100%;
       color: white;
       text-align: center;
-      font-family: SourceHanSansCN-Bold;
       font-weight: 550;
       font-size: 22px;
     }
@@ -137,7 +132,6 @@ const Item = styled.div`
       width: 80%;
       text-align: center;
       color: #B2B2B2;
-      font-family: SourceHanSansCN-Bold;
       font-size: 16px;
     }
   }

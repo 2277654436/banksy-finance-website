@@ -1,5 +1,5 @@
 import React from 'react'
-import FeaturesBG from '../../image/solutions/features-bg.png'
+import FeaturesBG from '../../image/solutions/features-bg1.png'
 import styled from 'styled-components'
 
 import BackgroundImage from '../../image/solutions/dots.png'
@@ -36,7 +36,6 @@ const SolutionsContainer = styled.div`
 const Title = styled.div`
   color: white;
   font-size: 64px;
-  font-family: 'SourceHanSansCN-Bold';
   font-weight: 550;
   height: fit-content;
 
@@ -54,7 +53,6 @@ const Content = styled.div`
   margin-top: 30px;
   width: 580px;
   font-size: 18px;
-  font-family: 'SourceHanSansCN-Light';
   line-height: 32px;
   color: #B2B2B2;
 

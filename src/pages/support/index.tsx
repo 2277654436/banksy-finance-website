@@ -31,7 +31,6 @@ const SupportsContainer = styled.div`
 const Title = styled.div`
   position: relative;
   color: white;
-  font-family: SourceHanSansCN-Bold;
   font-weight: 550;
   font-size: 46px;
   z-index: 1;

@@ -4,7 +4,7 @@ import Number1 from '../../image/issues/number1.png'
 import Number2 from '../../image/issues/number2.png'
 import Number3 from '../../image/issues/number3.png'
 import styled from 'styled-components'
-import BackgroundImage from '../../image/issues/background.png'
+import BackgroundImage from '../../image/issues/background1.png'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -25,7 +25,6 @@ const IssuesContainer = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  font-family: 'AvenirNext';
 
   @media screen and (max-width: 1100px) {
     width: 100%;
@@ -64,7 +63,6 @@ const Title = styled.div`
     left: 190px;
     width: fit-content;
     color: white;
-    font-family: 'SourceHanSansCN-Bold';
 
     div {
       position: absolute;
@@ -120,7 +118,6 @@ const Item = styled.div`
     margin-top: 1.2vh;
     font-weight: 550;
     font-size: 28px;
-    font-family: 'SourceHanSansCN-Bold';
   }
 
   .detail {
@@ -128,7 +125,6 @@ const Item = styled.div`
     display: flex;
     color: #B2B2B2;
     font-size: 18px;
-    font-family: 'SourceHanSansCN-Light';
   }
 
   @media screen and (max-width: 1100px) {
@@ -142,7 +138,6 @@ const Item = styled.div`
       color: whit e;
       font-weight: 550;
       font-size: 22px;
-      font-family: 'SourceHanSansCN-Bold';
     }
 
     .detail {

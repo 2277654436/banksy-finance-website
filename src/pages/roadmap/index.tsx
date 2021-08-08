@@ -8,10 +8,10 @@ import { useMediaQuery } from 'react-responsive'
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 750px;
+  height: 790px;
   background: url(${Background}) no-repeat;
-  background-size: 80%;
-  background-position: top 0 left 50%;
+  background-size: 70%;
+  background-position: top 50% left 50%;
 
   @media screen and (max-width: 1100px) {
     height: 700px;
@@ -21,7 +21,6 @@ const Wrapper = styled.div`
 const RoadmapContainer = styled.div`
   width: 1200px;
   margin: 0 auto;
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;

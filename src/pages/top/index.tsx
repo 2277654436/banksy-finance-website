@@ -1,12 +1,14 @@
 import React from 'react'
-import MainBG2 from '../../image/top/topImg.png'
+import MainBG2 from '../../image/top/topImg1.png'
 
 import styled from 'styled-components'
 import Navbar from './Navbar'
+import useTypewriter from 'react-typewriter-hook'
+
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 110vh;
+  height: 900px;
   max-height: 900px;
   background: url(${MainBG2}) no-repeat;
   background-size: 100% 100%;
@@ -20,7 +22,6 @@ const Wrapper = styled.div`
 const TopContainer = styled.div`
   width: 1200px;
   margin-left: calc((100% - 1200px) / 2);
-  font-family: 'SourceHanSansCN-Bold';
   padding-top: 13%;
 
   @media screen and (max-width: 1100px) {
@@ -31,6 +32,7 @@ const TopContainer = styled.div`
 `
 
 const Title = styled.div`
+  width: 550px;
   text-align: left;
   z-index: 1;
   font-size: 64px;
@@ -39,7 +41,8 @@ const Title = styled.div`
     font-weight: 800;
     color: #FFFFFF;
     user-select: none;
-    line-height: 38px;
+    line-height: 85px;
+    letter-spacing: 2px;
   }
   
   @media screen and (max-width: 1100px) {
@@ -48,7 +51,6 @@ const Title = styled.div`
     width: fit-content;
     left: 0;
     font-size: 28px;
-    font-family: 'SourceHanSansCN-Light';
     
     p {
       width: fit-content;
@@ -77,7 +79,7 @@ const ExplorerButton = styled.div`
   margin-top: 20px;
 
   &:hover {
-    border: solid 4px #9490e7;
+    border: solid 3px #fff;
     background-color: #554BFF;
   }
 
@@ -118,14 +120,20 @@ const Text = styled.div`
 `
 
 const Top: React.FC = () => {
+
+  const word = 'NFT Pool-Based Lending Hub'
+
+  const newWord = useTypewriter(word)
+
   return (
     <div className="section">
       <Wrapper>
         <Navbar />
         <TopContainer>
           <Title>
-            <p>NFT Pool-Based</p>
-            <p> Lending Hub</p>
+            <p>{newWord}</p>
+            {/*<p>NFT Pool-Based</p>*/}
+            {/*<p> Lending Hub</p>*/}
           </Title>
           <Text>
             <div>The first AI-driven NFT pool-based</div>

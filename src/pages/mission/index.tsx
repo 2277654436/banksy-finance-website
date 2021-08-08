@@ -44,7 +44,6 @@ const Title = styled.div`
     position: absolute;
     top: -60px;
     left: 39px;
-    font-family: SourceHanSansCN-Bold;
     font-size: 64px;
     color: #fff;
     font-weight: 600;
@@ -80,7 +79,6 @@ const Content = styled.div`
   position: absolute;
   width: 520px;
   font-size: 18px;
-  font-family: 'SourceHanSansCN-Light';
   line-height: 32px;
   color: #B2B2B2;
   top: 340px;
@@ -123,12 +121,21 @@ const SpinningImage = styled.img`
 `
 
 const RingImage = styled.img`
-  height: 400px;
+  height: 600px;
   transform: rotate(-6deg);
   position: absolute;
-  top: 300px;
-  right: 0;
+  top: 50px;
+  right: 50px;
   z-index: 5;
+
+  @media screen and (max-width: 1100px) {
+    height: 400px;
+    transform: rotate(-6deg);
+    position: absolute;
+    top: 300px;
+    right: 0;
+    z-index: 5;
+  }
 `
 
 const Mission: React.FC = () => {

@@ -16,7 +16,6 @@ const MapperContainer = styled.div`
   margin: 0 auto;
   height: 100vh;
   position: relative;
-  font-family: 'AvenirNext';
   padding-top: 200px;
 
   @media screen and (max-width: 1100px) {
@@ -51,7 +50,6 @@ const Text = styled.div`
   width: 500px;
   color: #ccc;
   font-size: 22px;
-  font-family: SourceHanSansCN-Light;
 
   @media screen and (max-width: 1100px) {
     left: 20px;
