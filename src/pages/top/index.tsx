@@ -7,7 +7,7 @@ import Navbar from './Navbar'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 110vh;
+  height: 90vh;
   background: url(${MainBG2}) center;
   background-size: cover;
   
@@ -15,6 +15,8 @@ const Wrapper = styled.div`
   @media screen and (max-width: 1100px) {
     height: 50vh;
     background-size: 110%;
+    background: url(${MainBG2}) no-repeat;
+    background-size: 100%;
     background-position: top 60px right 0;
   }
   
