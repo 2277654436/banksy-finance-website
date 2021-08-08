@@ -8,10 +8,9 @@ import useTypewriter from 'react-typewriter-hook'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 900px;
-  max-height: 900px;
+  height: 110vh;
   background: url(${MainBG2}) no-repeat;
-  background-size: 1500px 100%;
+  background-size: 80% 100%;
   background-position: top 0 right 0; 
 
   @media screen and (max-width: 1100px) {
