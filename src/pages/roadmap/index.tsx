@@ -111,7 +111,7 @@ const RoadMap: React.FC = () => {
   return (
     <div className="section">
       <Wrapper>
-        <RoadmapContainer>
+        <RoadmapContainer id="RoadMapContainer">
           <Title>ROADMAP</Title>
           {
             !isMobile ?

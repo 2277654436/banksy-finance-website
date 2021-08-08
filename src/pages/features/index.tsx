@@ -176,7 +176,7 @@ const Features: React.FC = () => {
   return (
     <div className="section">
       <Wrapper>
-        <FeaturesContainer>
+        <FeaturesContainer id="FeaturesContainer">
           <Title id="features-title">
             <img src={featuresTextBG} alt="features" />
             <div>MAIN FEATURES</div>

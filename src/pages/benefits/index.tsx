@@ -171,7 +171,7 @@ const Benefits: React.FC = () => {
   return (
     <div className="section" id="benefits">
       <Wrapper>
-        <BenefitsContainer>
+        <BenefitsContainer id="BenefitsContainer">
           <Title id="benefits-title">
             BENEFITS
           </Title>
