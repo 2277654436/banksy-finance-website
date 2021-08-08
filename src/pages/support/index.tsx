@@ -177,7 +177,7 @@ export const Support = () => {
           <Title>
             <img src={Arrow} />
             <div>SUPPORT A VARIETY OF</div>
-            <div>NFTS POOL-BASE LENDING</div>
+            <div>NFTS POOL-BASED LENDING</div>
           </Title>
           <ImagesContainer>
             <img src={Image3} className="a" />

@@ -93,8 +93,8 @@ export const Solutions: React.FC = () => {
             The NAK protocol is a complete solution
             driven by AI technology,
             <br />
-            which can effectively either “eliminate,” “reduce,” “diminish” etc.,
-            but not “solve” the lending risk associated with NFT price confusion.
+            which can effectively either &apos;eliminate&apos;, &apos;reduce&apos;, &apos;diminish&apos; etc,
+            but not &apos;solve&apos; the lending risk associated with NFT price confusion.
           </Content>
 
           <SolutionsImage src={FeaturesBG} alt="solutions" />
