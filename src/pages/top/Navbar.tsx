@@ -16,8 +16,9 @@ function scrollToPart(anchorName: string) {
 }
 
 const NavbarContainer = styled.div`
-  width: 100%;
+  width: 80%;
   height: 80px;
+  margin-left: 10%;
   color: #fff;
   font-size: 1vw;
   font-weight: bold;
