@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   background-position: top 50% left 0;
 
   @media screen and (max-width: 1100px) {
-    height: 850px;
+    height: 750px;
   }
 `
 
@@ -119,15 +119,24 @@ const Item = styled.div`
     flex-direction: row;
     align-items: flex-start;
     position: relative;
-    margin-top: 5vh;
+    margin-top: 30px;
 
-    img {
-      width: 30vw;
-      margin-right: 3vw;
-      margin-bottom: 10vh;
-      position: relative;
+    .item-img {
+      width: 180px;
+      height: 130.25px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-right: 20px;
+
+      img {
+        width: 100%;
+        height: 90px;
+        margin-right: 3vw;
+        margin-bottom: 10vh;
+        position: relative;
+      }
     }
-
+    
     .title {
       font-size: 5vw;
     }
