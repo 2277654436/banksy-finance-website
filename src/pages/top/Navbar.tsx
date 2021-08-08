@@ -76,6 +76,13 @@ const ExternalLinksContainer = styled.div`
   height: 40%;
   display: flex;
   align-items: center;
+  
+  .contact {
+    padding: 7px 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #00FFFF, #5842FF, #7800FF);
+    cursor: pointer;
+  }
 `
 
 const ExternalLink = styled.a`
@@ -101,12 +108,12 @@ const Navbar: React.FC = () => {
       </NavLinksContainer>
 
       <ExternalLinksContainer id="ExternalLinksContainer">
-        <ExternalLink href={'https://twitter.com/banksy_finance'} target="_blank" rel="noreferrer">
-          <img src={menuTwitter} alt="twitter" />
-        </ExternalLink>
-        <ExternalLink href={'https://t.me/Banskyfinance'} target="_blank" rel="noreferrer">
-          <img src={menuFly} alt="telegram" />
-        </ExternalLink>
+        <div 
+          className="contact" 
+          onClick={() => scrollToPart('FootContainer')}
+        >
+          Contact Us
+        </div>
       </ExternalLinksContainer>
 
     </NavbarContainer>

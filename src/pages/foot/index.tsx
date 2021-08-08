@@ -74,7 +74,7 @@ const Foot: React.FC = () => {
   return (
     <div className="section">
       <FootContainer>
-        <ExternalLinksContainer>
+        <ExternalLinksContainer id="FootContainer">
           {
             EXTERNAL_LINKS.map(({ icon, link }) => (
               <SCExternalLink key={link} href={link} target="_blank" rel="noreferrer">
