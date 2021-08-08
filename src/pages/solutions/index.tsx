@@ -72,7 +72,7 @@ const ContentItem = styled.div`
   }
   
   .item-content {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bolder;
     color: #B2B2B2;
   }
@@ -112,7 +112,37 @@ const SolutionsImage = styled.img`
   }
 `
 
+type SolutionItem = {
+  serialNum: number
+  content: string
+}
+
 export const Solutions: React.FC = () => {
+
+  const solutionsData:SolutionItem[] = [
+    {
+      serialNum: 1,
+      content: 'NFT whitelist mechanism-qualityNFTs are used as collateral for loans on the platform.'
+    },
+    {
+      serialNum: 2,
+      content: 'Based on the Pool-Based lending model,\n' +
+        'NFT holders can quickly get loans from the platform without\n' +
+        'an agreement between lenders and borrowers.'
+    },
+    {
+      serialNum: 3,
+      content: 'Developed an NFT risk assessment model to carry out reasonable valuation\n' +
+        'of NFT and dynamically update the price to adjust NFT mortgage rate deposit\n' +
+        'rate, and loan interest rate in real time.'
+    },
+    {
+      serialNum: 4,
+      content: 'The safety fund pool and liquidation mechanism are\n' +
+        'set up to ensure the security of lenders\' funds.'
+    }
+  ]
+
   return (
     <div className="section">
       <Wrapper>
@@ -121,36 +151,14 @@ export const Solutions: React.FC = () => {
             SOLUTIONS
           </Title>
           <Content>
-            <ContentItem>
-              <span className="serialNum">1</span>
-              <span className="item-content">
-                NFT whitelist mechanism-qualityNFTs are
-                used as collateral for loans on the platform.
-              </span>
-            </ContentItem>
-            <ContentItem>
-              <span className="serialNum">2</span>
-              <span className="item-content">
-                Based on the Pool-Based lending model,
-                whitelist NFT holders can quickly get loans from the platform without
-                an agreement between lenders and borrowers.
-              </span>
-            </ContentItem>
-            <ContentItem>
-              <span className="serialNum">3</span>
-              <span className="item-content">
-                Developed an NFT risk assessment model to carry out reasonable valuation
-                of NFT and dynamically update the price to adjust NFT mortgage rate deposit
-                rate, and loan interest rate in real time.
-              </span>
-            </ContentItem>
-            <ContentItem>
-              <span className="serialNum">4</span>
-              <span className="item-content">
-                The safety fund pool and liquidation mechanism are
-                set up to ensure the security of lenders&apos; funds.
-              </span>
-            </ContentItem>
+            {
+              solutionsData.map((item: any, index) => (
+                <ContentItem key={index}>
+                  <span className="serialNum">{item.serialNum}</span>
+                  <span className="item-content">{item.content}</span>
+                </ContentItem>
+              ))
+            }
           </Content>
 
           <SolutionsImage src={SolutionImg} alt="solutions" />

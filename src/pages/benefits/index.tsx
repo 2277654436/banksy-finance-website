@@ -180,7 +180,7 @@ const Benefits: React.FC = () => {
       title: 'Funds Lender',
       details: [
         '1｜Security for funds',
-        '2｜Double incomes from interest and platform rewards',
+        '2｜Incomes from interest and platform rewards',
         '3｜Deposit and withdraw funds anytime',
       ]
     },
