@@ -83,7 +83,7 @@ const Item = styled.div`
     
     img {
       border-radius: 10px;
-      width: 100%;
+      height: 100%;
       margin-bottom: 40px;
       transition: all 0.7s;
 
