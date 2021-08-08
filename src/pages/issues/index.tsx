@@ -3,15 +3,16 @@ import danger from '../../image/issues/danger.png'
 import Number1 from '../../image/issues/number1.png'
 import Number2 from '../../image/issues/number2.png'
 import Number3 from '../../image/issues/number3.png'
+import dotsBG from '../../image/dots.png'
 import styled from 'styled-components'
 import BackgroundImage from '../../image/issues/background1.png'
 
 const Wrapper = styled.div`
   width: 100%;
   height: 900px;
-  background-image: url(${BackgroundImage});
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background: url(${dotsBG}) no-repeat;
+  background-size: 40% 40%;
+  background-position: top 0 left 0;
 
   @media screen and (max-width: 1100px) {
     height: 770px;
@@ -25,6 +26,9 @@ const IssuesContainer = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  background: url(${dotsBG}) no-repeat;
+  background-size: 60% 60%;
+  background-position: bottom 0 right 0;
 
   @media screen and (max-width: 1100px) {
     width: 100%;

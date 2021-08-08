@@ -2,16 +2,16 @@ import React from 'react'
 import RoadMapImg from '../../image/roadmap/roadmapImg.png'
 import RoadMapImgMobile from '../../image/roadmap/RoadmapMobile.png'
 import styled from 'styled-components'
-
+import dotsBG from '../../image/solutions/dots.png'
 import Background from '../../image/roadmap/mapBac.png'
 import { useMediaQuery } from 'react-responsive'
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 790px;
-  background: url(${Background}) no-repeat;
-  background-size: 70%;
-  background-position: top 50% left 50%;
+  height: 600px;
+  background: url(${dotsBG}) no-repeat;
+  background-size: 50% 50%;
+  background-position: top 0 left 0;
 
   @media screen and (max-width: 1100px) {
     height: 700px;
@@ -25,6 +25,9 @@ const RoadmapContainer = styled.div`
   background-size: 100%;
   position: relative;
   user-select: none;
+  background: url(${dotsBG}) no-repeat center;
+  background-size: 50% 50%;
+  background-position: bottom 0 right 0;
 
   @media screen and (max-width: 1100px) {
     width: 100%;

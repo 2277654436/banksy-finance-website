@@ -11,13 +11,15 @@ import linkedin from '../../image/team/linkedin.png'
 import github from '../../image/team/github-link.png'
 import styled from 'styled-components'
 import BackgroundImage from '../../image/issues/background1.png'
+import dotsBG from '../../image/solutions/dots.png'
 
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 900px;
-  background-image: url(${BackgroundImage});
-  background-size: 100% 100%;
+  height: 700px;
+  background: url(${dotsBG}) no-repeat;
+  background-size: 50% 50%;
+  background-position: top 50% left 0;
 
   @media screen and (max-width: 1100px) {
     height: 1250px;
@@ -26,8 +28,12 @@ const Wrapper = styled.div`
 
 const TeamContainer = styled.div`
   width: 1200px;
+  height: 900px;
   margin: 0 auto;
   position: relative;
+  background: url(${dotsBG}) no-repeat;
+  background-size: 60% 60%;
+  background-position: top -50% right 0;
 
   @media screen and (max-width: 1100px) {
     width: 100%;

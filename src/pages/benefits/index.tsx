@@ -2,11 +2,15 @@ import React from 'react'
 import benefits1 from '../../image/banefits/benefits1.png'
 import benefits2 from '../../image/banefits/benefits2.png'
 import benefits3 from '../../image/banefits/benefits3.png'
+import dotsBG from '../../image/solutions/dots.png'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 1100px;
+  height: 1000px;
+  background: url(${dotsBG}) no-repeat;
+  background-size: 50% 50%;
+  background-position: top 50% left 0;
 
   @media screen and (max-width: 1100px) {
     height: 850px;
@@ -18,6 +22,9 @@ const BenefitsContainer = styled.div`
   margin: 0 auto;
   position: relative;
   padding: 200px 0;
+  background: url(${dotsBG}) no-repeat center;
+  background-size: 50% 50%;
+  background-position: top 50% right 0;
 
   @media screen and (max-width: 1100px) {
     width: 100%;

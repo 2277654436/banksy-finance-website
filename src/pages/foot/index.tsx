@@ -8,6 +8,7 @@ import Discord from '../../image/foot/Discord.svg'
 import styled from 'styled-components'
 
 const FootContainer = styled.div`
+  width: 100%;
   height: fit-content;
   margin: 20vh 0 5vh 0;
   display: flex;
@@ -42,7 +43,7 @@ const SCExternalLink = styled.a`
 `
 
 const Logo = styled.img`
-  width: 380px;
+  width: 180px;
   margin: 60px 0 0 0;
 
   @media screen and (max-width: 1100px) {

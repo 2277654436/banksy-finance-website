@@ -4,11 +4,15 @@ import Image1 from '../../image/support/1.png'
 import Image2 from '../../image/support/2.png'
 import Image3 from '../../image/support/3.png'
 import SpinImg from '../../image/features/spinImg.png'
+import dotsBG from '../../image/solutions/dots.png'
 import styled, { keyframes } from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100vw;
   height: 800px;
+  background: url(${dotsBG}) no-repeat center;
+  background-size: 60% 60%;
+  background-position: top 0 left 50%;
 
   @media screen and (max-width: 1100px) {
     height: 600px;
@@ -20,6 +24,9 @@ const SupportsContainer = styled.div`
   margin: 0 auto;
   height: 100vh;
   position: relative;
+  background: url(${dotsBG}) no-repeat;
+  background-size: 60% 60%;
+  background-position: bottom 0 left 0;
 
   @media screen and (max-width: 1100px) {
     width: 100%;

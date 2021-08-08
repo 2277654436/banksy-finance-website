@@ -8,21 +8,22 @@ import useTypewriter from 'react-typewriter-hook'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 110vh;
-  background: url(${MainBG2}) no-repeat;
-  background-size: 80% 100%;
+  height: 100vh;
+  background: url(${MainBG2}) no-repeat center;
+  background-size: 80%;
   background-position: top 0 right 0; 
 
   @media screen and (max-width: 1100px) {
-    height: 60vh;
-    max-height: 1200px;
+    height: 50vh;
+    background-size: 110%;
+    background-position: top 60px right 0;
   }
 `
 
 const TopContainer = styled.div`
   width: 1200px;
   margin-left: calc((100% - 1200px) / 2);
-  padding-top: 13%;
+  padding-top: 150px;
 
   @media screen and (max-width: 1100px) {
     padding-top: 5vh;

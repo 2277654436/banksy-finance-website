@@ -1,18 +1,21 @@
 import React from 'react'
 import missionTitleImg from '../../image/mission/missionTitleImg.png'
 import missionBG from '../../image/mission/missionBG.png'
-import MissionBackground from '../../image/mission/missionBac.png'
+import dotsBG from '../../image/dots.png'
 import missionRing from '../../image/mission/mission-ring.png'
 import styled, { keyframes } from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100%;
   height: 760px;
-  // background: url(${MissionBackground}) no-repeat center;
-  // background-size: 100% 100%;
+  background: url(${dotsBG}) no-repeat;
+  background-size: 60% 60%;
+  background-position: top 50% left 20%;
   
   @media screen and (max-width: 1100px) {
     height: 600px;
+    background-size: 60%;
+    background-position: top 50% left 20%;
   }
 `
 

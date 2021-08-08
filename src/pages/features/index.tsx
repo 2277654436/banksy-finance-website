@@ -4,11 +4,15 @@ import Features1 from '../../image/features/features-img1.png'
 import Features2 from '../../image/features/features-img2.png'
 import Features3 from '../../image/features/features-img3.png'
 import Features4 from '../../image/features/features-img4.png'
+import dotsBG from '../../image/dots.png'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100%;
   height: 900px;
+  background: url(${dotsBG}) no-repeat;
+  background-size: 50% 50%;
+  background-position: top 50% left 0;
 
   @media screen and (max-width: 1100px) {
     height: 1250px;
