@@ -50,7 +50,7 @@ const Title = styled.div`
   img {
     width: 200px;
     position: relative;
-    bottom: 18vh;
+    bottom: 100px;
     right: 200px;
     z-index: 1;
   }
