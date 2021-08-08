@@ -9,9 +9,9 @@ import styled from 'styled-components'
 
 const FootContainer = styled.div`
   width: 100%;
-  height: fit-content;
-  margin: 20vh 0 5vh 0;
   display: flex;
+  margin-top: 500px;
+  margin-bottom: 50px;
   flex-direction: column;
   align-items: center;
   
@@ -31,10 +31,10 @@ const ExternalLinksContainer = styled.div`
 `
 
 const SCExternalLink = styled.a`
-  width: 45px;
+  
 
   img {
-    width: 100%;
+    width: 45px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -73,8 +73,8 @@ const Foot: React.FC = () => {
   ]
   return (
     <div className="section">
-      <FootContainer>
-        <ExternalLinksContainer id="FootContainer">
+      <FootContainer  id="FootContainer">
+        <ExternalLinksContainer>
           {
             EXTERNAL_LINKS.map(({ icon, link }) => (
               <SCExternalLink key={link} href={link} target="_blank" rel="noreferrer">

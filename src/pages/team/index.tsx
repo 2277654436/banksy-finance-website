@@ -16,7 +16,7 @@ import dotsBG from '../../image/solutions/dots.png'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 700px;
+  height: 400px;
   background: url(${dotsBG}) no-repeat;
   background-size: 50% 50%;
   background-position: top 50% left 0;
