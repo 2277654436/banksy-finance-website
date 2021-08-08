@@ -11,7 +11,8 @@ const Wrapper = styled.div`
   height: 900px;
   max-height: 900px;
   background: url(${MainBG2}) no-repeat;
-  background-size: 100% 100%;
+  background-size: 1500px 100%;
+  background-position: top 0 right 0; 
 
   @media screen and (max-width: 1100px) {
     height: 60vh;

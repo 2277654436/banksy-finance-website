@@ -8,8 +8,8 @@ import styled, { keyframes } from 'styled-components'
 const Wrapper = styled.div`
   width: 100%;
   height: 760px;
-  background: url(${MissionBackground}) no-repeat center;
-  background-size: 100% 100%;
+  // background: url(${MissionBackground}) no-repeat center;
+  // background-size: 100% 100%;
   
   @media screen and (max-width: 1100px) {
     height: 600px;
