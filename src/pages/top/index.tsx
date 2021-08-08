@@ -3,15 +3,13 @@ import MainBG2 from '../../image/top/topImg1.png'
 
 import styled from 'styled-components'
 import Navbar from './Navbar'
-import useTypewriter from 'react-typewriter-hook'
 
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background: url(${MainBG2}) no-repeat center;
-  background-size: 80%;
-  background-position: top 0 right 0; 
+  background-size: cover;
 
   @media screen and (max-width: 1100px) {
     height: 50vh;
@@ -122,17 +120,13 @@ const Text = styled.div`
 
 const Top: React.FC = () => {
 
-  const word = 'NFT Pool-Based Lending Hub'
-
-  const newWord = useTypewriter(word)
-
   return (
     <div className="section">
       <Wrapper>
         <Navbar />
         <TopContainer>
           <Title>
-            <p>{newWord}</p>
+            <p>NFT Pool-Based Lending Hub</p>
             {/*<p>NFT Pool-Based</p>*/}
             {/*<p> Lending Hub</p>*/}
           </Title>
