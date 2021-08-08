@@ -11,18 +11,19 @@ const Wrapper = styled.div`
   background: url(${MainBG2}) no-repeat center;
   background-size: cover;
 
-  @media screen and (max-width: 1100px) {
-    height: 50vh;
-    background-size: 110%;
-    background-position: top 60px right 0;
-  }
-
-  @media screen and (max-width: 3840px) {
+  @media screen and (min-width: 3840px) {
     width: 100%;
     height: 90vh;
     background: url(${MainBG2}) no-repeat center;
     background-size: cover;
   }
+
+  @media screen and (max-width: 1100px) {
+    height: 50vh;
+    background-size: 110%;
+    background-position: top 60px right 0;
+  }
+  
 `
 
 const TopContainer = styled.div`
