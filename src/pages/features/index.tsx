@@ -151,23 +151,23 @@ const Features: React.FC = () => {
   const FEATURES_ITEMS: FeatureItem[] = [
     {
       img: Features1,
-      title: 'Safe and Convenient',
-      detail: 'Secures users\' assets, flexible and convenient lending'
+      title: 'Funds Security',
+      detail: 'Double insurance to ensure the safety of users’ funds.'
     },
     {
       img: Features2,
-      title: 'Multi-chain Supports',
-      detail: 'Supports multi-chain such as ETH, BSC, HECO, Solana, DOT, etc'
+      title: 'Integration With Deﬁ',
+      detail: 'To improve NFT liquidity through the integration with Defi model.'
     },
     {
       img: Features3,
-      title: 'Combine with Defi',
-      detail: 'Integrateas Defi to increase NFT liquidity'
+      title: 'Convenient Borrowing',
+      detail: 'Efficiently take loans without an agreement with fund lenders.'
     },
     {
       img: Features4,
-      title: 'NAK Protocol',
-      detail: 'Service for the whole industry to a healthier and faster development'
+      title: 'AI-Driven Risk Control',
+      detail: 'The AI-driven risk control system provides the infrastructure services for the NFT ecosystem.'
     },
   ]
 

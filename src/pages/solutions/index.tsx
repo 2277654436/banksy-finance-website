@@ -1,22 +1,22 @@
 import React from 'react'
-import FeaturesBG from '../../image/solutions/features-bg1.png'
+import SolutionImg from '../../image/solutions/solutionsImg.png'
 import styled from 'styled-components'
 
 import dotsBG from '../../image/solutions/dots.png'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 600px;
+  height: 1000px;
   background: url(${dotsBG}) no-repeat;
   background-size: 70% 70%;
 
   @media screen and (max-width: 1100px) {
-    height: 550px;
+    height: 900px;
   }
 `
 
 const SolutionsContainer = styled.div`
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
   position: relative;
   user-select: none;
@@ -52,29 +52,62 @@ const Title = styled.div`
 const Content = styled.div`
   margin-top: 30px;
   width: 580px;
-  font-size: 18px;
-  line-height: 32px;
-  color: #B2B2B2;
 
   @media screen and (max-width: 1100px) {
     width: 300px;
-    font-size: 16px;
-    margin-left: 40px;
-    margin-top: 10px;
+    margin-left: calc((100% - 300px) / 2);
+  }
+`
+
+const ContentItem = styled.div`
+  display: flex;
+  align-items: center;
+  
+  .serialNum {
+    font-size: 120px;
+    font-weight: bolder;
+    color: #00ACFF;
+    font-style: italic;
+    margin-right: 20px;
+  }
+  
+  .item-content {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #B2B2B2;
+  }
+
+  @media screen and (max-width: 1100px) {
+    align-items: normal;
+    margin-top: 20px;
+    
+    .serialNum {
+      font-size: 50px;
+      font-weight: bolder;
+      color: #00ACFF;
+      font-style: italic;
+      margin-right: 20px;
+    }
+
+    .item-content {
+      font-size: 16px;
+      font-weight: bolder;
+      color: #B2B2B2;
+    }
   }
 `
 
 const SolutionsImage = styled.img`
   position: absolute;
   right: 0;
-  top: 40px;
-  width: 630px;
+  top: 500px;
+  width: 670px;
 
   @media screen and (max-width: 1100px) {
     position: relative;
     top: 20px;
-    left: calc((100% - 270px) / 2);
-    width: 270px;
+    left: calc((100% - 300px) / 2);
+    width: 300px;
     margin-bottom: 5vh;
   }
 `
@@ -88,14 +121,39 @@ export const Solutions: React.FC = () => {
             SOLUTIONS
           </Title>
           <Content>
-            The NAK protocol is a complete solution
-            driven by AI technology,
-            <br />
-            which can effectively either &apos;eliminate&apos;, &apos;reduce&apos;, &apos;diminish&apos; etc,
-            but not &apos;solve&apos; the lending risk associated with NFT price confusion.
+            <ContentItem>
+              <span className="serialNum">1</span>
+              <span className="item-content">
+                NFT whitelist mechanism-qualityNFTs are
+                used as collateral for loans on the platform.
+              </span>
+            </ContentItem>
+            <ContentItem>
+              <span className="serialNum">2</span>
+              <span className="item-content">
+                Based on the Pool-Based lending model,
+                whitelist NFT holders can quickly get loans from the platform without
+                an agreement between lenders and borrowers.
+              </span>
+            </ContentItem>
+            <ContentItem>
+              <span className="serialNum">3</span>
+              <span className="item-content">
+                Developed an NFT risk assessment model to carry out reasonable valuation
+                of NFT and dynamically update the price to adjust NFT mortgage rate deposit
+                rate, and loan interest rate in real time.
+              </span>
+            </ContentItem>
+            <ContentItem>
+              <span className="serialNum">4</span>
+              <span className="item-content">
+                The safety fund pool and liquidation mechanism are
+                set up to ensure the security of lenders&apos; funds.
+              </span>
+            </ContentItem>
           </Content>
 
-          <SolutionsImage src={FeaturesBG} alt="solutions" />
+          <SolutionsImage src={SolutionImg} alt="solutions" />
         </SolutionsContainer>
       </Wrapper>
     </div>

@@ -26,7 +26,7 @@ const ExternalLinksContainer = styled.div`
   margin: 0 auto;
 
   @media screen and (max-width: 1100px) {
-    width: 70vw;
+    width: 250px;
   }
 `
 
@@ -38,7 +38,10 @@ const SCExternalLink = styled.a`
   }
 
   @media screen and (max-width: 1100px) {
-    width: 10vw;
+    
+    img {
+      width: 30px;
+    }
   }
 `
 

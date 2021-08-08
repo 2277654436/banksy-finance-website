@@ -171,17 +171,17 @@ const Benefits: React.FC = () => {
       img: benefits1,
       title: 'NFT Holder',
       details: [
-        '1｜Easily get loans',
-        '2｜Instant loan and repayment; Flexible repayment',
+        '1｜Get loans in a convenient way',
+        '2｜Get and repay loans anytime',
       ]
     },
     {
       img: benefits2,
       title: 'Funds Lender',
       details: [
-        '1｜Loan safely with security',
-        '2｜Dual incomes from interest and platform rewards',
-        '3｜Deposit and withdraw funds instantly',
+        '1｜Security for funds',
+        '2｜Double incomes from interest and platform rewards',
+        '3｜Deposit and withdraw funds anytime',
       ]
     },
     {
