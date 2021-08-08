@@ -42,7 +42,7 @@ const TeamContainer = styled.div`
 const Title = styled.div`
   position: absolute;
   width: fit-content;
-  top: 100px;
+  top: 50px;
   
   img {
     width: 165px;
@@ -60,7 +60,7 @@ const Title = styled.div`
   div {
     position: absolute;
     color: #808080;
-    width: 310px;
+    width: 400px;
     font-family: SourceHanSansCN-Light;
     font-size: 20px;
     top: 200px;
@@ -317,9 +317,9 @@ const Team: React.FC = () => {
             <img src={teamTitleImg} className="team-title-img" alt="banksy team" />
             <span>TEAM</span>
             <div>
-              We are all from first-line internet
-              companies with extensive experience
-              in blockchain technology.
+              We are an international team from well-known companies such as IBM, Amazon, Tencent, and Sangfor.
+              We have rich experience in artificial intelligence and DeFi product development, as well as mature
+              product operation capabilities.
             </div>
           </Title>
 

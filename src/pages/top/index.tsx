@@ -7,19 +7,13 @@ import Navbar from './Navbar'
 const Wrapper = styled.div`
   width: 100%;
   height: 110vh;
-  min-height: 800px;
-  max-height: 1200px;
-  background-image: url(${MainBG2});
-  background-repeat: no-repeat;
+  max-height: 900px;
+  background: url(${MainBG2}) no-repeat;
   background-size: 100% 100%;
-  background-position: center;
 
   @media screen and (max-width: 1100px) {
     height: 60vh;
-    min-height: 300px;
     max-height: 1200px;
-    background-size: 100% 100%;
-    background-position: center;
   }
 `
 
@@ -67,6 +61,7 @@ const Title = styled.div`
 const ExplorerButton = styled.div`
   background-color: #554BFF;
   border-radius: 1rem;
+  border: solid 3px #554BFF;
   width: 190px;
   height: 60px;
   display: flex;
@@ -82,7 +77,7 @@ const ExplorerButton = styled.div`
   margin-top: 20px;
 
   &:hover {
-    border: solid 1px #9490e7;
+    border: solid 4px #9490e7;
     background-color: #554BFF;
   }
 
