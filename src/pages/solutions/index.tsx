@@ -6,7 +6,7 @@ import dotsBG from '../../image/solutions/dots.png'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 1000px;
+  height: 1100px;
   background: url(${dotsBG}) no-repeat;
   background-size: 70% 70%;
 
@@ -122,7 +122,7 @@ export const Solutions: React.FC = () => {
   const solutionsData:SolutionItem[] = [
     {
       serialNum: 1,
-      content: 'NFT whitelist mechanism-qualityNFTs are used as collateral for loans on the platform.'
+      content: 'NFT whitelist mechanism-Quality NFTs are used as collateral for loans on the platform.'
     },
     {
       serialNum: 2,
@@ -133,7 +133,7 @@ export const Solutions: React.FC = () => {
     {
       serialNum: 3,
       content: 'Developed an NFT risk assessment model to carry out reasonable valuation\n' +
-        'of NFT and dynamically update the price to adjust NFT mortgage rate deposit\n' +
+        'of NFT and dynamically update the price to adjust NFT pcollateral rate deposit\n' +
         'rate, and loan interest rate in real time.'
     },
     {

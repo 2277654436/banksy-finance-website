@@ -75,7 +75,7 @@ const BackgroundImage = styled.img`
 const Image = styled.img`
   position: relative;
   left: 40px;
-  top: 150px;
+  top: 100px;
   width: 100%;
   z-index: 99;
 
