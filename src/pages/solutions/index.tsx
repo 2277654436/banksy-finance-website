@@ -132,9 +132,10 @@ export const Solutions: React.FC = () => {
     },
     {
       serialNum: 3,
-      content: 'Developed an NFT risk assessment model to carry out reasonable valuation\n' +
-        'of NFT and dynamically update the price to adjust NFT collateral rate deposit\n' +
-        'rate, and loan interest rate in real time.'
+      content: 'Our self-developed NFT risk assessment model can be used to ' +
+        'carry out a reasonable valuation for NFT and update its price ' +
+        'so as to dynamically adjust the NFTcollateral rate, interest rate, ' +
+        'and mortagage rate in real time.'
     },
     {
       serialNum: 4,
