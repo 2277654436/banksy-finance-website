@@ -180,17 +180,17 @@ export const Support = () => {
     <div className="section">
       <Wrapper>
         <SupportsContainer id="support">
-          <Title>
+          <Title data-aos="fade-in">
             <img src={Arrow} />
             <div>SUPPORT A VARIETY OF</div>
             <div>NFTS POOL-BASED LENDING</div>
           </Title>
-          <ImagesContainer>
+          <ImagesContainer data-aos="fade-in">
             <img src={Image3} className="a" />
             <img src={Image2} className="b" />
             <img src={Image1} className="c" />
           </ImagesContainer>
-          <SpinningRing src={SpinImg} />
+          <SpinningRing src={SpinImg} data-aos="fade-in" />
         </SupportsContainer>
       </Wrapper>
     </div>

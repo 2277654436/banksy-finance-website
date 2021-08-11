@@ -120,7 +120,7 @@ const MembersRowContainer = styled.div`
   }
 
   .row__2 {
-    width: 1180px;
+    width: 1160px;
     position: absolute;
     right: 0;
     top: 500px;
@@ -197,11 +197,30 @@ const MemberContainer = styled.div`
   }
 `
 
+const AvatarBox = styled.div`
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .avatar-bg {
+    width: 123px;
+    height: 123px;
+    border-radius: 123px;
+    background: linear-gradient(to right, #7800FF, #5842FF, #00FFFF);
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`
+
 const Avatar = styled.img`
   width: 110px;
-  border-radius: 55px;
-  margin-left: calc((100% - 110px) / 2);
-
+  height: 110px;
+  border-radius: 110px;
+  
   @media screen and (max-width: 1100px) {
     width: 80px;
     border-radius: 40px;
@@ -251,7 +270,11 @@ const Member: React.FC<TeamMember> = ({
 }) => {
   return (
     <MemberContainer key={name}>
-      <Avatar src={avatar} alt={name} />
+      <AvatarBox>
+        <div className="avatar-bg">
+          <Avatar src={avatar} alt={name} />
+        </div>
+      </AvatarBox>
       <div className="data">
         <div className="name">{name}</div>
         <div className="position">{position}</div>
@@ -316,7 +339,7 @@ const Team: React.FC = () => {
     <div className="section">
       <Wrapper>
         <TeamContainer>
-          <Title>
+          <Title data-aos="fade-in">
             <img src={teamTitleImg} className="team-title-img" alt="banksy team" />
             <span>TEAM</span>
             <div>
@@ -327,12 +350,12 @@ const Team: React.FC = () => {
           </Title>
 
           <MembersRowContainer>
-            <div className="row__1">
+            <div className="row__1" data-aos="fade-in">
               {
                 MEMBERS_ROW1.map(member => (<Member key={member.name} {...member} />))
               }
             </div>
-            <div className="row__2">
+            <div className="row__2" data-aos="fade-in">
               {
                 MEMBERS_ROW2.map(member => (<Member key={member.name} {...member} />))
               }

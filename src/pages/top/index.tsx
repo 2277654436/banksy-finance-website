@@ -65,9 +65,8 @@ const Title = styled.div`
 `
 
 const ExplorerButton = styled.div`
-  background-color: #554BFF;
+  background: linear-gradient(to right, #00FFFF, #5842FF, #7800FF);
   border-radius: 1rem;
-  border: solid 3px #554BFF;
   width: 190px;
   height: 60px;
   display: flex;
@@ -83,8 +82,7 @@ const ExplorerButton = styled.div`
   margin-top: 20px;
 
   &:hover {
-    border: solid 3px #fff;
-    background-color: #554BFF;
+    
   }
 
   @media screen and (max-width: 1100px) {
@@ -130,17 +128,17 @@ const Top: React.FC = () => {
       <Wrapper>
         <Navbar />
         <TopContainer>
-          <Title>
+          <Title data-aos="fade-in">
             <p>NFT Pool-Based Lending Hub</p>
             {/*<p>NFT Pool-Based</p>*/}
             {/*<p> Lending Hub</p>*/}
           </Title>
-          <Text>
+          <Text data-aos="fade-in">
             <div>The first AI-driven NFT pool-based</div>
             <div>lending platform to lead a revolution</div>
             <div>of the NFT market</div>
           </Text>
-          <ExplorerButton>
+          <ExplorerButton data-aos="fade-in">
             <a href={'https://app.banksy.finance/#/'} target="_blank" style={{ color: 'white' }} rel="noreferrer">
               Explore
             </a>

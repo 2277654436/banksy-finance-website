@@ -175,14 +175,14 @@ const Features: React.FC = () => {
     <div className="section">
       <Wrapper>
         <FeaturesContainer id="FeaturesContainer">
-          <Title id="features-title">
+          <Title id="features-title" data-aos="fade-in">
             <img src={featuresTextBG} alt="features" />
             <div>MAIN FEATURES</div>
           </Title>
           <ItemsContainer>
             {
               FEATURES_ITEMS.map(item => (
-                <Item key={item.title}>
+                <Item key={item.title} data-aos="fade-in">
                   <img src={item.img} alt={item.title} />
                   <div className="title">{item.title}</div>
                   <div className="detail">{item.detail}</div>

@@ -148,13 +148,13 @@ export const Solutions: React.FC = () => {
     <div className="section">
       <Wrapper>
         <SolutionsContainer>
-          <Title>
+          <Title data-aos="fade-in">
             SOLUTIONS
           </Title>
           <Content>
             {
               solutionsData.map((item: any, index) => (
-                <ContentItem key={index}>
+                <ContentItem key={index} data-aos="fade-in">
                   <span className="serialNum">{item.serialNum}</span>
                   <span className="item-content">{item.content}</span>
                 </ContentItem>
@@ -162,7 +162,7 @@ export const Solutions: React.FC = () => {
             }
           </Content>
 
-          <SolutionsImage src={SolutionImg} alt="solutions" />
+          <SolutionsImage src={SolutionImg} alt="solutions" data-aos="fade-in" />
         </SolutionsContainer>
       </Wrapper>
     </div>

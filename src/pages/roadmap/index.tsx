@@ -114,17 +114,19 @@ const RoadMap: React.FC = () => {
     <div className="section">
       <Wrapper>
         <RoadmapContainer id="RoadMapContainer">
-          <Title>ROADMAP</Title>
+          <Title data-aos="fade-in">ROADMAP</Title>
           {
             !isMobile ?
               <Image
                 src={RoadMapImg}
                 alt="roadmap"
+                data-aos="fade-in"
               /> :
               <RoadmapMobile>
                 <ImageMobile
                   src={RoadMapImgMobile}
                   alt="roadmapMobile"
+                  data-aos="fade-in"
                 />
               </RoadmapMobile>
           }

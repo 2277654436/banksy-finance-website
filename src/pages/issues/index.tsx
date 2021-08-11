@@ -181,7 +181,7 @@ const Issues: React.FC = () => {
     <div className="section">
       <Wrapper>
         <IssuesContainer id="IssuesContainer">
-          <Title>
+          <Title data-aos="fade-in">
             <div>ISSUES</div>
             <img src={danger} alt="issues" />
           </Title>
@@ -189,7 +189,7 @@ const Issues: React.FC = () => {
           <ItemsContainer id="ItemsContainer">
             {
               items.map(item => (
-                <Item key={item.title}>
+                <Item key={item.title} data-aos="fade-in">
                   <img src={item.img} alt={item.title} />
                   <div className="col">
                     <div className="title">{item.title}</div>

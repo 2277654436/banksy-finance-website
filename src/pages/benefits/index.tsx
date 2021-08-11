@@ -198,13 +198,13 @@ const Benefits: React.FC = () => {
     <div className="section" id="benefits">
       <Wrapper>
         <BenefitsContainer id="BenefitsContainer">
-          <Title id="benefits-title">
+          <Title id="benefits-title" data-aos="fade-in">
             BENEFITS
           </Title>
           <ItemsContainer>
             {
               BENEFIT_ITEMS.map(item => (
-                <Item key={item.title}>
+                <Item key={item.title} data-aos="fade-in">
                   <div className="item-img">
                     <img src={item.img} alt={item.title} />
                   </div>
