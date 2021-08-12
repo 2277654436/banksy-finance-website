@@ -144,7 +144,7 @@ const MembersRowContainer = styled.div`
       margin: 0 auto;
       position: absolute;
       left: 0;
-      top: 640px;
+      top: 650px;
     }
   }
 `
@@ -222,8 +222,8 @@ const Avatar = styled.img`
   border-radius: 110px;
   
   @media screen and (max-width: 1100px) {
-    width: 80px;
-    border-radius: 40px;
+    width: 100px;
+    height: 100px;
     margin-left: 0;
     margin-right: 20px;
   }
@@ -270,11 +270,9 @@ const Member: React.FC<TeamMember> = ({
 }) => {
   return (
     <MemberContainer key={name}>
-      <AvatarBox>
-        <div className="avatar-bg">
-          <Avatar src={avatar} alt={name} />
-        </div>
-      </AvatarBox>
+      <div className="avatar-bg">
+        <Avatar src={avatar} alt={name} />
+      </div>
       <div className="data">
         <div className="name">{name}</div>
         <div className="position">{position}</div>

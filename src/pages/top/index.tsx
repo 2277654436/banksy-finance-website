@@ -92,7 +92,7 @@ const ExplorerButton = styled.div`
     width: 40vw;
     height: 9vw;
     font-size: 5vw;
-    margin: 0 0 0 20px;
+    margin: 5px 0;
     background-color: #554BFF;
     border-radius: 10px;
     color: white;
@@ -137,12 +137,13 @@ const Top: React.FC = () => {
             <div>The first AI-driven NFT pool-based</div>
             <div>lending platform to lead a revolution</div>
             <div>of the NFT market</div>
+            <ExplorerButton>
+              <a href={'https://app.banksy.finance/#/'} target="_blank" style={{ color: 'white' }} rel="noreferrer">
+                Explore
+              </a>
+            </ExplorerButton>
           </Text>
-          <ExplorerButton data-aos="fade-in">
-            <a href={'https://app.banksy.finance/#/'} target="_blank" style={{ color: 'white' }} rel="noreferrer">
-              Explore
-            </a>
-          </ExplorerButton>
+
         </TopContainer>
       </Wrapper>
     </div>
