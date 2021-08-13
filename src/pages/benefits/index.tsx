@@ -3,6 +3,7 @@ import benefits1 from '../../image/banefits/benefits1.png'
 import benefits2 from '../../image/banefits/benefits2.png'
 import benefits3 from '../../image/banefits/benefits3.png'
 import dotsBG from '../../image/solutions/dots.png'
+
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
