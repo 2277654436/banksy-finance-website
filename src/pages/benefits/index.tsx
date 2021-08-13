@@ -80,6 +80,7 @@ const Item = styled.div`
     height: 178.25px;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 50px;
     
     
     img {
