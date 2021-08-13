@@ -155,11 +155,6 @@ const Features: React.FC = () => {
       detail: 'The security fund pool supports users to choose fund insurance, and the platform provides the security for users\' funds.'
     },
     {
-      img: Features2,
-      title: 'Integration With Deﬁ',
-      detail: 'To improve NFT liquidity through the integration with Defi model.'
-    },
-    {
       img: Features3,
       title: 'Convenient Borrowing',
       detail: 'NFT holders can quickly obtain loans without the need to reach an agreement with fund lenders.\n'

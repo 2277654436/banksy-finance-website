@@ -152,9 +152,7 @@ const Mission: React.FC = () => {
           </Title>
 
           <Content>
-            Provide a safe and reliable lending environment for
-            the NFT market, solve the problem of NFT liquidity,
-            and fully release the value of NFT
+            Provide a safe and reliable lending environment for NFT holders, fully release the financial value of NFT, and raise the NFT market infrastructure.
           </Content>
 
           <SpinningImage src={missionBG} />

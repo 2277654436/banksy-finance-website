@@ -81,6 +81,7 @@ const Item = styled.div`
     border-radius: 10px;
     overflow: hidden;
     
+    
     img {
       border-radius: 10px;
       height: 100%;
@@ -171,25 +172,21 @@ const Benefits: React.FC = () => {
       img: benefits1,
       title: 'Share platform revenue',
       details: [
-        '1｜Get loans in a convenient way',
-        '2｜Get and repay loans anytime',
+
       ]
     },
     {
       img: benefits2,
       title: 'Participate in DAO',
       details: [
-        '1｜Security for funds',
-        '2｜Incomes from interest and platform rewards',
-        '3｜Deposit and withdraw funds anytime',
+
       ]
     },
     {
       img: benefits3,
       title: 'Repurchase and Burn',
       details: [
-        '1｜Share the platform revenue',
-        '2｜Participate in platform governance'
+
       ]
     }
   ]

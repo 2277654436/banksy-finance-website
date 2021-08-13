@@ -131,11 +131,6 @@ export const Solutions: React.FC = () => {
     {
       serialNum: 3,
       content: 'NFT whitelist mechanism, security fund pool and liquidation mechanism are set up to provide multiple protection for platform fund.'
-    },
-    {
-      serialNum: 4,
-      content: 'The safety fund pool and liquidation mechanism are\n' +
-        'set up to ensure the security of lenders\' funds.'
     }
   ]
 

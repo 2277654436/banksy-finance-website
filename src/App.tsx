@@ -32,7 +32,7 @@ const App = () => {
       {/*  isMobile ? (*/}
       {/*    <div>*/}
       <Top />
-      {/*<Mission />*/}
+      <Mission />
       <Issues />
       <Solutions />
       {/*<Mapper />*/}
