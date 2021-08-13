@@ -37,7 +37,7 @@ const App = () => {
       <Solutions />
       {/*<Mapper />*/}
       <Features />
-      <Support />
+      {/*<Support />*/}
       <Benefits />
       <RoadMap />
       <Team />

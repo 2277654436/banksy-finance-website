@@ -54,6 +54,7 @@ const Title = styled.div`
 
 const ItemsContainer = styled.div`
   display: flex;
+  justify-content: center;
   position: relative;
   width: 100%;
 
@@ -71,10 +72,9 @@ const ItemsContainer = styled.div`
 
 const Item = styled.div`
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-direction: column;
-  margin-left: 20px;
-  align-items: start;
+  align-items: center;
 
   .item-img {
     width: 240px;
@@ -102,6 +102,7 @@ const Item = styled.div`
     font-size: 28px;
     font-weight: bolder;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .details {
