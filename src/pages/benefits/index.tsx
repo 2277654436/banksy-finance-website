@@ -201,7 +201,7 @@ const Benefits: React.FC = () => {
           <Title id="benefits-title" data-aos="fade-in">
             TOKEN VALUE
           </Title>
-          <ItemsContainer>
+          <ItemsContainer data-aos="fade-right">
             {
               BENEFIT_ITEMS.map(item => (
                 <Item key={item.title} data-aos="fade-in">

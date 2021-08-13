@@ -16,7 +16,7 @@ import dotsBG from '../../image/solutions/dots.png'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 400px;
+  height: 500px;
   background: url(${dotsBG}) no-repeat;
   background-size: 50% 50%;
   background-position: top 50% left 0;
@@ -58,16 +58,17 @@ const Title = styled.div`
     font-size: 64px;
     font-weight: 550;
     position: absolute;
-    left: 20px;
+    left: 520px;
     top: 80px;
   }
 
   div {
     position: absolute;
+    text-align: center;
     color: #808080;
     width: 800px;
     font-size: 20px;
-    top: 70px;
+    top: 190px;
     left: 250px;
   }
 
@@ -117,14 +118,14 @@ const MembersRowContainer = styled.div`
     width: 1160px;
     position: absolute;
     left: 0;
-    top: 300px;
+    top: 400px;
   }
 
   .row__2 {
     width: 865px;
     position: absolute;
-    left: 0;
-    top: 600px;
+    left: 150px;
+    top: 680px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -343,9 +344,9 @@ const Team: React.FC = () => {
   return (
     <div className="section">
       <Wrapper>
-        <TeamContainer>
-          <Title data-aos="fade-in">
-            <img src={teamTitleImg} className="team-title-img" alt="banksy team" />
+        <TeamContainer data-aos="fade-in">
+          <Title>
+            {/*<img src={teamTitleImg} className="team-title-img" alt="banksy team" />*/}
             <span>TEAM</span>
             <div>
               We are an international team from well-known companies such as IBM, Tencent, and Sangfor.
@@ -355,12 +356,12 @@ const Team: React.FC = () => {
           </Title>
 
           <MembersRowContainer>
-            <div className="row__1" data-aos="fade-in">
+            <div className="row__1" data-aos="fade-up">
               {
                 MEMBERS_ROW1.map(member => (<Member key={member.name} {...member} />))
               }
             </div>
-            <div className="row__2" data-aos="fade-in">
+            <div className="row__2" data-aos="fade-up">
               {
                 MEMBERS_ROW2.map(member => (<Member key={member.name} {...member} />))
               }
