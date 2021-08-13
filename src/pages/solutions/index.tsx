@@ -52,10 +52,17 @@ const Title = styled.div`
 const Content = styled.div`
   margin-top: 30px;
   width: 580px;
+  position: relative;
+  right: 0;
+  left: 700px;
+  
 
   @media screen and (max-width: 1100px) {
     width: 300px;
     margin-left: calc((100% - 300px) / 2);
+    position: relative;
+    right: 0;
+    left: 0;
   }
 `
 
@@ -99,8 +106,8 @@ const ContentItem = styled.div`
 
 const SolutionsImage = styled.img`
   position: absolute;
-  right: 0;
-  top: 400px;
+  left: 0;
+  top: 350px;
   width: 670px;
 
   @media screen and (max-width: 1100px) {
@@ -141,6 +148,9 @@ export const Solutions: React.FC = () => {
           <Title data-aos="fade-in">
             SOLUTIONS
           </Title>
+
+
+          <SolutionsImage src={SolutionImg} alt="solutions" data-aos="fade-in" />
           <Content>
             {
               solutionsData.map((item: any, index) => (
@@ -151,8 +161,6 @@ export const Solutions: React.FC = () => {
               ))
             }
           </Content>
-
-          <SolutionsImage src={SolutionImg} alt="solutions" data-aos="fade-in" />
         </SolutionsContainer>
       </Wrapper>
     </div>
