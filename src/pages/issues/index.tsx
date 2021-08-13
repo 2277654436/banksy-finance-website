@@ -12,7 +12,7 @@ import Feat3 from '../../image/issues/4.png'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 900px;
+  height: 750px;
   background: url(${dotsBG}) no-repeat;
   background-size: 40% 40%;
   background-position: top 0 left 0;

@@ -14,7 +14,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 900px;
+  height: 740px;
   background: url(${dotsBG}) no-repeat;
   background-size: 50% 50%;
   background-position: top 50% left 0;
@@ -180,10 +180,10 @@ const Features: React.FC = () => {
             <img src={featuresTextBG} alt="features" />
             <div>MAIN FEATURES</div>
           </Title>
-          <ItemsContainer data-aos="fade-right">
+          <ItemsContainer>
             {
-              FEATURES_ITEMS.map(item => (
-                <Item key={item.title} data-aos="fade-in">
+              FEATURES_ITEMS.map((item, index) => (
+                <Item key={item.title} data-aos="fade-up" data-aos-delay={ index * 250 } data-aos-duration={800}>
                   <img src={item.img} alt={item.title} />
                   <div className="title">{item.title}</div>
                   <div className="detail">{item.detail}</div>

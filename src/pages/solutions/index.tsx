@@ -6,12 +6,12 @@ import dotsBG from '../../image/solutions/dots.png'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 900px;
+  height: 780px;
   background: url(${dotsBG}) no-repeat;
   background-size: 70% 70%;
 
   @media screen and (max-width: 1100px) {
-    height: 700px;
+    height: 900px;
   }
 `
 

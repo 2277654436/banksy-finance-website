@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 1000px;
+  height: 830px;
   background: url(${dotsBG}) no-repeat;
   background-size: 50% 50%;
   background-position: top 50% left 0;
@@ -201,10 +201,10 @@ const Benefits: React.FC = () => {
           <Title id="benefits-title" data-aos="fade-in">
             TOKEN VALUE
           </Title>
-          <ItemsContainer data-aos="fade-right">
+          <ItemsContainer >
             {
-              BENEFIT_ITEMS.map(item => (
-                <Item key={item.title} data-aos="fade-in">
+              BENEFIT_ITEMS.map((item, index) => (
+                <Item key={item.title} data-aos="fade-up" data-aos-delay={ index * 250 } data-aos-duration={800} >
                   <div className="item-img">
                     <img src={item.img} alt={item.title} />
                   </div>
