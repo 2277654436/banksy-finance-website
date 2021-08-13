@@ -169,7 +169,7 @@ const Benefits: React.FC = () => {
   const BENEFIT_ITEMS: BenefitItem[] = [
     {
       img: benefits1,
-      title: 'NFT Holder',
+      title: 'Share platform revenue',
       details: [
         '1｜Get loans in a convenient way',
         '2｜Get and repay loans anytime',
@@ -177,7 +177,7 @@ const Benefits: React.FC = () => {
     },
     {
       img: benefits2,
-      title: 'Funds Lender',
+      title: 'Participate in DAO',
       details: [
         '1｜Security for funds',
         '2｜Incomes from interest and platform rewards',
@@ -186,7 +186,7 @@ const Benefits: React.FC = () => {
     },
     {
       img: benefits3,
-      title: 'Tokens Holder',
+      title: 'Repurchase and Burn',
       details: [
         '1｜Share the platform revenue',
         '2｜Participate in platform governance'

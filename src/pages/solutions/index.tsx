@@ -73,7 +73,7 @@ const ContentItem = styled.div`
   
   .item-content {
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: normal;
     color: #B2B2B2;
   }
 
@@ -100,7 +100,7 @@ const ContentItem = styled.div`
 const SolutionsImage = styled.img`
   position: absolute;
   right: 0;
-  top: 500px;
+  top: 400px;
   width: 670px;
 
   @media screen and (max-width: 1100px) {
@@ -122,20 +122,15 @@ export const Solutions: React.FC = () => {
   const solutionsData:SolutionItem[] = [
     {
       serialNum: 1,
-      content: 'NFT whitelist mechanism-Quality NFTs are used as collateral for loans on the platform.'
+      content: 'Our self-developed NFT risk assessment model can be used to carry out a reasonable valuation for NFT and update its price so as to dynamically adjust the NFT collateral rate, deposit interest rate, and loan interest rate.\n'
     },
     {
       serialNum: 2,
-      content: 'Based on the Pool-Based lending model,\n' +
-        'NFT holders can quickly get loans from the platform without\n' +
-        'an agreement between lenders and borrowers.'
+      content: 'Based on the Pool-Based lending model, NFT holders can quickly get loans from the platform without an agreement between lenders and borrowers. It can improve the utilization of users\' funds.'
     },
     {
       serialNum: 3,
-      content: 'Our self-developed NFT risk assessment model can be used to ' +
-        'carry out a reasonable valuation for NFT and update its price ' +
-        'so as to dynamically adjust the NFTcollateral rate, interest rate, ' +
-        'and mortagage rate in real time.'
+      content: 'NFT whitelist mechanism, security fund pool and liquidation mechanism are set up to provide multiple protection for platform fund.'
     },
     {
       serialNum: 4,

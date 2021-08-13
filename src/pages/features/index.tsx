@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   background-position: top 50% left 0;
 
   @media screen and (max-width: 1100px) {
-    height: 1250px;
+    height: 1300px;
   }
 `
 
@@ -151,8 +151,8 @@ const Features: React.FC = () => {
   const FEATURES_ITEMS: FeatureItem[] = [
     {
       img: Features1,
-      title: 'Funds Security',
-      detail: 'Double insurance to ensure the safety of users’ funds.'
+      title: 'Financial Security',
+      detail: 'The security fund pool supports users to choose fund insurance, and the platform provides the security for users\' funds.'
     },
     {
       img: Features2,
@@ -162,12 +162,12 @@ const Features: React.FC = () => {
     {
       img: Features3,
       title: 'Convenient Borrowing',
-      detail: 'Efficiently take loans without an agreement with fund lenders.'
+      detail: 'NFT holders can quickly obtain loans without the need to reach an agreement with fund lenders.\n'
     },
     {
       img: Features4,
-      title: 'AI-Driven Risk Control',
-      detail: 'The AI-driven risk control system provides the infrastructure services for the NFT ecosystem.'
+      title: 'NFT Valuation',
+      detail: 'Comprehensively evaluate the value of NFT based on various dimensions of NFT data, and update the valuation in time according to market changes.'
     },
   ]
 

@@ -341,7 +341,7 @@ const Team: React.FC = () => {
             <img src={teamTitleImg} className="team-title-img" alt="banksy team" />
             <span>TEAM</span>
             <div>
-              We are an international team from well-known companies such as IBM, Amazon, Tencent, and Sangfor.
+              We are an international team from well-known companies such as IBM, Tencent, and Sangfor.
               We have rich experience in artificial intelligence and DeFi product development, as well as mature
               product operation capabilities.
             </div>
