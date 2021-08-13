@@ -146,16 +146,16 @@ const Mission: React.FC = () => {
     <div className="section">
       <Wrapper>
         <MissionContainer id="MissionContainer">
-          <Title>
-            <p>MISSION</p>
-            <img src={missionTitleImg} alt="mission" />
+          <Title >
+            <p data-aos="fade-down">MISSION</p>
+            <img src={missionTitleImg} alt="mission" data-aos="fade-right" />
           </Title>
 
-          <Content>
+          <Content  data-aos="fade-in">
             Provide a safe and reliable lending environment for NFT holders, fully release the financial value of NFT, and raise the NFT market infrastructure.
           </Content>
 
-          <SpinningImage src={missionBG} />
+          <SpinningImage src={missionBG}  data-aos="fade-in" />
 
           <RingImage src={missionRing} />
         </MissionContainer>

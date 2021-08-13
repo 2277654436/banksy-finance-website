@@ -6,12 +6,12 @@ import dotsBG from '../../image/solutions/dots.png'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 1100px;
+  height: 900px;
   background: url(${dotsBG}) no-repeat;
   background-size: 70% 70%;
 
   @media screen and (max-width: 1100px) {
-    height: 900px;
+    height: 700px;
   }
 `
 
@@ -50,7 +50,7 @@ const Title = styled.div`
 `
 
 const Content = styled.div`
-  margin-top: 30px;
+  margin-top: 200px;
   width: 580px;
   position: relative;
   right: 0;
@@ -63,6 +63,7 @@ const Content = styled.div`
     position: relative;
     right: 0;
     left: 0;
+    margin-top: 50px;
   }
 `
 
@@ -98,7 +99,7 @@ const ContentItem = styled.div`
 
     .item-content {
       font-size: 16px;
-      font-weight: bolder;
+      font-weight: normal;
       color: #B2B2B2;
     }
   }
@@ -120,7 +121,7 @@ const SolutionsImage = styled.img`
 `
 
 type SolutionItem = {
-  serialNum: number
+  serialNum: number | string
   content: string
 }
 
@@ -128,17 +129,24 @@ export const Solutions: React.FC = () => {
 
   const solutionsData:SolutionItem[] = [
     {
-      serialNum: 1,
-      content: 'Our self-developed NFT risk assessment model can be used to carry out a reasonable valuation for NFT and update its price so as to dynamically adjust the NFT collateral rate, deposit interest rate, and loan interest rate.\n'
+      serialNum: '',
+      content: 'We guarantee the security of platform\n' +
+          'funds by customizing the NFT whitelist\n' +
+          'mechanism and risk assessment model.\n' +
+          'At the same time, based on the Pool-\n' +
+          'Based lending model, users can quickly\n' +
+          'complete deposits and loans, thereby\n' +
+          'increasing the utlization rate of user\n' +
+          'funds.\n'
     },
-    {
+    /* {
       serialNum: 2,
       content: 'Based on the Pool-Based lending model, NFT holders can quickly get loans from the platform without an agreement between lenders and borrowers. It can improve the utilization of users\' funds.'
     },
     {
       serialNum: 3,
       content: 'NFT whitelist mechanism, security fund pool and liquidation mechanism are set up to provide multiple protection for platform fund.'
-    }
+    }*/
   ]
 
   return (
@@ -150,11 +158,11 @@ export const Solutions: React.FC = () => {
           </Title>
 
 
-          <SolutionsImage src={SolutionImg} alt="solutions" data-aos="fade-in" />
+          <SolutionsImage src={SolutionImg} alt="solutions" data-aos="fade-right" />
           <Content>
             {
               solutionsData.map((item: any, index) => (
-                <ContentItem key={index} data-aos="fade-in">
+                <ContentItem key={index} data-aos="fade-left">
                   <span className="serialNum">{item.serialNum}</span>
                   <span className="item-content">{item.content}</span>
                 </ContentItem>

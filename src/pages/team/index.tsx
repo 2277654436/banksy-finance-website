@@ -65,10 +65,10 @@ const Title = styled.div`
   div {
     position: absolute;
     color: #808080;
-    width: 400px;
+    width: 800px;
     font-size: 20px;
-    top: 200px;
-    left: 0;
+    top: 70px;
+    left: 250px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -98,6 +98,7 @@ const Title = styled.div`
       width: 100%;
       top: 80px;
       font-size: 16px;
+      left: 0px;
     }
   }
 `
@@ -113,17 +114,17 @@ const MembersRowContainer = styled.div`
   }
 
   .row__1 {
-    width: 865px;
+    width: 1160px;
     position: absolute;
-    right: 0;
-    top: 220px;
+    left: 0;
+    top: 300px;
   }
 
   .row__2 {
-    width: 1160px;
+    width: 865px;
     position: absolute;
-    right: 0;
-    top: 500px;
+    left: 0;
+    top: 600px;
   }
 
   @media screen and (max-width: 1100px) {
@@ -304,15 +305,21 @@ const Team: React.FC = () => {
       avatar: cmo,
       externalLinks: { icon: linkedin, link: 'https://www.linkedin.com/in/terry-li-614512212/' }
     },
-  ]
-
-  const MEMBERS_ROW2: TeamMember[] = [
     {
       name: 'Wei Jiang',
       position: 'Blockchain Architect',
       avatar: architect,
       externalLinks: { icon: github, link: 'https://github.com/GleipnirJ/' }
     },
+  ]
+
+  const MEMBERS_ROW2: TeamMember[] = [
+    // {
+    //   name: 'Wei Jiang',
+    //   position: 'Blockchain Architect',
+    //   avatar: architect,
+    //   externalLinks: { icon: github, link: 'https://github.com/GleipnirJ/' }
+    // },
     {
       name: 'Roger Luo',
       position: 'Chief Algorithm Expert',

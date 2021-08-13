@@ -199,7 +199,7 @@ const Benefits: React.FC = () => {
       <Wrapper>
         <BenefitsContainer id="BenefitsContainer">
           <Title id="benefits-title" data-aos="fade-in">
-            BENEFITS
+            TOKEN VALUE
           </Title>
           <ItemsContainer>
             {
