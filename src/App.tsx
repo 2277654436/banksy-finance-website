@@ -5,7 +5,6 @@ import 'aos/dist/aos.css'
 import Top from './pages/top'
 import Mission from './pages/mission'
 import Issues from './pages/issues'
-import Mapper from './pages/mapper'
 import Features from './pages/features'
 import Foot from './pages/foot'
 import AOS from 'aos'
@@ -37,7 +36,7 @@ const App = () => {
       <Solutions />
       {/*<Mapper />*/}
       <Features />
-      {/*<Support />*/}
+      <Support />
       <Benefits />
       <RoadMap />
       <Team />

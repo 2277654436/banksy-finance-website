@@ -1,9 +1,5 @@
 import React from 'react'
 import featuresTextBG from '../../image/features/features-text-bg.png'
-import Features1 from '../../image/features/features-img1.png'
-import Features2 from '../../image/features/features-img2.png'
-import Features3 from '../../image/features/features-img3.png'
-import Features4 from '../../image/features/features-img4.png'
 import Feat1 from '../../image/features/features1.png'
 import Feat2 from '../../image/features/features2.png'
 import Feat3 from '../../image/features/features3.png'
@@ -14,7 +10,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 740px;
+  height: 900px;
   background: url(${dotsBG}) no-repeat;
   background-size: 50% 50%;
   background-position: top 50% left 0;
@@ -99,6 +95,7 @@ const Item = styled.div`
 
   img {
     height: 120px;
+    width: 120px;
     object-fit: cover;
   }
 

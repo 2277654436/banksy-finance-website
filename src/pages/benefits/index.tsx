@@ -81,12 +81,11 @@ const Item = styled.div`
     height: 178.25px;
     border-radius: 10px;
     overflow: hidden;
-    
-    
+    margin-bottom: 40px;
+
     img {
       border-radius: 10px;
       height: 100%;
-      margin-bottom: 40px;
       transition: all 0.7s;
 
       &:hover {
@@ -129,6 +128,7 @@ const Item = styled.div`
       border-radius: 10px;
       overflow: hidden;
       margin-right: 20px;
+      margin-bottom: 0
 
       img {
         width: 100%;

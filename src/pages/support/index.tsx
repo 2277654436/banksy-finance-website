@@ -3,9 +3,10 @@ import Arrow from '../../image/support/arrow.png'
 import Image1 from '../../image/support/1.png'
 import Image2 from '../../image/support/2.png'
 import Image3 from '../../image/support/3.png'
-import SpinImg from '../../image/features/spinImg.png'
 import dotsBG from '../../image/solutions/dots.png'
 import styled, { keyframes } from 'styled-components'
+import React3DSlick from '../../components/React3DSlider'
+import { useMediaQuery } from 'react-responsive'
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -43,6 +44,7 @@ const Title = styled.div`
   z-index: 1;
   width: fit-content;
   top: 0;
+  margin-bottom: 150px;
 
   img {
     position: relative;
@@ -86,15 +88,15 @@ const ImagesContainer = styled.div`
       z-index: 1;
       position: relative;
       transition: all 1s;
+    }
 
-      &:hover {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        z-index: 99;
-      }
+    img:hover {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      z-index: 99;
     }
 
     .a {
@@ -176,6 +178,8 @@ const SpinningRing = styled.img`
 `
 
 export const Support = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 1100px)' })
+
   return (
     <div className="section">
       <Wrapper>
@@ -185,12 +189,16 @@ export const Support = () => {
             <div>SUPPORT A VARIETY OF</div>
             <div>NFTS POOL-BASED LENDING</div>
           </Title>
-          <ImagesContainer data-aos="fade-in">
-            <img src={Image3} className="a" />
-            <img src={Image2} className="b" />
-            <img src={Image1} className="c" />
-          </ImagesContainer>
-          <SpinningRing src={SpinImg} data-aos="fade-in" />
+          {
+            isMobile ? (
+              <ImagesContainer data-aos="fade-in">
+                <img src={Image3} className="a" />
+                <img src={Image2} className="b" />
+                <img src={Image1} className="c" />
+              </ImagesContainer>
+            ) : (<React3DSlick />)
+          }
+          {/*<SpinningRing src={SpinImg} data-aos="fade-in" />*/}
         </SupportsContainer>
       </Wrapper>
     </div>

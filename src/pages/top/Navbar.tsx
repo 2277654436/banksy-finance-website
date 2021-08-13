@@ -1,7 +1,5 @@
 import React from 'react'
 import logo from '../../image/logo.png'
-import menuTwitter from '../../image/menuTwitter.png'
-import menuFly from '../../image/menuFly.png'
 import styled from 'styled-components'
 
 function scrollToPart(anchorName: string) {
@@ -83,11 +81,13 @@ const ExternalLinksContainer = styled.div`
     background: linear-gradient(to right, #00FFFF, #5842FF, #7800FF);
     cursor: pointer;
   }
+  
+  @media screen and (max-width: 1100px) {
+    font-size: 3vw;
+  }
 `
 
 const ExternalLink = styled.a`
-
-
   img {
     width: 25px;
     margin-left: 2.5vw;
@@ -108,8 +108,8 @@ const Navbar: React.FC = () => {
       </NavLinksContainer>
 
       <ExternalLinksContainer id="ExternalLinksContainer">
-        <div 
-          className="contact" 
+        <div
+          className="contact"
           onClick={() => scrollToPart('FootContainer')}
         >
           Contact Us
