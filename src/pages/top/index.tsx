@@ -134,9 +134,8 @@ const Top: React.FC = () => {
             {/*<p> Lending Hub</p>*/}
           </Title>
           <Text data-aos="fade-in">
-            <div>The first AI-driven NFT pool-based</div>
-            <div>lending platform to lead a revolution</div>
-            <div>of the NFT market</div>
+            <div>Convenient NFT collateralized loan to </div>
+            <div>keep your funds fully liquid</div>
             <ExplorerButton>
               <a href={'https://app.banksy.finance/#/'} target="_blank" style={{ color: 'white' }} rel="noreferrer">
                 Explore
