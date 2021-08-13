@@ -8,13 +8,13 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 830px;
+  height: 850px;
   background: url(${dotsBG}) no-repeat;
   background-size: 50% 50%;
   background-position: top 50% left 0;
 
   @media screen and (max-width: 1100px) {
-    height: 750px;
+    height: 950px;
   }
 `
 
@@ -81,7 +81,6 @@ const Item = styled.div`
     height: 178.25px;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 50px;
     
     
     img {
@@ -120,8 +119,7 @@ const Item = styled.div`
   @media screen and (max-width: 1100px) {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
     position: relative;
     margin-top: 30px;
 

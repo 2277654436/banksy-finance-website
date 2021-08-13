@@ -14,11 +14,10 @@ const Wrapper = styled.div`
   
 
   @media screen and (max-width: 1100px) {
-    height: 50vh;
-    background-size: 110%;
+    height: 80vh;
     background: url(${MainBG2}) no-repeat;
-    background-size: 100%;
-    background-position: top 60px right 0;
+    background-size: 250%;
+    background-position: top 60px right -200px;
   }
   
 `
@@ -58,7 +57,7 @@ const Title = styled.div`
     
     p {
       width: fit-content;
-      margin: 0;
+      margin: 120px 0;
       line-height: normal;
     }
   }
@@ -92,7 +91,7 @@ const ExplorerButton = styled.div`
     width: 40vw;
     height: 9vw;
     font-size: 5vw;
-    margin: 5px 0;
+    margin: 25px 0;
     background-color: #554BFF;
     border-radius: 10px;
     color: white;
@@ -115,7 +114,7 @@ const Text = styled.div`
     position: relative;
     text-align: left;
     top: 0;
-    margin: 0 auto 20px 20px;
+    margin: 100px auto 20px 20px;
     font-size: 3.6vw;
     color: #eee;
   }

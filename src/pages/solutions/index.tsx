@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   background-size: 70% 70%;
 
   @media screen and (max-width: 1100px) {
-    height: 900px;
+    height: 600px;
   }
 `
 
@@ -50,7 +50,7 @@ const Title = styled.div`
 `
 
 const Content = styled.div`
-  margin-top: 200px;
+  margin-top: 100px;
   width: 580px;
   position: relative;
   right: 0;
@@ -108,7 +108,7 @@ const ContentItem = styled.div`
 const SolutionsImage = styled.img`
   position: absolute;
   left: 0;
-  top: 350px;
+  top: 280px;
   width: 670px;
 
   @media screen and (max-width: 1100px) {

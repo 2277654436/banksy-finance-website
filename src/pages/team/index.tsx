@@ -58,7 +58,7 @@ const Title = styled.div`
     font-size: 64px;
     font-weight: 550;
     position: absolute;
-    left: 520px;
+    left: 550px;
     top: 80px;
   }
 
@@ -88,7 +88,7 @@ const Title = styled.div`
     span {
       position: relative;
       top: 20px;
-      left: 40px;
+      left: 100px;
       width: fit-content;
       margin: 0;
       font-size: 41px;
@@ -146,7 +146,7 @@ const MembersRowContainer = styled.div`
       margin: 0 auto;
       position: absolute;
       left: 0;
-      top: 650px;
+      top: 800px;
     }
   }
 `

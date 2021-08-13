@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   background-position: top 50% left 0;
 
   @media screen and (max-width: 1100px) {
-    height: 1300px;
+    height: 1050px;
   }
 `
 
