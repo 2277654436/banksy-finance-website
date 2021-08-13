@@ -4,9 +4,6 @@ import Features1 from '../../image/features/features-img1.png'
 import Features2 from '../../image/features/features-img2.png'
 import Features3 from '../../image/features/features-img3.png'
 import Features4 from '../../image/features/features-img4.png'
-import Feat1 from '../../image/features/1.png'
-import Feat2 from '../../image/features/2.png'
-import Feat3 from '../../image/features/4.png'
 
 
 import dotsBG from '../../image/dots.png'
@@ -155,17 +152,17 @@ type FeatureItem = {
 const Features: React.FC = () => {
   const FEATURES_ITEMS: FeatureItem[] = [
     {
-      img: Feat1,
+      img: Features1,
       title: 'Financial Security',
       detail: 'The security fund pool supports users to choose fund insurance, and the platform provides the security for users\' funds.'
     },
     {
-      img: Feat2,
+      img: Features2,
       title: 'Convenient Borrowing',
       detail: 'NFT holders can quickly obtain loans without the need to reach an agreement with fund lenders.\n'
     },
     {
-      img: Feat3,
+      img: Features3,
       title: 'NFT Valuation',
       detail: 'Comprehensively evaluate the value of NFT based on various dimensions of NFT data, and update the valuation in time according to market changes.'
     },

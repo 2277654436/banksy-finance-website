@@ -6,6 +6,9 @@ import Number3 from '../../image/issues/number3.png'
 import dotsBG from '../../image/dots.png'
 import styled from 'styled-components'
 import BackgroundImage from '../../image/issues/background1.png'
+import Feat1 from '../../image/issues/1.png'
+import Feat2 from '../../image/issues/2.png'
+import Feat3 from '../../image/issues/4.png'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -161,17 +164,17 @@ type IssueItem = {
 const Issues: React.FC = () => {
   const items: IssueItem[] = [
     {
-      img: Number1,
+      img: Feat1,
       title: 'Price confusion',
       detail: 'Lack of a reasonable valuation mechanism and NFT price discovery mechanism.'
     },
     {
-      img: Number2,
+      img: Feat2,
       title: 'Poor liquidity',
       detail: 'The frequency of NFT turnover is very low, cannot be realized in time, and the utilization rate of NFT holders\' funds is low.'
     },
     {
-      img: Number3,
+      img: Feat3,
       title: 'No security for lender\'s funds',
       detail: 'Lack of an effective mechanism to ensure the security of lenders’ funds.'
     },
