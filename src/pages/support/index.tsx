@@ -1,8 +1,5 @@
 import React from 'react'
 import Arrow from '../../image/support/arrow.png'
-import Image1 from '../../image/support/1.png'
-import Image2 from '../../image/support/2.png'
-import Image3 from '../../image/support/3.png'
 import dotsBG from '../../image/solutions/dots.png'
 import styled, { keyframes } from 'styled-components'
 import React3DSlick from '../../components/React3DSlider'
@@ -189,16 +186,17 @@ export const Support = () => {
             <div>SUPPORT A VARIETY OF</div>
             <div>NFTS POOL-BASED LENDING</div>
           </Title>
-          {
-            isMobile ? (
-              <ImagesContainer data-aos="fade-in">
-                <img src={Image3} className="a" />
-                <img src={Image2} className="b" />
-                <img src={Image1} className="c" />
-              </ImagesContainer>
-            ) : (<React3DSlick   data-aos="fade-in" />)
-          }
+          {/*{*/}
+          {/*  isMobile ? (*/}
+          {/*    <ImagesContainer data-aos="fade-in">*/}
+          {/*      <img src={Image3} className="a" />*/}
+          {/*      <img src={Image2} className="b" />*/}
+          {/*      <img src={Image1} className="c" />*/}
+          {/*    </ImagesContainer>*/}
+          {/*  ) : (<React3DSlick   data-aos="fade-in" />)*/}
+          {/*}*/}
           {/*<SpinningRing src={SpinImg} data-aos="fade-in" />*/}
+          <React3DSlick   data-aos="fade-in" />
         </SupportsContainer>
       </Wrapper>
     </div>

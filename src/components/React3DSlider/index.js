@@ -6,7 +6,7 @@ import Image4 from '../../image/support/nft1.jpg'
 import Image5 from '../../image/support/nft2.png'
 import Image6 from '../../image/support/nft3.png'
 import Image7 from '../../image/support/nft4.png'
-import Image8 from '../../image/support/nft5.png'
+import Image8 from '../../image/support/nft9.png'
 
 
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
@@ -38,10 +38,10 @@ function React3DSlick() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const settings = {
-    infinite: !isMobile,
+    infinite: true,
     lazyLoad: true,
     speed: 300,
-    slidesToShow: 5,
+    slidesToShow: isMobile ? 3 : 5 ,
     centerMode: true,
     centerPadding: 0,
     beforeChange: (current, next) => setCurrentIndex(next),
