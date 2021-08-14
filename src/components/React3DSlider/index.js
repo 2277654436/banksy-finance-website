@@ -1,13 +1,18 @@
 import React, { useState } from 'react'
 import './index.css'
 import Slider from 'react-slick'
-import Image1 from '../../image/support/1.png'
 import Image2 from '../../image/support/2.png'
-import Image3 from '../../image/support/3.png'
+import Image4 from '../../image/support/nft1.jpg'
+import Image5 from '../../image/support/nft2.png'
+import Image6 from '../../image/support/nft3.png'
+import Image7 from '../../image/support/nft4.png'
+import Image8 from '../../image/support/nft5.png'
+
+
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 import { useMediaQuery } from 'react-responsive'
 
-const images = [Image1, Image2, Image3, Image1, Image2, Image3,]
+const images = [Image2, Image4,Image5, Image6, Image7, Image8]
 
 function React3DSlick() {
   const isMobile = useMediaQuery({ query: '(max-width: 1100px)' })
@@ -36,7 +41,7 @@ function React3DSlick() {
     infinite: !isMobile,
     lazyLoad: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 5,
     centerMode: true,
     centerPadding: 0,
     beforeChange: (current, next) => setCurrentIndex(next),

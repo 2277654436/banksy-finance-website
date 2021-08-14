@@ -161,7 +161,7 @@ const Spin = keyframes`
 `
 
 const SpinningRing = styled.img`
-  width: 300px;
+  width: 300px; 
   position: absolute;
   top: 500px;
   left: 400px;
@@ -196,7 +196,7 @@ export const Support = () => {
                 <img src={Image2} className="b" />
                 <img src={Image1} className="c" />
               </ImagesContainer>
-            ) : (<React3DSlick />)
+            ) : (<React3DSlick   data-aos="fade-in" />)
           }
           {/*<SpinningRing src={SpinImg} data-aos="fade-in" />*/}
         </SupportsContainer>
