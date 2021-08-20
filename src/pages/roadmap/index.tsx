@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   background-position: top 0 left 0;
 
   @media screen and (max-width: 1100px) {
-    height: 700px;
+    height: 300px;
   }
 `
 
@@ -74,9 +74,9 @@ const BackgroundImage = styled.img`
 
 const Image = styled.img`
   position: relative;
-  left: 40px;
+  left: 0;
   top: 100px;
-  width: 100%;
+  width: 110%;
   z-index: 99;
 
   @media screen and (max-width: 1100px) {

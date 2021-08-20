@@ -2,6 +2,8 @@ import React from 'react'
 import benefits1 from '../../image/banefits/benefits1.png'
 import benefits2 from '../../image/banefits/benefits2.png'
 import benefits3 from '../../image/banefits/benefits3.png'
+import benefits4 from '../../image/banefits/benefits4.png'
+
 import dotsBG from '../../image/solutions/dots.png'
 
 import styled from 'styled-components'
@@ -14,7 +16,7 @@ const Wrapper = styled.div`
   background-position: top 50% left 0;
 
   @media screen and (max-width: 1100px) {
-    height: 950px;
+    height: 1250px;
   }
 `
 
@@ -186,6 +188,13 @@ const Benefits: React.FC = () => {
     {
       img: benefits3,
       title: 'Repurchase and Burn',
+      details: [
+
+      ]
+    },
+    {
+      img: benefits4,
+      title: 'AI Oracle gas fee',
       details: [
 
       ]
