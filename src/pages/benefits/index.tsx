@@ -79,8 +79,8 @@ const Item = styled.div`
   align-items: center;
 
   .item-img {
-    width: 240px;
-    height: 178.25px;
+    width: 200px;
+    height: 150px;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 40px;
@@ -99,7 +99,7 @@ const Item = styled.div`
   .title {
     color: #fff;
     width: 100%;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bolder;
     margin-bottom: 20px;
     text-align: center;
@@ -107,8 +107,8 @@ const Item = styled.div`
 
   .details {
     color: #B2B2B2;
-    font-size: 18px;
-    width: 400px;
+    font-size: 12px;
+    width: 310px;
 
     p {
       width: 100%;
