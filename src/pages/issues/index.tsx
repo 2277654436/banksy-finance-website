@@ -166,17 +166,17 @@ const Issues: React.FC = () => {
     {
       img: Feat1,
       title: 'Price confusion',
-      detail: 'Lack of a reasonable valuation mechanism and NFT price discovery mechanism.'
+      detail: 'Lack of a reliable valuation and NFT price discovery mechanism'
     },
     {
       img: Feat2,
       title: 'Poor liquidity',
-      detail: 'The frequency of NFT turnover is very low, cannot be realized in time, and the utilization rate of NFT holders\' funds is low.'
+      detail: 'Low utilization of NFT’s value'
     },
     {
       img: Feat3,
       title: 'No security for lender\'s funds',
-      detail: 'Lack of an effective mechanism to ensure the security of lenders’ funds.'
+      detail: 'Lack of financial security over NFT collateral'
     },
   ]
 

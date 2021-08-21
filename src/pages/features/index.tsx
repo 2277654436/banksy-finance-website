@@ -154,18 +154,18 @@ const Features: React.FC = () => {
     {
       img: Feat1,
       title: 'NFT Valuation',
-      detail: 'Comprehensively evaluate the value of NFT based on various dimensions of NFT data, and update the valuation in time according to market changes.'
+      detail: 'Various dimensions of NFT data are used for comprehensive NFT evaluation updated in real time;'
 
     },
     {
       img: Feat2,
       title: 'Convenient Borrowing',
-      detail: 'NFT holders can quickly obtain loans without the need to reach an agreement with fund lenders.\n'
+      detail: 'NFT borrowers can quickly obtain loans without reaching an agreement with lenders; collaterals of the same risk category share the same pool;'
     },
     {
       img: Feat3,
       title: 'Financial Security',
-      detail: 'The security fund pool supports users to choose fund insurance, and the platform provides the security for users\' funds.'
+      detail: 'Whitelisting process is required for new NFT collection as collateral; liquidation and security fund pool are in place to hedge risks'
     },
   ]
 

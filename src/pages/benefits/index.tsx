@@ -180,7 +180,7 @@ const Benefits: React.FC = () => {
     },
     {
       img: benefits2,
-      title: 'Participate in DAO',
+      title: 'Participate in Governance',
       details: [
 
       ]
