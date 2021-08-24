@@ -152,7 +152,7 @@ const Mission: React.FC = () => {
           </Title>
 
           <Content  data-aos="fade-in">
-            Provide a safe and reliable lending environment for NFT holders, fully release the financial value of NFT, and raise the NFT market infrastructure.
+            Provide a safe and reliable lending environment for NFT holders, fully release the financial value of NFT, and improve the NFT market infrastructure.
           </Content>
 
           <SpinningImage src={missionBG}  data-aos="fade-in" />
