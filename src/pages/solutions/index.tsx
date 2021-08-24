@@ -130,14 +130,13 @@ export const Solutions: React.FC = () => {
   const solutionsData:SolutionItem[] = [
     {
       serialNum: '',
-      content: 'We guarantee the security of platform\n' +
-          'funds by customizing the NFT whitelist\n' +
-          'mechanism and risk assessment model.\n' +
-          'At the same time, based on the Pool-\n' +
-          'Based lending model, users can quickly\n' +
+      content: 'We guarantee the security of funds on our\n' +
+          'platform by 1) a NFT whitelisting mechanism\n' +
+          '2) a risk assessment model 3) a liquidation\n' +
+          'process. At the same time, based on the \n' +
+          'pool-based lending model, users can quickly\n' +
           'complete deposits and loans, thereby\n' +
-          'increasing the utlization rate of user\n' +
-          'funds.\n'
+          'increasing the utilization of their NFTs\n'
     },
     /* {
       serialNum: 2,
