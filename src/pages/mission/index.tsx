@@ -104,14 +104,15 @@ const Spin = keyframes`
 `
 
 const SpinningImage = styled.img`
-  width: 600px;
+  width: 500px;
   background-size: 100% 100%;
   position: absolute;
-  top: 60px;
+  top: 70px;
   right: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 99;
   // animation: ${Spin} 30s infinite linear !important;
 
   @media screen and (max-width: 1100px) {
