@@ -183,8 +183,7 @@ export const Support = () => {
         <SupportsContainer id="support">
           <Title data-aos="fade-in">
             <img src={Arrow} />
-            <div>SUPPORT A VARIETY OF</div>
-            <div>NFTS POOL-BASED LENDING</div>
+            <div>SUPPORT A VARIETY OF NFT COLLECTIONS</div>
           </Title>
           {/*{*/}
           {/*  isMobile ? (*/}

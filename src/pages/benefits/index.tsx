@@ -180,21 +180,21 @@ const Benefits: React.FC = () => {
     },
     {
       img: benefits2,
-      title: 'Participate in Governance',
+      title: 'Participate in governance',
       details: [
 
       ]
     },
     {
       img: benefits3,
-      title: 'Repurchase and Burn',
+      title: 'Repurchase and burn',
       details: [
 
       ]
     },
     {
       img: benefits4,
-      title: 'AI Oracle gas fee',
+      title: 'Earn AI Oracle gas fee',
       details: [
 
       ]
