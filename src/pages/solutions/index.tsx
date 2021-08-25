@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   background-size: 70% 70%;
 
   @media screen and (max-width: 1100px) {
-    height: 600px;
+    height: 250px;
   }
 `
 
