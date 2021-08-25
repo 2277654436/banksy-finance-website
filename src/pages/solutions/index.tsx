@@ -107,9 +107,9 @@ const ContentItem = styled.div`
 
 const SolutionsImage = styled.img`
   position: absolute;
-  left: 0;
+  left: 130px;
   top: 280px;
-  width: 780px;
+  width: 1000px;
 
   @media screen and (max-width: 1100px) {
     position: relative;
@@ -167,17 +167,17 @@ export const Solutions: React.FC = () => {
           </Title>
 
 
-          <SolutionsImage src={SolutionImg} alt="solutions" data-aos="fade-right" />
-          <Content>
-            {
-              solutionsData.map((item: any, index) => (
-                <ContentItem key={index} data-aos="fade-left">
-                  <span className="serialNum">{item.serialNum}</span>
-                  <span className="item-content">{item.content}</span>
-                </ContentItem>
-              ))
-            }
-          </Content>
+          <SolutionsImage src={SolutionImg} alt="solutions" data-aos="fade-in" />
+          {/*<Content>*/}
+          {/*  {*/}
+          {/*    solutionsData.map((item: any, index) => (*/}
+          {/*      <ContentItem key={index} data-aos="fade-left">*/}
+          {/*        <span className="serialNum">{item.serialNum}</span>*/}
+          {/*        <span className="item-content">{item.content}</span>*/}
+          {/*      </ContentItem>*/}
+          {/*    ))*/}
+          {/*  }*/}
+          {/*</Content>*/}
         </SolutionsContainer>
       </Wrapper>
     </div>
