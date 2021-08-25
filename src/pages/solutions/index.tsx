@@ -51,10 +51,10 @@ const Title = styled.div`
 
 const Content = styled.div`
   margin-top: 100px;
-  width: 580px;
+  width: 540px;
   position: relative;
   right: 0;
-  left: 700px;
+  left: 760px;
   
 
   @media screen and (max-width: 1100px) {
@@ -109,7 +109,7 @@ const SolutionsImage = styled.img`
   position: absolute;
   left: 0;
   top: 280px;
-  width: 670px;
+  width: 780px;
 
   @media screen and (max-width: 1100px) {
     position: relative;
@@ -130,9 +130,19 @@ export const Solutions: React.FC = () => {
   const solutionsData:SolutionItem[] = [
     {
       serialNum: '',
-      content: 'We guarantee the security of funds on our\n' +
-          'platform by 1) a NFT whitelisting mechanism\n' +
-          '2) a risk assessment model 3) a liquidation\n' +
+      content: 'We guarantee the security of funds on our platform by '
+    },
+    {
+      serialNum: '',
+      content: '1) a NFT whitelisting mechanism\n'
+    },
+    {
+      serialNum: '',
+      content: '2) a risk assessment model '
+    },
+    {
+      serialNum: '',
+      content: '3) a liquidation\n' +
           'process. At the same time, based on the \n' +
           'pool-based lending model, users can quickly\n' +
           'complete deposits and loans, thereby\n' +
