@@ -104,7 +104,7 @@ const Spin = keyframes`
 `
 
 const SpinningImage = styled.img`
-  width: 500px;
+  width: 650px;
   background-size: 100% 100%;
   position: absolute;
   top: 70px;
