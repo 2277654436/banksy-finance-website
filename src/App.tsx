@@ -39,7 +39,7 @@ const App = () => {
       <Support />
       <Benefits />
       <RoadMap />
-      {/*<Team />*/}
+      <Team />
       <Foot />
       {/*    </div>
         ) : (
