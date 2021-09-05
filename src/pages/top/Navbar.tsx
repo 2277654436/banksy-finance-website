@@ -105,6 +105,7 @@ const Navbar: React.FC = () => {
         <li><a onClick={() => scrollToPart('FeaturesContainer')}>Features</a></li>
         <li><a onClick={() => scrollToPart('BenefitsContainer')}>Benefits</a></li>
         <li><a onClick={() => scrollToPart('RoadMapContainer')}>Roadmap</a></li>
+        <li><a href={'https://banksy-docs.gitbook.io/banksy-finance/'} target={'_blank'} rel="noreferrer" >Docs</a></li>
       </NavLinksContainer>
 
       <ExternalLinksContainer id="ExternalLinksContainer">

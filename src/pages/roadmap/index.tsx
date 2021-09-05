@@ -3,12 +3,11 @@ import RoadMapImg from '../../image/roadmap/roadmapImg.png'
 import RoadMapImgMobile from '../../image/roadmap/RoadmapMobile.png'
 import styled from 'styled-components'
 import dotsBG from '../../image/solutions/dots.png'
-import Background from '../../image/roadmap/mapBac.png'
 import { useMediaQuery } from 'react-responsive'
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 600px;
+  height: 900px;
   background: url(${dotsBG}) no-repeat;
   background-size: 50% 50%;
   background-position: top 0 left 0;

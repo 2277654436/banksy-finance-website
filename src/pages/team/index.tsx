@@ -1,8 +1,6 @@
 import React from 'react'
-import teamTitleImg from '../../image/team/teamTttleImg.png'
 import ceo from '../../image/team/1.png'
 import cto from '../../image/team/2.png'
-import cmo from '../../image/team/3.png'
 import engineer1 from '../../image/team/4.png'
 import engineer2 from '../../image/team/5.png'
 import architect from '../../image/team/6.png'
@@ -10,13 +8,11 @@ import algorithm from '../../image/team/7.png'
 import linkedin from '../../image/team/linkedin.png'
 import github from '../../image/team/github-link.png'
 import styled from 'styled-components'
-import BackgroundImage from '../../image/issues/background1.png'
 import dotsBG from '../../image/solutions/dots.png'
 
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 500px;
   background: url(${dotsBG}) no-repeat;
   background-size: 50% 50%;
   background-position: top 50% left 0;
@@ -28,7 +24,6 @@ const Wrapper = styled.div`
 
 const TeamContainer = styled.div`
   width: 1200px;
-  height: 900px;
   margin: 0 auto;
   position: relative;
   background: url(${dotsBG}) no-repeat;
@@ -39,16 +34,21 @@ const TeamContainer = styled.div`
     width: 100%;
     height: fit-content;
     position: relative;
+    margin-top: 10vh;
     margin-bottom: 30vh;
     background-size: 100% 100%;
   }
 `
 
 const Title = styled.div`
-  position: absolute;
+  //position: absolute;
   width: fit-content;
-  top: 50px;
-  
+  //top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
   img {
     width: 165px;
   }
@@ -57,27 +57,26 @@ const Title = styled.div`
     color: #fff;
     font-size: 64px;
     font-weight: 550;
-    position: absolute;
-    left: 550px;
-    top: 80px;
+    //position: absolute;
+    //left: 550px;
+    //top: 80px;
   }
 
   div {
-    position: absolute;
+    //position: absolute;
     text-align: center;
     color: #808080;
     width: 800px;
     font-size: 20px;
     top: 190px;
-    left: 250px;
   }
 
   @media screen and (max-width: 1100px) {
     position: relative;
     width: 80vw;
-    margin: 0;
+    margin: 0 auto;
     height: fit-content;
-    left: 40px;
+    margin-bottom: 10vh;
 
     img {
       position: absolute;
@@ -87,15 +86,13 @@ const Title = styled.div`
 
     span {
       position: relative;
-      top: 20px;
-      left: 100px;
       width: fit-content;
       margin: 0;
       font-size: 41px;
     }
 
     div {
-      position: absolute;
+      //position: absolute;
       width: 100%;
       top: 80px;
       font-size: 16px;
@@ -106,47 +103,40 @@ const Title = styled.div`
 
 const MembersRowContainer = styled.div`
   position: relative;
-  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .row__1, .row__2 {
-    position: relative;
     display: flex;
     justify-content: space-between;
   }
 
   .row__1 {
     width: 1160px;
-    position: absolute;
-    left: 0;
-    top: 400px;
+    margin-top: 40px;
   }
 
   .row__2 {
-    width: 865px;
-    position: absolute;
-    left: 150px;
-    top: 680px;
+    width: 1160px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   @media screen and (max-width: 1100px) {
     position: relative;
     margin-top: 0;
 
-    .row__1{
+    .row__1, .row__2 {
       width: 100%;
+      display: flex;
       flex-direction: column;
+      align-items: center;
       margin: 0 auto;
-      position: absolute;
-      top: 230px;
-      left: 0;
-    } 
+    }
+    
     .row__2 {
-      width: 100%;
-      flex-direction: column;
-      margin: 0 auto;
-      position: absolute;
-      left: 0;
-      top: 800px;
+      margin-bottom: 0;
     }
   }
 `
@@ -161,7 +151,7 @@ const MemberContainer = styled.div`
   font-size: 18px;
   color: #B2B2B2;
   text-align: center;
-  
+
   .data {
 
     .name {
@@ -173,9 +163,9 @@ const MemberContainer = styled.div`
       font-size: 16px;
     }
   }
-  
+
   @media screen and (max-width: 1100px) {
-    width: 100%;
+    width: 75vw;
     position: relative;
     align-items: center;
     margin-bottom: 5vh;
@@ -183,10 +173,11 @@ const MemberContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin-left: 0;
 
     .data {
       text-align: left;
-      
+
       .name {
         margin-top: 5px;
       }
@@ -205,7 +196,7 @@ const AvatarBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   .avatar-bg {
     width: 123px;
     height: 123px;
@@ -222,7 +213,7 @@ const Avatar = styled.img`
   width: 110px;
   height: 110px;
   border-radius: 110px;
-  
+
   @media screen and (max-width: 1100px) {
     width: 100px;
     height: 100px;
@@ -250,7 +241,7 @@ const ExternalLink = styled.a`
 
   @media screen and (max-width: 1100px) {
     display: block;
-    
+
     img {
       width: 20px;
     }
@@ -300,12 +291,12 @@ const Team: React.FC = () => {
       avatar: cto,
       externalLinks: { icon: linkedin, link: 'https://www.linkedin.com/in/chris-su-b78775119/' }
     },
-    {
+    /* {
       name: 'Terry Li',
       position: 'Co-founder CMO',
       avatar: cmo,
       externalLinks: { icon: linkedin, link: 'https://www.linkedin.com/in/terry-li-614512212/' }
-    },
+    },*/
     {
       name: 'Wei Jiang',
       position: 'Blockchain Architect',
