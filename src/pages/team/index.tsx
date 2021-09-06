@@ -1,5 +1,6 @@
 import React from 'react'
 import ceo from '../../image/team/1.png'
+import TerryLi from '../../image/team/cmo1.png'
 import cto from '../../image/team/2.png'
 import engineer1 from '../../image/team/4.png'
 import engineer2 from '../../image/team/5.png'
@@ -118,7 +119,7 @@ const MembersRowContainer = styled.div`
   }
 
   .row__2 {
-    width: 1160px;
+    width: 880px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
@@ -145,46 +146,122 @@ const MemberContainer = styled.div`
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin-left: 40px;
   z-index: 2;
   font-size: 18px;
   color: #B2B2B2;
   text-align: center;
+  height: 250px;
+  overflow-y: hidden;
 
-  .data {
-
-    .name {
-      margin-top: 10px;
+  &:hover {
+    border-radius: 10px;
+    background-image: linear-gradient(to top, rgba(72, 72, 79, 0.3) 0%, #33333a 100%);
+    background-repeat: repeat;
+  }
+  
+  .wrapper {
+    height: fit-content;
+    transition: all 0.2s;
+    position: relative;
+    bottom: 0;
+    
+    &:hover {
+      position: relative;
+      bottom: 260px;
     }
+    
+    .page-1, .page-2 {
+      width: 220px;
+      height: 260px;
+      padding: 20px 0;
+    }
+    
+    .page-1 {
+      .data {
+        .name {
+          margin-top: 10px;
+        }
 
-    .position {
-      margin-top: 10px;
-      font-size: 16px;
+        .position {
+          margin-top: 10px;
+          font-size: 16px;
+        }
+      }
+    }
+    
+    .page-2 {
+      .title-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        .avatar {
+          width: 60px;
+          height: 60px;
+          border-radius: 30px;
+          margin-right: 10px;
+        }
+        
+        .name-and-position {
+           margin-right: 10px;
+           
+          .name {
+             font-size: 18px;
+             font-weight: 600;
+          }
+          
+          .position {
+            display: none;
+          }                
+        }
+
+      }
+      
+      .description {
+        font-size: 13px;
+        text-align: start;
+      }
     }
   }
 
   @media screen and (max-width: 1100px) {
-    width: 75vw;
     position: relative;
     align-items: center;
     margin-bottom: 5vh;
     font-size: 18px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
     margin-left: 0;
+    padding: 0!important;
 
-    .data {
-      text-align: left;
+    &:hover {
+      background-image: none;
+    }
 
-      .name {
-        margin-top: 5px;
-      }
+    .wrapper:hover {
+      bottom: 0;
+    }
 
-      .position {
-        margin-top: 5px;
-        font-size: 16px;
+    .page-1 {
+      display: none;
+      height: 0 !important;
+    }
+
+    &, .wrapper, .page-2 {
+      width: 80vw !important;
+      height: fit-content !important;
+    }
+ 
+    .page-2 {
+      .name-and-position {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        .position {
+          display: block !important;
+          color: #999;
+          font-size: 12px;
+        }
       }
     }
   }
@@ -223,7 +300,6 @@ const Avatar = styled.img`
 `
 
 const ExternalLink = styled.a`
-  margin-top: 10px;
   cursor: pointer;
   color: #fff;
   display: flex;
@@ -256,22 +332,39 @@ type TeamMember = {
     icon: string
     link: string
   }
+  description: string
 }
 
 const Member: React.FC<TeamMember> = ({
-  name, avatar, externalLinks, position
+  name, avatar, externalLinks, position, description
 }) => {
   return (
     <MemberContainer key={name}>
-      <div className="avatar-bg">
-        <Avatar src={avatar} alt={name} />
-      </div>
-      <div className="data">
-        <div className="name">{name}</div>
-        <div className="position">{position}</div>
-        <ExternalLink href={externalLinks.link}>
-          <img src={externalLinks.icon} alt="" />
-        </ExternalLink>
+      <div className="wrapper">
+        <div className="page-1">
+          <div className="avatar-bg">
+            <Avatar src={avatar} alt={name} />
+          </div>
+          <div className="data">
+            <div className="name">{name}</div>
+            <div className="position">{position}</div>
+          </div>
+        </div>
+        <div className="page-2">
+          <div className="title-row">
+            <img src={avatar} alt={name} className={'avatar'} />
+            <div className="name-and-position">
+              <div className="name">{name}</div>
+              <div className="position">{position}</div>
+            </div>
+            <ExternalLink href={externalLinks.link} target={'__blank'} rel="noreferrer">
+              <img src={externalLinks.icon} alt="" />
+            </ExternalLink>
+          </div>
+          <div className="description">
+            {description}
+          </div>
+        </div>
       </div>
     </MemberContainer>
   )
@@ -283,25 +376,29 @@ const Team: React.FC = () => {
       name: 'Clink Li',
       position: 'Co-founder CEO',
       avatar: ceo,
-      externalLinks: { icon: linkedin, link: 'https://www.linkedin.com/in/clink-li-aa1ba418a/' }
+      externalLinks: { icon: linkedin, link: 'https://www.linkedin.com/in/clink-li-aa1ba418a/' },
+      description: 'Clink had worked as both algorithm engineer and product manager for a Chinese tech firm. He is proficient in artificial intelligence algorithms.'
     },
     {
       name: 'Chris Su',
       position: 'Co-founder CTO',
       avatar: cto,
-      externalLinks: { icon: linkedin, link: 'https://www.linkedin.com/in/chris-su-b78775119/' }
+      externalLinks: { icon: linkedin, link: 'https://www.linkedin.com/in/chris-su-b78775119/' },
+      description: 'Chris worked as software architect in two Chinese tech firms. He’s experienced in distributed computing, storage, network protocol, Web3, Ethereum, and Substrate.'
     },
-    /* {
+    {
       name: 'Terry Li',
       position: 'Co-founder CMO',
-      avatar: cmo,
-      externalLinks: { icon: linkedin, link: 'https://www.linkedin.com/in/terry-li-614512212/' }
-    },*/
+      avatar: TerryLi,
+      externalLinks: { icon: linkedin, link: 'https://www.linkedin.com/in/文瑞-terry-李-740151220' },
+      description: 'Terry worked as a project manager for European and American multinational companies. Extensive experience in project management and business development. '
+    },
     {
       name: 'Wei Jiang',
       position: 'Blockchain Architect',
       avatar: architect,
-      externalLinks: { icon: github, link: 'https://github.com/GleipnirJ/' }
+      externalLinks: { icon: github, link: 'https://github.com/GleipnirJ/' },
+      description: 'Wei is the former Lead Engineer and Project Manager of a infrastructure technology company, specializing in embedded software, communication protocol, software development and software process management\n'
     },
   ]
 
@@ -316,26 +413,29 @@ const Team: React.FC = () => {
       name: 'Roger Luo',
       position: 'Chief Algorithm Expert',
       avatar: algorithm,
-      externalLinks: { icon: github, link: 'https://github.com/luojie1024/' }
+      externalLinks: { icon: github, link: 'https://github.com/luojie1024/' },
+      description: 'Roger worked as a Data Scientist for IBM GCG Data and AI labs. He contributed to Google TensorFlow framework and had experience implementing AI model for housing loan risk prediction. He’s Proficient in C++, Java, Python, etc.'
     },
     {
-      name: 'PeiHuang Guo',
+      name: 'Disperito Guo',
       position: 'Front-End Engineer',
       avatar: engineer1,
-      externalLinks: { icon: github, link: 'https://github.com/Disperito' }
+      externalLinks: { icon: github, link: 'https://github.com/Disperito' },
+      description: 'Disperito, Full stack development engineer, Experienced in Java/React/Vue/Flutter,  blockchain and cross-chain decentralized app development. '
     },
     {
-      name: 'ChengYang Lin',
+      name: 'Scottlin Lin',
       position: 'Front-End Engineer',
       avatar: engineer2,
-      externalLinks: { icon: github, link: 'https://github.com/linchengyang1116' }
+      externalLinks: { icon: github, link: 'https://github.com/linchengyang1116' },
+      description: 'Scottlin, Experienced front-end engineer, proficient in vue, react and other front-end frameworks, with rich experience in large-scale project development.'
     },
   ]
 
   return (
     <div className="section">
       <Wrapper>
-        <TeamContainer data-aos="fade-in">
+        <TeamContainer>
           <Title>
             {/*<img src={teamTitleImg} className="team-title-img" alt="banksy team" />*/}
             <span>TEAM</span>
